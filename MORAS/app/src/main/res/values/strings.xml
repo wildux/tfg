@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MORAS</string>
+
+    <string name="picture">Picture</string>
+
+    <string name="capture">Take a picture</string>
+    <string name="browse">Browse Gallery</string>
+    <string name="options">Settings</string>
+
+    <string name="point_selector">Point selector</string>
+    <string name="feature_extractor">Feature extractor:</string>
+
+    <string-array name="point_selector_list">
+        <item>HARRIS</item>
+        <item>SHI TOMASI</item>
+        <item>DoG</item>
+    </string-array>
+
+    <string-array name="feature_extractor_list">
+        <item>SIFT</item>
+        <item>SURF</item>
+        <item>LATCH</item>
+    </string-array>
+
+</resources>
