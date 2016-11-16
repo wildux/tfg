@@ -52,5 +52,11 @@
             android:layout_margin="5dp"
             android:background="@drawable/pic_border"/>
 
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:text="New Text"
+            android:id="@+id/text" />
+
     </LinearLayout>
 </RelativeLayout>

@@ -2,36 +2,30 @@ package com.wildux.moras;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
-import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
 import java.io.File;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.SocketTimeoutException;
-import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
-import java.util.zip.GZIPOutputStream;
+import java.util.HashMap;
+import java.util.Map;
+
 
 /**
  * Created by joan on 14/11/16
@@ -47,7 +41,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     //captured picture uri
     private Uri picUri = Uri.EMPTY;
-    private Uri destination = Uri.EMPTY;
+    private ImageView picView;
 
     // Save the activity state when it's going to stop.
     @Override
@@ -69,156 +63,85 @@ public class MainActivity extends Activity implements View.OnClickListener {
         Button captureBtn = (Button)findViewById(R.id.capture_btn);
         Button browseBtn = (Button)findViewById(R.id.browse_btn);
         Button optionsBtn = (Button)findViewById(R.id.options_btn);
+        picView = (ImageView) findViewById(R.id.picture);
         //handle button clicks
         captureBtn.setOnClickListener(this);
         browseBtn.setOnClickListener(this);
         optionsBtn.setOnClickListener(this);
-        settings = new Settings(this);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        settings = new Settings(getApplicationContext());
     }
 
     public void onClick(View v) {
-        if (v.getId() == R.id.capture_btn) {
-            try {
-
-                //camera stuff
-                Intent captureIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                /*String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-
-                //folder stuff
-                File imagesFolder = new File(Environment.getExternalStorageDirectory(), "MyImages");
-                imagesFolder.mkdirs();
-
-                File image = new File(imagesFolder, "QR_" + timeStamp + ".png");
-                picUri = Uri.fromFile(image);
-
-                captureIntent.putExtra(MediaStore.EXTRA_OUTPUT, picUri);
-*/
-
-                Toast.makeText(this, "URI: " + picUri, Toast.LENGTH_LONG).show();
-
-                //updateDestination();
-
-                //we will handle the returned data in onActivityResult
-                startActivityForResult(captureIntent, CAMERA_CAPTURE);
-
-                //start image scanne to add photo to gallery
-                //addProductPhotoToGallery(picUri);
-            }
-            catch(ActivityNotFoundException anfe){
-                //display an error message
-                String errorMessage = "Whoops - your device doesn't support capturing images!";
-                Toast toast = Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT);
-                toast.show();
-            }
+        if (v.getId() == R.id.capture_btn) try {
+            Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            startActivityForResult(captureIntent, CAMERA_CAPTURE);
+        } catch (ActivityNotFoundException anfe) {
+            String errorMessage = "Your device doesn't support capturing images!";
+            Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
         }
 
-        else if (v.getId() == R.id.browse_btn) {
-            try {
-                //use standard intent to capture an image
-                Intent galleryIntent = new Intent(
-                        Intent.ACTION_PICK,
-                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-
-                //we will handle the returned data in onActivityResult
-                startActivityForResult(galleryIntent, RESULT_GALLERY);
-            }
-            catch(ActivityNotFoundException anfe){
-                //display an error message
-                String errorMessage = "Whoops - your device doesn't support gallery!";
-                Toast toast = Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT);
-                toast.show();
-            }
+        else if (v.getId() == R.id.browse_btn) try {
+            Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            startActivityForResult(galleryIntent, RESULT_GALLERY);
+        } catch (ActivityNotFoundException anfe) {
+            String errorMessage = "Your device doesn't support gallery access!";
+            Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
         }
-        else if (v.getId() == R.id.options_btn) {
-            try {
-                //use standard intent to capture an image
-                Intent it = new Intent(this,SettingsActivity.class);
-                startActivity(it);
-            }
-            catch(ActivityNotFoundException anfe){
-                //display an error message
-                String errorMessage = "Whoops - your device doesn't support gallery!";
-                Toast toast = Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT);
-                toast.show();
-            }
+
+        else if (v.getId() == R.id.options_btn) try {
+            Intent it = new Intent(this, SettingsActivity.class);
+            startActivity(it);
+        } catch (ActivityNotFoundException anfe) {
+            String errorMessage = "Unknown error";
+            Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
         }
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == RESULT_OK) {
-            //user is returning from capturing an image using the camera
-            if(requestCode == CAMERA_CAPTURE){
-                //picUri = Uri.parse("content://media/external/images/media/26681");
-                //get the Uri for the captured image
-                if (data == null) {
-                    Toast.makeText(this, "Null data", Toast.LENGTH_LONG).show();
-                    //performCrop();
-                } else {
-                    //Toast.makeText(this, "OK", Toast.LENGTH_LONG).show();
-                    //picUri = data.getData();
-                    Toast.makeText(this, "OK, " + data.getData(), Toast.LENGTH_LONG).show();
-                    //performCrop();
-                }
+        if (resultCode == RESULT_OK)
+            switch (requestCode) {
+                case CAMERA_CAPTURE:
+                    String path = getLastImage();
+                    if (data == null || path == null) Toast.makeText(this, "Null data", Toast.LENGTH_LONG).show();
+                    else {
+                        picUri = Uri.fromFile(new File(path));
+                        performCrop();
+                    }
+                    break;
+
+                case RESULT_GALLERY:
+                    if (data == null) {
+                        Toast.makeText(this, "Null data", Toast.LENGTH_LONG).show();
+                    } else {
+                        picUri = data.getData();
+                        performCrop();
+                    }
+                    break;
+
+                case PIC_CROP:
+                    Bundle extras = data.getExtras();
+
+                    Bitmap thePic = extras.getParcelable("data");
+                    //String encodedImage = encodeToBase64(thePic, Bitmap.CompressFormat.PNG, 100);
+
+                    /*final int chunkSize = 2048;
+                    for (int i = 0; i < encodedImage.length(); i += chunkSize) {
+                        Log.w("PICTURE:", encodedImage.substring(i, Math.min(encodedImage.length(), i + chunkSize)));
+                    }*/
+
+                    //sendRequest(encodedImage);
+
+                    picView.setImageBitmap(thePic);
+                    break;
             }
-            else if(requestCode == RESULT_GALLERY) {
-                //get the Uri for the captured image
-                if (data == null) {
-                    Toast.makeText(this, "Null data", Toast.LENGTH_LONG).show();
-
-                } else {
-                    picUri = data.getData();
-                    Toast.makeText(this, "URI: " + picUri, Toast.LENGTH_LONG).show();
-                    performCrop();
-                }
-            }
-
-            //user is returning from cropping the image
-            else if(requestCode == PIC_CROP){
-                //get the returned data
-                Bundle extras = data.getExtras();
-
-                Bitmap thePic = extras.getParcelable("data");
-                String encodedImage = encodeToBase64(thePic,Bitmap.CompressFormat.PNG, 100);
-
-                //callServer(encodedImage);
-                //Log.w("PICTURE:", encodedImage);
-
-                //LOG
-                /*final int chunkSize = 2048;
-                for (int i = 0; i < encodedImage.length(); i += chunkSize) {
-                    Log.w("PICTURE:", encodedImage.substring(i, Math.min(encodedImage.length(), i + chunkSize)));
-                }*/
-
-                ImageView picView = (ImageView)findViewById(R.id.picture);
-                picView.setImageBitmap(thePic);
-            }
-        }
     }
 
-    /*private String encodeOK(Bitmap image) {
-        String encodedImage = "";
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        try {
-            GZIPOutputStream gzipOstream = null;
-            try {
-                gzipOstream = new GZIPOutputStream(stream);
-                image.compress(Bitmap.CompressFormat.JPEG, 100, gzipOstream);
-                gzipOstream.flush();
-            } finally {
-                gzipOstream.close();
-                stream.close();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-            stream = null;
-        }
-        if(stream != null) {
-            byte[] byteArry=stream.toByteArray();
-            encodedImage = Base64.encodeToString(byteArry, Base64.NO_WRAP);
-        }
-        return encodedImage;
-    }*/
-
+    /*
     public static String encodeToBase64(Bitmap image, Bitmap.CompressFormat compressFormat, int quality)
     {
         ByteArrayOutputStream byteArrayOS = new ByteArrayOutputStream();
@@ -228,9 +151,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     public static Bitmap decodeBase64(String input)
     {
-        byte[] decodedBytes = Base64.decode(input, 0);
+        byte[] decodedBytes = Base64.decode(input, Base64.URL_SAFE);
         return BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.length);
-    }
+    }*/
 
     private void performCrop(){
         try {
@@ -246,99 +169,102 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    private void callServer(String image) {
-        int ps = settings.getPoint_selector();
-        int fe = settings.getFeature_extractor();
-        boolean rs = settings.isRansac();
-        String rob = settings.getRobot_add();
-        String uri = Uri.parse("http://wildux.pythonanywhere.com/MORAS/default/image_dimensions")
-                .buildUpon()
-                .appendQueryParameter("ps", "HARRIS")
-                .build().toString();
-        //HttpGet httpget = new HttpGet(uri);
-        HttpURLConnection client = null;
-        try {
-            URL url = new URL("http://wildux.pythonanywhere.com/MORAS/default/image_dimensions");
-            client = (HttpURLConnection) url.openConnection();
-            client.setRequestMethod("POST");//setRequestMode("POST");
-            client.setRequestProperty("ps","HARRIS");
-            client.setDoOutput(true);
+    private void sendRequest(final String encodedImage) {
+        final TextView mTextView = (TextView) findViewById(R.id.text);
+        // Instantiate the RequestQueue.
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url = "http://wildux.pythonanywhere.com/MORAS/default/image_dimensions";
+        mTextView.setText("Waiting response...");
 
-            OutputStream outputPost = new BufferedOutputStream(client.getOutputStream());
-            writeStream(outputPost);
-            outputPost.flush();
-            outputPost.close();
-        }
-        catch(MalformedURLException error) {
-            //Handles an incorrectly entered URL
-        }
-        catch(SocketTimeoutException error) {
-        //Handles URL access timeout.
-        }
-        catch (IOException error) {
-        //Handles input and output errors
-        }
-        finally {
-            if(client != null) // Make sure the connection is not null.
-                client.disconnect();
-        }
+        // Request a string response from the provided URL.
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+            new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    // Display the first 500 characters of the response string.
+                    mTextView.setText(response);
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    mTextView.setText("That didn't work!");
+                }
+            }
+        )
+        {
+            @Override
+            protected Map<String, String> getParams() {
+                int ps = settings.getPoint_selector();
+                int fe = settings.getFeature_extractor();
+                boolean rs = settings.isRansac();
+                String rob = settings.getRobot_add();
 
-        // call(image, ps, fe, rs, rob)
+                Map<String, String> params = new HashMap<>();
+                //params.put("img", encodedImage);
+                params.put("ps", Integer.toString(ps));
+                params.put("fe", Integer.toString(fe));
+                params.put("ransac",Boolean.toString(rs));
+                params.put("robot",rob);
+
+                //Log.w("PARAMS: ",params.toString());
+
+                return params;
+            }
+        };
+        // Add the request to the RequestQueue.
+        queue.add(stringRequest);
     }
 
     /*
+    private void setPic() {
+        String mCurrentPhotoPath = getLastImageId();
+        // Get the dimensions of the View
+        int targetW = 200;
+        int targetH = 200;
 
-    // Recover the saved state when the activity is recreated.
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
+        // Get the dimensions of the bitmap
+        BitmapFactory.Options bmOptions = new BitmapFactory.Options();
+        bmOptions.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(mCurrentPhotoPath, bmOptions);
+        int photoW = bmOptions.outWidth;
+        int photoH = bmOptions.outHeight;
 
-        picUri = savedInstanceState.getParcelable("picUri");
+        // Determine how much to scale down the image
+        int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
 
-    }*/
-    private void updateDestination() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyD_HHmmss");
-        String timeString = sdf.format(Calendar.getInstance().getTime());
-        Toast toast = Toast.makeText(this, timeString, Toast.LENGTH_SHORT);
-        //toast.show();
+        // Decode the image file into a Bitmap sized to fill the View
+        bmOptions.inJustDecodeBounds = false;
+        //bmOptions.inSampleSize = scaleFactor << 1;
+        bmOptions.inPurgeable = true;
 
-        Uri urii = Uri.parse("content://media/external/images/media/26681");
-        String path = urii.getPath();
-        toast = Toast.makeText(this, path, Toast.LENGTH_SHORT);
-        toast.show();
-        //File image = new File(imagesFolder, timeString + ".png");
-        //Uri uriSavedImage = Uri.fromFile(image);
+        Bitmap bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath, bmOptions);
+
+        //Matrix mtx = new Matrix();
+        //mtx.postRotate(90);
+        // Rotating Bitmap
+        //Bitmap rotatedBMP = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), mtx, true);
+
+        //if (rotatedBMP != bitmap) bitmap.recycle();
+
+
+        picView.setImageBitmap(bitmap);
+    }
+    */
+
+    private String getLastImage(){
+        final String[] imageColumns = { MediaStore.Images.Media._ID, MediaStore.Images.Media.DATA };
+        final String imageOrderBy = MediaStore.Images.Media._ID+" DESC";
+        Cursor cursor = getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, imageColumns, null, null, imageOrderBy);
+        if(cursor.moveToFirst()){
+            //int id = imageCursor.getInt(imageCursor.getColumnIndex(MediaStore.Images.Media._ID));
+            String fullPath = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
+            //Log.d("ID: ", "getLastImageId::id " + id);
+            Log.d("ID: ", "getLastImageId::path " + fullPath);
+            cursor.close();
+            return fullPath;
+        }else return null;
     }
 
-    private File getProductPhotoDirectory() {
-        //get directory where file should be stored
-        return new File(Environment.getExternalStoragePublicDirectory(
-                Environment.DIRECTORY_PICTURES),
-                "myPhotoDir");
-    }
-
-    private Uri getPhotoFileUri(final String photoStorePath) {
-
-        //timestamp used in file name
-        final String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss",
-                Locale.US).format(new Date());
-
-        // file uri with timestamp
-        final Uri fileUri = Uri.fromFile(new java.io.File(photoStorePath
-                + java.io.File.separator + "IMG_" + timestamp + ".jpg"));
-
-        return fileUri;
-    }
-
-    private void addProductPhotoToGallery(Uri photoUri) {
-        //create media scanner intetnt
-        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
-
-        //set uri to scan
-        mediaScanIntent.setData(photoUri);
-        //start media scanner to discover new photo and display it in gallery
-        this.sendBroadcast(mediaScanIntent);
-    }
 
 
 }

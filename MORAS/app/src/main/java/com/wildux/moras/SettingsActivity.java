@@ -25,7 +25,7 @@ public class SettingsActivity extends Activity implements AdapterView.OnItemSele
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        settings = new Settings(this);
+        settings = new Settings(getApplicationContext());
 
         sp_points = (Spinner) findViewById(R.id.sp_points);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -52,13 +52,11 @@ public class SettingsActivity extends Activity implements AdapterView.OnItemSele
             }
 
             @Override
-            public void beforeTextChanged(CharSequence s, int start,
-                                          int count, int after) {
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
 
             @Override
-            public void onTextChanged(CharSequence s, int start,
-                                      int before, int count) {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
                 //if(s.length() != 0);
             }
         });
