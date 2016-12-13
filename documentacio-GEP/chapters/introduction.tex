@@ -1,0 +1,58 @@
+Els avenços tecnològics dels últims anys, han millorat la capacitat de les màquines per extreure informació i resoldre problemes de manera autònoma, imitant cada vegada millor
+el comportament humà.\\\\
+En aquest treball, es treballarà la visió per computador aplicada a un problema de robòtica.
+\section{Context}
+	Aquest projecte es desenvolupa com a treball final de grau dels estudis de grau en enginyeria informàtica, de l'especialitat en tecnologies de la informació.
+	Es tracta d'un projecte de modalitat A, realitzat a la Facultat d'Informàtica de Barcelona (Universitat Politècnica de Catalunya) i proposat pel director Joan Climent,
+	del departament d'ESAII (Enginyeria de Sistemes, Automàtica i Informàtica Industrial).
+\section{Descripció del problema}
+	El treball pretén resoldre un problema d'autolocalització de robots mòbils en un entorn variable, de tal manera que el robot sigui capaç de desplaçar-se d'un punt inicial a un punt final escollit per l'usuari.
+	Per fer això, s'utilitzaran diverses tècniques de visió per ordinador.
+\section{Actors implicats}
+	En aquesta secció es descriuen els actors implicats del projecte, és a dir, totes aquelles persones que es veuran beneficiades directa o indirectament amb la realització d'aquest.\\
+	\begin{itemize}
+		\item \textbf{Autor/Desenvolupador:} És el màxim responsable del projecte. En tractar-se d'un treball final de grau, l'autor del projecte serà també el màxim beneficiari, ja que la realització d'aquest li permetrà acabar la carrera d'enginyeria informàtica.
+		\item \textbf{Usuaris:} Qualsevol persona qui ho desitgi, tindrà accés a tots els codis desenvolupats durant el projecte, ja que es llançaran sota una llicència de programari lliure que permetrà veure i adaptar el codi a les necessitats d'altres usuaris.
+		\item \textbf{Altres beneficiaris:} Qualsevol empresa o institució interessada podrà utilitzar el sistema desenvolupat i adaptar-lo a les seves necessitats, com podria ser per exemple un sistema de transport d'equipatge basat en robots.
+	\end{itemize}
+\section{Estat de l'art}
+	\subsection{Visió per computador}
+		La visió per computador\cite{Szeliski} és una ciència que té com a objectiu dotar les màquines o ordinadors de la capacitat de ``veure''.
+		Es basa en l'extracció i anàlisi de dades obtingudes a partir d'imatges.\\\\
+		Algunes de les aplicacions de la visió per computador són:\\
+		\begin{itemize}
+			\item Vehicles autònoms
+			\item Realitat augmentada
+			\item Reconeixement facial
+			\item Restauració d'imatges
+			\item Inspecció industrial 
+			\item Robòtica\\
+		\end{itemize}
+		En aquest treball, ens interessa utilitzar la visió per computador en el camp de la robòtica, per aconseguir guiar a un robot mòbil cap a un objectiu
+		determinat basant-se en la detecció d'un punt o regió en una imatge.
+		\subsubsection{Nous algorismes}
+			En els darrers anys, han aparegut nous algorismes d'obtenció de punts i extracció de característiques que suposen una alternativa als clàssics SIFT\cite{SIFT}
+			( Scale Invariant Feature Transform) i SURF\cite{SURF} (Speeded-Up Robust Features). Alguns d'aquests algorismes són BinBoost\cite{Trzcinski13a} o un dels més recents:
+			LATCH\cite{LeviHassner2016LATCH}\\\\
+			En aquest projecte s'analitzarà si es adequat emprar algun d'aquests algorismes en la implementació del sistema d'autolocalització. 
+	\subsection{Robòtica}
+		La robòtica és un camp de la tecnologia que estudia el disseny i la construcció de robots.\\\\
+		Que és, doncs, un robot? Al llarg de la historia, s'han donat diverses definicions del concepte de robot, sense existir encara una definició exacta acceptada per tothom. I a mesura que passa el temps,
+		cada vegada resulta més complicat determinar si una màquina és o no un robot. Per no complicar-nos massa, entendrem com a robot una màquina programable capaç de realitzar una sèrie de
+		tasques concretes interactuant amb l'entorn, ja sigui de manera automàtica o dirigida.\\\\
+		Existeixen diversos tipus de robots, podent fer una classificació senzilla segons la seva arquitectura: robots mòbils, poliarticulats (industrials, mèdics, etc.), humanoides, 
+		zoomòrfics\footnote{\textbf{Robots zoomòrfics:} Robots que imiten característiques pròpies de determinats animals.} i híbrids.\\\\
+		Els robots mòbils, que són els que ens interessen per aquest projecte, acostumen a tenir una sèrie de sensors i dispositius per permetre'n el desplaçament, la localització, esquivar obstacles i
+		realitzar tasques concretes. Alguns exemples de sensors utilitzats per robots mòbils són:\\
+		\begin{itemize}
+			\item Odometria: S'utilitza la informació obtinguda amb sensors de moviment (\textit{encoders} a les rodes, per exemple) per estimar la posició del robot respecte a la inicial.
+			\item GPS (Global Positioning System): Es determina la ubicació del robot amb la xarxa de satèl·lits.
+			\item Sensors de contacte: Permeten detectar si el robot està en contacte amb un altre objecte.
+			\item Sensors d'ultrasons: Detecten objectes mitjançant ones ultrasòniques.
+			\item Acceleròmetre: Determina l'acceleració del robot quan es mou. 
+			\item Càmera: Permet capturar imatges de l'entorn.\\
+		\end{itemize}
+		En el nostre cas, només ens interessaran les dades obtingudes a través d'una càmera, és a dir, les imatges. El treball no se centrarà per tant en la part robòtica del sistema, i no es tindran en compte
+		els sensors i algorismes necessaris per poder moure el robot.\\\\
+		En cas d'aplicar el sistema desenvolupat en robots en un futur, aleshores s'hauran de tenir en compte altres sensors per permetre el moviment
+		de la màquina i arribar a la destinació evitant obstacles.

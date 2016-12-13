@@ -1,94 +1,127 @@
 \def\arraystretch{1.4}
-\definecolor{tableHeader}{RGB}{211, 127, 47}
-\definecolor{myOrange}{RGB}{255, 230, 210}
+\definecolor{tableHeader}{RGB}{53, 104, 151}
+\definecolor{total2}{RGB}{150, 200, 230}
+\definecolor{total}{RGB}{240, 240, 240} %GRIS
+\definecolor{myGray}{RGB}{236, 242, 248}
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}m{#1}}
 
-\section{Costos directes}
+\label{sec:Costos}
 
-	\subsection{Recursos humans}
-		\begin{table}[H]
-			\begin{center}
-				\rowcolors{2}{myOrange}{white}
-				\begin{tabular}{l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l}
-					\rowcolor{tableHeader}
-					\textbf{Rol} & \textbf{Hores} & \textbf{Cost/hora} & \textbf{Cost total} \\
-					Cap de projecte & h & €{}/h & € \\
-					Programador & h & €/h & € \\
-					\textit{Tester} & h & €/h & € \\
-					Analista & h & €/h & € \\
-				\end{tabular}
-			\end{center}
-			\caption{Recursos de programari (costos)}
-		\end{table}
+%A continuació es detallen els costos necessaris per la realització d'aquest treball.
+\section{Recursos de programari}
+	Tot el \textit{software} utilitzat en aquest projecte és gratuït i de codi obert. Per tant, el programari no suposarà cap despesa. Podeu trobar el llistat del programari utilitzat
+	a la taula \ref{table:programari} (Recursos de programari).
 
-	\subsection{Recursos de maquinari}
-
-		\begin{table}[H]
-			\begin{center}
-				\rowcolors{2}{myOrange}{white}
-				\begin{tabular}{l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l}
-					\rowcolor{tableHeader}
-					\textbf{Producte} & \textbf{Unitats} & \textbf{Preu unitari} & \textbf{Vida útil} & \textbf{Amortització} & \textbf{Cost} \\
-					Ordinador personal & 1 & 500€ & 5 anys & - & - \\
-					Càmera & 1 & € & 10 anys & - & - \\
-				\end{tabular}
-			\end{center}
-			\caption{Recursos de maquinari (costos)}
-		\end{table}
-
-	\subsection{Recursos de programari}
-
-		\begin{table}[H]
-			\begin{center}
-				\rowcolors{2}{myOrange}{white}
-				\begin{tabular}{l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l}
-					\rowcolor{tableHeader}
-					\textbf{Producte} & \textbf{Llicència} & \textbf{Preu} & \textbf{Vida útil} & \textbf{Amortització} & \textbf{Cost} \\
-					Arch Linux & ll & 0€ & - & - & 0€ \\
-					Arch Linux & ll & 0€ & - & - & 0€ \\
-					Arch Linux & ll & 0€ & - & - & 0€ \\
-					Arch Linux & ll & 0€ & - & - & 0€ \\
-					Arch Linux & ll & 0€ & - & - & 0€ \\
-					Arch Linux & ll & 0€ & - & - & 0€ \\
-					Arch Linux & ll & 0€ & - & - & 0€ \\
-					Arch Linux & ll & 0€ & - & - & 0€ \\
-					Arch Linux & ll & 0€ & - & - & 0€ \\
-					Arch Linux & ll & 0€ & - & - & 0€ \\
-				\end{tabular}
-			\end{center}
-			\caption{Recursos de programari (costos)}
-		\end{table}
-
-
-
-
-\section{Costos indirectes}
+\section{Recursos humans}
+	El projecte el desenvoluparà una sola persona, que assumirà diversos rols durant la realització d'aquest. Tenint en compte les tasques descrites a la secció \ref{sec:planificacio},
+	les hores de treball queden repartides de la següent manera:
 	\begin{table}[H]
 		\begin{center}
-			\rowcolors{2}{myOrange}{white}
-			\begin{tabular}{l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l}
-				\rowcolor{tableHeader}
-				\textbf{Tipus} & \textbf{Hores} & \textbf{Cost/hora} & \textbf{Cost total} \\
-				Electricitat & 450h & €/h & € \\
-				Internet & 450h & €/h & € \\
+			%\rowcolors{2}{myGray}{white}
+			\begin{tabular}{m{4.2cm} !{\vrule width -1pt}x{2.4cm} !{\vrule width -1pt}x{2.4cm} !{\vrule width -1pt}x{3cm}}
+				%\rowcolor{tableHeader}
+				\textbf{Tasca} & \textbf{Cap} & \textbf{Analista} & \textbf{Programador} \\ \hline
+				Preparació de l'entorn & 3h & & 2h \\
+				Curs de GEP & 75h & & \\
+				Implementació i proves & & 40h & 200h \\
+				Conclusions i resultats & & 30h & \\
+				Ampliacions (opcional) & & & 30h\\
+				Redacció memòria & 40h & & \\
+				Preparació defensa & 30h & & \\
+				\noalign{\vskip 4mm}
+				\rowcolor{total}
+				Total & 148h & 70h & 232h
+			\end{tabular}
+		\end{center}
+		\caption{Recursos humans (hores)}
+	\end{table}
+	\noindent{Suposem uns costos de 25€/h pel cap de projecte, 20€/h per l'analista i 15€/h pel programador/\textit{tester}.}
+	\begin{table}[H]
+		\begin{center}
+			%\rowcolors{2}{myGray}{white}
+			\begin{tabular}{l !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r}
+				%\rowcolor{tableHeader}
+				\textbf{Rol} & \textbf{Hores} & \textbf{Cost/hora} & \textbf{Cost total} \\ \hline
+				Cap de projecte & 148h & 25€/h & 3700€ \\
+				Analista & 70h & 20€/h & 1400€ \\
+				Programador & 230h & 15€/h & 3450€ \\
+				%\textit{Tester} & h & 15€/h & € \\
+				\noalign{\vskip 4mm}
+				\rowcolor{total}
+				Total & & & 8550€
 			\end{tabular}
 		\end{center}
 		\caption{Recursos humans (costos)}
 	\end{table}
 
-\section{Desviacions}
-	asdasdasdasdasdasdasda
+
+\section{Recursos de maquinari}
+	El \textit{hardware} necessari per a la realització del treball serà només un ordinador (usat durant tot el projecte) i una càmera (per la fase d'implementació/proves).
+	\begin{table}[H]
+		\begin{center}
+			%\rowcolors{2}{myGray}{white}
+			\begin{tabular}{l !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r}
+				%\rowcolor{tableHeader}
+				\textbf{Producte} & \textbf{Preu} & \textbf{Ús} & \textbf{Vida útil} & \textbf{Amortització} \\ \hline
+				Ordinador personal & 500€ & 5 mesos & 5 anys & 41,70€ \\
+				Càmera & 185€ & 1 mes & 8 anys & 1,93€ \\
+				\noalign{\vskip 4mm}
+				\rowcolor{total}
+				Total &  &  &  & 43,60€ \\
+			\end{tabular}
+		\end{center}
+		\caption{Recursos de maquinari (costos)}
+	\end{table}
+
+\section{Costos indirectes}
+	També es tindran en compte els costos indirectes més importants: la connexió a Internet i el consum elèctric. La connexió a Internet costarà 40€ al mes (considerem 240 hores) i
+	l'electricitat 0,141033€/kWh (considerem la potència 0,2kW).
+	\begin{table}[H]
+		\begin{center}
+			%\rowcolors{2}{myGray}{white}
+			\begin{tabular}{l !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r}
+				%\rowcolor{tableHeader}
+				\textbf{Tipus} & \textbf{Temps} & \textbf{Cost} & \textbf{Cost total} \\ \hline
+				Electricitat & 450h & 0,028€/h & 12,69€ \\
+				Accès a Internet & 450h & 0,17€/h & 75€ \\
+				\noalign{\vskip 4mm}
+				\rowcolor{total}
+				Total & & & 87,69€
+			\end{tabular}
+		\end{center}
+		\caption{Costos indirectes}
+	\end{table}
+
+\section{Imprevistos}
+	Es podria donar el cas que el projecte ocupi més temps de l'esperat, pel que es considerarà un extra de 30 hores de treball, que es dividirien entre el programador i el \textit{tester}.
+	Això suposaria un increment de 600€ en el pressupost. \\\\
+	No es tindran en compte possibles fallades de maquinari, ja que l'ordinador principal amb què es treballa està en garantia i també es disposa d'altres ordinadors.
+
+\section{Contingència}
+	Com a mesura de contingència, s'estableix un marge del 5\%.
 
 \section{Costos totals}
 	\begin{table}[H]
 		\begin{center}
-			\rowcolors{2}{myOrange}{white}
-			\begin{tabular}{l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l}
-				\rowcolor{tableHeader}
-				\textbf{Tipus} & \textbf{Cost} \\
-				Costos directes & € \\
-				Costos indirectes & € \\
-				Costos totals & € \\
+			%\rowcolors{2}{myGray}{white}
+			\begin{tabular}{p{8cm}  !{\vrule width -1pt}r}
+				%\rowcolor{tableHeader}
+				\textbf{Tipus} & \textbf{Cost estimat} \\ \hline
+				Recursos humans & 8550€ \\
+				Recursos de programari & 0€ \\
+				Recursos de maquinari & 43,60€ \\
+				Costos indirectes & 87,69€ \\
+				Imprevistos & 600€ \\
+				Contingència (5\%) & 464,06€ \\
+				\noalign{\vskip 4mm}
+				\rowcolor{total}
+				Total & 9745,35€
 			\end{tabular}
 		\end{center}
-		\caption{Recursos humans (costos)}
+		\caption{Costos totals}
 	\end{table}
+
+\section{Control de gestió}
+	Després de cada tasca es farà una valoració del pressupost i es revisarà si és necessari.
+	També es durà a terme un control de les hores de treball per cada rol mitjançant un full de càlcul, que s'anirà actualitzant cada dia de treball.\\\\
+	Es calcularà la desviació en mà d'obra, programari, maquinari i altres costos (cost estimat - cost real).

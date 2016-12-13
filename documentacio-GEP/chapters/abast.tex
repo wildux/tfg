@@ -1,0 +1,75 @@
+\section{Objectius}
+	L'objectiu principal del projecte consisteix a dissenyar i desenvolupar un sistema d'autolocalització per a robots mòbils.\\\\
+	Aquest sistema estarà basat en tècniques de visió per computador i consistirà, bàsicament, a comparar dues imatges (una global i una altra capturada pel robot)
+	i localitzar un punt o regió seleccionat per l'usuari.\\\\	
+	Per arribar a aquest objectiu, es dividirà el treball en diverses fases:\\
+	\begin{itemize}
+		\item Estudi dels diferents algorismes de visió existents
+		\item Obtenció de \textit{keypoints} en una imatge
+		\item Extracció de característiques
+		\item \textit{Matching} de dues imatges
+	\end{itemize}
+\section{Requeriments}
+	El sistema d'autolocalització implementat ha de complir amb una sèrie de requeriments mínims presentats a continuació:\\
+	\begin{itemize}
+		\item L'usuari ha de poder seleccionar un punt o regió d'interès en una imatge donada.
+		\item El sistema ha de ser capaç d'adaptar-se mínimament a diverses condicions de l'entorn (canvis de lluminositat, perspectiva, etc.).
+	\end{itemize}
+\section{Obstacles}
+	Durant la planificació i realització del treball, s'hauran de tenir en compte els possibles obstacles que es trobaran. A continuació es detallen alguns dels problemes que es podran trobar.
+	\subsection{Noves eines}
+		Un dels principals obstacles serà el fet de treballar amb noves eines i algorismes. Per tal d'evitar problemes en aquest aspecte, caldrà fer una planificació acurada i documentar-se apropiadament.
+		També serà important mantenir una bona comunicació amb el tutor en tot moment, per poder resoldre possibles dubtes referents als algorismes.
+	\subsection{Calendari}
+		Un altre obstacle important serà la falta de temps, ja que està previst realitzar el projecte en el transcurs d'un quadrimestre. Gestionar correctament el temps serà clau per aconseguir
+		finalitzar el projecte sense problemes. Per tant, s'haurà de fer una planificació el més realista possible i escollir una metodologia de treball adequada i flexible.
+	\subsection{Errors de programació}
+		Com a qualsevol projecte on s'ha de programar, el codi serà una font important d'errors. Per això, caldrà realitzar diverses proves cada vegada que es realitzi una modificació en el codi
+		o s'implementi una nova funcionalitat.
+	\subsection{Condicions variables en les imatges}
+		Les imatges capturades a través d'una càmera no presentaran sempre les mateixes condicions. La lluminositat, perspectiva o resolució de la imatge 
+		influiran a l'hora de processar les imatges i comparar-les.\\\\
+		Per intentar minimitzar aquests efectes, s'analitzaran diversos algorismes d'obtenció de punts i extracció de característiques. 
+		També s'estudiarà si és necessari realitzar un preprocessament o filtratge de les imatges abans d'aplicar els algorismes.
+\section{Ampliacions}
+	Encara que el calendari és força estricte i no hi ha gaire marge d'ampliació, es podria estendre el projecte amb les següents ampliacions:\\
+	\begin{itemize}
+		\item Anàlisi del rendiment d'algorismes alternatius per l'obtenció de punts i característiques de les imatges.
+		\item Creació d'una aplicació d'Android que permeti seleccionar un punt o regió d'una imatge.
+		\item Execució del codi del sistema via servidor web, utilitzant les dades enviades per l'aplicació d'Android.
+	\end{itemize}
+\section{Metodologia}
+	Per aquest projecte, s'utilitzarà una metodologia de treball àgil amb cicles de desenvolupament curts.
+	Com que només hi ha un desenvolupador, no s'utilitzaran exactament les metodologies Scrum o XP\cite{Pxp} (Extreme Programming),
+	però sí que s'aplicaran moltes de les pràctiques pròpies d'aquestes dues metodologies (proves, simplicitat, refacció de codi, etc.).
+	Això ens donarà més flexibilitat a l'hora de fer canvis i adaptar-nos a una nova planificació.\\\\
+	Es començarà treballant amb imatges de prova (casos senzills) i algorismes coneguts com ara Harris\cite{Harris} i SIFT. Més endavant, s'aniran introduint modificacions en el codi per intentar aconseguir un
+	sistema capaç de funcionar amb fotografies ``reals'' i es provaran altres algorismes de visió per computador.\\\\
+	Per altra banda, s'utilitzarà el mètode en cascada per la realització del curs de GEP.
+\section{Eines de desenvolupament}
+	El codi del projecte es desenvoluparà amb python i s'utilitzaran, sempre que sigui possible, eines de programari lliure o de codi obert.\\\\
+	En cas de crear una aplicació per a dispositius Android, es realitzarà mitjançant Android Studio (Java).
+	\subsection{OpenCV}
+		Per tal d'utilitzar algorismes de visió per computador en el codi amb relativa facilitat, s'utilitzarà la biblioteca de codi obert OpenCV\cite{OpenCV} (Open Source Computer Vision Library),
+		disponible per a python. La versió emprada serà la 3.1.\\\\
+		En concret, hi haurà tres passos indispensables que faran ús d'aquesta biblioteca:\\
+		\begin{itemize}
+			\item {Obtenció de punts en una imatge}
+			\item {Extracció de característiques}
+			\item \textit{Matching} de dues imatges
+		\end{itemize}
+\section{Eines de seguiment}
+	A continuació es detallen les eines de programari usades per fer el seguiment del treball final de grau:
+	\subsection{LibreOffice Calc}
+		Per fer un seguiment de les hores dedicades al projecte, es crearà un full de càlcul amb les hores diàries dedicades a cada tasca. S'utilitzarà LibreOffice Calc, inclòs en
+		la \textit{suite} ofimàtica LibreOffice.
+	\subsection{Gantt Project}
+		Per tal d'organitzar totes les tasques a realitzar i mirar si hi ha desviacions respecte el pla inicial, s'utilitzarà l'eina de \textit{software} lliure 
+		Gantt Project\cite{GanttProject}. Aquesta eina ens permetrà realitzar tant un diagrama de Gantt com un diagrama de PERT.
+	\subsection{Git + Github}
+		Tot i que no es tracta d'un projecte col·laboratiu (només hi ha un desenvolupador), s'ha decidit utilitzar el sistema de control de versions Git juntament amb la pàgina web Github. 
+		D'aquesta manera es facilitarà treballar amb diverses màquines i portar un control dels canvis realitzats. A més, permetrà compartir el codi amb el director amb facilitat.
+	\section{Mètode de validació}
+		Es faran validacions parcials durant la realització del projecte, fent proves del sistema amb diverses imatges.
+	\subsubsection{Contacte amb el director}
+		Hi haurà reunions presencials amb el director, així com comunicació via correu electrònic, per tal de resoldre dubtes i validar la feina realitzada.

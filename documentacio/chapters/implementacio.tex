@@ -1,0 +1,231 @@
+\section{Biblioteca}
+	Per facilitar la utilització del codi i possibles adaptacions o millores futures, s'ha decidit implementar una biblioteca en Python amb totes les funcions necessaries. El programa principal farà ús
+	d'aquesta biblioteca, que permetrà:
+	
+	\begin{enumerate}
+		\item{Pre-processar les imatges}
+		\item{Seleccionar la regió d'interès}
+		\item{Obtenir els keypoints}
+		\item{Extreure les característiques}
+		\item{Fer matching de característiques}
+		\item{Homografia: Obtenir la regió/punt demanat}
+		\item{Obtenir l'angle de rotació pel robot}
+	\end{enumerate}
+
+	\subsection{Pre-processament de les imatges}
+		En primer lloc es redimensionarà la imatge per tal d'agilitzar la selecció de keypoints, extracció de característiques i matching. Desprès, s'aplicarà un filtre gaussià
+		a la imatge i es retornarà la imatge en color i en escala de grisos.\\
+		\begin{python}
+def prep(image):
+	img = cv2.resize(image, (0,0), fx=0.3, fy=0.3)
+	img = cv2.GaussianBlur(img,(3,3),0)
+	return img, cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+		\end{python}
+	\subsection{Selecció de la regió d'interès}
+		Per poder seleccionar la regió d'interès amb facilitat, s'ha definit la funció \textbf{selectRoi(imatge)}, que permet a l'usuari seleccionar una regió rectangular amb el ratolí i retalla la imatge.
+		Nomes necessita la imatge com a paràmetre.\\
+		\begin{python}
+def click_and_crop(event, x, y, flags, param):
+	global refPt, cropping, sel_rect_endpoint, img
+ 
+	if event == cv2.EVENT_LBUTTONDOWN:	# Initial coordinates. Cropping = true
+		cropping = True
+		refPt = [(x, y)] 
+	elif event == cv2.EVENT_LBUTTONUP:	# End coordinates. Cropping = false (done)
+		cropping = False
+		refPt.append((x, y)) 
+		clone = img.copy()
+		cv2.rectangle(clone, refPt[0], refPt[1], (0, 255, 255), 2)	# Draw a rectangle (ROI)
+		cv2.imshow("image", clone)
+	elif event == cv2.EVENT_MOUSEMOVE and cropping:	# Update position (moving rectangle)
+		sel_rect_endpoint = [(x, y)]
+
+def selectROI(image):
+	global img, refPt, sel_rect_endpoint
+	img = image ###
+	cv2.namedWindow("image")
+	cv2.setMouseCallback("image", click_and_crop)
+	cv2.imshow('image', img)
+
+	while True:
+		if not cropping:
+			sel_rect_endpoint = []
+		elif cropping and sel_rect_endpoint:	# Display rectangle (moving)
+			clone = img.copy()
+			cv2.rectangle(clone, refPt[0], sel_rect_endpoint[0], (0, 255, 0), 1)
+			cv2.imshow('image', clone)
+		if (cv2.waitKey(1) & 0xFF) == ord("c"):
+			break
+
+	cv2.destroyAllWindows()
+	if len(refPt) == 2:
+		img = img[refPt[0][1]:refPt[1][1], refPt[0][0]:refPt[1][0]]
+	return img
+		\end{python}
+	\subsection{Obtenció de keypoints}
+		Per obtenir els punts d'interès d'una imatge, s'utilitzaràn diversos algorismes ja implementats en la biblioteca OpenCV. La funció... \\
+		\begin{python}
+def point_selection(gray, alg, small=False):
+	kp = []
+
+	if alg == _SIFT:
+		sift = cv2.xfeatures2d.SIFT_create()
+		kp = sift.detect(gray,None)
+
+	elif alg == _HARRIS:
+		gray2 = np.float32(gray)
+		dst = cv2.cornerHarris(gray2,2,3,0.04)
+		dst = cv2.dilate(dst,None)
+		roi[dst>0.01*dst.max()]=[0,0,255]
+		#SIZE = SIZE LOCAL REGION
+
+	elif alg == _STAR:
+		star = cv2.xfeatures2d.StarDetector_create()
+		kp = star.detect(gray,None)
+
+	elif alg == _ORB:
+		if small:
+			orb = cv2.ORB_create(nfeatures = 2500, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		else:
+			orb = cv2.ORB_create(nfeatures = 50000, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		kp = orb.detect(gray,None)
+
+	elif alg == _BRISK:
+		brisk = cv2.BRISK_create(thresh = 8, octaves = 4)
+		kp = brisk.detect(gray,None)
+
+	elif alg == _MSER:
+		mser = cv2.MSER_create()
+		kp = mser.detect(gray,None)
+
+	return kp
+		\end{python}
+	\subsection{Extracció de característiques}
+		De la mateixa manera en que podem aconseguir keypoints, OpenCV també disposa de diversos algorismes d'extracció de característiques a partir dels keypoints d'una imatge.\\
+		\begin{python}
+def feature_extraction(image, kp, alg):
+	des = []
+	if alg == _SIFT:
+		sift = cv2.xfeatures2d.SIFT_create()
+		kp, des = sift.compute(image, kp)
+
+	elif alg == _ORB:
+		orb = cv2.ORB_create(nfeatures = 50000, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		kp, des = orb.compute(image, kp)
+
+	elif alg == _LATCH:
+		latch = cv2.xfeatures2d.LATCH_create()
+		kp, des = latch.compute(image, kp)
+
+	elif alg == _BRISK:
+		brisk = cv2.BRISK_create(thresh = 8, octaves = 4)
+		kp, des = brisk.compute(image, kp)
+
+	elif alg == _DAISY:
+		daisy = cv2.xfeatures2d.DAISY_create()
+		kp, des = daisy.compute(image, kp)
+
+	return kp, des
+		\end{python}
+\newpage
+	\subsection{Matching i homografia}
+		En el cas dels descriptors binaris, utilitzarem la distancia Hamming, mentre que per la resta s'utilitzarà...\\
+		\begin{python}
+def matching(img1, img2, des1, des2, kp1, kp2, fe , rs=True):
+	if fe == _LATCH or fe == _ORB or fe == _BRISK:
+		bf = cv2.BFMatcher(cv2.NORM_HAMMING)
+	else:
+		bf = cv2.BFMatcher()
+
+	matches = bf.knnMatch(des1, des2, k=2)
+	x = -1; y = -1
+
+	good = [] # store all the good matches as per Lowe's ratio test
+	for m,n in matches:
+		if m.distance < 0.8*n.distance:
+			good.append(m)
+
+	if len(good) >= MIN_MATCH_COUNT:
+		src_pts = np.float32([ kp1[m.queryIdx].pt for m in good ]).reshape(-1,1,2)
+		dst_pts = np.float32([ kp2[m.trainIdx].pt for m in good ]).reshape(-1,1,2)
+		M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0) #If Ransac
+		matchesMask = mask.ravel().tolist()
+		h,w,_ = img1.shape
+		pts = np.float32([ [0,0],[0,h-1],[w-1,h-1],[w-1,0] ]).reshape(-1,1,2)
+		dst = cv2.perspectiveTransform(pts,M)
+		img2 = cv2.polylines(img2,[np.int32(dst)],True,255,3, cv2.LINE_AA)
+
+		x1, y1 = np.int32(dst)[0].ravel()
+		x2, y2 = np.int32(dst)[1].ravel()
+		x3, y3 = np.int32(dst)[2].ravel()
+		x4, y4 = np.int32(dst)[3].ravel()
+		x = (x1+x2+x3+x4)/4
+		y = (y1+y2+y3+y4)/4
+	else:
+		print("Not enough matches are found", len(good),"of",MIN_MATCH_COUNT)
+		matchesMask = None
+
+	draw_params = dict(matchColor = (0,255,0), singlePointColor = None,
+					matchesMask = matchesMask, flags = 2)
+	return x, y, cv2.drawMatches(img1,kp1,img2,kp2,good,None,**draw_params)
+		\end{python}
+	\subsection{Angle de gir}
+		En el cas dels descriptors binaris, utilitzarem la distancia Hamming, mentre que per la resta s'utilitzarà...\\
+		\begin{python}
+def getAngle(aV, w, x):
+	if x == -1:
+		return 0
+	else:
+		return (aV*x / w) - (aV/2)
+		\end{python}
+
+\section{Aplicació mòbil}
+	L'aplicació mòbil d'ha desenvolupat amb Android Studio i el llenguatge de programació Java (amb l'SDK d'Android).
+	\subsection{Capturar imatge}
+		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
+		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		\begin{python}
+class MyClass(Yourclass):
+  def __init__(self, my, yours):
+    String = "String"
+    String2 = '5 1 2 3 4'
+    print String2
+import numpy as np #Comment1
+  # Comment2
+		\end{python}
+	\subsection{Selecció d'imatges de la galeria}
+		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
+		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		\begin{python}
+class MyClass(Yourclass):
+  def __init__(self, my, yours):
+    String = "String"
+    String2 = '5 1 2 3 4'
+    print String2
+import numpy as np #Comment1
+  # Comment2
+		\end{python}
+	\subsection{Selecció de la regió d'interès}
+		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
+		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		\begin{python}
+class MyClass(Yourclass):
+  def __init__(self, my, yours):
+    String = "String"
+    String2 = '5 1 2 3 4'
+    print String2
+import numpy as np #Comment1
+  # Comment2
+		\end{python}
+	\subsection{Enviament de dades al servidor}
+		Per poder enviar dades al servidor, serà necessari l'ús d'una connexió a Internet. Per tant, s'haurà d'habilitar el permís necessari.\\\\
+		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		\begin{python}
+class MyClass(Yourclass):
+  def __init__(self, my, yours):
+    String = "String"
+    String2 = '5 1 2 3 4'
+    print String2
+import numpy as np #Comment1
+  # Comment2
+		\end{python}

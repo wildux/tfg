@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.9.25)  4 OCT 2016 08:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.9.25)  12 DEC 2016 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -724,13 +724,36 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen121
 \titlewidthfirst=\dimen122
 )
+(/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen123
+)
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen123
-\extrarowheight=\dimen124
+\col@sep=\dimen124
+\extrarowheight=\dimen125
 \NC@list=\toks22
 \extratabsurround=\skip68
 \backup@length=\skip69
+)
+(/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen126
+\lightrulewidth=\dimen127
+\cmidrulewidth=\dimen128
+\belowrulesep=\dimen129
+\belowbottomsep=\dimen130
+\aboverulesep=\dimen131
+\abovetopsep=\dimen132
+\cmidrulesep=\dimen133
+\cmidrulekern=\dimen134
+\defaultaddspace=\dimen135
+\@cmidla=\count281
+\@cmidlb=\count282
+\@aboverulesep=\dimen136
+\@belowrulesep=\dimen137
+\@thisruleclass=\count283
+\@lastruleclass=\count284
+\@thisrulewidth=\dimen138
 )
 (/usr/share/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
@@ -776,16 +799,16 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 (/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen125
-\Hy@linkcounter=\count281
-\Hy@pagecounter=\count282
+\@linkdim=\dimen139
+\Hy@linkcounter=\count285
+\Hy@pagecounter=\count286
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count283
+\Hy@SavedSpaceFactor=\count287
 
 (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -797,12 +820,12 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count284
+\c@Hy@tempcnt=\count288
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen126
-\Fld@menulength=\count285
-\Field@Width=\dimen127
-\Fld@charsize=\dimen128
+\XeTeXLinkMargin=\dimen140
+\Fld@menulength=\count289
+\Field@Width=\dimen141
+\Fld@charsize=\dimen142
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -812,17 +835,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count286
-\c@Item=\count287
-\c@Hfootnote=\count288
+\Hy@abspage=\count290
+\c@Item=\count291
+\c@Hfootnote=\count292
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count289
-\c@bookmark@seq@number=\count290
+\Fld@listcount=\count293
+\c@bookmark@seq@number=\count294
 
 (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -833,17 +856,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (/usr/share/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
 File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
-\BKM@id=\count291
+\BKM@id=\count295
 ))
 (/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count292
-\c@@ppsavesec=\count293
-\c@@ppsaveapp=\count294
+\c@@pps=\count296
+\c@@ppsavesec=\count297
+\c@@ppsaveapp=\count298
 )
 (/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/05/22 v2.16c rotated objects in LaTeX
-\c@r@tfl@t=\count295
+\c@r@tfl@t=\count299
 \rotFPtop=\skip71
 \rotFPbot=\skip72
 \rot@float@box=\box29
@@ -868,7 +891,7 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks24
 \minrowclearance=\skip73
 )
-\rownum=\count296
+\rownum=\count300
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -879,6 +902,35 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 38.
+
+(/usr/share/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count301
+\lst@gtempboxa=\box31
+\lst@token=\toks25
+\lst@length=\count302
+\lst@currlwidth=\dimen143
+\lst@column=\count303
+\lst@pos=\count304
+\lst@lostspace=\dimen144
+\lst@width=\dimen145
+\lst@newlines=\count305
+\lst@lineno=\count306
+\lst@maxwidth=\dimen146
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count307
+\lst@skipnumbers=\count308
+\lst@framebox=\box32
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 Package biblatex Info: Trying to load language 'catalan'...
 Package biblatex Info: ... file 'catalan.lbx' found.
 
@@ -889,38 +941,38 @@ File: catalan.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count297
-\@quotereset=\count298
+\@quotelevel=\count309
+\@quotereset=\count310
 (./tfg.aux)
 \openout1 = `tfg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
-\scratchdimen=\dimen129
-\scratchbox=\box31
-\nofMPsegments=\count300
-\nofMParguments=\count301
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count302
-\MPscratchDim=\dimen130
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count311
+\scratchdimen=\dimen147
+\scratchbox=\box33
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen148
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks27
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -938,8 +990,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \l on input line 35.
-LaTeX Info: Redefining \L on input line 35.
+LaTeX Info: Redefining \l on input line 115.
+LaTeX Info: Redefining \L on input line 115.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -951,8 +1003,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tfg.bbl' found.
  (./tfg.bbl)
-Package biblatex Info: Reference section=0 on input line 35.
-Package biblatex Info: Reference segment=0 on input line 35.
+Package biblatex Info: Reference section=0 on input line 115.
+Package biblatex Info: Reference segment=0 on input line 115.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -988,19 +1040,20 @@ Package biblatex Info: Reference segment=0 on input line 35.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 35.
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring OFF on input line 115.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count305
+\c@section@level=\count317
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 115.
+LaTeX Info: Redefining \pageref on input line 115.
+LaTeX Info: Redefining \nameref on input line 115.
+\c@lstlisting=\count318
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1037,7 +1090,7 @@ LaTeX Info: Redefining \nameref on input line 35.
 <images/logo.png, id=4, 1027.84pt x 1027.84pt>
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 65.
+Package pdftex.def Info: images/logo.png used on input line 145.
 (pdftex.def)             Requested size: 83.64944pt x 83.6404pt.
  [1
 
@@ -1075,152 +1128,757 @@ Package pdftex.def Info: images/logo.png used on input line 65.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (./tfg.toc
+
+(./chapters/abstract.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 1--166
+
+ []
+
+[2
+
+
+
+] (./chapters/acknowledgements.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 1--168
+
+ []
+
+[3
+
+] (./tfg.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 7.
+ [4
 
-[2
-
-
-
-])
-\tf@toc=\write5
-\openout5 = `tfg.toc'.
-
- <images/fib-upc-logo.png, id=103, 823.075pt x 116.435pt>
+] <images/fib-upc-logo.png, id=126, 823.075pt x 116.435pt>
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 85.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 181.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [3 <./images/fib-upc-logo.png>]
+ [5 <./images/fib-upc-logo.png>])
+\tf@toc=\write5
+\openout5 = `tfg.toc'.
+
+File: images/fib-upc-logo.png Graphic file (type png)
+
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 170.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [6]
 Cap\'{\i }tol 1.
 (./chapters/introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--4
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
+
+ []
+
+[7
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
 
-Overfull \hbox (4.20685pt too wide) in paragraph at lines 14--15
+Overfull \hbox (4.20685pt too wide) in paragraph at lines 26--27
 []\OT1/cmr/bx/n/12 Autor/Desenvolupador: []\OT1/cmr/m/n/12 Es el m^^Raxim res-p
 on-sa-ble del pro-jec-te. En tractar-
  []
 
-[4
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 30.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--51
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 51.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [9]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 58.
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 73.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 95.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 112.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 114--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 135.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [13])
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 172.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [14]
+Cap\'{\i }tol 2.
+(./chapters/planificacio.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
+
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 51--51
+[]|\OT1/cmr/m/n/12 Presentaci^^So pre-li-mi-nar en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--57
+
+ []
+
+[15
 
 ]
-
-LaTeX Warning: Citation 'Szeliski' on page 5 undefined on input line 20.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
+Underfull \hbox (badness 10000) in paragraph at lines 60--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
+Underfull \hbox (badness 10000) in paragraph at lines 60--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-
-LaTeX Warning: Citation 'SIFT' on page 5 undefined on input line 34.
-
-
-LaTeX Warning: Citation 'SURF' on page 5 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'Trzcinski13a' on page 5 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'LeviHassner2016LATCH' on page 5 undefined on input lin
-e 36.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--38
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 38.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 81.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [5]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 44.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 44.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--47
+ [16]
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--47
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+<images/tasques.png, id=291, 383.39235pt x 161.52345pt>
+File: images/tasques.png Graphic file (type png)
+
+<use images/tasques.png>
+Package pdftex.def Info: images/tasques.png used on input line 100.
+(pdftex.def)             Requested size: 292.77629pt x 123.3506pt.
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 103.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--47
+Underfull \hbox (badness 10000) in paragraph at lines 121--143
 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 52.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 143.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+ [18 <./images/tasques.png>])
+File: images/fib-upc-logo.png Graphic file (type png)
+
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 174.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [19]
+Cap\'{\i }tol 3.
+(./chapters/disseny.tex
+<images/arquitectura.png, id=316, 184.2885pt x 58.90005pt>
+File: images/arquitectura.png Graphic file (type png)
+
+<use images/arquitectura.png>
+Package pdftex.def Info: images/arquitectura.png used on input line 7.
+(pdftex.def)             Requested size: 292.77629pt x 93.57692pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+[20
+
+ <./images/arquitectura.png>]
+<images/fs.png, id=323, 419.5675pt x 275.0275pt>
+File: images/fs.png Graphic file (type png)
+ <use images/fs.png>
+Package pdftex.def Info: images/fs.png used on input line 25.
+(pdftex.def)             Requested size: 209.12683pt x 137.08116pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--27
+
+ []
+
+<images/selection.png, id=324, 242.9075pt x 213.79875pt>
+File: images/selection.png Graphic file (type png)
+
+<use images/selection.png>
+Package pdftex.def Info: images/selection.png used on input line 34.
+(pdftex.def)             Requested size: 209.12683pt x 184.0656pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--36
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 37.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [21 <./images/fs.png>]
+File: images/fib-upc-logo.png Graphic file (type png)
+
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 37.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [22 <./images/selection.png>]
+<images/menu.png, id=337, 722.7pt x 1284.8pt>
+File: images/menu.png Graphic file (type png)
+ <use images/menu.png>
+Package pdftex.def Info: images/menu.png used on input line 47.
+(pdftex.def)             Requested size: 209.12683pt x 371.77867pt.
+File: images/menu.png Graphic file (type png)
+
+<use images/menu.png>
+Package pdftex.def Info: images/menu.png used on input line 55.
+(pdftex.def)             Requested size: 173.44534pt x 308.3387pt.
+File: images/menu.png Graphic file (type png)
+ <use images/menu.png>
+Package pdftex.def Info: images/menu.png used on input line 57.
+(pdftex.def)             Requested size: 173.44534pt x 308.3387pt.
+
+Overfull \hbox (15.36632pt too wide) in paragraph at lines 53--59
+[]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 60.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [23 <./images/menu.png>]
+<images/gallery.png, id=343, 722.7pt x 1284.8pt>
+File: images/gallery.png Graphic file (type png)
+ <use images/gallery.png>
+Package pdftex.def Info: images/gallery.png used on input line 71.
+(pdftex.def)             Requested size: 173.44534pt x 308.3387pt.
+File: images/gallery.png Graphic file (type png)
+
+<use images/gallery.png>
+Package pdftex.def Info: images/gallery.png used on input line 73.
+(pdftex.def)             Requested size: 173.44534pt x 308.3387pt.
+
+Overfull \hbox (15.36632pt too wide) in paragraph at lines 69--75
+[]$[]$ 
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 77.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [24]
+<images/crop.png, id=351, 722.7pt x 1284.8pt>
+File: images/crop.png Graphic file (type png)
+ <use images/crop.png>
+Package pdftex.def Info: images/crop.png used on input line 82.
+(pdftex.def)             Requested size: 173.44534pt x 308.3387pt.
+File: images/crop.png Graphic file (type png)
+
+<use images/crop.png>
+Package pdftex.def Info: images/crop.png used on input line 84.
+(pdftex.def)             Requested size: 173.44534pt x 308.3387pt.
+
+Overfull \hbox (15.36632pt too wide) in paragraph at lines 80--86
+[]$[]$ 
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 88.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [25 <./images/gallery.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+
+ []
+
+<images/options.png, id=359, 722.7pt x 1284.8pt>
+File: images/options.png Graphic file (type png)
+ <use images/options.png>
+Package pdftex.def Info: images/options.png used on input line 99.
+(pdftex.def)             Requested size: 173.44534pt x 308.3387pt.
+File: images/options.png Graphic file (type png)
+
+<use images/options.png>
+Package pdftex.def Info: images/options.png used on input line 101.
+(pdftex.def)             Requested size: 173.44534pt x 308.3387pt.
+
+Overfull \hbox (15.36632pt too wide) in paragraph at lines 97--103
+[]$[]$ 
+ []
+
+)
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 176.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [26 <./images/crop.png>]
+File: images/fib-upc-logo.png Graphic file (type png)
+
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 176.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [27 <./images/options.png>]
+Cap\'{\i }tol 4.
+(./chapters/tecniques.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+
+ []
+
+<images/pre-processat.png, id=371, 450.2421pt x 297.7524pt>
+File: images/pre-processat.png Graphic file (type png)
+
+<use images/pre-processat.png>
+Package pdftex.def Info: images/pre-processat.png used on input line 20.
+(pdftex.def)             Requested size: 376.42575pt x 248.9472pt.
+ [28
+
+]
+<images/RobotKp.png, id=376, 803.0pt x 642.4pt>
+File: images/RobotKp.png Graphic file (type png)
+ <use images/RobotKp.png>
+Package pdftex.def Info: images/RobotKp.png used on input line 33.
+(pdftex.def)             Requested size: 292.77629pt x 234.22409pt.
+File: images/fib-upc-logo.png Graphic file (type png)
+
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 36.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [29 <./images/pre-processat.png>]
+<images/matching.png, id=383, 975.645pt x 642.4pt>
+File: images/matching.png Graphic file (type png)
+ <use images/matching.png>
+Package pdftex.def Info: images/matching.png used on input line 54.
+(pdftex.def)             Requested size: 292.77629pt x 192.7705pt.
+File: images/fib-upc-logo.png Graphic file (type png)
+
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 57.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [30 <./images/RobotKp.png (PNG copy)>]
+<images/homography.png, id=389, 975.645pt x 642.4pt>
+File: images/homography.png Graphic file (type png)
+
+<use images/homography.png>
+Package pdftex.def Info: images/homography.png used on input line 66.
+(pdftex.def)             Requested size: 292.77629pt x 192.7705pt.
+)
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 178.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [31 <./images/matching.png (PNG copy)> <./images/homography.png (PNG copy)>]
+Cap\'{\i }tol 5.
+(./chapters/implementacio.tex
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+[32
+
+]
+Overfull \hbox (13.7507pt too wide) in paragraph at lines 34--35
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (56.95114pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (46.15103pt too wide) in paragraph at lines 40--41
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 65.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 79.
+(/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 79.
+
+Overfull \hbox (175.75237pt too wide) in paragraph at lines 88--89
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Overfull \hbox (181.15242pt too wide) in paragraph at lines 90--91
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 105.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [34]
+Overfull \hbox (170.35231pt too wide) in paragraph at lines 113--114
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 130.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [35]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+
+Overfull \hbox (2.9506pt too wide) in paragraph at lines 149--150
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.9506pt too wide) in paragraph at lines 150--151
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.9506pt too wide) in paragraph at lines 151--152
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 172.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [36]
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 203.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [37]
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--223
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 55--87
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 180.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [38]
+Cap\'{\i }tol 6.
+(./chapters/resultats.tex
+
+Package array Warning: Column x is already defined on input line 1.
+
+) [39
+
+]
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 182.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [40]
+Cap\'{\i }tol 7.
+(./chapters/costos.tex
+
+Package array Warning: Column x is already defined on input line 6.
+
+[41
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 87.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 99.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [7]
-Cap\'{\i }tol 2.
-(./chapters/abast.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--6
+ [42])
+Underfull \hbox (badness 10000) in paragraph at lines 125--184
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 184.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [43]
+Cap\'{\i }tol 8.
+(./chapters/sostenibilitat.tex
+
+Package array Warning: Column x is already defined on input line 1.
+
+
+Package array Warning: Column M is already defined on input line 2.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--6
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--6
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
@@ -1229,197 +1887,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-[8
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 30--34
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-File: images/fib-upc-logo.png Graphic file (type png)
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 36.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [9]
-
-LaTeX Warning: Citation 'Pxp' on page 10 undefined on input line 43.
-
-
-LaTeX Warning: Citation 'Harris' on page 10 undefined on input line 46.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
-
- []
-
-
-LaTeX Warning: Citation 'OpenCV' on page 10 undefined on input line 53.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--56
-
- []
-
-File: images/fib-upc-logo.png Graphic file (type png)
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 56.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [10]
-
-LaTeX Warning: Citation 'GanttProject' on page 11 undefined on input line 68.
-
-File: images/fib-upc-logo.png Graphic file (type png)
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 74.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [11])
-File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 89.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [12]
-Cap\'{\i }tol 3.
-(./chapters/planificacio.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
-
- []
-
-
-Underfull \hbox (badness 2310) in paragraph at lines 49--49
-[]|\OT1/cmr/m/n/12 Presentaci^^So pre-li-mi-nar en
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--55
-
- []
-
-[13
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 58--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--73
-
- []
-
-File: images/fib-upc-logo.png Graphic file (type png)
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 77.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [14]
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-<images/pert-dev.png, id=190, 407.5225pt x 170.6375pt>
-File: images/pert-dev.png Graphic file (type png)
-
-<use images/pert-dev.png>
-Package pdftex.def Info: images/pert-dev.png used on input line 87.
-(pdftex.def)             Requested size: 292.77629pt x 122.59592pt.
-File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 100.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [15 <./images/pert-dev.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 104--107
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--127
-
- []
-
-File: images/fib-upc-logo.png Graphic file (type png)
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 133.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [16])
-File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 91.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [17]
-Cap\'{\i }tol 4.
-(./chapters/costos.tex
-Overfull \hbox (21.94675pt too wide) in paragraph at lines 28--34
+Overfull \hbox (3.54701pt too wide) in paragraph at lines 18--31
  [] 
  []
 
-[18
+[44
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
+
+ []
+
+
+Overfull \hbox (5.25998pt too wide) in paragraph at lines 52--55
+\OT1/cmr/m/n/12 Aquest pro-jec-te m'-ha perm^^Res pro-fun-dit-zar els meus co-n
+ei-xe-ments so-bre les t^^Recniques
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 58.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [45]
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--76
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 79.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [46])
+Underfull \hbox (badness 10000) in paragraph at lines 87--186
+
+ []
+
+
+Overfull \hbox (7.90163pt too wide) in paragraph at lines 87--186
+\OT1/cmr/m/n/12 La ^^Sunica de-pend^^Rencia del pro-gra-ma prin-ci-pal es la bi
+-bli-o-te-ca OpenCV, pero tractant-
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 186.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [47]
+Cap\'{\i }tol 9.
+(./chapters/conclusions.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+[48
 
 ])
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 93.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 189.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [19]
-File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 93.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [20]
-Cap\'{\i }tol 5.
-(./chapters/sostenibilitat.tex) [21
-
-] [22
+ [49] [50
 
 
 ]
 Ap\`endix A.
 (./chapters/diagrames.tex
-<images/pert-global.png, id=239, 408.52625pt x 259.97125pt>
+<images/pert-global.png, id=678, 408.52625pt x 259.97125pt>
 File: images/pert-global.png Graphic file (type png)
 
 <use images/pert-global.png>
-Package pdftex.def Info: images/pert-global.png used on input line 5.
+Package pdftex.def Info: images/pert-global.png used on input line 4.
 (pdftex.def)             Requested size: 418.25368pt x 266.17474pt.
- [23
+ [51
 
  <./images/pert-global.png (PNG copy)>]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1455,13 +2015,13 @@ Package pdftex.def Info: images/pert-global.png used on input line 5.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-<images/gantt.png, id=246, 1514.65875pt x 333.245pt>
+<images/gantt.png, id=684, 1514.65875pt x 333.245pt>
 File: images/gantt.png Graphic file (type png)
  <use images/gantt.png>
-Package pdftex.def Info: images/gantt.png used on input line 15.
+Package pdftex.def Info: images/gantt.png used on input line 12.
 (pdftex.def)             Requested size: 788.14136pt x 173.40025pt.
 
-[24 <./images/gantt.png>]
+[52 <./images/gantt.png>]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1494,85 +2054,61 @@ Package pdftex.def Info: images/gantt.png used on input line 15.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-<images/pert-gep.png, id=254, 690.58pt x 261.97874pt>
-File: images/pert-gep.png Graphic file (type png)
-
-<use images/pert-gep.png>
-Package pdftex.def Info: images/pert-gep.png used on input line 27.
-(pdftex.def)             Requested size: 418.25368pt x 158.67151pt.
-File: images/pert-dev.png Graphic file (type png)
- <use images/pert-dev.png>
-Package pdftex.def Info: images/pert-dev.png used on input line 34.
-(pdftex.def)             Requested size: 418.25368pt x 175.13889pt.
-File: images/fib-upc-logo.png Graphic file (type png)
-
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 37.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [25
+) [53
 
 
 
 
- <./images/pert-gep.png (PNG copy)>])
 
-LaTeX Warning: Empty bibliography on input line 108.
-
-(./tfg.lot)
+] (./tfg.lot)
 \tf@lot=\write6
 \openout6 = `tfg.lot'.
 
- [26
+ [54
 
 
 ] (./tfg.lof)
 \tf@lof=\write7
 \openout7 = `tfg.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
- [27
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
+ [55
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
  (./tfg.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 116.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                tfg
-(biblatex)                and rerun LaTeX afterwards.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 204.
 Package logreq Info: Writing requests to 'tfg.run.xml'.
 \openout1 = `tfg.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13961 strings out of 493013
- 219152 string characters out of 6139317
- 505882 words of memory out of 5000000
- 17185 multiletter control sequences out of 15000+600000
- 9918 words of font info for 35 fonts, out of 8000000 for 9000
+ 16632 strings out of 493013
+ 254251 string characters out of 6139317
+ 547485 words of memory out of 5000000
+ 19515 multiletter control sequences out of 15000+600000
+ 11045 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,15n,43p,819b,1813s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,20n,45p,819b,3207s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/eurosym/fe
-ymr10.pfb>
-Output written on tfg.pdf (27 pages, 270603 bytes).
+ts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/te
+xmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/txfonts/t1xbtt.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts
+/t1xtt.pfb>
+Output written on tfg.pdf (55 pages, 6713881 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 461 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 500000)
- 471 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1144 PDF objects out of 1200 (max. 8388607)
+ 1039 compressed objects within 11 object streams
+ 388 named destinations out of 1000 (max. 500000)
+ 761 words of extra memory for PDF output out of 10000 (max. 10000000)
 

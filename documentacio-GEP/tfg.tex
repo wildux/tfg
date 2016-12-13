@@ -1,0 +1,116 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[catalan]{babel}
+\usepackage[backend=bibtex,sorting=none]{biblatex}
+\addbibresource{references.bib}
+\usepackage[headheight=35pt]{geometry}
+\usepackage[bottom]{footmisc}
+\usepackage{float}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,RE]{\leftmark}
+\fancyhead[LO,LE]{\includegraphics[width=0.3\textwidth]{images/fib-upc-logo}}
+\fancyfoot{}
+\fancyfoot[CO,CE]{\thepage}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[hang] 
+{\normalfont\huge\bfseries}{\thechapter.}{1em}{} 
+
+\usepackage{array}
+\usepackage{bookmark}
+\usepackage[toc,page]{appendix}
+\usepackage{rotating}
+\usepackage[gen]{eurosym}
+\DeclareUnicodeCharacter{20AC}{\euro{}}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+
+\renewcommand\appendixtocname{Apèndix}
+\renewcommand\appendixpagename{Apèndix}
+
+\begin{document}
+
+	\newgeometry{bottom=2.5cm}
+
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+
+			\line(1,0){400}\\
+			%\noindent\hrulefill\\
+			\vspace{0.3cm}
+			\Huge
+			\textbf{Sistema d'autolocalització per a robots mòbils mitjançant tècniques de visió per computador}\\
+			%\noindent\hrulefill
+			\line(1,0){400}
+
+			\vspace{1.0cm}
+			\Large
+			Joan Rodas Cusidó\\
+			02-10-2016
+
+			\vfill
+			\LARGE
+			\textit{Treball final de grau en eng. informàtica\\
+			Tecnologies de la informació}\\
+			\vspace{0.3cm}
+			\normalsize{Lliurable 2 - GEP}
+
+			\vspace{1.6cm}
+
+			\includegraphics[width=0.2\textwidth]{images/logo}
+			%\includegraphics[width=0.7\textwidth]{images/fib-upc-logo}
+			
+			%\vspace{1cm}
+			\vspace{0.5cm}
+
+			\Large
+			Facultat d'Informàtica de Barcelona\\
+			Universitat Politècnica de Catalunya\\
+			%\vspace{0.5cm}
+			Director: Joan Climent Vilaró
+		\end{center}
+	\end{titlepage}
+	
+	
+	\restoregeometry
+	\newgeometry{bottom=4.5cm}
+	\setcounter{page}{2}
+	
+	\tableofcontents
+	\chapter{Introducció}
+	\input{chapters/introduction}
+	\chapter{Definició de l'abast}
+	\input{chapters/abast}
+	\chapter{Planificació}
+	\input{chapters/planificacio}
+	\chapter{Gestió econòmica}
+	\input{chapters/costos}
+	\chapter{Sostenibilitat}
+	\input{chapters/sostenibilitat}
+	
+	%\chapter{Prova}
+	%\input{chapters/prova}
+	
+	\begin{appendices}
+		%\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+		\addtocontents{toc}{\setcounter{tocdepth}{0}}
+		\chapter{Diagrames}
+		\label{appendix:diagrames}
+		\input{chapters/diagrames}
+		\addtocontents{toc}{\setcounter{tocdepth}{2}}
+	\end{appendices}
+
+	\printbibliography[heading=bibintoc]
+	\cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{\listtablename}
+	\listoftables
+	\cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{\listfigurename}
+	\listoffigures
+	
+	
+
+\end{document}

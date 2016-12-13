@@ -1,0 +1,43 @@
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash\hspace{0pt}}m{#1}}
+%\definecolor{myBlue}{RGB}{210, 230, 255}
+\definecolor{myBlue}{RGB}{217, 230, 242}
+
+
+\section{Experiments realitzats}
+\section{Comparació d'algorismes}
+
+	\begin{table}[H]
+		\begin{center}
+			\rowcolors{3}{}{myBlue}
+			%\begin{tabular}{l | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c}
+			\begin{tabular}{l | c c | c c | c c}
+				& \multicolumn{2}{c|}{\textbf{Imatge 1}} & \multicolumn{2}{c|}{\textbf{Imatge 2}} & \multicolumn{2}{c}{\textbf{Imatge 3}} \\
+				\textbf{Algorismes} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} \\ \hline
+				Harris & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+				SIFT & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+				ORB & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+				MSER & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+			\end{tabular}
+		\end{center}
+		\caption{Detectors de keypoints - comparació}
+	\end{table}
+
+	\begin{table}[H]
+		\begin{center}
+			\rowcolors{3}{}{myBlue}
+			\begin{tabular}{l | c c c | c c c}
+				& \multicolumn{3}{c|}{\textbf{Set 1}} & \multicolumn{3}{c}{\textbf{Set 2}} \\
+				\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} \\ \hline
+				HARRIS + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+				HARRIS + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+				SIFT + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+				SIFT + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+				ORB + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+				ORB + BRISK & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+				MSER + SURF & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+				MSER + DAISY & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+			\end{tabular}
+		\end{center}
+		\caption{Matching - comparació}
+	\end{table}

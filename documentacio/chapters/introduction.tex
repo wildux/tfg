@@ -1,13 +1,25 @@
+\textit{Aquest projecte es desenvolupa com a treball final de grau dels estudis de grau en enginyeria informàtica, de l'especialitat en tecnologies de la informació.
+Es tracta d'un projecte de modalitat A, realitzat a la Facultat d'Informàtica de Barcelona (Universitat Politècnica de Catalunya) i proposat pel director Joan Climent,
+del departament d'ESAII (Enginyeria de Sistemes, Automàtica i Informàtica Industrial).}\\\\\\\\
 Els avenços tecnològics dels últims anys, han millorat la capacitat de les màquines per extreure informació i resoldre problemes de manera autònoma, imitant cada vegada millor
-el comportament humà.\\\\
-En aquest treball, es treballarà la visió per computador aplicada a un problema de robòtica.
-\section{Context}
-	Aquest projecte es desenvolupa com a treball final de grau dels estudis de grau en enginyeria informàtica, de l'especialitat en tecnologies de la informació.
-	Es tracta d'un projecte de modalitat A, realitzat a la Facultat d'Informàtica de Barcelona (Universitat Politècnica de Catalunya) i proposat pel director Joan Climent,
-	del departament d'ESAII (Enginyeria de Sistemes, Automàtica i Informàtica Industrial).
+el comportament humà. En aquest treball, es treballarà la visió per computador aplicada a un problema de robòtica.\\\\
+El primer capítol serveix com a introducció del projecte, on s'explica l'abast, objectiu, motivació i estat de l'art de les tecnologies a tractar. En el segon capítol es detallen els recursos utilitzats
+per realitzar el treball.\\\\
+Els capítols 3 a 6 conformen el treball principal. Al tercer capítol s'explica el disseny i l'aquitectura del sistema desenvolupat. Al cuart, les tecniques de visió utilitzades, amb la seva implementació
+detallada al cinqué capítol. Al capítol 6 s'explicarán els experiments realitzats i els resultats obtinguts.\\\\
+Al capítol 7 podeu trobar un anàlisi de la gestió econòmica del projecte, on es detallen els costos humans, de programari, de maquinari, indirectes i possibles imprevistos. I al vuité capítol
+es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions del projecte, on es valorarà l'aportació del projecte a nivell personal i si s'han aconseguit els objectius inicials proposats.
+
+%\section{Context}
+%	Aquest projecte es desenvolupa com a treball final de grau dels estudis de grau en enginyeria informàtica, de l'especialitat en tecnologies de la informació.
+%	Es tracta d'un projecte de modalitat A, realitzat a la Facultat d'Informàtica de Barcelona (Universitat Politècnica de Catalunya) i proposat pel director Joan Climent,
+%	del departament d'ESAII (Enginyeria de Sistemes, Automàtica i Informàtica Industrial).
 \section{Descripció del problema}
-	El treball pretén resoldre un problema d'autolocalització de robots mòbils en un entorn variable, de tal manera que el robot sigui capaç de desplaçar-se d'un punt inicial a un punt final escollit per l'usuari.
-	Per fer això, s'utilitzaran diverses tècniques de visió per ordinador.
+	El treball pretén resoldre un problema d'autolocalització de robots mòbils en un entorn variable, de tal manera que el robot sigui capaç de desplaçar-se d'un punt inicial a un punt final escollit per
+	l'usuari. Per fer això, s'utilitzaran diverses tècniques de visió per ordinador.
+\section{Motivació}
+	Visió per computador i Robòtica van ser sense cap mena de dubte dos de les assignatures més interessants que he cursat a la universitat, així que quan vaig veure la oferta del projecte vaig pensar que
+	seria una bona idea per profunditzar els meus coneixements sobre la materia.
 \section{Actors implicats}
 	En aquesta secció es descriuen els actors implicats del projecte, és a dir, totes aquelles persones que es veuran beneficiades directa o indirectament amb la realització d'aquest.\\
 	\begin{itemize}
@@ -15,6 +27,7 @@ En aquest treball, es treballarà la visió per computador aplicada a un problem
 		\item \textbf{Usuaris:} Qualsevol persona qui ho desitgi, tindrà accés a tots els codis desenvolupats durant el projecte, ja que es llançaran sota una llicència de programari lliure que permetrà veure i adaptar el codi a les necessitats d'altres usuaris.
 		\item \textbf{Altres beneficiaris:} Qualsevol empresa o institució interessada podrà utilitzar el sistema desenvolupat i adaptar-lo a les seves necessitats, com podria ser per exemple un sistema de transport d'equipatge basat en robots.
 	\end{itemize}
+\newpage
 \section{Estat de l'art}
 	\subsection{Visió per computador}
 		La visió per computador\cite{Szeliski} és una ciència que té com a objectiu dotar les màquines o ordinadors de la capacitat de ``veure''.
@@ -35,6 +48,7 @@ En aquest treball, es treballarà la visió per computador aplicada a un problem
 			( Scale Invariant Feature Transform) i SURF\cite{SURF} (Speeded-Up Robust Features). Alguns d'aquests algorismes són BinBoost\cite{Trzcinski13a} o un dels més recents:
 			LATCH\cite{LeviHassner2016LATCH}\\\\
 			En aquest projecte s'analitzarà si es adequat emprar algun d'aquests algorismes en la implementació del sistema d'autolocalització. 
+\newpage
 	\subsection{Robòtica}
 		La robòtica és un camp de la tecnologia que estudia el disseny i la construcció de robots.\\\\
 		Que és, doncs, un robot? Al llarg de la historia, s'han donat diverses definicions del concepte de robot, sense existir encara una definició exacta acceptada per tothom. I a mesura que passa el temps,
@@ -56,3 +70,80 @@ En aquest treball, es treballarà la visió per computador aplicada a un problem
 		els sensors i algorismes necessaris per poder moure el robot.\\\\
 		En cas d'aplicar el sistema desenvolupat en robots en un futur, aleshores s'hauran de tenir en compte altres sensors per permetre el moviment
 		de la màquina i arribar a la destinació evitant obstacles.
+\section{Objectius}
+	L'objectiu principal del projecte consisteix a dissenyar i desenvolupar un sistema d'autolocalització per a robots mòbils.\\\\
+	Aquest sistema estarà basat en tècniques de visió per computador i consistirà, bàsicament, a comparar dues imatges (una global i una altra capturada pel robot)
+	i localitzar un punt o regió seleccionat per l'usuari.\\\\	
+	Per arribar a aquest objectiu, es dividirà el treball en diverses fases:\\
+	\begin{itemize}
+		\item Estudi dels diferents algorismes de visió existents
+		\item Obtenció de \textit{keypoints} en una imatge
+		\item Extracció de característiques
+		\item \textit{Matching} de dues imatges
+	\end{itemize}
+\section{Requeriments}
+	El sistema d'autolocalització implementat ha de complir amb una sèrie de requeriments mínims presentats a continuació:\\
+	\begin{itemize}
+		\item L'usuari ha de poder seleccionar un punt o regió d'interès en una imatge donada.
+		\item El sistema ha de ser capaç d'adaptar-se mínimament a diverses condicions de l'entorn (canvis de lluminositat, perspectiva, etc.).
+	\end{itemize}
+\section{Obstacles}
+	Durant la planificació i realització del treball, s'hauran de tenir en compte els possibles obstacles que es trobaran. A continuació es detallen alguns dels problemes que es podran trobar.
+	\subsubsection{Noves eines}
+		Un dels principals obstacles serà el fet de treballar amb noves eines i algorismes. Per tal d'evitar problemes en aquest aspecte, caldrà fer una planificació acurada i documentar-se apropiadament.
+		També serà important mantenir una bona comunicació amb el tutor en tot moment, per poder resoldre possibles dubtes referents als algorismes.
+	\subsubsection{Calendari}
+		Un altre obstacle important serà la falta de temps, ja que està previst realitzar el projecte en el transcurs d'un quadrimestre. Gestionar correctament el temps serà clau per aconseguir
+		finalitzar el projecte sense problemes. Per tant, s'haurà de fer una planificació el més realista possible i escollir una metodologia de treball adequada i flexible.
+	\subsubsection{Errors de programació}
+		Com a qualsevol projecte on s'ha de programar, el codi serà una font important d'errors. Per això, caldrà realitzar diverses proves cada vegada que es realitzi una modificació en el codi
+		o s'implementi una nova funcionalitat.
+	\subsubsection{Condicions variables en les imatges}
+		Les imatges capturades a través d'una càmera no presentaran sempre les mateixes condicions. La lluminositat, perspectiva o resolució de la imatge 
+		influiran a l'hora de processar les imatges i comparar-les.\\\\
+		Per intentar minimitzar aquests efectes, s'analitzaran diversos algorismes d'obtenció de punts i extracció de característiques. 
+		També s'estudiarà si és necessari realitzar un preprocessament o filtratge de les imatges abans d'aplicar els algorismes.
+\section{Ampliacions}
+	Encara que el calendari és força estricte i no hi ha gaire marge d'ampliació, es podria estendre el projecte amb les següents ampliacions:\\
+	\begin{itemize}
+		\item Anàlisi del rendiment d'algorismes alternatius per l'obtenció de punts i característiques de les imatges.
+		\item Creació d'una aplicació d'Android que permeti seleccionar un punt o regió d'una imatge.
+		\item Execució del codi del sistema via servidor web, utilitzant les dades enviades per l'aplicació d'Android.
+	\end{itemize}
+\section{Metodologia}
+	Per aquest projecte, s'utilitzarà una metodologia de treball àgil amb cicles de desenvolupament curts.
+	Com que només hi ha un desenvolupador, no s'utilitzaran exactament les metodologies Scrum o XP\cite{Pxp} (Extreme Programming),
+	però sí que s'aplicaran moltes de les pràctiques pròpies d'aquestes dues metodologies (proves, simplicitat, refacció de codi, etc.).
+	Això ens donarà més flexibilitat a l'hora de fer canvis i adaptar-nos a una nova planificació.\\\\
+	Es començarà treballant amb imatges de prova (casos senzills) i algorismes coneguts com ara Harris\cite{Harris} i SIFT. Més endavant, s'aniran introduint modificacions en el codi per intentar aconseguir un
+	sistema capaç de funcionar amb fotografies ``reals'' i es provaran altres algorismes de visió per computador.\\\\
+	Per altra banda, s'utilitzarà el mètode en cascada per la realització del curs de GEP.
+\section{Eines de desenvolupament}
+	El codi del projecte es desenvoluparà amb python i s'utilitzaran, sempre que sigui possible, eines de programari lliure o de codi obert.\\\\
+	En cas de crear una aplicació per a dispositius Android, es realitzarà mitjançant Android Studio (Java).
+	\subsection{OpenCV}
+		Per tal d'utilitzar algorismes de visió per computador en el codi amb relativa facilitat, s'utilitzarà la biblioteca de codi obert OpenCV\cite{OpenCV} (Open Source Computer Vision Library),
+		disponible per a python. La versió emprada serà la 3.1.\\\\
+		En concret, hi haurà tres passos indispensables que faran ús d'aquesta biblioteca:\\
+		\begin{itemize}
+			\item {Obtenció de punts en una imatge}
+			\item {Extracció de característiques}
+			\item \textit{Matching} de dues imatges
+		\end{itemize}
+\section{Eines de seguiment}
+	A continuació es detallen les eines de programari usades per fer el seguiment del treball final de grau:
+	\subsubsection{LibreOffice Calc}
+		Per fer un seguiment de les hores dedicades al projecte, es crearà un full de càlcul amb les hores diàries dedicades a cada tasca. S'utilitzarà LibreOffice Calc, inclòs en
+		la \textit{suite} ofimàtica LibreOffice.
+	\subsubsection{Gantt Project}
+		Per tal d'organitzar totes les tasques a realitzar i mirar si hi ha desviacions respecte el pla inicial, s'utilitzarà l'eina de \textit{software} lliure 
+		Gantt Project\cite{GanttProject}. Aquesta eina ens permetrà realitzar tant un diagrama de Gantt com un diagrama de PERT.
+	\subsubsection{Git + Github}
+		Tot i que no es tracta d'un projecte col·laboratiu (només hi ha un desenvolupador), s'ha decidit utilitzar el sistema de control de versions Git juntament amb la pàgina web Github. 
+		D'aquesta manera es facilitarà treballar amb diverses màquines i portar un control dels canvis realitzats. A més, permetrà compartir el codi amb el director amb facilitat.
+	\section{Mètode de validació}
+		Es faran validacions parcials durant la realització del projecte, fent proves del sistema amb diverses imatges.
+	\subsubsection{Contacte amb el director}
+		Hi haurà reunions presencials amb el director, així com comunicació via correu electrònic, per tal de resoldre dubtes i validar la feina realitzada. També es realitzarà una reunió de seguiment abans
+		del 19 de decembre, per conèixer l'estat del projecte i poder escollir el torn de lectura.
+

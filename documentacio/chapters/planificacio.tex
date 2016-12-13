@@ -2,8 +2,10 @@
 \def\arraystretch{1.4}
 \definecolor{tableHeader}{RGB}{211, 127, 47}
 \definecolor{myOrange}{RGB}{255, 230, 210}
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}m{#1}}
 
 \section{Planificació temporal}
+	\label{sec:planificacio}
 	El treball té una duració aproximada de 4 mesos i mig, des de setembre fins a principis de gener. La càrrega total serà d'unes 450 hores, corresponents a 18 crèdits ECTS.
 	La dedicació setmanal estimada serà d'unes 25 hores.\\\\
 	Es dividirà el projecte en quatre blocs, descrits a continuació:\\
@@ -11,7 +13,7 @@
 	\begin{table}[H]
 		\begin{center}
 			\rowcolors{2}{myOrange}{white}
-			\begin{tabular}{l !{\vrule width -1pt}p{8cm} !{\vrule width -1pt}l !{\vrule width -1pt}l }
+			\begin{tabular}{p{1.5cm} !{\vrule width -1pt}p{6cm} !{\vrule width -1pt}l !{\vrule width -1pt}l}
 			\rowcolor{tableHeader}
 			\textbf{Bloc} & \textbf{Descripció} & \textbf{Metodologia} & \textbf{Hores} \\
 			Bloc 0 & Preparació de l'entorn & - & 5h \\
@@ -40,7 +42,7 @@
 		\begin{table}[H]
 			\begin{center}
 				\rowcolors{2}{myOrange}{white}
-				\begin{tabular}{p{5cm} !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l }
+				\begin{tabular}{p{5cm} !{\vrule width -1pt}x{2.1cm} !{\vrule width -1pt}x{2.4cm} !{\vrule width -1pt}x{1.6cm} !{\vrule width -1pt}x{1.6cm}}
 				\rowcolor{tableHeader}
 				\textbf{Descripció} & \textbf{Inici} & \textbf{Finalització} & \textbf{Durada} & \textbf{Hores} \\
 				Introducció i abast & 19/09/2016 & 27/09/2016 & 9 dies & 16h \\
@@ -60,7 +62,7 @@
 			\begin{table}[H]
 				\begin{center}
 					\rowcolors{2}{myOrange}{white}
-					\begin{tabular}{p{5cm} !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l !{\vrule width -1pt}l }
+					\begin{tabular}{p{5cm} !{\vrule width -1pt}x{2.1cm} !{\vrule width -1pt}x{2.4cm} !{\vrule width -1pt}x{1.6cm} !{\vrule width -1pt}x{1.6cm}}
 					\rowcolor{tableHeader}
 					\textbf{Tasca} & \textbf{Inici} & \textbf{Finalització} & \textbf{Durada} & \textbf{Hores} \\
 					Implementació i proves & 13/09/2016 & 19/12/2016 & 98 dies & 240h \\
@@ -73,18 +75,29 @@
 			\end{table}
 
 		\subsubsection{Recerca d'informació, implementació i proves}
-			Durant tot el projecte, se cercarà informació contínuament i s'aniran fent proves a mesura que s'implementa el codi.
+			Una part molt important del projecte serà la cerca d'informació i l'estudi de les diverses eines i algorismes a utilitzar (com per exemple OpenCV i les seves funcions).
+			Se cercarà informació contínuament i s'aniran fent proves a mesura que s'implementa el codi.\\\\
+			La fase d'implementació es dividirà en diverses tasques, que s'aniràn realitzant a mesura que avanci el projecte. Algunes d'aquestes tasques seràn:
+			\begin{itemize}
+				\item{Obtenció de keypoints (Harris)}
+				\item{Extracció de característiques (SIFT)}
+				\item{Matching i homografia}
+				\item{Altres algorismes (ORB, BRISK, BRIEF)}
+				\item{Disseny de l'aplicació d'Android}
+				\item{Creació de l'aplicació d'Android}
+			\end{itemize}
 		\subsubsection{Conclusions i resultats}
 			Un cop enllestida la implementació, es procedirà a elaborar les conclusions d'acord amb els resultats obtinguts. Es compararan els resultats obtinguts amb diferents algorismes de visió i es faran
 			proves del sistema amb diverses imatges.
 		\subsubsection{Ampliacions (opcional)}
-			Un cop realitzades les conclusions, en cas de disposar de més temps, es podran fer ampliacions i millores.
+			Un cop realitzades les conclusions, en cas de disposar de més temps, es podran fer ampliacions i millores.\\\\
+			En cas de patir un retard en la planificació del projecte, s'utilitzarà aquest temps per acabar l'etapa de les conclusions.
 		\subsubsection{Redacció de la memòria}
 			La memòria s'anirà redactant a mesura que es realitza el projecte. No hi ha per tant cap dependència, encara que es dedicarà més temps en l'etapa final del treball.\\
 
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\textwidth]{images/pert-dev}
+			\includegraphics[width=0.7\textwidth]{images/tasques}
 			\caption{PERT - tasques desenvolupament}
 		\end{figure}
 
@@ -93,7 +106,7 @@
 	La defensa del projecte es durà a terme entre els dies 23 i 27 de gener.
 
 	\subsection{Diagrames}
-		Podeu trobar tots els diagrames de Gantt i PERT a l'apèndix \ref{appendix:diagrames} del treball.
+		Durant la fase de planificació del projecte, s'han realitzat diversos diagrames. Podeu trobar tots aquests diagrames (Gantt i PERT) a l'apèndix \ref{appendix:diagrames} del treball.
 
 \section{Recursos}
 	En aquesta secció s'analitzen els recursos necessaris per a la realització del projecte. %A continuació es detallen els recursos humans, de maquinari i de programari utilizats.
@@ -116,6 +129,8 @@
 			Python & Eina de desenvolupament & Programació \\
 			OpenCV & Eina de desenvolupament & Algorismes de VC \\
 			Geany & Eina de desenvolupament & Programació del codi \\
+			Android Studio & Eina de desenvolupament & Programació del codi \\
+			Gimp/Inkscape & Eina de desenvolupament & Retocs i creació d'imatges \\
 			\LaTeX & Eina de desenvolupament & Redacció de la memòria \\
 			Zathura & Eina de desenvolupament & Visualització de pdf \\
 			Gantt Project & Eina de gestió & Creació diagrames de Gantt \\
@@ -124,6 +139,7 @@
 			\end{tabular}
 		\end{center}
 		\caption{Recursos de programari}
+		\label{table:programari}
 	\end{table}
 	
 \section{Desviacions i pla d'actuació}

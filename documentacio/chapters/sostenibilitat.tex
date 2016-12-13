@@ -1,10 +1,91 @@
-[MATRIU]
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash\hspace{0pt}}m{#1}}
+%\definecolor{myBlue}{RGB}{210, 230, 255}
+\definecolor{myBlue}{RGB}{217, 230, 242}
+\newcommand{\bigcell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 
-\section{Sostenibilitat econòmica}
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis pellentesque odio. Sed hendrerit nisi ut metus malesuada placerat. Aenean a turpis tempus, auctor elit nec, elementum ante. Pellentesque faucibus malesuada pulvinar. Duis tristique est nibh, in dapibus est iaculis ut. Vestibulum gravida congue mi, a sodales est imperdiet at. Aliquam varius condimentum nisi, et pulvinar orci egestas eget. Sed pharetra metus nec enim fermentum commodo. Aenean auctor purus sit amet felis imperdiet semper. Ut scelerisque, ex eu tristique pretium, tellus purus vehicula magna, sed ornare dolor sem ut sapien. Morbi sit amet odio odio. Maecenas sodales nulla nec velit tempor, eu aliquam sapien cursus. Sed volutpat libero a nunc luctus, sagittis commodo ipsum ultrices.
+En aquest capítol es farà una anàlisi de la sostenibilitat del projecte, que es divideix en tres parts, identificades per les columnes de la matriu:\\
+\begin{itemize}
+	\item{El projecte posat en producció (PPP), que inclou la planificació, el desenvolupament i la implantació del projecte.}
+	\item{La vida útil del projecte, que comença un cop implantat el sistema i finalitza amb el seu desmantellament.}
+	\item{Els riscos inherents al propi projecte, considerant tota la construcció i la vida útil del mateix.\\}
+\end{itemize}
+Cadascuna de les columnes s'analitzarà des dels punts de vista ambiental, econòmic i social, les tres dimensions de la sostenibilitat. A continuació podeu veure la matriu de sostenibilitat del projecte:\\
 
-\section{Sostenibilitat social}
-	Phasellus consectetur tincidunt nunc, quis ultrices sapien rutrum non. Sed posuere lacinia mattis. Nunc fringilla ultricies dolor a ullamcorper. Praesent eu odio et dui aliquam aliquam eget a nibh. Nullam metus eros, convallis nec rhoncus eu, fermentum nec libero. Mauris finibus nunc in dapibus rhoncus. Cras ac lacus at nunc elementum tristique nec sed arcu. Aliquam ex neque, finibus sed laoreet ut, fringilla at nulla. 
+\begin{table}[H]
+	\begin{center}
+		%\rowcolors{2}{myOrange}{white}
+		\begin{tabular}{l !{\vrule width -1pt}M{3.7cm} !{\vrule width -1pt}M{3.4cm} !{\vrule width -1pt}M{3.4cm}}
+			%\rowcolor{tableHeader}
+			\textbf{Sostenibilitat} & \textbf{PPP} & \textbf{Vida útil} & \textbf{Riscos} \\ \hline
+			Ambiental & \bigcell{c}{Consum del disseny \\ {\textbf{0} [0:10]}} & \bigcell{c}{Petjada ecològica \\ {\textbf{0} [0:20]}} & \bigcell{c}{Riscos ambientals \\ {\textbf{0} [-20:0]}} \\
+			\noalign{\vskip 2mm}
+			Econòmica & \bigcell{c}{Factura \\ {\textbf{0} [0:10]}} & \bigcell{c}{Pla de viabilitat \\ {\textbf{0} [0:20]}} & \bigcell{c}{Riscos econòmics \\ {\textbf{0} [-20:0]}} \\
+			\noalign{\vskip 2mm}
+			Social & \bigcell{c}{Impacte personal \\ {\textbf{0} [0:10]}} & \bigcell{c}{Impacte social \\ {\textbf{0} [0:20]}} & \bigcell{c}{Riscos socials \\ {\textbf{0} [-20:0]}} \\
+			\noalign{\vskip 4mm}
+			\rowcolor{myBlue}
+			%Rang & [0:30] & [0:60] & [-60:0] \\
+			Valoració total & \multicolumn{3}{c}{\textbf{0} [-60:90]} \\
+		\end{tabular}
+	\end{center}
+	\caption{Matriu de sostenibilitat}
+\end{table}
 
-\section{Sostenibilitat ambiental}
-	Sed mattis turpis a nisi sodales, nec sodales nisi finibus. Mauris et nisi sit amet velit gravida facilisis et in lectus. Suspendisse sodales erat non semper fermentum. Mauris nec lacus non sapien fermentum posuere. Sed hendrerit nisl ac lectus consectetur sagittis. Cras vehicula lacus eget augue feugiat tincidunt. Vivamus vulputate enim velit, eget volutpat dolor dignissim at. 
+\section{Posada en producció}
+	En aquesta secció es detalla la sostenibilitat del sistema desde la seva planificació fins a la posible implantació. Es tindrà en compte el consum del disseny, la factura
+	i l'impacte personal que ha suposat la realització d'aquest treball.
+	\subsection{Consum del disseny}
+		Els recursos necessaris per al desenvolupament d'aquest projecte són mínims. No és necessari comprar cap tipus de maquinari addicional i tot el \textit{hardware} utilitzat ha estat comprat
+		a la unió europea, pagant una taxa pel correcte reciclatge dels residus. A més, el maquinari seguirà essent funcional un cop acabat el projecte.
+		L'impacte ambiental del projecte serà mínim, ja que només es consumirà l'energia necessària per utilitzar un ordinador personal. No es generarà cap tipus de residu durant el desenvolupament o el
+		desmantellament.
+
+	\subsection{Factura}
+		Tal com podeu veure a l'apartat \hyperref[sec:Costos]{"Gestió econòmica"}, per analitzar la viabilitat del projecte s'ha realitzat un pressupost tenint en compte els costos directes, indirectes
+		i possibles imprevistos. Com es pot veure, els costos de \textit{software} i \textit{hardware} són mínims, pel que el projecte resulta econòmicament viable.
+		L'única manera de rebaixar costos seria incrementant el nombre d'hores diàries (baixarien els costos de llum i Internet) o contractant a algú amb més experiència.
+		No està prevista cap col·laboració amb altres projectes, però s'utilitzaran eines i algorismes existents que no caldrà programar de nou.\\\\
+		El cost inicial ha sigut aproximadament el mateix que el final, ja que no han hagut modificacions en els recursos de programari o maquinari.
+
+	\subsection{Impacte personal}
+		Aquest projecte m'ha permès profunditzar els meus coneixements sobre les tècniques de visió per computador actuals i la seva possible aplicació en sistemes robòtics.\\\\
+		Amb la realització d'aquest treball, també he hagut d'utilitzar una metodologia de treball àgil, que fins ara no havia utilitzat i he hagut de realitzar la planificació i la gestió dels recursos
+		d'un projecte real, fet que estic segur que m'ajudarà en un futur a l'hora d'empendre altres projectes a nivell profesional.
+
+\section{Vida útil}
+	A continuació es descriu la sostenibilitat del projecte desde la implantació fins al desmantellament. Es tindrà en compte la petjada ecològica, la viabilitat i l'impacte del projecte en la societat.
+	\subsection{Petjada ecològica}
+		Es tracta d'un projecte de programari, que a més es publicarà sota una llicència de \textit{software} lliure, de manera que qualsevol usuari se'n podrà beneficiar i podrà reutilitzar el
+		codi per a futurs projectes. No suposaria un augment en la petjada ecològica ni tampoc una disminució, encara que amb la utilització del programari desenvolupat es necessitarien menys recursos materials
+		pel control d'un robot.
+
+	\subsection{Pla de viabilitat}
+		En principi, no està prevista la implantació o la comercialització del sistema en un futur. El codi estarà disponible al repositori de Github i podrà ser utilitzat i adaptat lliurement. Per tant,
+		seran els propis usuaris els que s'hauran de preocupar dels costos en cas d'utilitzar el sistema.\\\\
+		Si es volgués implantar el sistema, s'haurien de considerar els costos de la utilització i possible manteniment d'un servidor on allotjar el codi desenvolupat (ja sigui un servidor local o extern). I en
+		cas de voler millorar o actualitzar el codi amb noves funcionalitats, s'haurien de tenir en compte els recursos humans necessaris.
+
+	\subsection{Impacte social}
+		El projecte no suposarà cap canvi important en la situació social o política del país ni té intenció de canviar substancialment la vida de les persones. Actualment, existeixen múltiples maneres de
+		controlar un robot, ja sigui manualment o amb altres mètodes de localització, com podria ser utilitzant les coordinades GPS. També hi ha sistemes que utilitzen marques visuals (punts de referència)
+		o que operen en un entorn conegut pel robot. El proposit d'aquest projecte serà oferir una alternativa, un sistema d'autolocalització barat (no serà necessari dotar el robot de molts sensors)
+		i disponible per a tothom.\\\\
+		Qualsevol usuari podrà beneficiar-se del sistema, ja que el codi serà publicat sota una llicència de \textit{software} lliure en un repositori de Github. I evidenment, la realització d'aquest TFG
+		no perjudicarà cap col·lectiu de cap manera.
+
+\section{Riscos}
+	Finalment, s'analitzaran els riscos inherents del projecte en les tres dimensions de la sostenibilitat: ambientals, econòmics i socials.
+	\subsection{Riscos ambientals}
+		En principi la petjada ecològica del projecte té un marge molt limitat. Un cop desenvolupat el codi, s'allotjarà a Github. El que altres usuaris facin desprès ja no depen de la feina de l'autor.
+
+	\subsection{Riscos econòmics}
+		En cas d'implantar el sistema desenvolupat, l'únic risc econòmic serien les possibles fallades del sistema a nivell de servidor. Els costos del maquinari o del programari no podrien suposar cap
+		problema, ja que el programari és gratuït i el sistema no depen d'un maquinari específic. Un cop implementat el codi, el sistema nomes depen d'un servidor que pugui executar Python i OpenCV.
+
+	\subsection{Riscos socials}
+		Aquest treball no perjudicarà en cap cas a algun sector de la població, ni en la posada en producció, ni durant la posible implantació o posterior desmantellament. El sistema desenvolupat es un 
+		programari inofensiu, que nomes podria ser perjudicial si algun usuari en fes un mal ús en un servidor extern, fet que ja no seria responsabilitat de l'autor.\\\\
+		La única dependència del programa principal es la biblioteca OpenCV, pero tractant-se d'una biblioteca de \textit{software} lliure no hauria de suposar cap problema. S'utilitzen els algorismes
+		SIFT i SURF, que estan patentats i per tant no es poden utilitzar gratuïtament en productes comercials. Tot i que no està previst comercialitzar el sistema desenvolupat de cap manera, també s'utilitzen
+		algorismes alternatius com ORB que no suposarien cap problema si algún usuari volgués comercialitzar un producte derivat d'aquest projecte.
