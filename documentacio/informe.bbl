@@ -1,0 +1,297 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{Szeliski}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=SR}{%
+         family={Szeliski},
+         family_i={S\bibinitperiod},
+         given={Richard},
+         given_i={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SR1}
+    \strng{fullhash}{SR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Computer Vision: Algorithms and Applications}
+    \verb{url}
+    \verb http://szeliski.org/Book/drafts/SzeliskiBook_20100903_draft.pdf
+    \endverb
+    \field{year}{2010}
+  \endentry
+
+  \entry{SIFT}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=LDG}{%
+         family={Lowe},
+         family_i={L\bibinitperiod},
+         given={David\bibnamedelima G.},
+         given_i={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LDG1}
+    \strng{fullhash}{LDG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Computer Vision, 1999. The Proceedings of the Seventh
+  IEEE International Conference on}
+    \verb{doi}
+    \verb 10.1109/ICCV.1999.790410
+    \endverb
+    \field{pages}{1150\bibrangedash 1157}
+    \field{title}{Object recognition from local scale-invariant features}
+    \verb{url}
+    \verb http://www.cs.ubc.ca/~lowe/papers/iccv99.pdf
+    \endverb
+    \field{volume}{2}
+    \field{year}{1999}
+  \endentry
+
+  \entry{SURF}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BH}{%
+         family={Bay},
+         family_i={B\bibinitperiod},
+         given={Herbert},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Ess},
+         family_i={E\bibinitperiod},
+         given={Andreas},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Tuytelaars},
+         family_i={T\bibinitperiod},
+         given={Tinne},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=VGL}{%
+         family={Van\bibnamedelima Gool},
+         family_i={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={Luc},
+         given_i={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Science Inc.}%
+    }
+    \strng{namehash}{BH+1}
+    \strng{fullhash}{BHEATTVGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.cviu.2007.09.014
+    \endverb
+    \field{issn}{1077-3142}
+    \field{number}{3}
+    \field{pages}{346\bibrangedash 359}
+    \field{title}{Speeded-Up Robust Features (SURF)}
+    \verb{url}
+    \verb http://dx.doi.org/10.1016/j.cviu.2007.09.014
+    \endverb
+    \field{volume}{110}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{Comput. Vis. Image Underst.}
+    \field{month}{06}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Trzcinski13a}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=TTVLMC}{%
+         family={T.\bibnamedelima Trzcinski},
+         family_i={T\bibinitperiod\bibinitdelim T\bibinitperiod},
+         suffix={M.\bibnamedelima Christoudias},
+         suffix_i={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={V.\bibnamedelima Lepetit},
+         given_i={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Fua},
+         family_i={F\bibinitperiod},
+         given={P.},
+         given_i={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TTMCVLFP1}
+    \strng{fullhash}{TTMCVLFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Computer Vision and Pattern Recognition}
+    \field{title}{{Boosting Binary Keypoint Descriptors}}
+    \verb{url}
+    \verb https://infoscience.epfl.ch/record/186246/files/top.pdf
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{LeviHassner2016LATCH}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=LG}{%
+         family={Levi},
+         family_i={L\bibinitperiod},
+         given={Gil},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hassner},
+         family_i={H\bibinitperiod},
+         given={Tal},
+         given_i={T\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LGHT1}
+    \strng{fullhash}{LGHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Winter Conference on Applications of Computer Vision
+  ({WACV})}
+    \field{title}{{LATCH:} Learned Arrangements of Three Patch Codes}
+    \verb{url}
+    \verb http://www.openu.ac.il/home/hassner/projects/LATCH
+    \endverb
+    \field{year}{2016}
+  \endentry
+
+  \entry{Pxp}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DY}{%
+         family={Dzhurov},
+         family_i={D\bibinitperiod},
+         given={Yani},
+         given_i={Y\bibinitperiod},
+      }}%
+      {{hash=KI}{%
+         family={Krasteva},
+         family_i={K\bibinitperiod},
+         given={Iva},
+         given_i={I\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Ilieva},
+         family_i={I\bibinitperiod},
+         given={Sylvia},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DYKIIS1}
+    \strng{fullhash}{DYKIIS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Personal Extreme Programming–An Agile Process for
+  Autonomous Developers}
+    \verb{url}
+    \verb https://www.researchgate.net/publication/229046039
+    \endverb
+    \field{year}{2009}
+  \endentry
+
+  \entry{Harris}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=HC}{%
+         family={Harris},
+         family_i={H\bibinitperiod},
+         given={Chris},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Stephens},
+         family_i={S\bibinitperiod},
+         given={Mike},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HCSM1}
+    \strng{fullhash}{HCSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{In Proc. of Fourth Alvey Vision Conference}
+    \field{pages}{147\bibrangedash 151}
+    \field{title}{A combined corner and edge detector}
+    \verb{url}
+    \verb www.bmva.org/bmvc/1988/avc-88-023.pdf
+    \endverb
+    \field{year}{1988}
+  \endentry
+
+  \entry{OpenCV}{online}{}
+    \name{author}{3}{}{%
+      {{hash=CI}{%
+         family={Corporation},
+         family_i={C\bibinitperiod},
+         given={Intel},
+         given_i={I\bibinitperiod},
+      }}%
+      {{hash=GW}{%
+         family={Garage},
+         family_i={G\bibinitperiod},
+         given={Willow},
+         given_i={W\bibinitperiod},
+      }}%
+      {{hash=I}{%
+         family={Itseez},
+         family_i={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CIGWI1}
+    \strng{fullhash}{CIGWI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{OpenCV}
+    \verb{url}
+    \verb http://opencv.org
+    \endverb
+    \field{year}{2000}
+  \endentry
+
+  \entry{GanttProject}{online}{}
+    \name{author}{2}{}{%
+      {{hash=TA}{%
+         family={Thomas},
+         family_i={T\bibinitperiod},
+         given={Alexandre},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Barashev},
+         family_i={B\bibinitperiod},
+         given={Dmitry},
+         given_i={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TABD1}
+    \strng{fullhash}{TABD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Gantt Project}
+    \verb{url}
+    \verb http://www.ganttproject.biz/
+    \endverb
+    \field{year}{2003}
+  \endentry
+\endsortlist
+\endinput

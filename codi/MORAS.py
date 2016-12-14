@@ -178,7 +178,7 @@ def feature_extraction(image, kp, alg):
 
 	return kp, des
 
-def matching(img1, img2, des1, des2, kp1, kp2, fe):
+def matching(img1, img2, des1, des2, kp1, kp2, fe, test=False):
 	if fe == _LATCH or fe == _ORB or fe == _BRISK:
 		bf = cv2.BFMatcher(cv2.NORM_HAMMING)
 	else:
@@ -201,7 +201,8 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe):
 		h,w,_ = img1.shape
 		pts = np.float32([ [0,0],[0,h-1],[w-1,h-1],[w-1,0] ]).reshape(-1,1,2)
 		dst = cv2.perspectiveTransform(pts,M)
-		img2 = cv2.polylines(img2,[np.int32(dst)],True,255,3, cv2.LINE_AA)
+		img2C = img2.copy()
+		img2C = cv2.polylines(img2C,[np.int32(dst)],True,255,3, cv2.LINE_AA)
 
 		#RETURN POINT
 		x1, y1 = np.int32(dst)[0].ravel()
@@ -217,8 +218,11 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe):
 
 	draw_params = dict(matchColor = (0,255,0), singlePointColor = None,
 					matchesMask = matchesMask, flags = 2)
-	img3 = cv2.drawMatches(img1,kp1,img2,kp2,good,None,**draw_params)
-	return x, y, img3
+	img3 = cv2.drawMatches(img1,kp1,img2C,kp2,good,None,**draw_params)
+	if test:
+		return x, y, img3, len(good)
+	else:
+		return x, y, img3
 
 def getAngle(aV, w, x):
 	if x == -1:
