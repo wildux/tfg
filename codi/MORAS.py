@@ -89,10 +89,21 @@ def point_selection(gray, alg, small=False):
 
 	#Harris
 	elif alg == _HARRIS:
-		gray2 = np.float32(gray)
-		dst = cv2.cornerHarris(gray2,2,3,0.04)
-		dst = cv2.dilate(dst,None)
-		roi[dst>0.01*dst.max()]=[0,0,255]
+		#gray2 = np.float32(gray)
+		#dst = cv2.cornerHarris(gray2,2,3,0.04)
+		#dst = cv2.dilate(dst,None)
+		#roi[dst>0.01*dst.max()]=[0,0,255]
+		G = gray.copy()
+		for i in range(5):
+			if i != 0:
+				G = cv2.pyrDown(G)
+			scale = 2**(i)
+			corners = cv2.goodFeaturesToTrack(image=G,maxCorners=1000,qualityLevel=0.01,minDistance=scale,useHarrisDetector=1, k=0.04)
+			corners = np.int0(corners)
+			for corner in corners:
+				x,y = corner.ravel()
+				k = cv2.KeyPoint(x*scale, y*scale, scale)
+				kp.append(k)
 
 	#FAST
 	elif alg == _FAST:
@@ -192,6 +203,7 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe, test=False):
 		if m.distance < 0.8*n.distance:
 			good.append(m)
 
+	img2C = img2.copy()
 	if len(good) >= MIN_MATCH_COUNT:
 		src_pts = np.float32([ kp1[m.queryIdx].pt for m in good ]).reshape(-1,1,2)
 		dst_pts = np.float32([ kp2[m.trainIdx].pt for m in good ]).reshape(-1,1,2)
@@ -201,7 +213,6 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe, test=False):
 		h,w,_ = img1.shape
 		pts = np.float32([ [0,0],[0,h-1],[w-1,h-1],[w-1,0] ]).reshape(-1,1,2)
 		dst = cv2.perspectiveTransform(pts,M)
-		img2C = img2.copy()
 		img2C = cv2.polylines(img2C,[np.int32(dst)],True,255,3, cv2.LINE_AA)
 
 		#RETURN POINT
