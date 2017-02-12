@@ -235,6 +235,22 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe, test=False):
 	else:
 		return x, y, img3
 
+
+def matching2(img1, img2, des1, des2, kp1, kp2, fe):
+	if fe == _LATCH or fe == _ORB or fe == _BRISK:
+		bf = cv2.BFMatcher(cv2.NORM_HAMMING)
+	else:
+		bf = cv2.BFMatcher()
+
+	matches = bf.knnMatch(des1, des2, k=2)
+	good = [] # Good matches; Lowe's ratio test
+	for m,n in matches:
+		if m.distance < 0.8*n.distance:
+			good.append(m)
+	return good
+
+
+
 def getAngle(aV, w, x):
 	if x == -1:
 		return 0
