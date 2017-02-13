@@ -110,7 +110,8 @@ def feature_extraction(image, kp, alg):
 		kp, des = sift.compute(image, kp)
 
 	elif alg == _ORB:
-		orb = cv2.ORB_create(nfeatures = 50000, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		orb = cv2.ORB_create(nfeatures = 50000, nlevels = 8, edgeThreshold = 8,
+		 patchSize = 8, fastThreshold = 5)
 		kp, des = orb.compute(image, kp)
 
 	elif alg == _LATCH:

@@ -6,7 +6,9 @@
 En aquest capítol es detallen els experiments realitzats i els resultats obtinguts a partir d'aquests.
 
 \section{Experiments realitzats}
+	Podeu trobar el codi dels scripts realitzats a l'anex del treball.
 	\subsection{Comparació detectors de keypoints}
+		Tot i que la velocitat d'execució no és un factor determinant pel projecte, s'ha realitzat una comparació inicial de la velocitat d'execució dels algorismes de detecció de keypoints.\\\\
 		Es comparen els següents algorismes:
 		\begin{itemize}
 			\item{Harris}
@@ -17,6 +19,8 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 		\end{itemize}
 		Per mesurar el temps d'execució, s'agafa la mitja de 5 execucions de la funció d'obtenció de keypoints utilitzada.
 	\subsection{Comparació detecció i extracció de keypoints}
+		En aquest experiment s'analitzen els diversos algorismes de detecció i extracció de keypoints, tant en la velocitat d'execució com en fiabilitat, que serà el més important pel sistema desenvolupat.\\\\
+		Es compararan els següents algorismes:
 		\begin{itemize}
 			\item{Harris + SIFT}
 			\item{Harris + LATCH}
@@ -27,9 +31,26 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\item{MSER + SURF}
 			\item{MSER + DAISY}
 		\end{itemize}
-
+\newpage
 \section{Resultats i comparació d'algorismes}
 	\subsection{Detectors de keypoints}
+	En primer lloc s'han realitzat proves amb imatges típiques de visió per computador.
+		\begin{figure}[!htb]
+			\minipage{0.32\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.32\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image2}
+			\endminipage\hfill
+			\minipage{0.32\textwidth}%
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image3}
+			\endminipage
+			\caption{Pati}
+		\end{figure}
+
 		\begin{table}[H]
 			\begin{center}
 				\rowcolors{3}{}{myBlue}
@@ -46,6 +67,24 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\end{center}
 			\caption{Detectors de keypoints - comparació}
 		\end{table}
+		\noindent
+		També s'ha provat el sistema amb imatges reals d'entorns coneguts (la universitat i casa meva).
+
+		\begin{figure}[!htb]
+			\minipage{0.32\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.32\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image2}
+			\endminipage\hfill
+			\minipage{0.32\textwidth}%
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image3}
+			\endminipage
+			\caption{Pati}
+		\end{figure}
 
 		\begin{table}[H]
 			\begin{center}
@@ -63,8 +102,30 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\end{center}
 			\caption{Detectors de keypoints - comparació}
 		\end{table}
-
+\newpage
 	\subsection{Detecció i extracció de keypoints}
+		Tal com s'ha fet en l'experiment anterior, primer s'ha provat el sistema amb les imatges de visió.
+
+		\begin{figure}[!htb]
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image2}
+			\endminipage\hfill
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image3}
+			\endminipage\hfill
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image3}
+			\endminipage
+			\caption{Pati}
+		\end{figure}
+
 		\begin{table}[H]
 			\begin{center}
 				\rowcolors{3}{}{myBlue}
@@ -83,6 +144,28 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\end{center}
 			\caption{Matching - comparació}
 		\end{table}
+		\noindent
+		Les proves amb imatges reals han utilitzat les següents fotografies:
+
+		\begin{figure}[!htb]
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image2}
+			\endminipage\hfill
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image3}
+			\endminipage\hfill
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/RobotKp}
+				\label{fig:awesome_image3}
+			\endminipage
+			\caption{Pati}
+		\end{figure}
 
 		\begin{table}[H]
 			\begin{center}
