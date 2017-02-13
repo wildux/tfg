@@ -3,41 +3,102 @@
 %\definecolor{myBlue}{RGB}{210, 230, 255}
 \definecolor{myBlue}{RGB}{217, 230, 242}
 
+En aquest capítol es detallen els experiments realitzats i els resultats obtinguts a partir d'aquests.
 
 \section{Experiments realitzats}
-\section{Comparació d'algorismes}
+	\subsection{Comparació detectors de keypoints}
+		Es comparen els següents algorismes:
+		\begin{itemize}
+			\item{Harris}
+			\item{SIFT}
+			\item{SURF}
+			\item{ORB}
+			\item{MSER}
+		\end{itemize}
+		Per mesurar el temps d'execució, s'agafa la mitja de 5 execucions de la funció d'obtenció de keypoints utilitzada.
+	\subsection{Comparació detecció i extracció de keypoints}
+		\begin{itemize}
+			\item{Harris + SIFT}
+			\item{Harris + LATCH}
+			\item{SIFT + SIFT}
+			\item{SIFT + LATCH}
+			\item{ORB + ORB}
+			\item{ORB + BRISK}
+			\item{MSER + SURF}
+			\item{MSER + DAISY}
+		\end{itemize}
 
-	\begin{table}[H]
-		\begin{center}
-			\rowcolors{3}{}{myBlue}
-			%\begin{tabular}{l | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c}
-			\begin{tabular}{l | c c | c c | c c}
-				& \multicolumn{2}{c|}{\textbf{Imatge 1}} & \multicolumn{2}{c|}{\textbf{Imatge 2}} & \multicolumn{2}{c}{\textbf{Imatge 3}} \\
-				\textbf{Algorismes} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} \\ \hline
-				Harris & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-				SIFT & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-				ORB & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-				MSER & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-			\end{tabular}
-		\end{center}
-		\caption{Detectors de keypoints - comparació}
-	\end{table}
+\section{Resultats i comparació d'algorismes}
+	\subsection{Detectors de keypoints}
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				%\begin{tabular}{l | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c}
+				\begin{tabular}{l | c c | c c | c c}
+					& \multicolumn{2}{c|}{\textbf{Motos}} & \multicolumn{2}{c|}{\textbf{Barco}} & \multicolumn{2}{c}{\textbf{Ubc}} \\
+					\textbf{Algorismes} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} \\ \hline
+					Harris & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+					SIFT & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+					SURF & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+					ORB & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+					MSER & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+				\end{tabular}
+			\end{center}
+			\caption{Detectors de keypoints - comparació}
+		\end{table}
 
-	\begin{table}[H]
-		\begin{center}
-			\rowcolors{3}{}{myBlue}
-			\begin{tabular}{l | c c c | c c c}
-				& \multicolumn{3}{c|}{\textbf{Set 1}} & \multicolumn{3}{c}{\textbf{Set 2}} \\
-				\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} \\ \hline
-				HARRIS + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-				HARRIS + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-				SIFT + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-				SIFT + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-				ORB + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-				ORB + BRISK & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-				MSER + SURF & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-				MSER + DAISY & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-			\end{tabular}
-		\end{center}
-		\caption{Matching - comparació}
-	\end{table}
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				%\begin{tabular}{l | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c}
+				\begin{tabular}{l | c c | c c | c c}
+					& \multicolumn{2}{c|}{\textbf{Universitat}} & \multicolumn{2}{c|}{\textbf{Menjador}} & \multicolumn{2}{c}{\textbf{Pati}} \\
+					\textbf{Algorismes} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} \\ \hline
+					Harris & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+					SIFT & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+					SURF & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+					ORB & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+					MSER & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+				\end{tabular}
+			\end{center}
+			\caption{Detectors de keypoints - comparació}
+		\end{table}
+
+	\subsection{Detecció i extracció de keypoints}
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\begin{tabular}{l | c c c | c c c}
+					& \multicolumn{3}{c|}{\textbf{Cotxes}} & \multicolumn{3}{c}{\textbf{Graffiti}} \\
+					\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} \\ \hline
+					Harris + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					Harris + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					SIFT + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					SIFT + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					ORB + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					ORB + BRISK & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					MSER + SURF & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					MSER + DAISY & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+				\end{tabular}
+			\end{center}
+			\caption{Matching - comparació}
+		\end{table}
+
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\begin{tabular}{l | c c c | c c c}
+					& \multicolumn{3}{c|}{\textbf{Universitat}} & \multicolumn{3}{c}{\textbf{Menjador}} \\
+					\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} \\ \hline
+					Harris + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					Harris + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					SIFT + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					SIFT + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					ORB + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					ORB + BRISK & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					MSER + SURF & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					MSER + DAISY & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+				\end{tabular}
+			\end{center}
+			\caption{Matching - comparació}
+		\end{table}
