@@ -12,13 +12,14 @@
 		\item{Obtenir l'angle de rotació pel robot}
 	\end{enumerate}
 
-	\subsection{Pre-processament de les imatges}
-		En primer lloc es redimensionarà la imatge per tal d'agilitzar la selecció de keypoints, extracció de característiques i matching. Desprès, s'aplicarà un filtre gaussià
-		a la imatge i es retornarà la imatge en color i en escala de grisos.\\
+	\subsection{Pre-processat de les imatges}
+		S'han provat diverses tècniques de pre-processat com filtres gaussians o canvis en el contrast, pero els resultats obtinguts no van ser satisfactoris i finalment s'ha optat per deixar
+		les imatges tal com són.\\\\
+		Simplement es transforma la imatge a escala de grisos per poder treballar amb tots els algorismes de visió i es redimensiona per agilitzar la selecció de keypoints, extracció
+		de característiques i matching.\\
 		\begin{python}
 def prep(image):
 	img = cv2.resize(image, (0,0), fx=0.3, fy=0.3)
-	img = cv2.GaussianBlur(img,(3,3),0)
 	return img, cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 		\end{python}
 	\subsection{Selecció de la regió d'interès}
@@ -65,113 +66,158 @@ def selectROI(image):
 	\subsection{Obtenció de keypoints}
 		Per obtenir els punts d'interès d'una imatge, s'utilitzaràn diversos algorismes ja implementats en la biblioteca OpenCV. La funció... \\
 		\begin{python}
-def point_selection(gray, alg, small=False):
+def point_selection(gray, alg):
 	kp = []
+	...
+	return kp
+		\end{python}
 
+		\subsubsection{SIFT}
+		Si fem servir el detector de SIFT (DoG)
+		\begin{python}
 	if alg == _SIFT:
 		sift = cv2.xfeatures2d.SIFT_create()
 		kp = sift.detect(gray,None)
+		\end{python}
 
+		\subsubsection{Harris}
+		En el cas de Harris, el detector no utilitza diferents escales i simplement detecta "corners" en la imatge. Per tant, utilitzarem la funció d'OpenCV pyrDown() per reduir la mida de la imatge i aplicar
+		Harris en diverses escales.
+		\begin{python}
 	elif alg == _HARRIS:
-		gray2 = np.float32(gray)
-		dst = cv2.cornerHarris(gray2,2,3,0.04)
-		dst = cv2.dilate(dst,None)
-		roi[dst>0.01*dst.max()]=[0,0,255]
-		#SIZE = SIZE LOCAL REGION
+		G = gray.copy()
+		for i in range(5):
+			if i != 0:
+				G = cv2.pyrDown(G)
+			scale = 2**(i)
+			corners = cv2.goodFeaturesToTrack(image=G,maxCorners=1000,
+				qualityLevel=0.01,minDistance=scale,useHarrisDetector=1, k=0.04)
+			corners = np.int0(corners)
+			for corner in corners:
+				x,y = corner.ravel()
+				k = cv2.KeyPoint(x*scale, y*scale, scale)
+				kp.append(k)
+		\end{python}
 
-	elif alg == _STAR:
-		star = cv2.xfeatures2d.StarDetector_create()
-		kp = star.detect(gray,None)
-
+		\subsubsection{ORB}
+		\begin{python}
 	elif alg == _ORB:
-		if small:
-			orb = cv2.ORB_create(nfeatures = 2500, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
-		else:
-			orb = cv2.ORB_create(nfeatures = 50000, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		orb = cv2.ORB_create(nfeatures = 5000, nlevels = 8, edgeThreshold = 8,
+		 patchSize = 8, fastThreshold = 5)
 		kp = orb.detect(gray,None)
+		\end{python}
 
-	elif alg == _BRISK:
-		brisk = cv2.BRISK_create(thresh = 8, octaves = 4)
-		kp = brisk.detect(gray,None)
-
+		\subsubsection{MSER}
+		\begin{python}
 	elif alg == _MSER:
 		mser = cv2.MSER_create()
 		kp = mser.detect(gray,None)
-
-	return kp
 		\end{python}
+
 	\subsection{Extracció de característiques}
 		De la mateixa manera en que podem aconseguir keypoints, OpenCV també disposa de diversos algorismes d'extracció de característiques a partir dels keypoints d'una imatge.\\
 		\begin{python}
 def feature_extraction(image, kp, alg):
 	des = []
+	...
+	return kp, des
+		\end{python}
+
+		\subsubsection{SIFT}
+		\begin{python}
 	if alg == _SIFT:
 		sift = cv2.xfeatures2d.SIFT_create()
 		kp, des = sift.compute(image, kp)
+		\end{python}
 
+		\subsubsection{ORB}
+		\begin{python}
 	elif alg == _ORB:
 		orb = cv2.ORB_create(nfeatures = 50000, nlevels = 8, edgeThreshold = 8,
-		 patchSize = 8, fastThreshold = 5)
+				patchSize = 8, fastThreshold = 5)
 		kp, des = orb.compute(image, kp)
+		\end{python}
 
+		\subsubsection{LATCH}
+		\begin{python}
 	elif alg == _LATCH:
 		latch = cv2.xfeatures2d.LATCH_create()
 		kp, des = latch.compute(image, kp)
+		\end{python}
 
+		\subsubsection{BRISK}
+		\begin{python}
 	elif alg == _BRISK:
 		brisk = cv2.BRISK_create(thresh = 8, octaves = 4)
 		kp, des = brisk.compute(image, kp)
+		\end{python}
 
+		\subsubsection{DAISY}
+		\begin{python}
 	elif alg == _DAISY:
 		daisy = cv2.xfeatures2d.DAISY_create()
 		kp, des = daisy.compute(image, kp)
-
-	return kp, des
 		\end{python}
+
 \newpage
 	\subsection{Matching i homografia}
-		En el cas dels descriptors binaris, utilitzarem la distancia Hamming, mentre que per la resta s'utilitzarà...\\
+La funció retornarà les coordenades de destí (x,y) i una imatge amb els matches i la regió de destí pintats.\\
 		\begin{python}
-def matching(img1, img2, des1, des2, kp1, kp2, fe , rs=True):
+def matching(img1, img2, des1, des2, kp1, kp2, fe):
+	draw_params = dict(matchColor = (0,255,0), singlePointColor = None,
+					matchesMask = matchesMask, flags = 2)
+	return x, y, cv2.drawMatches(img1,kp1,img2,kp2,good,None,**draw_params)
+		\end{python}
+
+		\subsubsection{Matching}
+		En el cas dels descriptors binaris, utilitzarem la distancia Hamming, mentre que per la resta s'utilitzarà... En els dos casos, s'utilitzarà la funció BFMatcher(), que aplicarà el matching
+		per força bruta.\\
+		\begin{python}
 	if fe == _LATCH or fe == _ORB or fe == _BRISK:
 		bf = cv2.BFMatcher(cv2.NORM_HAMMING)
 	else:
 		bf = cv2.BFMatcher()
 
 	matches = bf.knnMatch(des1, des2, k=2)
-	x = -1; y = -1
+		\end{python}
 
-	good = [] # store all the good matches as per Lowe's ratio test
+		\subsubsection{Ratio test}
+Un cop obtinguts els "matches", aplicarem el ratio test *** per descartar alguns "matches".\\
+		\begin{python}
+	good = []
 	for m,n in matches:
 		if m.distance < 0.8*n.distance:
 			good.append(m)
+		\end{python}
 
+\newpage
+		\subsubsection{Homografia}
+Si hi ha prou coincidencies (considerem acceptable com a mínim 10), es buscarà la homografia i es pintarà la regió trobada en la imatge. S'aplicarà Ransac. \\
+		\begin{python}
 	if len(good) >= MIN_MATCH_COUNT:
 		src_pts = np.float32([ kp1[m.queryIdx].pt for m in good ]).reshape(-1,1,2)
 		dst_pts = np.float32([ kp2[m.trainIdx].pt for m in good ]).reshape(-1,1,2)
-		M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0) #If Ransac
+		M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0)
 		matchesMask = mask.ravel().tolist()
 		h,w,_ = img1.shape
 		pts = np.float32([ [0,0],[0,h-1],[w-1,h-1],[w-1,0] ]).reshape(-1,1,2)
 		dst = cv2.perspectiveTransform(pts,M)
 		img2 = cv2.polylines(img2,[np.int32(dst)],True,255,3, cv2.LINE_AA)
+		\end{python}
 
+		\subsubsection{Coordenades de destí}
+Per obtenir el punt on volem que es dirigeixi el robot agafarem els valors de dst i retornarem el punt mitg.\\
+		\begin{python}
 		x1, y1 = np.int32(dst)[0].ravel()
 		x2, y2 = np.int32(dst)[1].ravel()
 		x3, y3 = np.int32(dst)[2].ravel()
 		x4, y4 = np.int32(dst)[3].ravel()
 		x = (x1+x2+x3+x4)/4
 		y = (y1+y2+y3+y4)/4
-	else:
-		print("Not enough matches are found", len(good),"of",MIN_MATCH_COUNT)
-		matchesMask = None
-
-	draw_params = dict(matchColor = (0,255,0), singlePointColor = None,
-					matchesMask = matchesMask, flags = 2)
-	return x, y, cv2.drawMatches(img1,kp1,img2,kp2,good,None,**draw_params)
 		\end{python}
+
 	\subsection{Angle de gir}
-		En el cas dels descriptors binaris, utilitzarem la distancia Hamming, mentre que per la resta s'utilitzarà...\\
+		Un cop obtingudes les coordenades de la imatge, s'obtindrà l'angle de gir necessari pel robot a partir de l'angle de visió de la càmera i les dimensions de la imatge.\\
 		\begin{python}
 def getAngle(aV, w, x):
 	if x == -1:
