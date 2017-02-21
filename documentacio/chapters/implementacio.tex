@@ -1,7 +1,7 @@
 \section{Programa en python}
-	Per facilitar la utilització del codi i possibles adaptacions o millores futures, s'ha decidit implementar una biblioteca en Python amb totes les funcions necessaries. El programa principal farà ús
+	Per facilitar la utilització del codi en possibles adaptacions o millores futures, s'ha decidit implementar una petita biblioteca en Python amb totes les funcions necessaries. El programa principal farà ús
 	d'aquesta biblioteca, que permetrà:
-	
+
 	\begin{enumerate}
 		\item{Pre-processar les imatges}
 		\item{Seleccionar la regió d'interès}
@@ -13,7 +13,7 @@
 	\end{enumerate}
 
 	\subsection{Pre-processat de les imatges}
-		S'han provat diverses tècniques de pre-processat com filtres gaussians o canvis en el contrast, pero els resultats obtinguts no van ser satisfactoris i finalment s'ha optat per deixar
+		S'han provat diverses tècniques de pre-processat com ara filtres gaussians o canvis en el contrast, pero els resultats obtinguts no han sigut satisfactoris i finalment s'ha optat per deixar
 		les imatges tal com són.\\\\
 		Simplement es transforma la imatge a escala de grisos per poder treballar amb tots els algorismes de visió i es redimensiona per agilitzar la selecció de keypoints, extracció
 		de característiques i matching.\\
@@ -23,8 +23,8 @@ def prep(image):
 	return img, cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 		\end{python}
 	\subsection{Selecció de la regió d'interès}
-		Per poder seleccionar la regió d'interès amb facilitat, s'ha definit la funció \textbf{selectRoi(imatge)}, que permet a l'usuari seleccionar una regió rectangular amb el ratolí i retalla la imatge.
-		Nomes necessita la imatge com a paràmetre.\\
+		Per tal de poder seleccionar la regió d'interès amb facilitat, s'ha definit la funció \textbf{selectROI(image)}, que permet a l'usuari seleccionar una regió rectangular de la imatge donada
+		com a paràmetre. La imatge resultant serà aquesta selecció.\\
 		\begin{python}
 def click_and_crop(event, x, y, flags, param):
 	global refPt, cropping, sel_rect_endpoint, img
@@ -64,7 +64,9 @@ def selectROI(image):
 	return img
 		\end{python}
 	\subsection{Obtenció de keypoints}
-		Per obtenir els punts d'interès d'una imatge, s'utilitzaràn diversos algorismes ja implementats en la biblioteca OpenCV. La funció... \\
+		Per obtenir els punts d'interès d'una imatge, s'utilitzaràn diversos algorismes de visió per computador.\\\\
+		La funció point{\_}selection(gray, alg) serà l'encarregada de cridar l'algoritme desitjat segons el que vulgui l'usuari (per defecte s'utilitzarà Harris).
+		Els paràmetres necessaris seràn una imatge en escala de grisos i l'algorisme desitjat. La funció retornarà un array amb els keypoints trobats. \\
 		\begin{python}
 def point_selection(gray, alg):
 	kp = []
@@ -73,16 +75,28 @@ def point_selection(gray, alg):
 		\end{python}
 
 		\subsubsection{SIFT}
-		Si fem servir el detector de SIFT (DoG)
+		Una de les opcions serà utilitzar SIFT (DoG). Per fer això simplement cridarem la funció d'OpenCV detect() en la instància de SIFT creada.\\
 		\begin{python}
 	if alg == _SIFT:
 		sift = cv2.xfeatures2d.SIFT_create()
 		kp = sift.detect(gray,None)
 		\end{python}
 
+		\subsubsection{ORB}
+		Per utilitzar ORB també cridarem la funció detect() d'OpenCV, pero en aquest cas haurem de modificar una mica els paràmetres per defecte de la creació de l'objecte ORB, ja que els resultats obtinguts
+		en primer moment no eren gaire bons.\\
+		\begin{python}
+	elif alg == _ORB:
+		orb = cv2.ORB_create(nfeatures = 5000, nlevels = 8, edgeThreshold = 8,
+		 patchSize = 8, fastThreshold = 5)
+		kp = orb.detect(gray,None)
+		\end{python}
+\newpage
 		\subsubsection{Harris}
-		En el cas de Harris, el detector no utilitza diferents escales i simplement detecta "corners" en la imatge. Per tant, utilitzarem la funció d'OpenCV pyrDown() per reduir la mida de la imatge i aplicar
-		Harris en diverses escales.
+		En el cas de Harris, el detector no utilitza diferents escales i simplement detecta ``corners'' en la imatge. Per tant, utilitzarem la funció d'OpenCV pyrDown() per reduir
+		la mida de la imatge (1/2) i aplicar Harris en diverses escales.\\\\
+		Per detectar els keypoints farem servir la funció goodFeaturesToTrack() en comptes del detector de corners de Harris, ja que permet obtenir els punts més facilment i
+		també té la opció d'utilitzar Shi-Tomasi si ens interessés.\\
 		\begin{python}
 	elif alg == _HARRIS:
 		G = gray.copy()
@@ -99,64 +113,40 @@ def point_selection(gray, alg):
 				kp.append(k)
 		\end{python}
 
-		\subsubsection{ORB}
-		\begin{python}
-	elif alg == _ORB:
-		orb = cv2.ORB_create(nfeatures = 5000, nlevels = 8, edgeThreshold = 8,
-		 patchSize = 8, fastThreshold = 5)
-		kp = orb.detect(gray,None)
-		\end{python}
-
 		\subsubsection{MSER}
+		Per últim, tindrem la opció d'utilitzar MSER. Tal com fem amb SIFT i ORB, també farem servir la funció detect().\\
 		\begin{python}
 	elif alg == _MSER:
 		mser = cv2.MSER_create()
 		kp = mser.detect(gray,None)
 		\end{python}
-
+\newpage
 	\subsection{Extracció de característiques}
-		De la mateixa manera en que podem aconseguir keypoints, OpenCV també disposa de diversos algorismes d'extracció de característiques a partir dels keypoints d'una imatge.\\
+		De la mateixa manera en que podem aconseguir keypoints, OpenCV també disposa de diversos algorismes d'extracció de característiques a partir dels keypoints d'una imatge.\\\\
+		La funció creada feature{\_}detection(image, kp, alg) serà l'encarregada d'extreure les característiques utilitzant algun dels algorismes disponibles. Els paràmetres necessaris de la funció són:
+		la imatge en escala de grisos, l'array de keypoints obtinguts i l'algorisme desitjat. Retornarà tant els descriptors com els keypoints.\\
+
 		\begin{python}
 def feature_extraction(image, kp, alg):
 	des = []
 	...
 	return kp, des
 		\end{python}
+		\ \\Els algorismes que podrà escollir l'usuari són:
+		\begin{itemize}
+			\item{SIFT}
+			\item{SURF}
+			\item{ORB}
+			\item{BRISK}
+			\item{LATCH}
+			\item{DAISY}
+		\end{itemize}
+	\ \\S'utilitzaran els algorismes ja implementats en la biblioteca OpenCV de la següent manera:\\
 
-		\subsubsection{SIFT}
-		\begin{python}
-	if alg == _SIFT:
-		sift = cv2.xfeatures2d.SIFT_create()
-		kp, des = sift.compute(image, kp)
-		\end{python}
-
-		\subsubsection{ORB}
-		\begin{python}
-	elif alg == _ORB:
-		orb = cv2.ORB_create(nfeatures = 50000, nlevels = 8, edgeThreshold = 8,
-				patchSize = 8, fastThreshold = 5)
-		kp, des = orb.compute(image, kp)
-		\end{python}
-
-		\subsubsection{LATCH}
 		\begin{python}
 	elif alg == _LATCH:
 		latch = cv2.xfeatures2d.LATCH_create()
 		kp, des = latch.compute(image, kp)
-		\end{python}
-
-		\subsubsection{BRISK}
-		\begin{python}
-	elif alg == _BRISK:
-		brisk = cv2.BRISK_create(thresh = 8, octaves = 4)
-		kp, des = brisk.compute(image, kp)
-		\end{python}
-
-		\subsubsection{DAISY}
-		\begin{python}
-	elif alg == _DAISY:
-		daisy = cv2.xfeatures2d.DAISY_create()
-		kp, des = daisy.compute(image, kp)
 		\end{python}
 
 \newpage

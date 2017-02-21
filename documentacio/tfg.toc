@@ -132,33 +132,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{SIFT}{37}{subsubsection*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Harris}{37}{subsubsection*.26}
+\contentsline {subsubsection}{ORB}{37}{subsubsection*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ORB}{37}{subsubsection*.27}
+\contentsline {subsubsection}{Harris}{38}{subsubsection*.27}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{MSER}{38}{subsubsection*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Extracci\IeC {\'o} de caracter\IeC {\'\i }stiques}{38}{subsection.5.1.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{SIFT}{38}{subsubsection*.29}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ORB}{38}{subsubsection*.30}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{LATCH}{38}{subsubsection*.31}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{BRISK}{39}{subsubsection*.32}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{DAISY}{39}{subsubsection*.33}
+\contentsline {subsection}{\numberline {5.1.4}Extracci\IeC {\'o} de caracter\IeC {\'\i }stiques}{39}{subsection.5.1.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.5}Matching i homografia}{40}{subsection.5.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Matching}{40}{subsubsection*.34}
+\contentsline {subsubsection}{Matching}{40}{subsubsection*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ratio test}{40}{subsubsection*.35}
+\contentsline {subsubsection}{Ratio test}{40}{subsubsection*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Homografia}{41}{subsubsection*.36}
+\contentsline {subsubsection}{Homografia}{41}{subsubsection*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Coordenades de dest\IeC {\'\i }}{41}{subsubsection*.37}
+\contentsline {subsubsection}{Coordenades de dest\IeC {\'\i }}{41}{subsubsection*.32}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.6}Angle de gir}{41}{subsection.5.1.6}
 \defcounter {refsection}{0}\relax 
@@ -240,7 +230,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.3}Treball futur}{60}{section.9.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Ap\IeC {\`e}ndix}{61}{section*.38}
+\contentsline {chapter}{Ap\IeC {\`e}ndix}{61}{section*.33}
 \defcounter {refsection}{0}\relax 
 \global \c@tocdepth 0\relax 
 \defcounter {refsection}{0}\relax 
@@ -254,8 +244,8 @@
 \defcounter {refsection}{0}\relax 
 \global \c@tocdepth 2\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{66}{chapter*.39}
+\contentsline {chapter}{Bibliografia}{66}{chapter*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'Index de taules}{67}{section*.40}
+\contentsline {chapter}{\'Index de taules}{67}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'Index de figures}{68}{section*.42}
+\contentsline {chapter}{\'Index de figures}{68}{section*.37}
