@@ -4,11 +4,11 @@ import MORAS as vc
 import cv2
 
 #EXECUCIÓ
-imgs1 = ['images/light/img1.png','images/boat/img5.png','images/graff/img1.png']
-imgs2 = ['images/light/img6.png','images/boat/img6.png','images/graff/img3.png']
-algs1 = [vc._HARRIS, vc._SIFT, vc._ORB]
-algs2 = [vc._SIFT, vc._SIFT, vc._ORB]
-algsName = ["HARRIS + SIFT", "SIFT","ORB"]
+imgs1 = ['images/graff/img3.png', 'images/experiments/jardi1.jpg', 'images/experiments/uni1.jpg', 'images/experiments/uni3.jpg']
+imgs2 = ['images/graff/img6.png', 'images/experiments/jardi2.jpg', 'images/experiments/uni2.jpg', 'images/experiments/uni4.jpg']
+algs1 = [vc._HARRIS, vc._HARRIS, vc._SIFT, vc._SIFT, vc._ORB, vc._ORB]
+algs2 = [vc._SIFT, vc._ORB, vc._SIFT, vc._LATCH, vc._ORB, vc._BRISK]
+algsName = ["HARRIS + SIFT", "HARRIS + ORB", "SIFT", "SIFT + LATCH", "ORB", "ORB + BRISK"]
 
 for z in range(len(imgs1)):
 	print(imgs1[z], imgs2[z])

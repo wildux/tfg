@@ -69,7 +69,7 @@ def selectROI(image):
 	return img
 
 def imgPrep(image):
-	img = cv2.resize(image, (0,0), fx=0.3, fy=0.3)
+	img = cv2.resize(image, (0,0), fx=0.5, fy=0.5)
 	#img = cv2.GaussianBlur(img,(3,3),0)
 	imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 	return img, imgGray
@@ -88,11 +88,7 @@ def point_selection(gray, alg, small=False):
 		kp = surf.detect(gray,None)
 
 	#Harris
-	elif alg == _HARRIS:
-		#gray2 = np.float32(gray)
-		#dst = cv2.cornerHarris(gray2,2,3,0.04)
-		#dst = cv2.dilate(dst,None)
-		#roi[dst>0.01*dst.max()]=[0,0,255]
+	elif alg == _HARRIS:		
 		G = gray.copy()
 		for i in range(5):
 			if i != 0:
@@ -126,10 +122,11 @@ def point_selection(gray, alg, small=False):
 
 	#ORB
 	elif alg == _ORB:
-		if small:
-			orb = cv2.ORB_create(nfeatures = 2500, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
-		else:
-			orb = cv2.ORB_create(nfeatures = 50000, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		#if small:
+		#	orb = cv2.ORB_create(nfeatures = 2500, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		#else:
+		#	orb = cv2.ORB_create(nfeatures = 50000, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		orb = cv2.ORB_create(nfeatures = 2500, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
 		kp = orb.detect(gray,None)
 
 	#BRISK
@@ -250,9 +247,27 @@ def matching2(img1, img2, des1, des2, kp1, kp2, fe):
 	return good
 
 
+def getResult(img1, img2, alg1, alg2):
+	img1, img1Gray = imgPrep(img1)
+	img2, img2Gray = imgPrep(img2)
+
+	kp1 = point_selection(img1Gray, alg1)
+	kp2 = point_selection(img2Gray, alg1)
+
+	kp1, des1 = feature_extraction(img1Gray, kp1, alg2)
+	kp2, des2 = feature_extraction(img2Gray, kp2, alg2)
+
+	x, y, img3 = matching(img1, img2, des1, des2, kp1, kp2, alg2)
+	return img3
+
 
 def getAngle(aV, w, x):
 	if x == -1:
 		return 0
 	else:
 		return (aV*x / w) - (aV/2)
+
+#gray2 = np.float32(gray)
+		#dst = cv2.cornerHarris(gray2,2,3,0.04)
+		#dst = cv2.dilate(dst,None)
+		#roi[dst>0.01*dst.max()]=[0,0,255]

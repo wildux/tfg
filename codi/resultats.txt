@@ -1,0 +1,91 @@
+images/graff/img1.png
+SIFT: 0.0674812569998 ms Keypoints: 1096
+SURF: 0.0181551241998 ms Keypoints: 1467
+ORB: 0.0102502541002 ms Keypoints: 2500
+HARRIS: 0.0123545291997 ms Keypoints: 1285
+MSER: 0.2323200184 ms Keypoints: 1044
+
+
+images/boat/img1.png
+SIFT: 0.0754874886001 ms Keypoints: 1599
+SURF: 0.0213179381999 ms Keypoints: 1768
+ORB: 0.0128507053003 ms Keypoints: 2500
+HARRIS: 0.0124289074 ms Keypoints: 1666
+MSER: 0.1585746696 ms Keypoints: 924
+
+
+images/ubc/img1.png
+SIFT: 0.0638687748997 ms Keypoints: 1284
+SURF: 0.0181567183001 ms Keypoints: 1533
+ORB: 0.0115702283003 ms Keypoints: 2500
+HARRIS: 0.0101257896 ms Keypoints: 1329
+MSER: 0.0564642059 ms Keypoints: 286
+
+
+images/experiments/uni.jpg
+SIFT: 0.7357718323 ms Keypoints: 4621
+SURF: 0.1761317285 ms Keypoints: 7676
+ORB: 0.0515208818006 ms Keypoints: 2500
+HARRIS: 0.1107861796 ms Keypoints: 2522
+MSER: 0.6790144413 ms Keypoints: 2135
+
+
+images/experiments/jardi2.jpg
+SIFT: 0.8171916244 ms Keypoints: 9690
+SURF: 0.2332244909 ms Keypoints: 14888
+ORB: 0.0978009344004 ms Keypoints: 2500
+HARRIS: 0.1086535985 ms Keypoints: 1971
+MSER: 0.3930458099 ms Keypoints: 1141
+
+
+images/experiments/uni4.jpg
+SIFT: 0.7404892211 ms Keypoints: 4750
+SURF: 0.1989590555 ms Keypoints: 10720
+ORB: 0.0617870967995 ms Keypoints: 2500
+HARRIS: 0.109501176 ms Keypoints: 2589
+MSER: 0.6396240802 ms Keypoints: 1798
+
+##############################
+
+images/graff/img3.png images/graff/img6.png
+HARRIS + SIFT: 0.1870875456 Good matches: 153
+HARRIS + ORB: 0.0990833114 Good matches: 374
+SIFT: 0.445674544799 Good matches: 53
+Not enough matches found 0 of 10
+Not enough matches found 0 of 10
+Not enough matches found 0 of 10
+Not enough matches found 0 of 10
+Not enough matches found 0 of 10
+SIFT + LATCH: 0.255484992599 Good matches: 0
+ORB: 0.1356995988 Good matches: 316
+ORB + BRISK: 0.975859078 Good matches: 51
+
+
+images/experiments/jardi1.jpg images/experiments/jardi2.jpg
+HARRIS + SIFT: 0.664196175 Good matches: 198
+HARRIS + ORB: 0.3416689928 Good matches: 487
+
+SIFT: 7.0601221298 Good matches: 229
+SIFT + LATCH: 3.4780043362 Good matches: 57
+ORB: 0.3607885102 Good matches: 406
+ORB + BRISK: 1.1723117502 Good matches: 89
+
+
+images/experiments/uni1.jpg images/experiments/uni2.jpg
+HARRIS + SIFT: 0.6174143446 Good matches: 149
+HARRIS + ORB: 0.3147444902 Good matches: 301
+SIFT: 2.8035648542 Good matches: 199
+SIFT + LATCH: 1.7640422428 Good matches: 42
+ORB: 0.2610256224 Good matches: 576
+ORB + BRISK: 1.0968507258 Good matches: 211
+
+
+images/experiments/uni3.jpg images/experiments/uni4.jpg
+HARRIS + SIFT: 0.7752833402 Good matches: 658
+HARRIS + ORB: 0.3606078726 Good matches: 858
+SIFT: 3.5315636938 Good matches: 702
+SIFT + LATCH: 2.1093278326 Good matches: 483
+ORB: 0.2909326908 Good matches: 769
+ORB + BRISK: 1.1187399888 Good matches: 462
+
+#################################

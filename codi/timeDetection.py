@@ -3,9 +3,9 @@ import numpy as np
 import MORAS as vc
 import cv2
 
-algs = [vc._SIFT, vc._SURF, vc._ORB, vc._HARRIS]
-algsName = ["SIFT", "SURF","ORB", "HARRIS"]
-paths = ['images/graff/img1.png', 'images/bikes/img1.png', 'images/ubc/img1.png', 'images/all.ppm']
+algs = [vc._SIFT, vc._SURF, vc._ORB, vc._HARRIS, vc._MSER]
+algsName = ["SIFT", "SURF","ORB", "HARRIS", "MSER"]
+paths = ['images/graff/img1.png', 'images/boat/img1.png', 'images/ubc/img1.png', 'images/experiments/uni.jpg', 'images/experiments/jardi2.jpg', 'images/experiments/uni4.jpg']
 
 for imgPath in paths:
 	img = cv2.imread(imgPath, 0)
