@@ -106,19 +106,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Selecci\IeC {\'o} de la regi\IeC {\'o} d'inter\IeC {\`e}s}{28}{subsubsection*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Opcions}{29}{subsubsection*.24}
+\contentsline {subsubsection}{Opcions}{28}{subsubsection*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}T\IeC {\`e}cniques de visi\IeC {\'o} usades}{31}{chapter.4}
+\contentsline {chapter}{\numberline {4}T\IeC {\`e}cniques de visi\IeC {\'o} usades}{30}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Pre-processat digital d'imatges}{31}{section.4.1}
+\contentsline {section}{\numberline {4.1}Pre-processat digital d'imatges}{30}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Obtenci\IeC {\'o} de keypoints en una imatge}{32}{section.4.2}
+\contentsline {section}{\numberline {4.2}Obtenci\IeC {\'o} de keypoints en una imatge}{31}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Extracci\IeC {\'o} de caracter\IeC {\'\i }stiques}{33}{section.4.3}
+\contentsline {section}{\numberline {4.3}Extracci\IeC {\'o} de caracter\IeC {\'\i }stiques}{32}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Matching de caracter\IeC {\'\i }stiques}{33}{section.4.4}
+\contentsline {section}{\numberline {4.4}Matching de caracter\IeC {\'\i }stiques}{32}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Homografia}{34}{section.4.5}
+\contentsline {section}{\numberline {4.5}Homografia}{33}{section.4.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Implementaci\IeC {\'o}}{35}{chapter.5}
 \defcounter {refsection}{0}\relax 

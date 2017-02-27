@@ -23,12 +23,12 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 		Es compararan els següents algorismes:
 		\begin{itemize}
 			\item{Harris + SIFT}
-			\item{Harris + LATCH}
+			\item{Harris + ORB}
 			\item{SIFT + SIFT}
 			\item{SIFT + LATCH}
 			\item{ORB + ORB}
 			\item{ORB + BRISK}
-			\item{MSER + SURF}
+			\item{MSER + SIFT}
 			\item{MSER + DAISY}
 		\end{itemize}
 \newpage
@@ -37,18 +37,18 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 	En primer lloc s'han realitzat proves amb imatges típiques de visió per computador.
 		\begin{figure}[!htb]
 			\minipage{0.32\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/graf3}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.32\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/boat}
 				\label{fig:awesome_image2}
 			\endminipage\hfill
 			\minipage{0.32\textwidth}%
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/ubc}
 				\label{fig:awesome_image3}
 			\endminipage
-			\caption{Pati}
+			\caption{Imatges graff, boat i ubc}
 		\end{figure}
 
 		\begin{table}[H]
@@ -72,18 +72,18 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 
 		\begin{figure}[!htb]
 			\minipage{0.32\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/uni}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.32\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/jardi2}
 				\label{fig:awesome_image2}
 			\endminipage\hfill
 			\minipage{0.32\textwidth}%
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/uni4}
 				\label{fig:awesome_image3}
 			\endminipage
-			\caption{Pati}
+			\caption{Imatges UPC i jardins}
 		\end{figure}
 
 		\begin{table}[H]
@@ -108,22 +108,22 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 
 		\begin{figure}[!htb]
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/graf3}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/graf6}
 				\label{fig:awesome_image2}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/jardi1}
 				\label{fig:awesome_image3}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/jardi2}
 				\label{fig:awesome_image3}
 			\endminipage
-			\caption{Pati}
+			\caption{Imatges graff i jardins}
 		\end{figure}
 
 		\begin{table}[H]
@@ -133,12 +133,12 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 					& \multicolumn{3}{c|}{\textbf{Cotxes}} & \multicolumn{3}{c}{\textbf{Graffiti}} \\
 					\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} \\ \hline
 					Harris + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					Harris + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					Harris + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 					SIFT + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 					SIFT + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 					ORB + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 					ORB + BRISK & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					MSER + SURF & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					MSER + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 					MSER + DAISY & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 				\end{tabular}
 			\end{center}
@@ -149,22 +149,22 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 
 		\begin{figure}[!htb]
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/uni1}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/uni2}
 				\label{fig:awesome_image2}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/uni3}
 				\label{fig:awesome_image3}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
+				\includegraphics[width=\linewidth]{images/experiments/uni4}
 				\label{fig:awesome_image3}
 			\endminipage
-			\caption{Pati}
+			\caption{Imatges UPC}
 		\end{figure}
 
 		\begin{table}[H]
@@ -174,12 +174,12 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 					& \multicolumn{3}{c|}{\textbf{Universitat}} & \multicolumn{3}{c}{\textbf{Menjador}} \\
 					\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} \\ \hline
 					Harris + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					Harris + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					Harris + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 					SIFT + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 					SIFT + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 					ORB + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 					ORB + BRISK & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					MSER + SURF & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					MSER + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 					MSER + DAISY & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
 				\end{tabular}
 			\end{center}
@@ -198,7 +198,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 				\includegraphics[width=\linewidth]{images/RobotKp}
 				\label{fig:awesome_image2}
 			\endminipage
-			\caption{Pati}
+			\caption{Menjador}
 		\end{figure}
 
 		\begin{figure}[!htb]
@@ -210,7 +210,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 				\includegraphics[width=\linewidth]{images/RobotKp}
 				\label{fig:awesome_image2}
 			\endminipage
-			\caption{Pati}
+			\caption{UPC 1}
 		\end{figure}
 
 \newpage
@@ -224,7 +224,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 				\includegraphics[width=\linewidth]{images/RobotKp}
 				\label{fig:awesome_image2}
 			\endminipage
-			\caption{Pati}
+			\caption{UPC 2}
 		\end{figure}
 
 
@@ -237,5 +237,5 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 				\includegraphics[width=\linewidth]{images/RobotKp}
 				\label{fig:awesome_image2}
 			\endminipage
-			\caption{Pati}
+			\caption{Jardins}
 		\end{figure}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.9.25)  21 FEB 2017 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.9.25)  27 FEB 2017 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1713,36 +1713,37 @@ File: images/fib-upc-logo.png Graphic file (type png)
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 77.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [27]
-<images/crop.png, id=378, 722.7pt x 1284.8pt>
+<images/crop.png, id=378, 1284.8pt x 722.7pt>
 File: images/crop.png Graphic file (type png)
  <use images/crop.png>
 Package pdftex.def Info: images/crop.png used on input line 82.
-(pdftex.def)             Requested size: 173.44534pt x 308.3387pt.
+(pdftex.def)             Requested size: 173.44534pt x 97.56029pt.
 File: images/crop.png Graphic file (type png)
 
 <use images/crop.png>
 Package pdftex.def Info: images/crop.png used on input line 84.
-(pdftex.def)             Requested size: 173.44534pt x 308.3387pt.
+(pdftex.def)             Requested size: 173.44534pt x 97.56029pt.
 
 Overfull \hbox (15.36632pt too wide) in paragraph at lines 80--86
 []$[]$ 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+
+ []
+
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 88.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 91.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [28 <./images/gallery.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
-
- []
-
-<images/options.png, id=385, 722.7pt x 1284.8pt>
+ [28 <./images/gallery.png> <./images/crop.png>]
+<images/options.png, id=387, 722.7pt x 1284.8pt>
 File: images/options.png Graphic file (type png)
  <use images/options.png>
 Package pdftex.def Info: images/options.png used on input line 99.
@@ -1762,29 +1763,23 @@ File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 176.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [29 <./images/crop.png>]
-File: images/fib-upc-logo.png Graphic file (type png)
-
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 176.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [30 <./images/options.png>]
+ [29 <./images/options.png>]
 Cap\'{\i }tol 4.
 (./chapters/tecniques.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
-<images/pre-processat.png, id=397, 450.2421pt x 297.7524pt>
+<images/pre-processat.png, id=393, 450.2421pt x 297.7524pt>
 File: images/pre-processat.png Graphic file (type png)
 
 <use images/pre-processat.png>
 Package pdftex.def Info: images/pre-processat.png used on input line 20.
 (pdftex.def)             Requested size: 376.42575pt x 248.9472pt.
- [31
+ [30
 
 ]
-<images/RobotKp.png, id=403, 803.0pt x 642.4pt>
+<images/RobotKp.png, id=398, 803.0pt x 642.4pt>
 File: images/RobotKp.png Graphic file (type png)
  <use images/RobotKp.png>
 Package pdftex.def Info: images/RobotKp.png used on input line 33.
@@ -1794,30 +1789,48 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 36.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [32 <./images/pre-processat.png>]
-<images/matching.png, id=410, 975.645pt x 642.4pt>
+ [31 <./images/pre-processat.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
+
+ []
+
+<images/matching.png, id=406, 975.645pt x 642.4pt>
 File: images/matching.png Graphic file (type png)
  <use images/matching.png>
-Package pdftex.def Info: images/matching.png used on input line 54.
+Package pdftex.def Info: images/matching.png used on input line 58.
 (pdftex.def)             Requested size: 292.77629pt x 192.7705pt.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 57.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 61.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [33 <./images/RobotKp.png (PNG copy)>]
-<images/homography.png, id=416, 975.645pt x 642.4pt>
+ [32 <./images/RobotKp.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+
+ []
+
+<images/homography.png, id=412, 975.645pt x 642.4pt>
 File: images/homography.png Graphic file (type png)
 
 <use images/homography.png>
-Package pdftex.def Info: images/homography.png used on input line 66.
+Package pdftex.def Info: images/homography.png used on input line 73.
 (pdftex.def)             Requested size: 292.77629pt x 192.7705pt.
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 178.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [34 <./images/matching.png (PNG copy)> <./images/homography.png (PNG copy)>]
+ [33 <./images/matching.png (PNG copy)>]
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 178.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [34 <./images/homography.png (PNG copy)>]
 Cap\'{\i }tol 5.
 (./chapters/implementacio.tex
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -2052,96 +2065,127 @@ File: images/fib-upc-logo.png Graphic file (type png)
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 34.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [45]
-File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 40.
-(pdftex.def)             Requested size: 133.84424pt x 107.06967pt.
-File: images/RobotKp.png Graphic file (type png)
+<images/experiments/graf3.png, id=644, 803.0pt x 642.4pt>
+File: images/experiments/graf3.png Graphic file (type png)
 
-<use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 44.
+<use images/experiments/graf3.png>
+Package pdftex.def Info: images/experiments/graf3.png used on input line 40.
 (pdftex.def)             Requested size: 133.84424pt x 107.06967pt.
-File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 48.
-(pdftex.def)             Requested size: 133.84424pt x 107.06967pt.
-File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 75.
-(pdftex.def)             Requested size: 133.84424pt x 107.06967pt.
-File: images/RobotKp.png Graphic file (type png)
 
-<use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 79.
-(pdftex.def)             Requested size: 133.84424pt x 107.06967pt.
-File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 83.
-(pdftex.def)             Requested size: 133.84424pt x 107.06967pt.
-File: images/fib-upc-logo.png Graphic file (type png)
+<images/experiments/boat.png, id=645, 853.1875pt x 682.55pt>
+File: images/experiments/boat.png Graphic file (type png)
 
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 105.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [46]
+<use images/experiments/boat.png>
+Package pdftex.def Info: images/experiments/boat.png used on input line 44.
+(pdftex.def)             Requested size: 133.84424pt x 107.07518pt.
+
+<images/experiments/ubc.png, id=646, 803.0pt x 642.4pt>
+File: images/experiments/ubc.png Graphic file (type png)
+
+<use images/experiments/ubc.png>
+Package pdftex.def Info: images/experiments/ubc.png used on input line 48.
+(pdftex.def)             Requested size: 133.84424pt x 107.06967pt.
+
+<images/experiments/uni.jpg, id=647, 3276.24pt x 2457.18pt>
+File: images/experiments/uni.jpg Graphic file (type jpg)
+
+<use images/experiments/uni.jpg>
+Package pdftex.def Info: images/experiments/uni.jpg used on input line 75.
+(pdftex.def)             Requested size: 133.84424pt x 100.37009pt.
+
+<images/experiments/jardi2.jpg, id=648, 3276.24pt x 2457.18pt>
+File: images/experiments/jardi2.jpg Graphic file (type jpg)
+
+<use images/experiments/jardi2.jpg>
+Package pdftex.def Info: images/experiments/jardi2.jpg used on input line 79.
+(pdftex.def)             Requested size: 133.84424pt x 100.37009pt.
+
+<images/experiments/uni4.jpg, id=649, 3276.24pt x 2457.18pt>
+File: images/experiments/uni4.jpg Graphic file (type jpg)
+
+<use images/experiments/uni4.jpg>
+Package pdftex.def Info: images/experiments/uni4.jpg used on input line 83.
+(pdftex.def)             Requested size: 133.84424pt x 100.37009pt.
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 105.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [47]
-File: images/RobotKp.png Graphic file (type png)
+ [46 <./images/experiments/graf3.png (PNG copy)> <./images/experiments/boat.png
+> <./images/experiments/ubc.png (PNG copy)>]
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 105.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [47 <./images/experiments/uni.jpg> <./images/experiments/jardi2.jpg> <./images
+/experiments/uni4.jpg>]
+File: images/experiments/graf3.png Graphic file (type png)
+ <use images/experiments/graf3.png>
+Package pdftex.def Info: images/experiments/graf3.png used on input line 111.
+(pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
 
-<use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 111.
-(pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
-File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 115.
-(pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
-File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 119.
-(pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
-File: images/RobotKp.png Graphic file (type png)
+<images/experiments/graf6.png, id=663, 803.0pt x 642.4pt>
+File: images/experiments/graf6.png Graphic file (type png)
 
-<use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 123.
+<use images/experiments/graf6.png>
+Package pdftex.def Info: images/experiments/graf6.png used on input line 115.
 (pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
-File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 152.
-(pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
-File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 156.
-(pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
-File: images/RobotKp.png Graphic file (type png)
 
-<use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 160.
-(pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
-File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 164.
-(pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
+<images/experiments/jardi1.jpg, id=664, 3276.24pt x 2457.18pt>
+File: images/experiments/jardi1.jpg Graphic file (type jpg)
+
+<use images/experiments/jardi1.jpg>
+Package pdftex.def Info: images/experiments/jardi1.jpg used on input line 119.
+(pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
+File: images/experiments/jardi2.jpg Graphic file (type jpg)
+ <use images/experiments/jardi2.jpg>
+Package pdftex.def Info: images/experiments/jardi2.jpg used on input line 123.
+(pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
+
+<images/experiments/uni1.jpg, id=665, 3276.24pt x 2457.18pt>
+File: images/experiments/uni1.jpg Graphic file (type jpg)
+
+<use images/experiments/uni1.jpg>
+Package pdftex.def Info: images/experiments/uni1.jpg used on input line 152.
+(pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
+
+<images/experiments/uni2.jpg, id=666, 3276.24pt x 2457.18pt>
+File: images/experiments/uni2.jpg Graphic file (type jpg)
+
+<use images/experiments/uni2.jpg>
+Package pdftex.def Info: images/experiments/uni2.jpg used on input line 156.
+(pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
+
+<images/experiments/uni3.jpg, id=667, 3276.24pt x 2457.18pt>
+File: images/experiments/uni3.jpg Graphic file (type jpg)
+
+<use images/experiments/uni3.jpg>
+Package pdftex.def Info: images/experiments/uni3.jpg used on input line 160.
+(pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
+File: images/experiments/uni4.jpg Graphic file (type jpg)
+ <use images/experiments/uni4.jpg>
+Package pdftex.def Info: images/experiments/uni4.jpg used on input line 164.
+(pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 188.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [48]
+ [48 <./images/experiments/graf6.png (PNG copy)> <./images/experiments/jardi1.j
+pg> <./images/experiments/uni1.jpg> <./images/experiments/uni2.jpg> <./images/e
+xperiments/uni3.jpg>]
 File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
+
+<use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 189.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [49]
 File: images/RobotKp.png Graphic file (type png)
-
-<use images/RobotKp.png>
+ <use images/RobotKp.png>
 Package pdftex.def Info: images/RobotKp.png used on input line 194.
 (pdftex.def)             Requested size: 200.75996pt x 160.6094pt.
 File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
+
+<use images/RobotKp.png>
 Package pdftex.def Info: images/RobotKp.png used on input line 198.
 (pdftex.def)             Requested size: 200.75996pt x 160.6094pt.
 File: images/RobotKp.png Graphic file (type png)
@@ -2149,22 +2193,22 @@ File: images/RobotKp.png Graphic file (type png)
 Package pdftex.def Info: images/RobotKp.png used on input line 206.
 (pdftex.def)             Requested size: 200.75996pt x 160.6094pt.
 File: images/RobotKp.png Graphic file (type png)
-
-<use images/RobotKp.png>
+ <use images/RobotKp.png>
 Package pdftex.def Info: images/RobotKp.png used on input line 210.
 (pdftex.def)             Requested size: 200.75996pt x 160.6094pt.
 File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
+
+<use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 216.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [50]
 File: images/RobotKp.png Graphic file (type png)
-
-<use images/RobotKp.png>
+ <use images/RobotKp.png>
 Package pdftex.def Info: images/RobotKp.png used on input line 220.
 (pdftex.def)             Requested size: 200.75996pt x 160.6094pt.
 File: images/RobotKp.png Graphic file (type png)
- <use images/RobotKp.png>
+
+<use images/RobotKp.png>
 Package pdftex.def Info: images/RobotKp.png used on input line 224.
 (pdftex.def)             Requested size: 200.75996pt x 160.6094pt.
 File: images/RobotKp.png Graphic file (type png)
@@ -2172,13 +2216,13 @@ File: images/RobotKp.png Graphic file (type png)
 Package pdftex.def Info: images/RobotKp.png used on input line 233.
 (pdftex.def)             Requested size: 200.75996pt x 160.6094pt.
 File: images/RobotKp.png Graphic file (type png)
-
-<use images/RobotKp.png>
+ <use images/RobotKp.png>
 Package pdftex.def Info: images/RobotKp.png used on input line 237.
 (pdftex.def)             Requested size: 200.75996pt x 160.6094pt.
 )
 File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
+
+<use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 182.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [51]
@@ -2458,10 +2502,10 @@ Package logreq Info: Writing requests to 'tfg.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16897 strings out of 493013
- 257647 string characters out of 6139317
+ 16954 strings out of 493013
+ 259175 string characters out of 6139317
  549485 words of memory out of 5000000
- 19635 multiletter control sequences out of 15000+600000
+ 19679 multiletter control sequences out of 15000+600000
  11045 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,20n,45p,819b,3298s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2478,10 +2522,10 @@ cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 xmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/txfonts/t1xbtt.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts
 /t1xtt.pfb>
-Output written on tfg.pdf (68 pages, 6733600 bytes).
+Output written on tfg.pdf (68 pages, 23053136 bytes).
 PDF statistics:
- 1399 PDF objects out of 1440 (max. 8388607)
+ 1411 PDF objects out of 1440 (max. 8388607)
  1279 compressed objects within 13 object streams
  533 named destinations out of 1000 (max. 500000)
- 825 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 880 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -22,7 +22,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	\end{figure}
 
 \section{Obtenció de keypoints en una imatge}
-	Consisteix en obtenir punts de la imatge amb característiques distintives, que ens puguin ser útils...
+	Consisteix en obtenir punts de la imatge amb característiques distintives, que ens puguin ser útils més endavant.
 	\begin{itemize}	
 		\item{Detecció de vores}
 		\item{Detecció de cantonades}
@@ -35,8 +35,9 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	\end{figure}
 
 \section{Extracció de característiques}
-	
-	\begin{itemize}	
+
+	L'extracció de característiques és el que ens permetrà comparar els punts obtinguts en les dues imatges.
+	\begin{itemize}
 		\item{Descriptors vectorials: SIFT, SURF}
 		\item{Descriptors binaris: ORB, BRIEF}
 	\end{itemize}
@@ -44,10 +45,13 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 
 \section{Matching de característiques}
 
+	Un cop tenim els keypoints i les característiques dels punts, necessitarem obtenir coincidencies entre els punts de les dues imatges.\\
+	Bàsicament podem obtenir els matchs de dues maneres:\\
 	\begin{itemize}	
-		\item{Força bruta}
-		\item{Aproximació}
+		\item{Força bruta: Consisteix en provar totes les combinacions possibles.}
+		\item{Aproximació: ...}
 	\end{itemize}
+	Com que el temps d'execució no es una factor essencial, s'aplicarà el mètode de força bruta, una mica més lent pero més .
 
 	\begin{figure}[H]
 		\centering
@@ -55,11 +59,14 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\caption{Matching}
 	\end{figure}
 
-
 	En la imatge anterior podem veure determinats punts on el "match" és clarament erroni. Aquest error es pot minimitzar escollint punts més significatius, característiques més distinctives, aplicant el rati
-	de Lowe o Ransac.
+	de Lowe o eliminant outliers.
 
 \section{Homografia}
+
+	L'objectiu principal del programa es trobar una part d'una imatge en una altre imatge diferent i per fer això utilitzarem la homografia. Trobant la relació entre els píxels de les dues imatges podrem
+	reprojectar el pla d'una imatge en l'altre i trobar el punt on volem dirigir el robot.\\\\
+	A l'hora de buscar la homografia aplicarem RANSAC (Random Sample Consensus), un algorisme que ens permetrà eliminar outliers dels match trobats.\\
 
 	\begin{figure}[H]
 		\centering
