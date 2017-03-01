@@ -56,19 +56,23 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 				\rowcolors{3}{}{myBlue}
 				%\begin{tabular}{l | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c}
 				\begin{tabular}{l | c c | c c | c c}
-					& \multicolumn{2}{c|}{\textbf{Motos}} & \multicolumn{2}{c|}{\textbf{Barco}} & \multicolumn{2}{c}{\textbf{Ubc}} \\
-					\textbf{Algorismes} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} \\ \hline
-					Harris & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-					SIFT & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-					SURF & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-					ORB & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-					MSER & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+					& \multicolumn{2}{c|}{\textbf{Graff}} & \multicolumn{2}{c|}{\textbf{Boat}} & \multicolumn{2}{c}{\textbf{Ubc}} \\
+					\textbf{Algorismes} & \textbf{Punts} & \textbf{Temps (s)} & \textbf{Punts} & \textbf{Temps (s)} & \textbf{Punts} & \textbf{Temps (s)} \\ \hline
+					Harris & 1285 & 0.0123 & 1666 & 0.0124 & 1329 & 0.0101 \\
+					SIFT & 1096 & 0.0675 & 1599 & 0.0755 & 1284 & 0.0639 \\
+					SURF & 1467 & 0.0182 & 1768 & 0.0213 & 1533 & 0.0181 \\
+					ORB & 2500 & 0.0102 & 2500 & 0.0128 & 2500 & 0.0116 \\
+					MSER & 1044 & 0.2323 & 924 & 0.1586 & 286 & 0.0565 \\
 				\end{tabular}
 			\end{center}
 			\caption{Detectors de keypoints - comparació}
 		\end{table}
 		\noindent
-		També s'ha provat el sistema amb imatges reals d'entorns coneguts (la universitat i casa meva).
+		Amb aquestes imatges, podem veure com Harris, ORB i SURF són força més rapids que el detector de keypoints de SIFT (DoG). MSER sembla ser el més lent en general i el que menys punts obté.\\\\
+		S'ha de tenir en compte que el detector ORB s'ha limitat a 2500 punts.\\
+\newpage
+		\noindent
+		També s'ha provat el sistema amb imatges reals d'entorns coneguts (campus nord i jardins de palau reial).
 
 		\begin{figure}[!htb]
 			\minipage{0.32\textwidth}
@@ -91,20 +95,23 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 				\rowcolors{3}{}{myBlue}
 				%\begin{tabular}{l | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c}
 				\begin{tabular}{l | c c | c c | c c}
-					& \multicolumn{2}{c|}{\textbf{Universitat}} & \multicolumn{2}{c|}{\textbf{Menjador}} & \multicolumn{2}{c}{\textbf{Pati}} \\
-					\textbf{Algorismes} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} & \textbf{Punts} & \textbf{Temps} \\ \hline
-					Harris & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-					SIFT & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-					SURF & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-					ORB & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
-					MSER & 0 & 0ms & 0 & 0ms & 0 & 0ms \\
+					& \multicolumn{2}{c|}{\textbf{Campus}} & \multicolumn{2}{c|}{\textbf{Jardins}} & \multicolumn{2}{c}{\textbf{Campus 2}} \\
+					\textbf{Algorismes} & \textbf{Punts} & \textbf{Temps (s)} & \textbf{Punts} & \textbf{Temps (s)} & \textbf{Punts} & \textbf{Temps (s)} \\ \hline
+					Harris & 2522 & 0.1108 & 1971 & 0.1086 & 2589 & 0.1095 \\
+					SIFT & 4621 & 0.7358 & 9690 & 0.8172 & 4750 & 0.7405 \\
+					SURF & 7676 & 0.1761 & 14888 & 0.2332 & 10720 & 0.1990 \\
+					ORB & 2500 & 0.0515 & 2500 & 0.0978 & 2500 & 0.0618 \\
+					MSER & 2135 & 0.6790 & 1141 & 0.3930 & 1798 & 0.6397 \\
 				\end{tabular}
 			\end{center}
-			\caption{Detectors de keypoints - comparació}
+			\caption{Detectors de keypoints - comparació 2}
 		\end{table}
+		\noindent
+		SURF és el que més keypoints detecta, seguit de SIFT. Pel que fa al temps d'execució, SIFT és el més lent, seguit de MSER (el que menys keypoints obté). El més ràpid amb diferència és ORB, pero la
+		limitació a 2500 punts probablement farà que no s'obtinguin tan bons resultats.
 \newpage
 	\subsection{Detecció i extracció de keypoints}
-		Tal com s'ha fet en l'experiment anterior, primer s'ha provat el sistema amb les imatges de visió.
+		Tal com s'ha fet en l'experiment anterior, es prova el sistema amb les imatges de visió i desprès amb fotografies pròpies.
 
 		\begin{figure}[!htb]
 			\minipage{0.24\textwidth}
@@ -130,22 +137,28 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\begin{center}
 				\rowcolors{3}{}{myBlue}
 				\begin{tabular}{l | c c c | c c c}
-					& \multicolumn{3}{c|}{\textbf{Cotxes}} & \multicolumn{3}{c}{\textbf{Graffiti}} \\
-					\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} \\ \hline
-					Harris + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					Harris + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					SIFT + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					SIFT + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					ORB + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					ORB + BRISK & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					MSER + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					MSER + DAISY & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					& \multicolumn{3}{c|}{\textbf{Graff}} & \multicolumn{3}{c}{\textbf{Jardins}} \\
+					\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps (s)} & \textbf{Matches} & \textbf{\%} & \textbf{Temps (s)} \\ \hline
+					Harris + SIFT & 71 & 14.08\% & 0.1289 & 108 & 34.26\% & 0.5980 \\
+					Harris + ORB & 233 & -\% & 0.0437 & 320 & 10\% & 0.2816 \\
+					SIFT + SIFT & 48 & 43.75\% & 0.4469 & 138 & 69.56\% & 7.9518 \\
+					SIFT + LATCH & 0 & 0\% & 0.2879 & 21 & 66.67\% & 3.9541 \\
+					ORB + ORB & 7 & 4.09\% & 0.0771 & 243 & 16.05\% & 0.2952 \\
+					ORB + BRISK & 26 & 61.54\% & 0.9651 & 57 & 96.49\% & 1.1579 \\
+					MSER + SIFT & - & - & - & - & 0\% & - \\
+					MSER + DAISY & - & - & - & - & 0\% & - \\
 				\end{tabular}
 			\end{center}
 			\caption{Matching - comparació}
 		\end{table}
 		\noindent
-		Les proves amb imatges reals han utilitzat les següents fotografies:
+		Els resultats obtinguts són bastants dolents. En el cas de la imatge del graffiti sembla ser que el canvi de perspectiva i rotació de la imatge és massa gran.
+		Els únics algorismes que aconsegueixen superar el 50\% d'encerts són ORB+BRISK, pero nomès troben 26 matches. Latch, amb els punts obtinguts amb SIFT (DoG) no troba cap coincidència.\\\\
+		Pel que fa a la imatge dels jardins, els resultats són una mica millors. ORB+BRISK aconsegueix un 96.49\% d'encerts, encara que amb nomès 57 matches i bastant focalitzats, pel que podria tenir
+		problemes per trobar la homografia. SIFT encerta en el 69.56\% dels casos i troba 138 matches. ORB sembla ser el pitjor.\\
+
+		\noindent
+		També s'han realitzat proves amb les següents fotografies:
 
 		\begin{figure}[!htb]
 			\minipage{0.24\textwidth}
@@ -171,71 +184,48 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\begin{center}
 				\rowcolors{3}{}{myBlue}
 				\begin{tabular}{l | c c c | c c c}
-					& \multicolumn{3}{c|}{\textbf{Universitat}} & \multicolumn{3}{c}{\textbf{Menjador}} \\
-					\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} & \textbf{Matches} & \textbf{\%} & \textbf{Temps} \\ \hline
-					Harris + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					Harris + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					SIFT + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					SIFT + LATCH & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					ORB + ORB & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					ORB + BRISK & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					MSER + SIFT & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
-					MSER + DAISY & 0 & 0\% & 0ms & 0 & 0\% & 0ms \\
+					& \multicolumn{3}{c|}{\textbf{Campus 1}} & \multicolumn{3}{c}{\textbf{Campus 2}} \\
+					\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps (s)} & \textbf{Matches} & \textbf{\%} & \textbf{Temps (s)} \\ \hline
+					Harris + SIFT & 77 & 29.87\% & 0.5308 & 461 & -\% & 0.6783 \\
+					Harris + ORB & 212 & 10.38\% & 0.2514 & 617 & 20.10\% & 0.2881 \\
+					SIFT + SIFT & 150 & 60.67\% & 2.6028 & 520 & -\% & 3.6935 \\
+					SIFT + LATCH & 19 & 10.53\% & 1.7193 & 351 & -\% & 2.2701 \\
+					ORB + ORB & 414 & 11.84\% & 0.1942 & 580 & -\% & 0.2200 \\
+					ORB + BRISK & 143 & 54.55\% & 1.0620 & 328 & -\% & 1.0876 \\
+					MSER + SIFT & - & - & - & - & -\% & - \\
+					MSER + DAISY & - & - & - & - & -\% & - \\
 				\end{tabular}
 			\end{center}
-			\caption{Matching - comparació}
+			\caption{Matching - comparació 2}
 		\end{table}
+		\noindent
+		SIFT i ORB+BRISK continuent sent els algorismes amb la taxa d'encert més elevada i SIFT+LATCH segueix obtenint molt pocs matches.\\\\
+		En els dos conjunts d'imatges, els algorismes confonen en molts casos
+		les finestres, ja que realment són iguals i els canvis de zoom i perspectiva fan molt complicat diferenciar-les. En el primer cas, la moto i la porta es detecten força bé.
 
 \newpage
 	\subsection{Matching i homografia}
-
-		\begin{figure}[!htb]
-			\minipage{0.48\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
-				\label{fig:awesome_image1}
-			\endminipage\hfill
-			\minipage{0.48\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
-				\label{fig:awesome_image2}
-			\endminipage
-			\caption{Menjador}
+		Aquí podeu veure alguns dels resultats obtinguts a l'executar el programa seleccionant una regió més concreta:
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\textwidth]{images/homography}
+			\caption{Homografia graff - SIFT}
 		\end{figure}
-
-		\begin{figure}[!htb]
-			\minipage{0.48\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
-				\label{fig:awesome_image1}
-			\endminipage\hfill
-			\minipage{0.48\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
-				\label{fig:awesome_image2}
-			\endminipage
-			\caption{UPC 1}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\textwidth]{images/jardiSel}
+			\caption{Homografia jardins - ORB+BRISK}
 		\end{figure}
 
 \newpage
 
-		\begin{figure}[!htb]
-			\minipage{0.48\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
-				\label{fig:awesome_image1}
-			\endminipage\hfill
-			\minipage{0.48\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
-				\label{fig:awesome_image2}
-			\endminipage
-			\caption{UPC 2}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\textwidth]{images/uniSel}
+			\caption{Homografia campus - SIFT}
 		\end{figure}
-
-
-		\begin{figure}[!htb]
-			\minipage{0.48\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
-				\label{fig:awesome_image1}
-			\endminipage\hfill
-			\minipage{0.48\textwidth}
-				\includegraphics[width=\linewidth]{images/RobotKp}
-				\label{fig:awesome_image2}
-			\endminipage
-			\caption{Jardins}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\textwidth]{images/uniSel2}
+			\caption{Homografia campus 2 - }
 		\end{figure}

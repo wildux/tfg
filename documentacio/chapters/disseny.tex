@@ -44,61 +44,39 @@ En aquest capítol es detalla l'arquitectura del sistema i el disseny de les apl
 	\end{itemize}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.5\textwidth]{images/menu}
+		\includegraphics[width=0.4\textwidth]{images/menu}
 		\caption{App - Menú}
 	\end{figure}
 	\subsubsection{Fer una foto}
 		Permet a l'usuari fer una foto amb la càmera del dispositiu, per desprès seleccionar la regió d'interès.\\
 		\begin{figure}[H]
-			\begin{minipage}{6in}
-				\centering
-				\raisebox{-0.5\height}{\includegraphics[width=0.4\textwidth]{images/menu}}
-				\hspace*{.2in}
-				\raisebox{-0.5\height}{\includegraphics[width=0.4\textwidth]{images/menu}}
-			\end{minipage}
+			\centering
+			\includegraphics[width=0.6\textwidth]{images/cam}
 			\caption{App - Càmera}
 		\end{figure}
-		%\begin{figure}[H]
-		%	\centering
-		%	\includegraphics[width=0.5\textwidth]{images/cam}
-		%	\caption{App - Càmera}
-		%\end{figure}
 	\subsubsection{Seleccionar una imatge}
 	Si ja es disposa d'una imatge de l'entorn a la memòria del dispositiu, aquesta opció permet a l'usuari seleccionar-la. Un cop realitzada la selecció, l'usuari haurà de seleccionar la regió d'interès.
 		\begin{figure}[H]
-			\begin{minipage}{6in}
-				\centering
-				\raisebox{-0.5\height}{\includegraphics[width=0.4\textwidth]{images/gallery}}
-				\hspace*{.2in}
-				\raisebox{-0.5\height}{\includegraphics[width=0.4\textwidth]{images/gallery}}
-			\end{minipage}
+			\centering
+			\includegraphics[width=0.4\textwidth]{images/gallery}
 			\caption{App - Galeria}
 		\end{figure}
 	\subsubsection{Selecció de la regió d'interès}
 		Desprès de realitzar una captura o seleccionar una imatge del dispositiu, el programa demanarà a l'usuari que seleccioni una regió d'interès (destí) on vol que es desplaçi el robot.
 		\begin{figure}[H]
-			\begin{minipage}{6in}
-				\centering
-				\raisebox{-0.5\height}{\includegraphics[width=0.4\textwidth]{images/crop}}
-				\hspace*{.2in}
-				\raisebox{-0.5\height}{\includegraphics[width=0.4\textwidth]{images/crop}}
-			\end{minipage}
+			\centering
+			\includegraphics[width=0.6\textwidth]{images/crop}
 			\caption{App - Selecció de la regió d'interès}
 		\end{figure}
 	\subsubsection{Opcions}
 		Des del menú d'opcions, l'usuari hauria de posar les dades per poder connectar-se al robot (direcció IP).\\\\
 		I pels usuaris avançats, existeixen opcions per canviar els algorismes de visió per defecte:\\
 		\begin{itemize}
-			\item{Obtenció de keypoints: Harris, SIFT, SURF, FAST, ORB, BRISK, MSER}
-			\item{Extracció de característiques: SIFT, SURF, ORB, BRISK, LATCH, DAISY}
-			\item{Homografia: Ransac o asd}
+			\item{Obtenció de keypoints: Harris, SIFT, SURF, ORB, BRISK, MSER}
+			\item{Extracció de característiques: SIFT, SURF, ORB, BRISK, LATCH, DAISY\\}
 		\end{itemize}
 		\begin{figure}[H]
-			\begin{minipage}{6in}
-				\centering
-				\raisebox{-0.5\height}{\includegraphics[width=0.4\textwidth]{images/options}}
-				\hspace*{.2in}
-				\raisebox{-0.5\height}{\includegraphics[width=0.4\textwidth]{images/options}}
-			\end{minipage}
+			\centering
+			\includegraphics[width=0.4\textwidth]{images/options}
 			\caption{App - Opcions}
 		\end{figure}

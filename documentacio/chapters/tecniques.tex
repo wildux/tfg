@@ -15,12 +15,13 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\item{Ressaltar vores: filtre passa baixos}
 	\end{itemize}
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.9\textwidth]{images/pre-processat}
-		\caption{Pre-processat}
-	\end{figure}
+	%\begin{figure}[H]
+	%	\centering
+	%	\includegraphics[width=0.9\textwidth]{images/pre-processat}
+	%	\caption{Pre-processat}
+	%\end{figure}
 
+\newpage
 \section{Obtenció de keypoints en una imatge}
 	Consisteix en obtenir punts de la imatge amb característiques distintives, que ens puguin ser útils més endavant.
 	\begin{itemize}	
@@ -42,7 +43,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\item{Descriptors binaris: ORB, BRIEF}
 	\end{itemize}
 
-
+\newpage
 \section{Matching de característiques}
 
 	Un cop tenim els keypoints i les característiques dels punts, necessitarem obtenir coincidencies entre els punts de les dues imatges.\\
@@ -62,6 +63,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	En la imatge anterior podem veure determinats punts on el "match" és clarament erroni. Aquest error es pot minimitzar escollint punts més significatius, característiques més distinctives, aplicant el rati
 	de Lowe o eliminant outliers.
 
+\newpage
 \section{Homografia}
 
 	L'objectiu principal del programa es trobar una part d'una imatge en una altre imatge diferent i per fer això utilitzarem la homografia. Trobant la relació entre els píxels de les dues imatges podrem
