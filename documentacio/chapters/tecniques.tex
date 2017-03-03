@@ -2,17 +2,16 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 
 \section{Pre-processat digital d'imatges}
 	El pre-processament digital en una imatge, consisteix en aplicar diverses tècniques per tal d'aconseguir una imatge d'on poder obtenir la informació que necessitem més facilment. Es tracta
-	d'eliminar distorcions o be ressaltar determinades parts de la imatge.\\\\
+	d'eliminar distorsions o be ressaltar determinades parts de la imatge.\\\\
 	Algunes de les tècniques que es poden aplicar són:
 
 	\begin{itemize}	
-		\item{Suavitzar imatge: per eliminar soroll. Filtres de mediana per eliminar soroll impulsional.}
-		\item{Reduir mida: Reduir la mida de la imatge pot ser útil per augmentar la}
+		\item{Suavitzat de la imatge i reducció de soroll: }
+		\item{Reducció de mides: Reduir la mida de la imatge ens permet millorar el temps d'execució.}
 		\item{Escala de grisos: Els píxels de la imatge passen a tenir un valor en el rang 0-255. D'aquesta manera s'aconsegueix reduir el pes de la imatge. Encara que es perd la informació del color, moltes
-		vegades pot ser irellevant o fins i tot podria portar a errors.}
-		\item{Binarització: Consisteix en obtenir una imatge en blanc i negre (valors 1 i 0).}
+		vegades pot ser irellevant o fins i tot portar a errors.}
 		\item{Equalització de l'histograma: Per tal de millorar el contrast de les imatges. Clahe local adaptatiu.}
-		\item{Ressaltar vores: filtre passa baixos}
+		\item{Ressaltar vores: }
 	\end{itemize}
 	
 	%\begin{figure}[H]
@@ -40,7 +39,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	L'extracció de característiques és el que ens permetrà comparar els punts obtinguts en les dues imatges.
 	\begin{itemize}
 		\item{Descriptors vectorials: SIFT, SURF}
-		\item{Descriptors binaris: ORB, BRIEF}
+		\item{Descriptors binaris: ORB, BRISK}
 	\end{itemize}
 
 \newpage
@@ -49,7 +48,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	Un cop tenim els keypoints i les característiques dels punts, necessitarem obtenir coincidencies entre els punts de les dues imatges.\\
 	Bàsicament podem obtenir els matchs de dues maneres:\\
 	\begin{itemize}	
-		\item{Força bruta: Consisteix en provar totes les combinacions possibles.}
+		\item{Força bruta: Consisteix en provar totes les combinacions possibles per cada punt.}
 		\item{Aproximació: ...}
 	\end{itemize}
 	Com que el temps d'execució no es una factor essencial, s'aplicarà el mètode de força bruta, una mica més lent pero més .

@@ -172,11 +172,11 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe):
 		\end{python}
 
 		\subsubsection{Ratio test}
-Un cop obtinguts els "matches", aplicarem el ratio test *** per descartar alguns "matches".\\
+Un cop obtinguts els "matches", aplicarem el ratio test per descartar alguns "matches".\\
 		\begin{python}
 	good = []
 	for m,n in matches:
-		if m.distance < 0.8*n.distance:
+		if m.distance < 0.75*n.distance:
 			good.append(m)
 		\end{python}
 
@@ -196,7 +196,7 @@ Si hi ha prou coincidencies (considerem acceptable com a mínim 10), es buscarà
 		\end{python}
 
 		\subsubsection{Coordenades de destí}
-Per obtenir el punt on volem que es dirigeixi el robot agafarem els valors de dst i retornarem el punt mitg.\\
+Per obtenir el punt on volem que es dirigeixi el robot agafarem els valors de dst i retornarem el punt mig.\\
 		\begin{python}
 		x1, y1 = np.int32(dst)[0].ravel()
 		x2, y2 = np.int32(dst)[1].ravel()

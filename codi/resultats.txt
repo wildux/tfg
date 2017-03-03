@@ -128,31 +128,30 @@ ORB + BRISK: 1.0953171808 Good matches: 1263
 ###################################
 
 images/graff/img3.png images/graff/img6.png
-HARRIS + SIFT: 0.128923457401 Good matches: 73
+	HARRIS + SIFT: 0.128923457401 Good matches: 73
 HARRIS + ORB: 0.0437224769994 Good matches: 233
-SIFT: 0.4469467002 Good matches: 49
-Not enough matches found 0 of 10
-SIFT + LATCH: 0.287971274 Good matches: 0
-ORB: 0.0770898524002 Good matches: 171
-ORB + BRISK: 0.9651091446 Good matches: 26
+	SIFT: 0.4469467002 Good matches: 49
+	SIFT + LATCH: 0.287971274 Good matches: 0
+	ORB: 0.0770898524002 Good matches: 171
+	ORB + BRISK: 0.9651091446 Good matches: 26
 
 
 images/experiments/jardi1.jpg images/experiments/jardi2.jpg
-HARRIS + SIFT: 0.5979695046 Good matches: 111
-HARRIS + ORB: 0.281559350801 Good matches: 325
-SIFT: 7.9518383814 Good matches: 140
-SIFT + LATCH: 3.954150968 Good matches: 22
-ORB: 0.2952344866 Good matches: 248
-ORB + BRISK: 1.1579094378 Good matches: 57
+	HARRIS + SIFT: 0.5979695046 Good matches: 111
+	HARRIS + ORB: 0.281559350801 Good matches: 325
+	SIFT: 7.9518383814 Good matches: 140
+	SIFT + LATCH: 3.954150968 Good matches: 22
+	ORB: 0.2952344866 Good matches: 248
+	ORB + BRISK: 1.1579094378 Good matches: 57
 
 
 images/experiments/uni1.jpg images/experiments/uni2.jpg
-HARRIS + SIFT: 0.5308372768 Good matches: 77
-HARRIS + ORB: 0.2514300576 Good matches: 214
-SIFT: 2.6027924576 Good matches: 150
-SIFT + LATCH: 1.7193479818 Good matches: 19
-ORB: 0.1941843026 Good matches: 414
-ORB + BRISK: 1.0620268292 Good matches: 143
+	HARRIS + SIFT: 0.5308372768 Good matches: 77
+	HARRIS + ORB: 0.2514300576 Good matches: 214
+	SIFT: 2.6027924576 Good matches: 150
+	SIFT + LATCH: 1.7193479818 Good matches: 19
+	ORB: 0.1941843026 Good matches: 414
+	ORB + BRISK: 1.0620268292 Good matches: 143
 
 
 images/experiments/uni3.jpg images/experiments/uni4.jpg
@@ -162,4 +161,17 @@ SIFT: 3.693462547 Good matches: 520
 SIFT + LATCH: 2.2700594096 Good matches: 351
 ORB: 0.219966521601 Good matches: 580
 ORB + BRISK: 1.0875534972 Good matches: 328
+
+
+#########
+
+images/graff/img3.png images/graff/img6.png
+HARRIS + SIFT: 0.342385353201 Good matches: 120
+HARRIS + ORB: 0.1197108106 Good matches: 334
+SIFT: 2.007566988 Good matches: 102
+Not enough matches found 5 of 10
+SIFT + LATCH: 1.2704413816 Good matches: 5
+ORB: 0.129018204399 Good matches: 227
+ORB + BRISK: 1.0204817076 Good matches: 49
+
 

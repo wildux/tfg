@@ -70,7 +70,8 @@ for z in range(len(imgs1)):
 			kpRobot = vc.point_selection(imgRobotGray, psAlg, True)					# Get points
 			kp2, desRobot = vc.feature_extraction(imgRobotGray, kpRobot, feAlg)	# Get features
 
-			x, y, img3, good = vc.matching(imgROI, imgRobot, desROI, desRobot, kp1, kp2, feAlg, True)	# Find matching point
+			x, y, img3, good = vc.matching(imgROI, imgRobot, desROI, desRobot,
+				kp1, kp2, feAlg, True)	# Find matching point
 
 			end = timer()
 			times[j] = end - start
@@ -107,7 +108,8 @@ def printMatches(img1, img2, k1, k2, sel_matches, name):
 	num = 0
 	for m in sel_matches:
 		color = tuple([sp.random.randint(0, 255) for _ in range(3)])
-		cv2.line(view, (int(k1[m.queryIdx].pt[0]), int(k1[m.queryIdx].pt[1])) , (int(k2[m.trainIdx].pt[0] + w1), int(k2[m.trainIdx].pt[1])), color)
+		cv2.line(view, (int(k1[m.queryIdx].pt[0]), int(k1[m.queryIdx].pt[1])) ,
+			(int(k2[m.trainIdx].pt[0] + w1), int(k2[m.trainIdx].pt[1])), color)
 		cv2.imwrite("resultats/"+name+"_"+str(num)+".png", view)
 		view = cp.copy()
 		num = num + 1
@@ -133,7 +135,8 @@ for z in range(len(imgs1)):
 		kpRobot = vc.point_selection(imgRobotGray, psAlg, True)					# Get points
 		kp2, desRobot = vc.feature_extraction(imgRobotGray, kpRobot, feAlg)	# Get features
 
-		good = vc.matching2(imgROI, imgRobot, desROI, desRobot, kp1, kp2, feAlg)	# Find matching point
+		good = vc.matching2(imgROI, imgRobot, desROI, desRobot,
+			kp1, kp2, feAlg)	# Find matching point
 
 		printMatches(imgROI, imgRobot, kp1, kp2, good, algsName[i]+"_"+str(z))
 	print("\n")

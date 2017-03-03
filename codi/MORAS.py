@@ -74,12 +74,12 @@ def imgPrep(image):
 	imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 	return img, imgGray
 
-def point_selection(gray, alg, small=False):
+def point_selection(gray, alg):
 	kp = []
 
 	#SIFT
 	if alg == _SIFT:
-		sift = cv2.xfeatures2d.SIFT_create()
+		sift = cv2.xfeatures2d.SIFT_create(sigma=1.4)
 		kp = sift.detect(gray,None)
 
 	#SURF
@@ -146,7 +146,7 @@ def feature_extraction(image, kp, alg):
 
 	#SIFT
 	if alg == _SIFT:
-		sift = cv2.xfeatures2d.SIFT_create()
+		sift = cv2.xfeatures2d.SIFT_create(sigma=1.4)
 		kp, des = sift.compute(image, kp)
 
 	#SURF
@@ -156,7 +156,7 @@ def feature_extraction(image, kp, alg):
 
 	#ORB
 	elif alg == _ORB:
-		orb = cv2.ORB_create(nfeatures = 50000, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		orb = cv2.ORB_create(nfeatures = 2500, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
 		kp, des = orb.compute(image, kp)
 
 	#BRIEF
@@ -197,7 +197,7 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe, test=False):
 
 	good = [] # Good matches; Lowe's ratio test
 	for m,n in matches:
-		if m.distance < 0.8*n.distance:
+		if m.distance < 0.75*n.distance:
 			good.append(m)
 
 	img2C = img2.copy()
@@ -242,7 +242,7 @@ def matching2(img1, img2, des1, des2, kp1, kp2, fe):
 	matches = bf.knnMatch(des1, des2, k=2)
 	good = [] # Good matches; Lowe's ratio test
 	for m,n in matches:
-		if m.distance < 0.8*n.distance:
+		if m.distance < 0.75*n.distance:
 			good.append(m)
 	return good
 

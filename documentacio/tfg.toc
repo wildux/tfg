@@ -64,13 +64,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Recerca d'informaci\IeC {\'o}, implementaci\IeC {\'o} i proves}{18}{subsubsection*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Conclusions i resultats}{18}{subsubsection*.14}
+\contentsline {subsubsection}{Experiments}{18}{subsubsection*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ampliacions (opcional)}{18}{subsubsection*.15}
+\contentsline {subsubsection}{Ampliacions i millores}{18}{subsubsection*.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Redacci\IeC {\'o} de la mem\IeC {\`o}ria}{18}{subsubsection*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}Bloc 3: Preparaci\IeC {\'o} de la defensa}{18}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.4}Bloc 3: Preparaci\IeC {\'o} de la defensa}{19}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.5}Diagrames}{19}{subsection.2.1.5}
 \defcounter {refsection}{0}\relax 
@@ -84,7 +84,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Desviacions i pla d'actuaci\IeC {\'o}}{22}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Mala planificaci\IeC {\'o} [Impacte: baix]}{22}{subsubsection*.17}
+\contentsline {subsubsection}{Mala planificaci\IeC {\'o} [Impacte: mig]}{22}{subsubsection*.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Fallades de maquinari [Impacte: baix]}{22}{subsubsection*.18}
 \defcounter {refsection}{0}\relax 
