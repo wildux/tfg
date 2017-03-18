@@ -64,9 +64,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Recerca d'informaci\IeC {\'o}, implementaci\IeC {\'o} i proves}{15}{subsubsection*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Conclusions i resultats}{15}{subsubsection*.12}
+\contentsline {subsubsection}{Experiments}{15}{subsubsection*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ampliacions (opcional)}{15}{subsubsection*.13}
+\contentsline {subsubsection}{Ampliacions i millores}{15}{subsubsection*.13}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Redacci\IeC {\'o} de la mem\IeC {\`o}ria}{15}{subsubsection*.14}
 \defcounter {refsection}{0}\relax 
@@ -84,7 +84,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Desviacions i pla d'actuaci\IeC {\'o}}{19}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Mala planificaci\IeC {\'o} [Impacte: baix]}{19}{subsubsection*.15}
+\contentsline {subsubsection}{Mala planificaci\IeC {\'o} [Impacte: mig]}{19}{subsubsection*.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Fallades de maquinari [Impacte: baix]}{19}{subsubsection*.16}
 \defcounter {refsection}{0}\relax 
@@ -132,8 +132,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.3}Riscos socials}{26}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{27}{chapter*.17}
+\contentsline {chapter}{\numberline {5}Lleis i regulacions}{27}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'Index de taules}{28}{section*.18}
+\contentsline {section}{\numberline {5.1}Legalitat del projecte}{27}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'Index de figures}{29}{section*.20}
+\contentsline {subsubsection}{Algorismes usats}{27}{subsubsection*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Drets d'imatge}{27}{subsubsection*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{28}{chapter*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\'Index de taules}{29}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\'Index de figures}{30}{section*.22}
