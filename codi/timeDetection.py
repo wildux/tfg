@@ -18,7 +18,7 @@ for imgPath in paths:
 		numKp = 0
 		for j in range(len(times)):
 			start = timer()
-			kpROI = vc.point_selection(img, psAlg, True)
+			kpROI = vc.point_selection(img, psAlg)
 			end = timer()
 			times[j] = end - start
 			numKp = len(kpROI)

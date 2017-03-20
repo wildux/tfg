@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.7 $
+% $ biblatex bbl format version 2.8 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -21,9 +21,9 @@
     \name{author}{1}{}{%
       {{hash=SR}{%
          family={Szeliski},
-         family_i={S\bibinitperiod},
+         familyi={S\bibinitperiod},
          given={Richard},
-         given_i={R\bibinitperiod},
+         giveni={R\bibinitperiod},
       }}%
     }
     \strng{namehash}{SR1}
@@ -41,9 +41,9 @@
     \name{author}{1}{}{%
       {{hash=LDG}{%
          family={Lowe},
-         family_i={L\bibinitperiod},
+         familyi={L\bibinitperiod},
          given={David\bibnamedelima G.},
-         given_i={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
     }
     \strng{namehash}{LDG1}
@@ -68,27 +68,27 @@
     \name{author}{4}{}{%
       {{hash=BH}{%
          family={Bay},
-         family_i={B\bibinitperiod},
+         familyi={B\bibinitperiod},
          given={Herbert},
-         given_i={H\bibinitperiod},
+         giveni={H\bibinitperiod},
       }}%
       {{hash=EA}{%
          family={Ess},
-         family_i={E\bibinitperiod},
+         familyi={E\bibinitperiod},
          given={Andreas},
-         given_i={A\bibinitperiod},
+         giveni={A\bibinitperiod},
       }}%
       {{hash=TT}{%
          family={Tuytelaars},
-         family_i={T\bibinitperiod},
+         familyi={T\bibinitperiod},
          given={Tinne},
-         given_i={T\bibinitperiod},
+         giveni={T\bibinitperiod},
       }}%
       {{hash=VGL}{%
          family={Van\bibnamedelima Gool},
-         family_i={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+         familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
          given={Luc},
-         given_i={L\bibinitperiod},
+         giveni={L\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
@@ -121,17 +121,17 @@
     \name{author}{2}{}{%
       {{hash=TTVLMC}{%
          family={T.\bibnamedelima Trzcinski},
-         family_i={T\bibinitperiod\bibinitdelim T\bibinitperiod},
+         familyi={T\bibinitperiod\bibinitdelim T\bibinitperiod},
          suffix={M.\bibnamedelima Christoudias},
-         suffix_i={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+         suffixi={M\bibinitperiod\bibinitdelim C\bibinitperiod},
          given={V.\bibnamedelima Lepetit},
-         given_i={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
       }}%
       {{hash=FP}{%
          family={Fua},
-         family_i={F\bibinitperiod},
+         familyi={F\bibinitperiod},
          given={P.},
-         given_i={P\bibinitperiod},
+         giveni={P\bibinitperiod},
       }}%
     }
     \strng{namehash}{TTMCVLFP1}
@@ -150,15 +150,15 @@
     \name{author}{2}{}{%
       {{hash=LG}{%
          family={Levi},
-         family_i={L\bibinitperiod},
+         familyi={L\bibinitperiod},
          given={Gil},
-         given_i={G\bibinitperiod},
+         giveni={G\bibinitperiod},
       }}%
       {{hash=HT}{%
          family={Hassner},
-         family_i={H\bibinitperiod},
+         familyi={H\bibinitperiod},
          given={Tal},
-         given_i={T\bibinitperiod},
+         giveni={T\bibinitperiod},
       }}%
     }
     \list{organization}{1}{%
@@ -181,21 +181,21 @@
     \name{author}{3}{}{%
       {{hash=DY}{%
          family={Dzhurov},
-         family_i={D\bibinitperiod},
+         familyi={D\bibinitperiod},
          given={Yani},
-         given_i={Y\bibinitperiod},
+         giveni={Y\bibinitperiod},
       }}%
       {{hash=KI}{%
          family={Krasteva},
-         family_i={K\bibinitperiod},
+         familyi={K\bibinitperiod},
          given={Iva},
-         given_i={I\bibinitperiod},
+         giveni={I\bibinitperiod},
       }}%
       {{hash=IS}{%
          family={Ilieva},
-         family_i={I\bibinitperiod},
+         familyi={I\bibinitperiod},
          given={Sylvia},
-         given_i={S\bibinitperiod},
+         giveni={S\bibinitperiod},
       }}%
     }
     \strng{namehash}{DYKIIS1}
@@ -214,15 +214,15 @@
     \name{author}{2}{}{%
       {{hash=HC}{%
          family={Harris},
-         family_i={H\bibinitperiod},
+         familyi={H\bibinitperiod},
          given={Chris},
-         given_i={C\bibinitperiod},
+         giveni={C\bibinitperiod},
       }}%
       {{hash=SM}{%
          family={Stephens},
-         family_i={S\bibinitperiod},
+         familyi={S\bibinitperiod},
          given={Mike},
-         given_i={M\bibinitperiod},
+         giveni={M\bibinitperiod},
       }}%
     }
     \strng{namehash}{HCSM1}
@@ -242,19 +242,19 @@
     \name{author}{3}{}{%
       {{hash=CI}{%
          family={Corporation},
-         family_i={C\bibinitperiod},
+         familyi={C\bibinitperiod},
          given={Intel},
-         given_i={I\bibinitperiod},
+         giveni={I\bibinitperiod},
       }}%
       {{hash=GW}{%
          family={Garage},
-         family_i={G\bibinitperiod},
+         familyi={G\bibinitperiod},
          given={Willow},
-         given_i={W\bibinitperiod},
+         giveni={W\bibinitperiod},
       }}%
       {{hash=I}{%
          family={Itseez},
-         family_i={I\bibinitperiod},
+         familyi={I\bibinitperiod},
       }}%
     }
     \strng{namehash}{CIGWI1}
@@ -272,15 +272,15 @@
     \name{author}{2}{}{%
       {{hash=TA}{%
          family={Thomas},
-         family_i={T\bibinitperiod},
+         familyi={T\bibinitperiod},
          given={Alexandre},
-         given_i={A\bibinitperiod},
+         giveni={A\bibinitperiod},
       }}%
       {{hash=BD}{%
          family={Barashev},
-         family_i={B\bibinitperiod},
+         familyi={B\bibinitperiod},
          given={Dmitry},
-         given_i={D\bibinitperiod},
+         giveni={D\bibinitperiod},
       }}%
     }
     \strng{namehash}{TABD1}

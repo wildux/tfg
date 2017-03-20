@@ -30,6 +30,9 @@
 \usepackage[table]{xcolor}
 \usepackage{hyperref}
 
+\usepackage{tcolorbox}
+\tcbuselibrary{listings}
+
 
 %%%%%%%%%%%%%
 %PYTHON CODE
@@ -75,7 +78,7 @@
 }
 {}
 
-% Python style for highlighting
+% Java style for highlighting
 \newcommand\javastyle{\lstset{
   language=Java,
   showspaces=false,
@@ -98,6 +101,54 @@
 \lstset{#1}
 }
 {}
+
+
+\lstdefinestyle{mystyle}{
+     basicstyle=\ttfamily\color{gray},
+     language=Bash,
+     tabsize=2,
+     %frame=tb,
+     keywordstyle=\color{gray},
+     showstringspaces=false,
+     alsoletter={$},
+     literate={\$}{{\textcolor{orange}{\$}}}1
+ }
+
+\newtcblisting{bash}{
+      arc=2pt,
+      top=0mm,
+      bottom=0mm,
+      left=0mm,
+      right=0mm,
+      %boxrule=0pt,
+      colback=black,
+      listing only,
+      listing options={style=mystyle},
+      %hbox
+}
+
+\lstdefinestyle{txtstyle}{
+     basicstyle=\ttfamily\color{black},
+     language={},
+     tabsize=2,
+     %frame=tb,
+     showstringspaces=false,
+ }
+ 
+\definecolor{grey}{RGB}{245,245,245}
+
+\newtcblisting{txt}{
+      arc=0pt,
+      top=0mm,
+      bottom=0mm,
+      left=0mm,
+      right=0mm,
+      boxrule=0.7pt,
+      colback=grey,
+      listing only,
+      listing options={style=txtstyle},
+      %hbox
+}
 
 
 %%%%%%%%%
@@ -173,6 +224,8 @@
 	\input{chapters/planificacio}
 	\chapter{Disseny i arquitectura}
 	\input{chapters/disseny}
+	\chapter{Servidor}
+	\input{chapters/servidor}
 	\chapter{Tècniques de visió usades}
 	\input{chapters/tecniques}
 	\chapter{Implementació}

@@ -108,144 +108,170 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Opcions}{28}{subsubsection*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}T\IeC {\`e}cniques de visi\IeC {\'o} usades}{30}{chapter.4}
+\contentsline {chapter}{\numberline {4}Servidor}{30}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Pre-processat digital d'imatges}{30}{section.4.1}
+\contentsline {section}{\numberline {4.1}Arquitectura}{30}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Obtenci\IeC {\'o} de keypoints en una imatge}{31}{section.4.2}
+\contentsline {subsection}{\numberline {4.1.1}Nginx}{30}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Extracci\IeC {\'o} de caracter\IeC {\'\i }stiques}{31}{section.4.3}
+\contentsline {subsection}{\numberline {4.1.2}uWSGI}{30}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Matching de caracter\IeC {\'\i }stiques}{32}{section.4.4}
+\contentsline {subsection}{\numberline {4.1.3}Flask}{31}{subsection.4.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Homografia}{33}{section.4.5}
+\contentsline {section}{\numberline {4.2}Instal\IeC {\textperiodcentered }laci\IeC {\'o} del software}{31}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Implementaci\IeC {\'o}}{34}{chapter.5}
+\contentsline {subsubsection}{Python}{31}{subsubsection*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Programa en python}{34}{section.5.1}
+\contentsline {subsubsection}{OpenCV}{31}{subsubsection*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Pre-processat de les imatges}{34}{subsection.5.1.1}
+\contentsline {subsubsection}{Nginx}{33}{subsubsection*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Selecci\IeC {\'o} de la regi\IeC {\'o} d'inter\IeC {\`e}s}{35}{subsection.5.1.2}
+\contentsline {subsubsection}{Flask}{33}{subsubsection*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Obtenci\IeC {\'o} de keypoints}{36}{subsection.5.1.3}
+\contentsline {subsubsection}{uWSGI}{33}{subsubsection*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{SIFT}{36}{subsubsection*.25}
+\contentsline {section}{\numberline {4.3}Configuraci\IeC {\'o}}{34}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ORB}{36}{subsubsection*.26}
+\contentsline {chapter}{\numberline {5}T\IeC {\`e}cniques de visi\IeC {\'o} usades}{37}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Harris}{37}{subsubsection*.27}
+\contentsline {section}{\numberline {5.1}Pre-processat digital d'imatges}{37}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{MSER}{37}{subsubsection*.28}
+\contentsline {section}{\numberline {5.2}Obtenci\IeC {\'o} de keypoints en una imatge}{38}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Extracci\IeC {\'o} de caracter\IeC {\'\i }stiques}{38}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.3}Extracci\IeC {\'o} de caracter\IeC {\'\i }stiques}{38}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Matching i homografia}{39}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.4}Matching de caracter\IeC {\'\i }stiques}{39}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Matching}{39}{subsubsection*.29}
+\contentsline {section}{\numberline {5.5}Homografia}{40}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ratio test}{39}{subsubsection*.30}
+\contentsline {chapter}{\numberline {6}Implementaci\IeC {\'o}}{41}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Homografia}{40}{subsubsection*.31}
+\contentsline {section}{\numberline {6.1}Programa en python}{41}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Coordenades de dest\IeC {\'\i }}{40}{subsubsection*.32}
+\contentsline {subsection}{\numberline {6.1.1}Pre-processat de les imatges}{41}{subsection.6.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.6}Angle de gir}{40}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {6.1.2}Selecci\IeC {\'o} de la regi\IeC {\'o} d'inter\IeC {\`e}s}{42}{subsection.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Aplicaci\IeC {\'o} m\IeC {\`o}bil}{41}{section.5.2}
+\contentsline {subsection}{\numberline {6.1.3}Obtenci\IeC {\'o} de keypoints}{43}{subsection.6.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Capturar imatge}{41}{subsection.5.2.1}
+\contentsline {subsubsection}{SIFT}{43}{subsubsection*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Selecci\IeC {\'o} d'imatges de la galeria}{41}{subsection.5.2.2}
+\contentsline {subsubsection}{ORB}{43}{subsubsection*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Selecci\IeC {\'o} de la regi\IeC {\'o} d'inter\IeC {\`e}s}{41}{subsection.5.2.3}
+\contentsline {subsubsection}{Harris}{44}{subsubsection*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}Enviament de dades al servidor}{42}{subsection.5.2.4}
+\contentsline {subsubsection}{MSER}{44}{subsubsection*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Experiments i resultats}{43}{chapter.6}
+\contentsline {subsection}{\numberline {6.1.4}Extracci\IeC {\'o} de caracter\IeC {\'\i }stiques}{45}{subsection.6.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Experiments realitzats}{43}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.5}Matching i homografia}{46}{subsection.6.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Comparaci\IeC {\'o} detectors de keypoints}{43}{subsection.6.1.1}
+\contentsline {subsubsection}{Matching}{46}{subsubsection*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Comparaci\IeC {\'o} detecci\IeC {\'o} i extracci\IeC {\'o} de keypoints}{43}{subsection.6.1.2}
+\contentsline {subsubsection}{Ratio test}{46}{subsubsection*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Resultats i comparaci\IeC {\'o} d'algorismes}{45}{section.6.2}
+\contentsline {subsubsection}{Homografia}{47}{subsubsection*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Detectors de keypoints}{45}{subsection.6.2.1}
+\contentsline {subsubsection}{Coordenades de dest\IeC {\'\i }}{47}{subsubsection*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Detecci\IeC {\'o} i extracci\IeC {\'o} de keypoints}{47}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.1.6}Angle de gir}{47}{subsection.6.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}Matching i homografia}{49}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.2}Aplicaci\IeC {\'o} m\IeC {\`o}bil}{48}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Gesti\IeC {\'o} econ\IeC {\`o}mica}{51}{chapter.7}
+\contentsline {subsection}{\numberline {6.2.1}Capturar imatge}{48}{subsection.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Recursos de programari}{51}{section.7.1}
+\contentsline {subsection}{\numberline {6.2.2}Selecci\IeC {\'o} d'imatges de la galeria}{48}{subsection.6.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Recursos humans}{51}{section.7.2}
+\contentsline {subsection}{\numberline {6.2.3}Selecci\IeC {\'o} de la regi\IeC {\'o} d'inter\IeC {\`e}s}{48}{subsection.6.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Recursos de maquinari}{52}{section.7.3}
+\contentsline {subsection}{\numberline {6.2.4}Enviament de dades al servidor}{49}{subsection.6.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Costos indirectes}{52}{section.7.4}
+\contentsline {chapter}{\numberline {7}Experiments i resultats}{50}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Imprevistos}{53}{section.7.5}
+\contentsline {section}{\numberline {7.1}Experiments realitzats}{50}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.6}Conting\IeC {\`e}ncia}{53}{section.7.6}
+\contentsline {subsection}{\numberline {7.1.1}Comparaci\IeC {\'o} detectors de keypoints}{50}{subsection.7.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.7}Costos totals}{53}{section.7.7}
+\contentsline {subsection}{\numberline {7.1.2}Comparaci\IeC {\'o} detecci\IeC {\'o} i extracci\IeC {\'o} de keypoints}{50}{subsection.7.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.8}Control de gesti\IeC {\'o}}{53}{section.7.8}
+\contentsline {section}{\numberline {7.2}Resultats i comparaci\IeC {\'o} d'algorismes}{52}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Informe de sostenibilitat}{54}{chapter.8}
+\contentsline {subsection}{\numberline {7.2.1}Detectors de keypoints}{52}{subsection.7.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Posada en producci\IeC {\'o}}{55}{section.8.1}
+\contentsline {subsection}{\numberline {7.2.2}Repetitivitat dels detectors de keypoints}{54}{subsection.7.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.1}Consum del disseny}{55}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {7.2.3}Detecci\IeC {\'o} i extracci\IeC {\'o} de keypoints}{58}{subsection.7.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.2}Factura}{55}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {7.2.4}Matching i homografia}{60}{subsection.7.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.3}Impacte personal}{55}{subsection.8.1.3}
+\contentsline {chapter}{\numberline {8}Gesti\IeC {\'o} econ\IeC {\`o}mica}{62}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Vida \IeC {\'u}til}{56}{section.8.2}
+\contentsline {section}{\numberline {8.1}Recursos de programari}{62}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.1}Petjada ecol\IeC {\`o}gica}{56}{subsection.8.2.1}
+\contentsline {section}{\numberline {8.2}Recursos humans}{62}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.2}Pla de viabilitat}{56}{subsection.8.2.2}
+\contentsline {section}{\numberline {8.3}Recursos de maquinari}{63}{section.8.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2.3}Impacte social}{56}{subsection.8.2.3}
+\contentsline {section}{\numberline {8.4}Costos indirectes}{63}{section.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Riscos}{57}{section.8.3}
+\contentsline {section}{\numberline {8.5}Imprevistos}{64}{section.8.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.1}Riscos ambientals}{57}{subsection.8.3.1}
+\contentsline {section}{\numberline {8.6}Conting\IeC {\`e}ncia}{64}{section.8.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.2}Riscos econ\IeC {\`o}mics}{57}{subsection.8.3.2}
+\contentsline {section}{\numberline {8.7}Costos totals}{64}{section.8.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3.3}Riscos socials}{57}{subsection.8.3.3}
+\contentsline {section}{\numberline {8.8}Control de gesti\IeC {\'o}}{64}{section.8.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Conclusions}{58}{chapter.9}
+\contentsline {chapter}{\numberline {9}Informe de sostenibilitat}{65}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Conclusions t\IeC {\`e}cniques}{58}{section.9.1}
+\contentsline {section}{\numberline {9.1}Posada en producci\IeC {\'o}}{66}{section.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Conclusions personals}{58}{section.9.2}
+\contentsline {subsection}{\numberline {9.1.1}Consum del disseny}{66}{subsection.9.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Treball futur}{59}{section.9.3}
+\contentsline {subsection}{\numberline {9.1.2}Factura}{66}{subsection.9.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Ap\IeC {\`e}ndix}{60}{section*.33}
+\contentsline {subsection}{\numberline {9.1.3}Impacte personal}{66}{subsection.9.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Vida \IeC {\'u}til}{67}{section.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.1}Petjada ecol\IeC {\`o}gica}{67}{subsection.9.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.2}Pla de viabilitat}{67}{subsection.9.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.3}Impacte social}{67}{subsection.9.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.3}Riscos}{68}{section.9.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.1}Riscos ambientals}{68}{subsection.9.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.2}Riscos econ\IeC {\`o}mics}{68}{subsection.9.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.3}Riscos socials}{68}{subsection.9.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Conclusions}{69}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}Conclusions t\IeC {\`e}cniques}{69}{section.10.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}Conclusions personals}{69}{section.10.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.3}Treball futur}{70}{section.10.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Ap\IeC {\`e}ndix}{71}{section*.38}
 \defcounter {refsection}{0}\relax 
 \global \c@tocdepth 0\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Codi dels experiments}{61}{Ap\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {e\global \mathchardef \accent@spacefactor \spacefactor }\accent 18 e\egroup \spacefactor \accent@spacefactor ndix.1.A}
+\contentsline {chapter}{\numberline {A}Codi dels experiments}{72}{Ap\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {e\global \mathchardef \accent@spacefactor \spacefactor }\accent 18 e\egroup \spacefactor \accent@spacefactor ndix.1.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Velocitat obtenci\IeC {\'o} de keypoints}{61}{section.1.A.1}
+\contentsline {section}{\numberline {A.1}Velocitat obtenci\IeC {\'o} de keypoints}{72}{section.1.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Velocitat Obtenci\IeC {\'o} + extracci\IeC {\'o} + match}{62}{section.1.A.2}
+\contentsline {section}{\numberline {A.2}Velocitat Obtenci\IeC {\'o} + extracci\IeC {\'o} + match}{73}{section.1.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Encert matches}{63}{section.1.A.3}
+\contentsline {section}{\numberline {A.3}Encert matches}{74}{section.1.A.3}
 \defcounter {refsection}{0}\relax 
 \global \c@tocdepth 2\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{65}{chapter*.34}
+\contentsline {chapter}{Bibliografia}{76}{chapter*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'Index de taules}{66}{section*.35}
+\contentsline {chapter}{\'Index de taules}{77}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\'Index de figures}{67}{section*.37}
+\contentsline {chapter}{\'Index de figures}{78}{section*.42}

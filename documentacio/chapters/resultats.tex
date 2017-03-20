@@ -33,6 +33,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 		\end{itemize}
 \newpage
 \section{Resultats i comparació d'algorismes}
+
 	\subsection{Detectors de keypoints}
 	En primer lloc s'han realitzat proves amb imatges típiques de visió per computador.
 		\begin{figure}[!htb]
@@ -109,6 +110,110 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 		\noindent
 		SURF és el que més keypoints detecta, seguit de SIFT. Pel que fa al temps d'execució, SIFT és el més lent, seguit de MSER (el que menys keypoints obté). El més ràpid amb diferència és ORB, pero la
 		limitació a 2500 punts probablement farà que no s'obtinguin tan bons resultats.
+
+\newpage
+\subsection{Repetitivitat dels detectors de keypoints}
+	En primer lloc s'han realitzat proves amb imatges típiques de visió per computador.
+		\begin{figure}[!htb]
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\label{fig:awesome_image2}
+			\endminipage
+			\caption{Imatges graff, boat i ubc}
+		\end{figure}
+		\begin{figure}[!htb]
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\label{fig:awesome_image2}
+			\endminipage
+			\caption{Imatges graff, boat i ubc}
+		\end{figure}
+		\begin{figure}[!htb]
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\label{fig:awesome_image2}
+			\endminipage
+			\caption{Imatges graff, boat i ubc}
+		\end{figure}
+
+\newpage
+
+		\begin{figure}[!htb]
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\label{fig:awesome_image2}
+			\endminipage
+			\caption{Imatges graff, boat i ubc}
+		\end{figure}
+		\begin{figure}[!htb]
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\label{fig:awesome_image2}
+			\endminipage
+			\caption{Imatges graff, boat i ubc}
+		\end{figure}
+		\begin{figure}[!htb]
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.45\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\label{fig:awesome_image2}
+			\endminipage
+			\caption{Imatges graff, boat i ubc}
+		\end{figure}
+
+\newpage
+
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				%\begin{tabular}{l | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c | !{\vrule width -1pt}c !{\vrule width -1pt}c}
+				\begin{tabular}{l | c c c | c c c}
+					& \multicolumn{3}{c|}{\textbf{Graff}} & \multicolumn{3}{c}{\textbf{Campus}}\\
+					\textbf{Algorismes} & \textbf{AB} & \textbf{A !B} & \textbf{A} & \textbf{AB} & \textbf{A !B} & \textbf{A} \\ \hline
+					Harris & 0 & 0 & 0 & 0 & 0 & 0 \\
+					SIFT & 0 & 0 & 0 & 0 & 0 & 0 \\
+					ORB & 0 & 0 & 0 & 0 & 0 & 0 \\
+				\end{tabular}
+			\end{center}
+			\caption{Detectors de keypoints - comparació}
+		\end{table}
+		\noindent
+		Amb aquestes imatges, podem veure com Harris, ORB i SURF són força més rapids que el detector de keypoints de SIFT (DoG). MSER sembla ser el més lent en general i el que menys punts obté.\\\\
+		S'ha de tenir en compte que el detector ORB s'ha limitat a 2500 punts.\\
+\newpage
+
+
+
+
+
+
+
+
+
+
 \newpage
 	\subsection{Detecció i extracció de keypoints}
 		Tal com s'ha fet en l'experiment anterior, es prova el sistema amb les imatges de visió i desprès amb fotografies pròpies.
