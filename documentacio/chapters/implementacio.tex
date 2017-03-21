@@ -1,4 +1,4 @@
-\section{Programa en python}
+\section{Programa principal en python}
 	Per facilitar la utilització del codi en possibles adaptacions o millores futures, s'ha decidit implementar una petita biblioteca en Python amb totes les funcions necessaries. El programa principal farà ús
 	d'aquesta biblioteca, que permetrà:
 
@@ -216,36 +216,131 @@ def getAngle(aV, w, x):
 		return (aV*x / w) - (aV/2)
 		\end{python}
 
-\section{Aplicació mòbil}
-	L'aplicació mòbil d'ha desenvolupat amb Android Studio i el llenguatge de programació Java (amb l'SDK d'Android).
-	\subsection{Capturar imatge}
+\section{Aplicació web}
+	L'aplicació web s'ha desenvolupat amb Flask (Python).
+	\subsection{Pujar imatge al servidor}
 		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
 		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
 		\begin{python}
-class MyClass(Yourclass):
-  def __init__(self, my, yours):
-    String = "String"
-    String2 = '5 1 2 3 4'
-    print String2
-import numpy as np #Comment1
-  # Comment2
+app.config['UPLOAD_FOLDER'] = 'static/'
+app.config['ALLOWED_EXTENSIONS'] = set(['png', 'jpg', 'jpeg', 'gif'])
+
+# For a given file, return whether it's an allowed type or not
+def allowed_file(filename):
+	return '.' in filename and 
+		filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
+
+@app.route("/update")
+def update():
+	return render_template('upload.html')
+
+@app.route('/upload', methods=['POST'])
+def upload():
+	file = request.files['file']
+	if file and allowed_file(file.filename):
+		filename = secure_filename(file.filename)
+		file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+		return redirect(url_for('uploaded_file', filename=filename))
+
+@app.route('/uploads/<filename>')
+def uploaded_file(filename):
+	return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 		\end{python}
-	\subsection{Selecció d'imatges de la galeria}
-		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
-		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
-		\begin{python}
-class MyClass(Yourclass):
-  def __init__(self, my, yours):
-    String = "String"
-    String2 = '5 1 2 3 4'
-    print String2
-import numpy as np #Comment1
-  # Comment2
-		\end{python}
+
+		\begin{txt}
+<form action="upload" method="post" 
+	enctype="multipart/form-data">
+	<div class="col-lg-6 col-sm-6 col-12">
+		<label class="input-group-btn">
+			<span class="btn btn-primary">
+				Browse&hellip; <input type="file" 
+					name="file" style="display: none;">
+			</span>
+		</label>
+	</div>
+	<div class="col-lg-6 col-sm-6 col-12">
+		<input class="btn btn-primary" type="submit"
+			value="Pujar imatge">
+	</div>
+</form>
+		\end{txt}
+
 	\subsection{Selecció de la regió d'interès}
 		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
 		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		\begin{txt}
+<form action="send" method="post" >
+	<input type="hidden" name="x1" value="" />
+	<input type="hidden" name="y1" value="" />
+	<input type="hidden" name="x2" value="" />
+	<input type="hidden" name="y2" value="" />
+	<input type="hidden" name="width" value="" />
+	<input type="hidden" name="height" value="" />
+	<input class="btn btn-primary" type="submit"
+		value="Send" />
+</form>
+
+<script type="text/javascript">
+	jQuery(document).ready(function () {
+		jQuery('img#scene').imgAreaSelect({
+			handles: true,
+			persistent: true,
+			imageHeight: 2448,
+			imageWidth: 3264,
+			x1: 100, y1: 100, x2: 300, y2: 300,
+			onInit: function ( image, selected) {
+				jQuery('input[name=x1]').val(selected.x1);
+				jQuery('input[name=y1]').val(selected.y1);
+				jQuery('input[name=x2]').val(selected.x2);
+				jQuery('input[name=y2]').val(selected.y2);
+				jQuery('input[name=width]')
+					.val(selected.width);
+				jQuery('input[name=height]')
+					.val(selected.height);
+			},
+			onSelectEnd: function ( image, selected) {
+				jQuery('input[name=x1]').val(selected.x1);
+				jQuery('input[name=y1]').val(selected.y1);
+				jQuery('input[name=x2]').val(selected.x2);
+				jQuery('input[name=y2]').val(selected.y2);
+				jQuery('input[name=width]')
+					.val(selected.width);
+				jQuery('input[name=height]')
+					.val(selected.height);
+			}
+		});
+	});
+ </script>
+		\end{txt}
+
 		\begin{python}
+@app.route("/")
+def index():
+	return render_template('index.html')
+
+@app.route('/send', methods=['POST'])
+def send():
+	x1 = int(request.form['x1'])
+	x2 = int(request.form['x2'])
+	y1 = int(request.form['y1'])
+	y2 = int(request.form['y2'])
+
+	img = cv2.imread(imgPath)
+	img = img[x1:x2, y1:y2]
+	imgRobot = cv2.imread(imgRobotPath)
+	imgRes, x, y = vc.getResult(img, imgRobot, vc._SIFT)
+	cv2.imwrite("static/result.png", imgRes)
+
+	return render_template('result.html', x=x, y=y)
+		\end{python}
+
+
+\section{Aplicació mòbil}
+	L'aplicació mòbil s'ha desenvolupat amb Android Studio i el llenguatge de programació Java (amb l'SDK d'Android).
+	\subsection{Capturar imatge}
+		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
+		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		\begin{java}
 class MyClass(Yourclass):
   def __init__(self, my, yours):
     String = "String"
@@ -253,11 +348,23 @@ class MyClass(Yourclass):
     print String2
 import numpy as np #Comment1
   # Comment2
-		\end{python}
+		\end{java}
+	\subsection{Selecció d'imatges de la galeria}
+		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
+		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		\begin{java}
+class MyClass(Yourclass):
+  def __init__(self, my, yours):
+    String = "String"
+    String2 = '5 1 2 3 4'
+    print String2
+import numpy as np #Comment1
+  # Comment2
+		\end{java}
 	\subsection{Enviament de dades al servidor}
 		Per poder enviar dades al servidor, serà necessari l'ús d'una connexió a Internet. Per tant, s'haurà d'habilitar el permís necessari.\\\\
 		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
-		\begin{python}
+		\begin{java}
 class MyClass(Yourclass):
   def __init__(self, my, yours):
     String = "String"
@@ -265,4 +372,4 @@ class MyClass(Yourclass):
     print String2
 import numpy as np #Comment1
   # Comment2
-		\end{python}
+		\end{java}
