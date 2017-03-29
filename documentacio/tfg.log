@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.3.1)  20 MAR 2017 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.3.7)  28 MAR 2017 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -729,33 +729,82 @@ Package: multirow 2016/10/11 v2.1 Span multiple rows of a table
 \multirow@dima=\skip69
 \bigstrutjot=\dimen123
 )
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+\c@tracingmulticols=\count283
+\mult@box=\box29
+\multicol@leftmargin=\dimen124
+\c@unbalance=\count284
+\c@collectmore=\count285
+\doublecol@number=\count286
+\multicoltolerance=\count287
+\multicolpretolerance=\count288
+\full@width=\dimen125
+\page@free=\dimen126
+\premulticols=\dimen127
+\postmulticols=\dimen128
+\multicolsep=\skip70
+\multicolbaselineskip=\skip71
+\partial@page=\box30
+\last@line=\box31
+\maxbalancingoverflow=\dimen129
+\mult@rightbox=\box32
+\mult@grightbox=\box33
+\mult@gfirstbox=\box34
+\mult@firstbox=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\c@columnbadness=\count289
+\c@finalcolumnbadness=\count290
+\last@try=\dimen130
+\multicolovershoot=\dimen131
+\multicolundershoot=\dimen132
+\mult@nat@firstbox=\box53
+\colbreak@box=\box54
+\mc@col@check@num=\count291
+)
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen124
-\extrarowheight=\dimen125
+\col@sep=\dimen133
+\extrarowheight=\dimen134
 \NC@list=\toks22
-\extratabsurround=\skip70
-\backup@length=\skip71
+\extratabsurround=\skip72
+\backup@length=\skip73
 )
 (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen126
-\lightrulewidth=\dimen127
-\cmidrulewidth=\dimen128
-\belowrulesep=\dimen129
-\belowbottomsep=\dimen130
-\aboverulesep=\dimen131
-\abovetopsep=\dimen132
-\cmidrulesep=\dimen133
-\cmidrulekern=\dimen134
-\defaultaddspace=\dimen135
-\@cmidla=\count283
-\@cmidlb=\count284
-\@aboverulesep=\dimen136
-\@belowrulesep=\dimen137
-\@thisruleclass=\count285
-\@lastruleclass=\count286
-\@thisrulewidth=\dimen138
+\heavyrulewidth=\dimen135
+\lightrulewidth=\dimen136
+\cmidrulewidth=\dimen137
+\belowrulesep=\dimen138
+\belowbottomsep=\dimen139
+\aboverulesep=\dimen140
+\abovetopsep=\dimen141
+\cmidrulesep=\dimen142
+\cmidrulekern=\dimen143
+\defaultaddspace=\dimen144
+\@cmidla=\count292
+\@cmidlb=\count293
+\@aboverulesep=\dimen145
+\@belowrulesep=\dimen146
+\@thisruleclass=\count294
+\@lastruleclass=\count295
+\@thisrulewidth=\dimen147
 )
 (/usr/share/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
@@ -801,16 +850,16 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 (/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen139
-\Hy@linkcounter=\count287
-\Hy@pagecounter=\count288
+\@linkdim=\dimen148
+\Hy@linkcounter=\count296
+\Hy@pagecounter=\count297
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count289
+\Hy@SavedSpaceFactor=\count298
 
 (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -822,12 +871,12 @@ Package hyperref Info: Plain pages OFF on input line 4501.
 Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4735.
-\c@Hy@tempcnt=\count290
+\c@Hy@tempcnt=\count299
 LaTeX Info: Redefining \url on input line 5088.
-\XeTeXLinkMargin=\dimen140
-\Fld@menulength=\count291
-\Field@Width=\dimen141
-\Fld@charsize=\dimen142
+\XeTeXLinkMargin=\dimen149
+\Fld@menulength=\count300
+\Field@Width=\dimen150
+\Fld@charsize=\dimen151
 Package hyperref Info: Hyper figures OFF on input line 6342.
 Package hyperref Info: Link nesting OFF on input line 6347.
 Package hyperref Info: Hyper index ON on input line 6350.
@@ -837,46 +886,46 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6367.
 Package hyperref Info: PDF/A mode OFF on input line 6372.
 LaTeX Info: Redefining \ref on input line 6412.
 LaTeX Info: Redefining \pageref on input line 6416.
-\Hy@abspage=\count292
-\c@Item=\count293
-\c@Hfootnote=\count294
+\Hy@abspage=\count301
+\c@Item=\count302
+\c@Hfootnote=\count303
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
-\Fld@listcount=\count295
-\c@bookmark@seq@number=\count296
+\Fld@listcount=\count304
+\c@bookmark@seq@number=\count305
 
 (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip72
+\Hy@SectionHShift=\skip74
 )
 (/usr/share/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
 File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
-\BKM@id=\count297
+\BKM@id=\count306
 ))
 (/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count298
-\c@@ppsavesec=\count299
-\c@@ppsaveapp=\count300
+\c@@pps=\count307
+\c@@ppsavesec=\count308
+\c@@ppsaveapp=\count309
 )
 (/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/05/22 v2.16c rotated objects in LaTeX
-\c@r@tfl@t=\count301
-\rotFPtop=\skip73
-\rotFPbot=\skip74
-\rot@float@box=\box29
+\c@r@tfl@t=\count310
+\rotFPtop=\skip75
+\rotFPbot=\skip76
+\rot@float@box=\box55
 \rot@mess@toks=\toks23
 )
 (/usr/share/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
-\@eurobox=\box30
+\@eurobox=\box56
 )
    defining Unicode char U+20AC (decimal 8364)
 
@@ -891,9 +940,9 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks24
-\minrowclearance=\skip75
+\minrowclearance=\skip77
 )
-\rownum=\count302
+\rownum=\count311
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -911,12 +960,12 @@ Package: tcolorbox 2016/07/14 version 3.94 text color boxes
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks25
-\pgfutil@tempdima=\dimen143
-\pgfutil@tempdimb=\dimen144
+\pgfutil@tempdima=\dimen152
+\pgfutil@tempdimb=\dimen153
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box31
+\pgfutil@abb=\box57
 
 (/usr/share/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -938,20 +987,20 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks28
 ))
-\pgf@x=\dimen145
-\pgf@y=\dimen146
-\pgf@xa=\dimen147
-\pgf@ya=\dimen148
-\pgf@xb=\dimen149
-\pgf@yb=\dimen150
-\pgf@xc=\dimen151
-\pgf@yc=\dimen152
+\pgf@x=\dimen154
+\pgf@y=\dimen155
+\pgf@xa=\dimen156
+\pgf@ya=\dimen157
+\pgf@xb=\dimen158
+\pgf@yb=\dimen159
+\pgf@xc=\dimen160
+\pgf@yc=\dimen161
 \w@pgf@writea=\write5
 \r@pgf@reada=\read2
-\c@pgf@counta=\count303
-\c@pgf@countb=\count304
-\c@pgf@countc=\count305
-\c@pgf@countd=\count306
+\c@pgf@counta=\count312
+\c@pgf@countb=\count313
+\c@pgf@countc=\count314
+\c@pgf@countd=\count315
 \t@pgf@toka=\toks29
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
@@ -969,8 +1018,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count307
-\pgfsyssoftpath@bigbuffer@items=\count308
+\pgfsyssoftpath@smallbuffer@items=\count316
+\pgfsyssoftpath@bigbuffer@items=\count317
 )
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -982,9 +1031,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen153
-\pgfmath@count=\count309
-\pgfmath@box=\box32
+\pgfmath@dimen=\dimen162
+\pgfmath@count=\count318
+\pgfmath@box=\box58
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
 \pgfmath@stack@operation=\toks34
@@ -1000,50 +1049,50 @@ x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
 .code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count310
+\c@pgfmathroundto@lastzeros=\count319
 )) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen154
-\pgf@picmaxx=\dimen155
-\pgf@picminy=\dimen156
-\pgf@picmaxy=\dimen157
-\pgf@pathminx=\dimen158
-\pgf@pathmaxx=\dimen159
-\pgf@pathminy=\dimen160
-\pgf@pathmaxy=\dimen161
-\pgf@xx=\dimen162
-\pgf@xy=\dimen163
-\pgf@yx=\dimen164
-\pgf@yy=\dimen165
-\pgf@zx=\dimen166
-\pgf@zy=\dimen167
+\pgf@picminx=\dimen163
+\pgf@picmaxx=\dimen164
+\pgf@picminy=\dimen165
+\pgf@picmaxy=\dimen166
+\pgf@pathminx=\dimen167
+\pgf@pathmaxx=\dimen168
+\pgf@pathminy=\dimen169
+\pgf@pathmaxy=\dimen170
+\pgf@xx=\dimen171
+\pgf@xy=\dimen172
+\pgf@yx=\dimen173
+\pgf@yy=\dimen174
+\pgf@zx=\dimen175
+\pgf@zy=\dimen176
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen168
-\pgf@path@lasty=\dimen169
+\pgf@path@lastx=\dimen177
+\pgf@path@lasty=\dimen178
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen170
-\pgf@shorten@start@additional=\dimen171
+\pgf@shorten@end@additional=\dimen179
+\pgf@shorten@start@additional=\dimen180
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box33
-\pgf@hbox=\box34
-\pgf@layerbox@main=\box35
-\pgf@picture@serial@count=\count311
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count320
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen172
+\pgflinewidth=\dimen181
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
 ex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen173
-\pgf@pt@y=\dimen174
-\pgf@pt@temp=\dimen175
+\pgf@pt@x=\dimen182
+\pgf@pt@y=\dimen183
+\pgf@pt@temp=\dimen184
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
@@ -1055,19 +1104,19 @@ x
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen176
+\pgfarrowsep=\dimen185
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen177
-\pgf@sys@shading@range@num=\count312
+\pgf@max=\dimen186
+\pgf@sys@shading@range@num=\count321
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box36
+\pgfexternal@startupbox=\box62
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
@@ -1079,15 +1128,15 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box37
+\pgfnodeparttextbox=\box63
 )
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen178
-\pgf@nodesepend=\dimen179
+\pgf@nodesepstart=\dimen187
+\pgf@nodesepend=\dimen188
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
@@ -1106,41 +1155,41 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks37
 )
-\tcb@titlebox=\box38
-\tcb@upperbox=\box39
-\tcb@lowerbox=\box40
-\tcb@phantombox=\box41
-\c@tcbbreakpart=\count313
-\c@tcblayer=\count314
-\tcolorbox@number=\count315
-\tcb@temp=\box42
-\tcb@temp=\box43
-\tcb@temp=\box44
-\tcb@temp=\box45
+\tcb@titlebox=\box64
+\tcb@upperbox=\box65
+\tcb@lowerbox=\box66
+\tcb@phantombox=\box67
+\c@tcbbreakpart=\count322
+\c@tcblayer=\count323
+\tcolorbox@number=\count324
+\tcb@temp=\box68
+\tcb@temp=\box69
+\tcb@temp=\box70
+\tcb@temp=\box71
 \tcb@out=\write6
 \tcb@record@out=\write7
 )
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '3.94'
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count316
-\lst@gtempboxa=\box46
+\lst@mode=\count325
+\lst@gtempboxa=\box72
 \lst@token=\toks38
-\lst@length=\count317
-\lst@currlwidth=\dimen180
-\lst@column=\count318
-\lst@pos=\count319
-\lst@lostspace=\dimen181
-\lst@width=\dimen182
-\lst@newlines=\count320
-\lst@lineno=\count321
-\lst@maxwidth=\dimen183
+\lst@length=\count326
+\lst@currlwidth=\dimen189
+\lst@column=\count327
+\lst@pos=\count328
+\lst@lostspace=\dimen190
+\lst@width=\dimen191
+\lst@newlines=\count329
+\lst@lineno=\count330
+\lst@maxwidth=\dimen192
 
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count322
-\lst@skipnumbers=\count323
-\lst@framebox=\box47
+\c@lstnumber=\count331
+\lst@skipnumbers=\count332
+\lst@framebox=\box73
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -1155,9 +1204,9 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '3.94'
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 69.
 ))
-\c@tcblisting=\count324
+\c@tcblisting=\count333
 ))
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 41.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 42.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
@@ -1172,8 +1221,8 @@ File: catalan.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count325
-\@quotereset=\count326
+\@quotelevel=\count334
+\@quotereset=\count335
 (./tfg.aux
 
 LaTeX Warning: Label `fig:awesome_image1' multiply defined.
@@ -1244,35 +1293,47 @@ LaTeX Warning: Label `fig:awesome_image3' multiply defined.
 
 LaTeX Warning: Label `fig:awesome_image3' multiply defined.
 
+
+LaTeX Warning: Label `fig:awesome_image1' multiply defined.
+
+
+LaTeX Warning: Label `fig:awesome_image2' multiply defined.
+
+
+LaTeX Warning: Label `fig:awesome_image3' multiply defined.
+
+
+LaTeX Warning: Label `fig:awesome_image3' multiply defined.
+
 )
 \openout1 = `tfg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
-\scratchdimen=\dimen184
-\scratchbox=\box48
-\nofMPsegments=\count328
-\nofMParguments=\count329
+\scratchcounter=\count336
+\scratchdimen=\dimen193
+\scratchbox=\box74
+\nofMPsegments=\count337
+\nofMParguments=\count338
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count330
-\MPscratchDim=\dimen185
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen194
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
 \everyMPtoPDFconversion=\toks40
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1291,8 +1352,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \l on input line 166.
-LaTeX Info: Redefining \L on input line 166.
+LaTeX Info: Redefining \l on input line 167.
+LaTeX Info: Redefining \L on input line 167.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1304,8 +1365,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tfg.bbl' found.
  (./tfg.bbl)
-Package biblatex Info: Reference section=0 on input line 166.
-Package biblatex Info: Reference segment=0 on input line 166.
+Package biblatex Info: Reference section=0 on input line 167.
+Package biblatex Info: Reference segment=0 on input line 167.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1341,22 +1402,22 @@ Package biblatex Info: Reference segment=0 on input line 166.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring OFF on input line 166.
+\AtBeginShipoutBox=\box75
+Package hyperref Info: Link coloring OFF on input line 167.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count333
+\c@section@level=\count342
 )
-LaTeX Info: Redefining \ref on input line 166.
-LaTeX Info: Redefining \pageref on input line 166.
-LaTeX Info: Redefining \nameref on input line 166.
+LaTeX Info: Redefining \ref on input line 167.
+LaTeX Info: Redefining \pageref on input line 167.
+LaTeX Info: Redefining \nameref on input line 167.
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count334
+\c@lstlisting=\count343
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1393,7 +1454,7 @@ ABD: EveryShipout initializing macros
 <images/logo.png, id=7, 1027.84pt x 1027.84pt>
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 196.
+Package pdftex.def Info: images/logo.png used on input line 197.
 (pdftex.def)             Requested size: 83.64944pt x 83.6404pt.
  [1
 
@@ -1433,7 +1494,7 @@ Package pdftex.def Info: images/logo.png used on input line 196.
 
 
 (./chapters/abstract.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--217
+Underfull \hbox (badness 10000) in paragraph at lines 1--218
 
  []
 
@@ -1442,7 +1503,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--217
 
 
 ] (./chapters/acknowledgements.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--219
+Underfull \hbox (badness 10000) in paragraph at lines 1--220
 
  []
 
@@ -1470,7 +1531,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 207.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 209.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [5 <./images/fib-upc-logo.png>])
 \tf@toc=\write8
@@ -1479,7 +1540,7 @@ Package pdftex.def Info: images/fib-upc-logo.png used on input line 207.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 221.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 222.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [6]
 Cap\'{\i }tol 1.
@@ -1669,7 +1730,7 @@ Package pdftex.def Info: images/fib-upc-logo.png used on input line 148.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 223.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 224.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [15]
 Cap\'{\i }tol 2.
@@ -1743,14 +1804,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-<images/pert-global.png, id=333, 392.46625pt x 241.90375pt>
+<images/pert-global.png, id=335, 392.46625pt x 241.90375pt>
 File: images/pert-global.png Graphic file (type png)
 
 <use images/pert-global.png>
 Package pdftex.def Info: images/pert-global.png used on input line 107.
 (pdftex.def)             Requested size: 292.77629pt x 180.46765pt.
 
-<images/tasques.png, id=334, 383.39235pt x 161.52345pt>
+<images/tasques.png, id=336, 383.39235pt x 161.52345pt>
 File: images/tasques.png Graphic file (type png)
 
 <use images/tasques.png>
@@ -1794,7 +1855,7 @@ Package pdftex.def Info: images/fib-upc-logo.png used on input line 117.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-<images/gantt.png, id=343, 1501.61pt x 328.22626pt>
+<images/gantt.png, id=345, 1501.61pt x 328.22626pt>
 File: images/gantt.png Graphic file (type png)
  <use images/gantt.png>
 Package pdftex.def Info: images/gantt.png used on input line 121.
@@ -1855,12 +1916,12 @@ Package pdftex.def Info: images/fib-upc-logo.png used on input line 160.
 ])
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 225.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 226.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [22]
 Cap\'{\i }tol 3.
 (./chapters/disseny.tex
-<images/arquitectura.png, id=361, 184.2885pt x 58.90005pt>
+<images/arquitectura.png, id=363, 184.2885pt x 58.90005pt>
 File: images/arquitectura.png Graphic file (type png)
 
 <use images/arquitectura.png>
@@ -1879,7 +1940,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 [23
 
  <./images/arquitectura.png>]
-<images/fs.png, id=368, 419.5675pt x 275.0275pt>
+<images/fs.png, id=370, 419.5675pt x 275.0275pt>
 File: images/fs.png Graphic file (type png)
  <use images/fs.png>
 Package pdftex.def Info: images/fs.png used on input line 25.
@@ -1889,7 +1950,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--27
 
  []
 
-<images/selection.png, id=369, 242.9075pt x 213.79875pt>
+<images/selection.png, id=371, 242.9075pt x 213.79875pt>
 File: images/selection.png Graphic file (type png)
 
 <use images/selection.png>
@@ -1911,13 +1972,13 @@ File: images/fib-upc-logo.png Graphic file (type png)
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 37.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [25 <./images/selection.png>]
-<images/menu.png, id=383, 722.7pt x 1284.8pt>
+<images/menu.png, id=385, 722.7pt x 1284.8pt>
 File: images/menu.png Graphic file (type png)
  <use images/menu.png>
 Package pdftex.def Info: images/menu.png used on input line 47.
 (pdftex.def)             Requested size: 167.2989pt x 297.41902pt.
 
-<images/cam.png, id=384, 1284.8pt x 722.7pt>
+<images/cam.png, id=386, 1284.8pt x 722.7pt>
 File: images/cam.png Graphic file (type png)
  <use images/cam.png>
 Package pdftex.def Info: images/cam.png used on input line 54.
@@ -1932,13 +1993,13 @@ File: images/fib-upc-logo.png Graphic file (type png)
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 57.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [26 <./images/menu.png>]
-<images/gallery.png, id=391, 722.7pt x 1284.8pt>
+<images/gallery.png, id=393, 722.7pt x 1284.8pt>
 File: images/gallery.png Graphic file (type png)
  <use images/gallery.png>
 Package pdftex.def Info: images/gallery.png used on input line 61.
 (pdftex.def)             Requested size: 167.2989pt x 297.41902pt.
 
-<images/crop.png, id=392, 1284.8pt x 722.7pt>
+<images/crop.png, id=394, 1284.8pt x 722.7pt>
 File: images/crop.png Graphic file (type png)
  <use images/crop.png>
 Package pdftex.def Info: images/crop.png used on input line 68.
@@ -1963,7 +2024,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-<images/options.png, id=400, 722.7pt x 1284.8pt>
+<images/options.png, id=402, 722.7pt x 1284.8pt>
 File: images/options.png Graphic file (type png)
  <use images/options.png>
 Package pdftex.def Info: images/options.png used on input line 80.
@@ -1972,18 +2033,18 @@ Package pdftex.def Info: images/options.png used on input line 80.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 227.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 228.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [28 <./images/crop.png>]
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 227.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 228.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [29 <./images/options.png>]
 Cap\'{\i }tol 4.
 (./chapters/servidor.tex
-<images/server.png, id=413, 183.18437pt x 193.72375pt>
+<images/server.png, id=415, 183.18437pt x 193.72375pt>
 File: images/server.png Graphic file (type png)
  <use images/server.png>
 Package pdftex.def Info: images/server.png used on input line 5.
@@ -2115,10 +2176,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+\openout6 = `tfg.listing'.
+
+(./tfg.listing) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
@@ -2128,7 +2191,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 \openout6 = `tfg.listing'.
 
  (./tfg.listing)
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
  []
 
@@ -2137,115 +2200,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--146
 (./tfg.listing)
 \openout6 = `tfg.listing'.
 
- (./tfg.listing
-Overfull \hbox (26.03065pt too wide) in paragraph at lines 9--10
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (152.00175pt too wide) in paragraph at lines 10--12
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-)
+ (./tfg.listing)
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 166.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 164.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [34]
 \openout6 = `tfg.listing'.
 
- (./tfg.listing)
-Underfull \hbox (badness 10000) in paragraph at lines 167--171
+
+(./tfg.listing)
+Underfull \hbox (badness 10000) in paragraph at lines 165--168
 
  []
 
 \openout6 = `tfg.listing'.
 
 (./tfg.listing)
-Underfull \hbox (badness 10000) in paragraph at lines 173--176
-
- []
-
-\openout6 = `tfg.listing'.
-
-(./tfg.listing
-Overfull \hbox (26.03065pt too wide) in paragraph at lines 7--8
-[][][][][][][][][][][][][][][][][][] 
- []
-
-)
 \openout6 = `tfg.listing'.
 
  (./tfg.listing)
-Underfull \hbox (badness 10000) in paragraph at lines 190--196
+Underfull \hbox (badness 10000) in paragraph at lines 182--188
 
  []
 
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 229.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 230.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [35]
-File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 229.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [36]
 Cap\'{\i }tol 5.
 (./chapters/tecniques.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
-[37
+[36
 
-] <images/RobotKp.png, id=561, 803.0pt x 642.4pt>
+] <images/RobotKp.png, id=551, 803.0pt x 642.4pt>
 File: images/RobotKp.png Graphic file (type png)
  <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 33.
+Package pdftex.def Info: images/RobotKp.png used on input line 29.
 (pdftex.def)             Requested size: 292.77629pt x 234.22409pt.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 45.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 47.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [38 <./images/RobotKp.png (PNG copy)>]
+ [37 <./images/RobotKp.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
-<images/matching.png, id=567, 975.645pt x 642.4pt>
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 57.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [38]
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+
+ []
+
+<images/matching.png, id=562, 975.645pt x 642.4pt>
 File: images/matching.png Graphic file (type png)
  <use images/matching.png>
-Package pdftex.def Info: images/matching.png used on input line 58.
+Package pdftex.def Info: images/matching.png used on input line 70.
 (pdftex.def)             Requested size: 292.77629pt x 192.7705pt.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 65.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 77.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [39 <./images/matching.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 68--71
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--71
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
-<images/homography.png, id=573, 975.645pt x 642.4pt>
+<images/homography.png, id=568, 975.645pt x 642.4pt>
 File: images/homography.png Graphic file (type png)
 
 <use images/homography.png>
-Package pdftex.def Info: images/homography.png used on input line 74.
+Package pdftex.def Info: images/homography.png used on input line 86.
 (pdftex.def)             Requested size: 292.77629pt x 192.7705pt.
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 231.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 232.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [40 <./images/homography.png (PNG copy)>]
 Cap\'{\i }tol 6.
@@ -2342,424 +2388,537 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--128
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 152.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 154.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [45]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 179.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 181.
 
 (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 179.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 181.
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 183.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 185.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
 
 [46]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 
-Overfull \hbox (2.9506pt too wide) in paragraph at lines 188--189
+Overfull \hbox (2.9506pt too wide) in paragraph at lines 190--191
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (2.9506pt too wide) in paragraph at lines 189--190
+Overfull \hbox (2.9506pt too wide) in paragraph at lines 191--192
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 221.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 220.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [47]
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+\openout6 = `tfg.listing'.
+
+(./tfg.listing)
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 270.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [48]
+\openout6 = `tfg.listing'.
+
+ (./tfg.listing)
+Underfull \hbox (badness 10000) in paragraph at lines 272--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 272--318
 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 248.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 319.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [48]
-Underfull \hbox (badness 10000) in paragraph at lines 258--260
+ [49]
+Overfull \vbox (12.4877pt too high) has occurred while \output is active []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 319.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [50]
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
+
+ []
+
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Underfull \hbox (badness 10000) in paragraph at lines 347--349
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--260
+Underfull \hbox (badness 10000) in paragraph at lines 347--349
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 355.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [51]
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
+
+ []
+
+
+Overfull \hbox (1.88982pt too wide) in paragraph at lines 363--364
+[][][][][][][][][][]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 233.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 234.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [49]
+ [52]
 Cap\'{\i }tol 7.
 (./chapters/resultats.tex
 
 Package array Warning: Column x is already defined on input line 1.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
+Underfull \hbox (badness 10000) in paragraph at lines 23--27
 
  []
 
-[50
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--27
+
+ []
+
+[53
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--45
+
+ []
+
 File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 34.
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 45.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [51]
-<images/experiments/graf3.png, id=797, 803.0pt x 642.4pt>
+ [54]
+<images/experiments/graf3.png, id=887, 803.0pt x 642.4pt>
 File: images/experiments/graf3.png Graphic file (type png)
 
 <use images/experiments/graf3.png>
-Package pdftex.def Info: images/experiments/graf3.png used on input line 41.
+Package pdftex.def Info: images/experiments/graf3.png used on input line 52.
 (pdftex.def)             Requested size: 133.84424pt x 107.06967pt.
 
-<images/experiments/boat.png, id=798, 853.1875pt x 682.55pt>
+<images/experiments/boat.png, id=888, 853.1875pt x 682.55pt>
 File: images/experiments/boat.png Graphic file (type png)
 
 <use images/experiments/boat.png>
-Package pdftex.def Info: images/experiments/boat.png used on input line 45.
+Package pdftex.def Info: images/experiments/boat.png used on input line 56.
 (pdftex.def)             Requested size: 133.84424pt x 107.07518pt.
 
-<images/experiments/ubc.png, id=799, 803.0pt x 642.4pt>
+<images/experiments/ubc.png, id=889, 803.0pt x 642.4pt>
 File: images/experiments/ubc.png Graphic file (type png)
 
 <use images/experiments/ubc.png>
-Package pdftex.def Info: images/experiments/ubc.png used on input line 49.
+Package pdftex.def Info: images/experiments/ubc.png used on input line 60.
 (pdftex.def)             Requested size: 133.84424pt x 107.06967pt.
 
-Overfull \hbox (11.45193pt too wide) in paragraph at lines 59--68
+Overfull \hbox (11.45193pt too wide) in paragraph at lines 70--79
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 74.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 85.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [52 <./images/experiments/graf3.png (PNG copy)> <./images/experiments/boat.png
+ [55 <./images/experiments/graf3.png (PNG copy)> <./images/experiments/boat.png
 > <./images/experiments/ubc.png (PNG copy)>]
-<images/experiments/uni.jpg, id=807, 3276.24pt x 2457.18pt>
+<images/experiments/uni.jpg, id=898, 3276.24pt x 2457.18pt>
 File: images/experiments/uni.jpg Graphic file (type jpg)
 
 <use images/experiments/uni.jpg>
-Package pdftex.def Info: images/experiments/uni.jpg used on input line 80.
+Package pdftex.def Info: images/experiments/uni.jpg used on input line 91.
 (pdftex.def)             Requested size: 133.84424pt x 100.37009pt.
 
-<images/experiments/jardi2.jpg, id=808, 3276.24pt x 2457.18pt>
+<images/experiments/jardi2.jpg, id=899, 3276.24pt x 2457.18pt>
 File: images/experiments/jardi2.jpg Graphic file (type jpg)
 
 <use images/experiments/jardi2.jpg>
-Package pdftex.def Info: images/experiments/jardi2.jpg used on input line 84.
+Package pdftex.def Info: images/experiments/jardi2.jpg used on input line 95.
 (pdftex.def)             Requested size: 133.84424pt x 100.37009pt.
 
-<images/experiments/uni4.jpg, id=809, 3276.24pt x 2457.18pt>
+<images/experiments/uni4.jpg, id=900, 3276.24pt x 2457.18pt>
 File: images/experiments/uni4.jpg Graphic file (type jpg)
 
 <use images/experiments/uni4.jpg>
-Package pdftex.def Info: images/experiments/uni4.jpg used on input line 88.
+Package pdftex.def Info: images/experiments/uni4.jpg used on input line 99.
 (pdftex.def)             Requested size: 133.84424pt x 100.37009pt.
 
-Overfull \hbox (11.45193pt too wide) in paragraph at lines 98--107
+Overfull \hbox (11.45193pt too wide) in paragraph at lines 109--118
  [] 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 114.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 125.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [53 <./images/experiments/uni.jpg> <./images/experiments/jardi2.jpg> <./images
+ [56 <./images/experiments/uni.jpg> <./images/experiments/jardi2.jpg> <./images
 /experiments/uni4.jpg>]
-File: images/experiments/graf3.png Graphic file (type png)
+<images/experiments/KP_HARRIS_0.jpg, id=907, 401.5pt x 321.2pt>
+File: images/experiments/KP_HARRIS_0.jpg Graphic file (type jpg)
 
-<use images/experiments/graf3.png>
-Package pdftex.def Info: images/experiments/graf3.png used on input line 119.
+<use images/experiments/KP_HARRIS_0.jpg>
+Package pdftex.def Info: images/experiments/KP_HARRIS_0.jpg used on input line 
+129.
 (pdftex.def)             Requested size: 188.21288pt x 150.57193pt.
-File: images/experiments/boat.png Graphic file (type png)
- <use images/experiments/boat.png>
-Package pdftex.def Info: images/experiments/boat.png used on input line 123.
-(pdftex.def)             Requested size: 188.21288pt x 150.56764pt.
-File: images/experiments/graf3.png Graphic file (type png)
 
-<use images/experiments/graf3.png>
-Package pdftex.def Info: images/experiments/graf3.png used on input line 130.
-(pdftex.def)             Requested size: 188.21288pt x 150.57193pt.
-File: images/experiments/boat.png Graphic file (type png)
- <use images/experiments/boat.png>
-Package pdftex.def Info: images/experiments/boat.png used on input line 134.
-(pdftex.def)             Requested size: 188.21288pt x 150.56764pt.
-File: images/experiments/graf3.png Graphic file (type png)
+<images/experiments/KP_HARRIS_1.jpg, id=908, 401.5pt x 321.2pt>
+File: images/experiments/KP_HARRIS_1.jpg Graphic file (type jpg)
 
-<use images/experiments/graf3.png>
-Package pdftex.def Info: images/experiments/graf3.png used on input line 141.
+<use images/experiments/KP_HARRIS_1.jpg>
+Package pdftex.def Info: images/experiments/KP_HARRIS_1.jpg used on input line 
+133.
 (pdftex.def)             Requested size: 188.21288pt x 150.57193pt.
-File: images/experiments/boat.png Graphic file (type png)
- <use images/experiments/boat.png>
-Package pdftex.def Info: images/experiments/boat.png used on input line 145.
-(pdftex.def)             Requested size: 188.21288pt x 150.56764pt.
+
+<images/experiments/KP_SIFT_0.jpg, id=909, 401.5pt x 321.2pt>
+File: images/experiments/KP_SIFT_0.jpg Graphic file (type jpg)
+
+<use images/experiments/KP_SIFT_0.jpg>
+Package pdftex.def Info: images/experiments/KP_SIFT_0.jpg used on input line 14
+0.
+(pdftex.def)             Requested size: 188.21288pt x 150.57193pt.
+
+<images/experiments/KP_SIFT_1.jpg, id=910, 401.5pt x 321.2pt>
+File: images/experiments/KP_SIFT_1.jpg Graphic file (type jpg)
+
+<use images/experiments/KP_SIFT_1.jpg>
+Package pdftex.def Info: images/experiments/KP_SIFT_1.jpg used on input line 14
+4.
+(pdftex.def)             Requested size: 188.21288pt x 150.57193pt.
+
+<images/experiments/KP_ORB_0.jpg, id=911, 401.5pt x 321.2pt>
+File: images/experiments/KP_ORB_0.jpg Graphic file (type jpg)
+
+<use images/experiments/KP_ORB_0.jpg>
+Package pdftex.def Info: images/experiments/KP_ORB_0.jpg used on input line 151
+.
+(pdftex.def)             Requested size: 188.21288pt x 150.57193pt.
+
+<images/experiments/KP_ORB_1.jpg, id=912, 401.5pt x 321.2pt>
+File: images/experiments/KP_ORB_1.jpg Graphic file (type jpg)
+
+<use images/experiments/KP_ORB_1.jpg>
+Package pdftex.def Info: images/experiments/KP_ORB_1.jpg used on input line 155
+.
+(pdftex.def)             Requested size: 188.21288pt x 150.57193pt.
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 161.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [57 <./images/experiments/KP_HARRIS_0.jpg> <./images/experiments/KP_HARRIS_1.j
+pg> <./images/experiments/KP_SIFT_0.jpg> <./images/experiments/KP_SIFT_1.jpg>]
+<images/experiments/KP_HARRIS_2.jpg, id=919, 1638.12pt x 1228.59pt>
+File: images/experiments/KP_HARRIS_2.jpg Graphic file (type jpg)
+
+<use images/experiments/KP_HARRIS_2.jpg>
+Package pdftex.def Info: images/experiments/KP_HARRIS_2.jpg used on input line 
+165.
+(pdftex.def)             Requested size: 188.21288pt x 141.14427pt.
+
+<images/experiments/KP_HARRIS_3.jpg, id=920, 1638.12pt x 1228.59pt>
+File: images/experiments/KP_HARRIS_3.jpg Graphic file (type jpg)
+
+<use images/experiments/KP_HARRIS_3.jpg>
+Package pdftex.def Info: images/experiments/KP_HARRIS_3.jpg used on input line 
+169.
+(pdftex.def)             Requested size: 188.21288pt x 141.14427pt.
+
+<images/experiments/KP_SIFT_2.jpg, id=921, 1638.12pt x 1228.59pt>
+File: images/experiments/KP_SIFT_2.jpg Graphic file (type jpg)
+
+<use images/experiments/KP_SIFT_2.jpg>
+Package pdftex.def Info: images/experiments/KP_SIFT_2.jpg used on input line 17
+6.
+(pdftex.def)             Requested size: 188.21288pt x 141.14427pt.
+
+<images/experiments/KP_SIFT_3.jpg, id=922, 1638.12pt x 1228.59pt>
+File: images/experiments/KP_SIFT_3.jpg Graphic file (type jpg)
+
+<use images/experiments/KP_SIFT_3.jpg>
+Package pdftex.def Info: images/experiments/KP_SIFT_3.jpg used on input line 18
+0.
+(pdftex.def)             Requested size: 188.21288pt x 141.14427pt.
+
+<images/experiments/KP_ORB_2.jpg, id=923, 1638.12pt x 1228.59pt>
+File: images/experiments/KP_ORB_2.jpg Graphic file (type jpg)
+
+<use images/experiments/KP_ORB_2.jpg>
+Package pdftex.def Info: images/experiments/KP_ORB_2.jpg used on input line 187
+.
+(pdftex.def)             Requested size: 188.21288pt x 141.14427pt.
+
+<images/experiments/KP_ORB_3.jpg, id=924, 1638.12pt x 1228.59pt>
+File: images/experiments/KP_ORB_3.jpg Graphic file (type jpg)
+
+<use images/experiments/KP_ORB_3.jpg>
+Package pdftex.def Info: images/experiments/KP_ORB_3.jpg used on input line 191
+.
+(pdftex.def)             Requested size: 188.21288pt x 141.14427pt.
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 197.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [58 <./images/experiments/KP_ORB_0.jpg> <./images/experiments/KP_ORB_1.jpg> <.
+/images/experiments/KP_HARRIS_2.jpg> <./images/experiments/KP_HARRIS_3.jpg> <./
+images/experiments/KP_SIFT_2.jpg> <./images/experiments/KP_SIFT_3.jpg>]
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 151.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 217.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [54]
-File: images/experiments/graf3.png Graphic file (type png)
- <use images/experiments/graf3.png>
-Package pdftex.def Info: images/experiments/graf3.png used on input line 155.
-(pdftex.def)             Requested size: 188.21288pt x 150.57193pt.
-File: images/experiments/boat.png Graphic file (type png)
+ [59 <./images/experiments/KP_ORB_2.jpg> <./images/experiments/KP_ORB_3.jpg>]
+<images/experiments/uni_2.jpg, id=938, 1793.70125pt x 1345.025pt>
+File: images/experiments/uni_2.jpg Graphic file (type jpg)
 
-<use images/experiments/boat.png>
-Package pdftex.def Info: images/experiments/boat.png used on input line 159.
-(pdftex.def)             Requested size: 188.21288pt x 150.56764pt.
-File: images/experiments/graf3.png Graphic file (type png)
- <use images/experiments/graf3.png>
-Package pdftex.def Info: images/experiments/graf3.png used on input line 166.
-(pdftex.def)             Requested size: 188.21288pt x 150.57193pt.
-File: images/experiments/boat.png Graphic file (type png)
-
-<use images/experiments/boat.png>
-Package pdftex.def Info: images/experiments/boat.png used on input line 170.
-(pdftex.def)             Requested size: 188.21288pt x 150.56764pt.
-File: images/experiments/graf3.png Graphic file (type png)
- <use images/experiments/graf3.png>
-Package pdftex.def Info: images/experiments/graf3.png used on input line 177.
-(pdftex.def)             Requested size: 188.21288pt x 150.57193pt.
-File: images/experiments/boat.png Graphic file (type png)
-
-<use images/experiments/boat.png>
-Package pdftex.def Info: images/experiments/boat.png used on input line 181.
-(pdftex.def)             Requested size: 188.21288pt x 150.56764pt.
-File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 187.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [55]
-Underfull \hbox (badness 10000) in paragraph at lines 203--206
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--206
-
- []
-
-File: images/fib-upc-logo.png Graphic file (type png)
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 206.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [56]
-File: images/fib-upc-logo.png Graphic file (type png)
- <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 206.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [57]
-File: images/experiments/graf3.png Graphic file (type png)
-
-<use images/experiments/graf3.png>
-Package pdftex.def Info: images/experiments/graf3.png used on input line 223.
-(pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
-
-<images/experiments/graf6.png, id=840, 803.0pt x 642.4pt>
-File: images/experiments/graf6.png Graphic file (type png)
-
-<use images/experiments/graf6.png>
-Package pdftex.def Info: images/experiments/graf6.png used on input line 227.
-(pdftex.def)             Requested size: 100.38318pt x 80.2998pt.
-
-<images/experiments/jardi1.jpg, id=841, 3276.24pt x 2457.18pt>
-File: images/experiments/jardi1.jpg Graphic file (type jpg)
-
-<use images/experiments/jardi1.jpg>
-Package pdftex.def Info: images/experiments/jardi1.jpg used on input line 231.
-(pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
-File: images/experiments/jardi2.jpg Graphic file (type jpg)
- <use images/experiments/jardi2.jpg>
-Package pdftex.def Info: images/experiments/jardi2.jpg used on input line 235.
+<use images/experiments/uni_2.jpg>
+Package pdftex.def Info: images/experiments/uni_2.jpg used on input line 223.
+(pdftex.def)             Requested size: 100.38318pt x 75.25931pt.
+File: images/experiments/uni.jpg Graphic file (type jpg)
+ <use images/experiments/uni.jpg>
+Package pdftex.def Info: images/experiments/uni.jpg used on input line 227.
 (pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
 
-Overfull \hbox (43.69748pt too wide) in paragraph at lines 244--256
- [] 
+<images/experiments/uni4_2.jpg, id=939, 1642.135pt x 1231.60126pt>
+File: images/experiments/uni4_2.jpg Graphic file (type jpg)
+
+<use images/experiments/uni4_2.jpg>
+Package pdftex.def Info: images/experiments/uni4_2.jpg used on input line 231.
+(pdftex.def)             Requested size: 100.38318pt x 75.28354pt.
+File: images/experiments/uni4.jpg Graphic file (type jpg)
+ <use images/experiments/uni4.jpg>
+Package pdftex.def Info: images/experiments/uni4.jpg used on input line 235.
+(pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--261
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--264
+Underfull \hbox (badness 10000) in paragraph at lines 256--261
+
+ []
+
+<images/experiments/motos3.png, id=940, 1003.75pt x 702.625pt>
+File: images/experiments/motos3.png Graphic file (type png)
+
+<use images/experiments/motos3.png>
+Package pdftex.def Info: images/experiments/motos3.png used on input line 264.
+(pdftex.def)             Requested size: 100.38318pt x 70.2666pt.
+
+<images/experiments/motos1.png, id=941, 1003.75pt x 702.625pt>
+File: images/experiments/motos1.png Graphic file (type png)
+
+<use images/experiments/motos1.png>
+Package pdftex.def Info: images/experiments/motos1.png used on input line 268.
+(pdftex.def)             Requested size: 100.38318pt x 70.2666pt.
+
+<images/experiments/cars4.png, id=942, 903.375pt x 602.25pt>
+File: images/experiments/cars4.png Graphic file (type png)
+
+<use images/experiments/cars4.png>
+Package pdftex.def Info: images/experiments/cars4.png used on input line 272.
+(pdftex.def)             Requested size: 100.38318pt x 66.91853pt.
+
+<images/experiments/cars6.png, id=943, 903.375pt x 602.25pt>
+File: images/experiments/cars6.png Graphic file (type png)
+
+<use images/experiments/cars6.png>
+Package pdftex.def Info: images/experiments/cars6.png used on input line 276.
+(pdftex.def)             Requested size: 100.38318pt x 66.91853pt.
+File: images/fib-upc-logo.png Graphic file (type png)
+ <use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 297.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [60 <./images/experiments/uni_2.jpg> <./images/experiments/uni4_2.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 297--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--264
+Underfull \hbox (badness 10000) in paragraph at lines 297--302
 
  []
 
-<images/experiments/uni1.jpg, id=842, 3276.24pt x 2457.18pt>
+<images/experiments/uni1.jpg, id=950, 3276.24pt x 2457.18pt>
 File: images/experiments/uni1.jpg Graphic file (type jpg)
 
 <use images/experiments/uni1.jpg>
-Package pdftex.def Info: images/experiments/uni1.jpg used on input line 270.
+Package pdftex.def Info: images/experiments/uni1.jpg used on input line 308.
 (pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
 
-<images/experiments/uni2.jpg, id=843, 3276.24pt x 2457.18pt>
+<images/experiments/uni2.jpg, id=951, 3276.24pt x 2457.18pt>
 File: images/experiments/uni2.jpg Graphic file (type jpg)
 
 <use images/experiments/uni2.jpg>
-Package pdftex.def Info: images/experiments/uni2.jpg used on input line 274.
+Package pdftex.def Info: images/experiments/uni2.jpg used on input line 312.
 (pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
 
-<images/experiments/uni3.jpg, id=844, 3276.24pt x 2457.18pt>
-File: images/experiments/uni3.jpg Graphic file (type jpg)
+<images/experiments/jardi_2.png, id=952, 2645.885pt x 1984.41376pt>
+File: images/experiments/jardi_2.png Graphic file (type png)
 
-<use images/experiments/uni3.jpg>
-Package pdftex.def Info: images/experiments/uni3.jpg used on input line 278.
-(pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
-File: images/experiments/uni4.jpg Graphic file (type jpg)
- <use images/experiments/uni4.jpg>
-Package pdftex.def Info: images/experiments/uni4.jpg used on input line 282.
+<use images/experiments/jardi_2.png>
+Package pdftex.def Info: images/experiments/jardi_2.png used on input line 316.
+
+(pdftex.def)             Requested size: 100.38318pt x 75.27527pt.
+File: images/experiments/jardi2.jpg Graphic file (type jpg)
+ <use images/experiments/jardi2.jpg>
+Package pdftex.def Info: images/experiments/jardi2.jpg used on input line 320.
 (pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 286.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 341.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [58 <./images/experiments/graf6.png (PNG copy)> <./images/experiments/jardi1.j
-pg>]
-Overfull \hbox (43.69748pt too wide) in paragraph at lines 291--303
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--310
+ [61 <./images/experiments/motos3.png (PNG copy)> <./images/experiments/motos1.
+png (PNG copy)> <./images/experiments/cars4.png (PNG copy)> <./images/experimen
+ts/cars6.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 341--345
 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 311.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 346.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [59 <./images/experiments/uni1.jpg> <./images/experiments/uni2.jpg> <./images/
-experiments/uni3.jpg>]
+ [62 <./images/experiments/uni1.jpg> <./images/experiments/uni2.jpg> <./images/
+experiments/jardi_2.png (PNG copy)>]
 File: images/homography.png Graphic file (type png)
 
 <use images/homography.png>
-Package pdftex.def Info: images/homography.png used on input line 316.
+Package pdftex.def Info: images/homography.png used on input line 351.
 (pdftex.def)             Requested size: 292.77629pt x 192.7705pt.
 
-<images/jardiSel.png, id=857, 1864.9675pt x 1228.59pt>
+<images/jardiSel.png, id=966, 1864.9675pt x 1228.59pt>
 File: images/jardiSel.png Graphic file (type png)
 
 <use images/jardiSel.png>
-Package pdftex.def Info: images/jardiSel.png used on input line 321.
+Package pdftex.def Info: images/jardiSel.png used on input line 356.
 (pdftex.def)             Requested size: 292.77629pt x 192.86656pt.
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 325.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 360.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [60 <./images/jardiSel.png (PNG copy)>] <images/uniSel.png, id=864, 1750.54pt 
+ [63 <./images/jardiSel.png (PNG copy)>] <images/uniSel.png, id=973, 1750.54pt 
 x 1228.59pt>
 File: images/uniSel.png Graphic file (type png)
 
 <use images/uniSel.png>
-Package pdftex.def Info: images/uniSel.png used on input line 329.
+Package pdftex.def Info: images/uniSel.png used on input line 363.
 (pdftex.def)             Requested size: 292.77629pt x 205.46437pt.
- <images/uniSel5.png, id=865, 1846.9pt x 1228.59pt>
+ <images/uniSel5.png, id=974, 1846.9pt x 1228.59pt>
 File: images/uniSel5.png Graphic file (type png)
 
 <use images/uniSel5.png>
-Package pdftex.def Info: images/uniSel5.png used on input line 334.
+Package pdftex.def Info: images/uniSel5.png used on input line 368.
 (pdftex.def)             Requested size: 292.77629pt x 194.75998pt.
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 235.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 236.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [61 <./images/uniSel.png (PNG copy)> <./images/uniSel5.png (PNG copy)>]
+ [64 <./images/uniSel.png (PNG copy)> <./images/uniSel5.png (PNG copy)>]
 Cap\'{\i }tol 8.
 (./chapters/costos.tex
 
 Package array Warning: Column x is already defined on input line 6.
 
-[62
+[65
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 96--99
@@ -2770,16 +2929,16 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 99.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [63])
-Underfull \hbox (badness 10000) in paragraph at lines 125--237
+ [66])
+Underfull \hbox (badness 10000) in paragraph at lines 125--238
 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 237.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 238.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [64]
+ [67]
 Cap\'{\i }tol 9.
 (./chapters/sostenibilitat.tex
 
@@ -2808,7 +2967,7 @@ Overfull \hbox (3.54701pt too wide) in paragraph at lines 18--31
  [] 
  []
 
-[65
+[68
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 45--50
@@ -2830,7 +2989,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 58.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [66]
+ [69]
 Underfull \hbox (badness 10000) in paragraph at lines 64--68
 
  []
@@ -2844,29 +3003,29 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 79.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [67])
-Underfull \hbox (badness 10000) in paragraph at lines 87--239
+ [70])
+Underfull \hbox (badness 10000) in paragraph at lines 87--240
 
  []
 
 
-Overfull \hbox (7.90163pt too wide) in paragraph at lines 87--239
+Overfull \hbox (7.90163pt too wide) in paragraph at lines 87--240
 \OT1/cmr/m/n/12 La ^^Sunica de-pend^^Rencia del pro-gra-ma prin-ci-pal es la bi
 -bli-o-te-ca OpenCV, pero tractant-
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 239.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 240.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [68]
+ [71]
 Cap\'{\i }tol 10.
 (./chapters/conclusions.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--4
 
  []
 
-[69
+[72
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 12--14
@@ -2881,9 +3040,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--14
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 242.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 243.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [70] [71
+ [73] [74
 
 
 ]
@@ -2895,7 +3054,7 @@ Overfull \hbox (116.35176pt too wide) in paragraph at lines 11--13
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[72
+[75
 
 ]
 Overfull \hbox (13.75072pt too wide) in paragraph at lines 40--41
@@ -2939,7 +3098,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 76.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [73]
+ [76]
 Overfull \hbox (13.75072pt too wide) in paragraph at lines 92--93
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -2957,7 +3116,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 119.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [74]
+ [77]
 Overfull \hbox (13.7507pt too wide) in paragraph at lines 133--135
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
 
@@ -2978,31 +3137,36 @@ Overfull \hbox (46.15103pt too wide) in paragraph at lines 136--138
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 250.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 251.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [75] [76
+ [78] [79
 
 ] (./tfg.lot)
 \tf@lot=\write9
 \openout9 = `tfg.lot'.
 
- [77
+ [80
 
 
 ] (./tfg.lof)
 \tf@lof=\write10
 \openout10 = `tfg.lof'.
 
- [78
+ [81
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
+File: images/fib-upc-logo.png Graphic file (type png)
 
-(./tfg.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 257.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 257.
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 258.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [82]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
+ (./tfg.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 258.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3012,10 +3176,10 @@ Package logreq Info: Writing requests to 'tfg.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26755 strings out of 493013
- 470604 string characters out of 6139318
- 736645 words of memory out of 5000000
- 29104 multiletter control sequences out of 15000+600000
+ 27231 strings out of 493013
+ 478564 string characters out of 6139318
+ 749078 words of memory out of 5000000
+ 29473 multiletter control sequences out of 15000+600000
  11300 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,20n,73p,819b,3325s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3032,10 +3196,10 @@ ts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/font
 s/type1/public/eurosym/feymr10.pfb></usr/share/texmf-dist/fonts/type1/public/tx
 fonts/t1xbtt.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on tfg.pdf (78 pages, 33860374 bytes).
+Output written on tfg.pdf (82 pages, 42101712 bytes).
 PDF statistics:
- 1657 PDF objects out of 1728 (max. 8388607)
- 1508 compressed objects within 16 object streams
- 667 named destinations out of 1000 (max. 500000)
- 976 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1790 PDF objects out of 2073 (max. 8388607)
+ 1620 compressed objects within 17 object streams
+ 749 named destinations out of 1000 (max. 500000)
+ 1064 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -133,14 +133,16 @@ def feature_extraction(image, kp, alg):
 	return kp, des
 		\end{python}
 		\ \\Els algorismes que podrà escollir l'usuari són:
-		\begin{itemize}
-			\item{SIFT}
-			\item{SURF}
-			\item{ORB}
-			\item{BRISK}
-			\item{LATCH}
-			\item{DAISY}
-		\end{itemize}
+		\begin{multicols}{3} 
+			\begin{itemize}
+				\item{SIFT}
+				\item{SURF}
+				\item{ORB}
+				\item{BRISK}
+				\item{LATCH}
+				\item{DAISY}
+			\end{itemize}
+		\end{multicols}
 	\ \\S'utilitzaran els algorismes ja implementats en la biblioteca OpenCV de la següent manera:\\
 
 		\begin{python}
@@ -206,21 +208,20 @@ Per obtenir el punt on volem que es dirigeixi el robot agafarem els valors de ds
 		y = (y1+y2+y3+y4)/4
 		\end{python}
 
-	\subsection{Angle de gir}
-		Un cop obtingudes les coordenades de la imatge, s'obtindrà l'angle de gir necessari pel robot a partir de l'angle de visió de la càmera i les dimensions de la imatge.\\
-		\begin{python}
-def getAngle(aV, w, x):
-	if x == -1:
-		return 0
-	else:
-		return (aV*x / w) - (aV/2)
-		\end{python}
-
+%	\subsection{Angle de gir}
+%		Un cop obtingudes les coordenades de la imatge, s'obtindrà l'angle de gir necessari pel robot a partir de l'angle de visió de la càmera i les dimensions de la imatge.\\
+%		\begin{python}
+%def getAngle(aV, w, x):
+%	if x == -1:
+%		return 0
+%	else:
+%		return (aV*x / w) - (aV/2)
+%		\end{python}
+\newpage
 \section{Aplicació web}
 	L'aplicació web s'ha desenvolupat amb Flask (Python).
 	\subsection{Pujar imatge al servidor}
-		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
-		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		Per poder canviar la imatge que mostrarà el sistema, es defineix la ruta /update, que ens mostra un formulari per penjar un arxiu (imatge).\\
 		\begin{python}
 app.config['UPLOAD_FOLDER'] = 'static/'
 app.config['ALLOWED_EXTENSIONS'] = set(['png', 'jpg', 'jpeg', 'gif'])
@@ -247,6 +248,8 @@ def uploaded_file(filename):
 	return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 		\end{python}
 
+El formulari de l'arxiu upload.html és el següent:\\
+
 		\begin{txt}
 <form action="upload" method="post" 
 	enctype="multipart/form-data">
@@ -266,8 +269,9 @@ def uploaded_file(filename):
 		\end{txt}
 
 	\subsection{Selecció de la regió d'interès}
-		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
-		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		Per seleccionar la regió d'interès s'ha utilitzar jQuery i el plugin imgAreaSelect, essent també compatible amb dispositius mòbils.\\\\
+		En la pàgina principal es mostra una imatge i un botó per acceptar la selecció. El plugin imgAreaSelect s'encarrega de permetre a l'usuari fer una selecció i actualitzar els camps
+		amagats del formulari.\\
 		\begin{txt}
 <form action="send" method="post" >
 	<input type="hidden" name="x1" value="" />
@@ -313,6 +317,8 @@ def uploaded_file(filename):
  </script>
 		\end{txt}
 
+El formulari ens porta a la ruta /send, que executarà el codi principal de visió per computador. Finalment podrem veure el resultat obtingut del matching a result.html.\\
+
 		\begin{python}
 @app.route("/")
 def index():
@@ -341,35 +347,28 @@ def send():
 		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
 		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
 		\begin{java}
-class MyClass(Yourclass):
-  def __init__(self, my, yours):
-    String = "String"
-    String2 = '5 1 2 3 4'
-    print String2
-import numpy as np #Comment1
-  # Comment2
+if (v.getId() == R.id.capture_btn) try {
+	Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+	startActivityForResult(captureIntent, CAMERA_CAPTURE);
+} catch (ActivityNotFoundException anfe) {
+	String errorMessage = "Your device doesn't support capturing images!";
+	Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
+}
 		\end{java}
 	\subsection{Selecció d'imatges de la galeria}
 		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
 		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
 		\begin{java}
-class MyClass(Yourclass):
-  def __init__(self, my, yours):
-    String = "String"
-    String2 = '5 1 2 3 4'
-    print String2
-import numpy as np #Comment1
-  # Comment2
+else if (v.getId() == R.id.browse_btn) try {
+	Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+	startActivityForResult(galleryIntent, RESULT_GALLERY);
+} catch (ActivityNotFoundException anfe) {
+	String errorMessage = "Your device doesn't support gallery access!";
+	Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
+}
 		\end{java}
 	\subsection{Enviament de dades al servidor}
 		Per poder enviar dades al servidor, serà necessari l'ús d'una connexió a Internet. Per tant, s'haurà d'habilitar el permís necessari.\\\\
-		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
 		\begin{java}
-class MyClass(Yourclass):
-  def __init__(self, my, yours):
-    String = "String"
-    String2 = '5 1 2 3 4'
-    print String2
-import numpy as np #Comment1
-  # Comment2
+...
 		\end{java}

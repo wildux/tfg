@@ -188,17 +188,24 @@ def feature_extraction(image, kp, alg):
 
 def matching(img1, img2, des1, des2, kp1, kp2, fe, test=False):
 	if fe == _LATCH or fe == _ORB or fe == _BRISK:
-		bf = cv2.BFMatcher(cv2.NORM_HAMMING)
+		#bf = cv2.BFMatcher(cv2.NORM_HAMMING)
+		bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 	else:
-		bf = cv2.BFMatcher()
+		#bf = cv2.BFMatcher()
+		bf = cv2.BFMatcher(crossCheck=True)
 
-	matches = bf.knnMatch(des1, des2, k=2)
+	#matches = bf.knnMatch(des1, des2, k=2)
+	good = bf.match(des1,des2)
+	#matches = sorted(matches, key = lambda x:x.distance)
+	#num = int(len(matches)*0.6)
+	#good = matches[:num]
+	
 	x = -1; y = -1
 
-	good = [] # Good matches; Lowe's ratio test
-	for m,n in matches:
-		if m.distance < 0.75*n.distance:
-			good.append(m)
+	#good = [] # Good matches; Lowe's ratio test
+	#for m,n in matches:
+	#	if m.distance < 0.75*n.distance:
+	#		good.append(m)
 
 	img2C = img2.copy()
 	if len(good) >= MIN_MATCH_COUNT:
@@ -235,16 +242,25 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe, test=False):
 
 def matching2(img1, img2, des1, des2, kp1, kp2, fe):
 	if fe == _LATCH or fe == _ORB or fe == _BRISK:
-		bf = cv2.BFMatcher(cv2.NORM_HAMMING)
+		#bf = cv2.BFMatcher(cv2.NORM_HAMMING)
+		bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 	else:
-		bf = cv2.BFMatcher()
+		#bf = cv2.BFMatcher()
+		bf = cv2.BFMatcher(crossCheck=True)
 
-	matches = bf.knnMatch(des1, des2, k=2)
-	good = [] # Good matches; Lowe's ratio test
-	for m,n in matches:
-		if m.distance < 0.75*n.distance:
-			good.append(m)
-	return good
+	#matches = bf.knnMatch(des1, des2, k=2)
+	matches = bf.match(des1,des2)
+	#matches = sorted(matches, key = lambda x:x.distance)
+	#num = int(len(matches)*0.6)
+	#good = matches[:num]
+	
+	x = -1; y = -1
+
+	#good = [] # Good matches; Lowe's ratio test
+	#for m,n in matches:
+	#	if m.distance < 0.75*n.distance:
+	#		good.append(m)
+	return matches
 
 
 def getResult(img1, img2, alg1, alg2):

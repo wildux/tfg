@@ -6,31 +6,42 @@
 En aquest capítol es detallen els experiments realitzats i els resultats obtinguts a partir d'aquests.
 
 \section{Experiments realitzats}
-	Podeu trobar el codi dels scripts realitzats a l'anex del treball.
+	S'han realitzat diversos expermients per comprovar tant la detecció de keypoints com la fiabilitat del matching. Els paràmetres utilitzats en tots els algormismes
+	són els descrits al Capítol 5: Implementació.\\\\
+	Podeu trobar el codi dels scripts utilitzats per la realització dels experiments a l'anex del treball.
 	\subsection{Comparació detectors de keypoints}
+		Els algorismes a comparar són:
+		\begin{multicols}{3}  
+			\begin{itemize}
+				\item{Harris}
+				\item{SIFT}
+				\item{SURF}
+				\item{ORB}
+				\item{MSER}
+			\end{itemize}
+		\end{multicols}
+		\noindent
 		Tot i que la velocitat d'execució no és un factor determinant pel projecte, s'ha realitzat una comparació inicial de la velocitat d'execució dels algorismes de detecció de keypoints.\\\\
-		Es comparen els següents algorismes:
-		\begin{itemize}
-			\item{Harris}
-			\item{SIFT}
-			\item{SURF}
-			\item{ORB}
-			\item{MSER}
-		\end{itemize}
-		Per mesurar el temps d'execució, s'agafa la mitja de 5 execucions de la funció d'obtenció de keypoints utilitzada.
+		Per mesurar el temps d'execució, s'ha fet la mitjana de 5 execucions de la funció d'obtenció de keypoints utilitzada.\\\\
+		Un cop obtinguts els temps d'execució, s'ha analitzat la repetibilitat dels detectors.
+\newpage
 	\subsection{Comparació detecció i extracció de keypoints}
 		En aquest experiment s'analitzen els diversos algorismes de detecció i extracció de keypoints, tant en la velocitat d'execució com en fiabilitat, que serà el més important pel sistema desenvolupat.\\\\
 		Es compararan els següents algorismes:
-		\begin{itemize}
-			\item{Harris + SIFT}
-			\item{Harris + ORB}
-			\item{SIFT + SIFT}
-			\item{SIFT + LATCH}
-			\item{ORB + ORB}
-			\item{ORB + BRISK}
-			\item{MSER + SIFT}
-			\item{MSER + DAISY}
-		\end{itemize}
+		\begin{multicols}{3} 
+			\begin{itemize}
+				\item{Harris + SIFT}
+				\item{Harris + ORB}
+				\item{SIFT + SIFT}
+				\item{SIFT + LATCH}
+				\item{ORB + ORB}
+				\item{ORB + BRISK}
+			\end{itemize}
+		\end{multicols}
+		\noindent
+		En primer lloc es provaran els algorismes utilitzant sub-imatges. Desprès es provarà el sistema amb imatges amb poques variacions (canvis d'il·luminació, blur...). L'última prova serà amb fotografies
+		del campus i els jardins de palau reial, que presenten canvis de perspectiva i zoom entre d'altres.\\\\
+		Per comprovar els matches, s'hauran de mirar manualment un per un, ja que les imatges no ens permeten utilitzar cap mecanisme per automatitzar el procès.
 \newpage
 \section{Resultats i comparació d'algorismes}
 
@@ -112,76 +123,75 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 		limitació a 2500 punts probablement farà que no s'obtinguin tan bons resultats.
 
 \newpage
-\subsection{Repetitivitat dels detectors de keypoints}
-	En primer lloc s'han realitzat proves amb imatges típiques de visió per computador.
+\subsection{Repetibilitat dels detectors de keypoints}
 		\begin{figure}[!htb]
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\includegraphics[width=\linewidth]{images/experiments/KP_HARRIS_0}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\includegraphics[width=\linewidth]{images/experiments/KP_HARRIS_1}
 				\label{fig:awesome_image2}
 			\endminipage
-			\caption{Imatges graff, boat i ubc}
+			\caption{HARRIS}
 		\end{figure}
 		\begin{figure}[!htb]
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\includegraphics[width=\linewidth]{images/experiments/KP_SIFT_0}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\includegraphics[width=\linewidth]{images/experiments/KP_SIFT_1}
 				\label{fig:awesome_image2}
 			\endminipage
-			\caption{Imatges graff, boat i ubc}
+			\caption{SIFT}
 		\end{figure}
 		\begin{figure}[!htb]
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\includegraphics[width=\linewidth]{images/experiments/KP_ORB_0}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\includegraphics[width=\linewidth]{images/experiments/KP_ORB_1}
 				\label{fig:awesome_image2}
 			\endminipage
-			\caption{Imatges graff, boat i ubc}
+			\caption{ORB}
 		\end{figure}
 
 \newpage
 
 		\begin{figure}[!htb]
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\includegraphics[width=\linewidth]{images/experiments/KP_HARRIS_2}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\includegraphics[width=\linewidth]{images/experiments/KP_HARRIS_3}
 				\label{fig:awesome_image2}
 			\endminipage
-			\caption{Imatges graff, boat i ubc}
+			\caption{HARRIS}
 		\end{figure}
 		\begin{figure}[!htb]
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\includegraphics[width=\linewidth]{images/experiments/KP_SIFT_2}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\includegraphics[width=\linewidth]{images/experiments/KP_SIFT_3}
 				\label{fig:awesome_image2}
 			\endminipage
-			\caption{Imatges graff, boat i ubc}
+			\caption{SIFT}
 		\end{figure}
 		\begin{figure}[!htb]
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\includegraphics[width=\linewidth]{images/experiments/KP_ORB_2}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.45\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/boat}
+				\includegraphics[width=\linewidth]{images/experiments/KP_ORB_3}
 				\label{fig:awesome_image2}
 			\endminipage
-			\caption{Imatges graff, boat i ubc}
+			\caption{ORB}
 		\end{figure}
 
 \newpage
@@ -193,68 +203,96 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 				\begin{tabular}{l | c c c | c c c}
 					& \multicolumn{3}{c|}{\textbf{Graff}} & \multicolumn{3}{c}{\textbf{Campus}}\\
 					\textbf{Algorismes} & \textbf{AB} & \textbf{A !B} & \textbf{A} & \textbf{AB} & \textbf{A !B} & \textbf{A} \\ \hline
-					Harris & 0 & 0 & 0 & 0 & 0 & 0 \\
-					SIFT & 0 & 0 & 0 & 0 & 0 & 0 \\
-					ORB & 0 & 0 & 0 & 0 & 0 & 0 \\
+					Harris & - & - & - & - & - & - \\
+					SIFT & - & - & - & - & - & - \\
+					ORB & - & - & - & - & - & - \\
 				\end{tabular}
 			\end{center}
 			\caption{Detectors de keypoints - comparació}
 		\end{table}
 		\noindent
-		Amb aquestes imatges, podem veure com Harris, ORB i SURF són força més rapids que el detector de keypoints de SIFT (DoG). MSER sembla ser el més lent en general i el que menys punts obté.\\\\
-		S'ha de tenir en compte que el detector ORB s'ha limitat a 2500 punts.\\
-\newpage
-
-
-
-
-
-
-
-
+		...
 
 
 \newpage
 	\subsection{Detecció i extracció de keypoints}
-		Tal com s'ha fet en l'experiment anterior, es prova el sistema amb les imatges de visió i desprès amb fotografies pròpies.
+		En primer lloc es prova el sistema amb imatges similars i subimatges, per comprovar  que funciona correctament en els casos més senzills.
 
 		\begin{figure}[!htb]
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/graf3}
+				\includegraphics[width=\linewidth]{images/experiments/uni_2}
 				\label{fig:awesome_image1}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/graf6}
+				\includegraphics[width=\linewidth]{images/experiments/uni}
 				\label{fig:awesome_image2}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/jardi1}
+				\includegraphics[width=\linewidth]{images/experiments/uni4_2}
 				\label{fig:awesome_image3}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/jardi2}
+				\includegraphics[width=\linewidth]{images/experiments/uni4}
 				\label{fig:awesome_image3}
 			\endminipage
-			\caption{Imatges graff i jardins}
+			\caption{Imatges motos i cotxes}
 		\end{figure}
 
 		\begin{table}[H]
 			\begin{center}
 				\rowcolors{3}{}{myBlue}
 				\begin{tabular}{l | c c c | c c c}
-					& \multicolumn{3}{c|}{\textbf{Graff}} & \multicolumn{3}{c}{\textbf{Jardins}} \\
-					\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps (s)} & \textbf{Matches} & \textbf{\%} & \textbf{Temps (s)} \\ \hline
+					& \multicolumn{3}{c|}{\textbf{Campus (subimatge)}} & \multicolumn{3}{c}{\textbf{Graff}} \\
+					\textbf{Algorismes} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} \\ \hline
 					Harris + SIFT & 71 & 14.08\% & 0.1289 & 108 & 34.26\% & 0.5980 \\
 					Harris + ORB & 221 & 04.07\% & 0.0437 & 320 & 10.00\% & 0.2816 \\
 					SIFT + SIFT & 48 & 43.75\% & 0.4469 & 138 & 69.56\% & 7.9518 \\
-					SIFT + LATCH & 0 & 00.00\% & 0.2879 & 21 & 66.67\% & 3.9541 \\
 					ORB + ORB & 7 & 04.09\% & 0.0771 & 243 & 16.05\% & 0.2952 \\
 					ORB + BRISK & 26 & 61.54\% & 0.9651 & 57 & 96.49\% & 1.1579 \\
-					MSER + SIFT & - & - & - & - & - & - \\
-					MSER + DAISY & - & - & - & - & - & - \\
 				\end{tabular}
 			\end{center}
-			\caption{Matching - comparació}
+			\caption{Matching - comparació sub-imatges}
+		\end{table}
+		\noindent
+		Els resultats obtinguts són bastants dolents. En el cas de la imatge del graffiti sembla ser que el canvi de perspectiva i rotació de la imatge és massa gran.
+		Els únics algorismes que aconsegueixen superar el 50\% d'encerts són ORB+BRISK, pero nomès troben 26 matches. Latch, amb els punts obtinguts amb SIFT (DoG) no troba cap coincidència.\\\\
+		Pel que fa a la imatge dels jardins, els resultats són una mica millors. ORB+BRISK aconsegueix un 96.49\% d'encerts, encara que amb nomès 57 matches i bastant focalitzats, pel que podria tenir
+		problemes per trobar la homografia. SIFT encerta en el 69.56\% dels casos i troba 138 matches. ORB sembla ser el pitjor.\\
+
+		\begin{figure}[!htb]
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/motos3}
+				\label{fig:awesome_image1}
+			\endminipage\hfill
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/motos1}
+				\label{fig:awesome_image2}
+			\endminipage\hfill
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/cars4}
+				\label{fig:awesome_image3}
+			\endminipage\hfill
+			\minipage{0.24\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/cars6}
+				\label{fig:awesome_image3}
+			\endminipage
+			\caption{Imatges motos i cotxes}
+		\end{figure}
+
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\begin{tabular}{l | c c c | c c c}
+					& \multicolumn{3}{c|}{\textbf{Campus (subimatge)}} & \multicolumn{3}{c}{\textbf{Graff}} \\
+					\textbf{Algorismes} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} \\ \hline
+					Harris + SIFT & 71 & 14.08\% & 0.1289 & 108 & 34.26\% & 0.5980 \\
+					Harris + ORB & 221 & 04.07\% & 0.0437 & 320 & 10.00\% & 0.2816 \\
+					SIFT + SIFT & 48 & 43.75\% & 0.4469 & 138 & 69.56\% & 7.9518 \\
+					ORB + ORB & 7 & 04.09\% & 0.0771 & 243 & 16.05\% & 0.2952 \\
+					ORB + BRISK & 26 & 61.54\% & 0.9651 & 57 & 96.49\% & 1.1579 \\
+				\end{tabular}
+			\end{center}
+			\caption{Matching - comparació imatges similars}
 		\end{table}
 		\noindent
 		Els resultats obtinguts són bastants dolents. En el cas de la imatge del graffiti sembla ser que el canvi de perspectiva i rotació de la imatge és massa gran.
@@ -275,33 +313,30 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 				\label{fig:awesome_image2}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/uni3}
+				\includegraphics[width=\linewidth]{images/experiments/jardi_2}
 				\label{fig:awesome_image3}
 			\endminipage\hfill
 			\minipage{0.24\textwidth}
-				\includegraphics[width=\linewidth]{images/experiments/uni4}
+				\includegraphics[width=\linewidth]{images/experiments/jardi2}
 				\label{fig:awesome_image3}
 			\endminipage
-			\caption{Imatges UPC}
+			\caption{Imatges Campus i jardins}
 		\end{figure}
 
 		\begin{table}[H]
 			\begin{center}
 				\rowcolors{3}{}{myBlue}
 				\begin{tabular}{l | c c c | c c c}
-					& \multicolumn{3}{c|}{\textbf{Campus 1}} & \multicolumn{3}{c}{\textbf{Campus 2}} \\
-					\textbf{Algorismes} & \textbf{Matches} & \textbf{\%} & \textbf{Temps (s)} & \textbf{Matches} & \textbf{\%} & \textbf{Temps (s)} \\ \hline
-					Harris + SIFT & 77 & 29.87\% & 0.5308 & 461 & \% & 0.6783 \\
-					Harris + ORB & 212 & 10.38\% & 0.2514 & 617 & 20.10\% & 0.2881 \\
-					SIFT + SIFT & 150 & 60.67\% & 2.6028 & 520 & \% & 3.6935 \\
-					SIFT + LATCH & 19 & 10.53\% & 1.7193 & 351 & \% & 2.2701 \\
-					ORB + ORB & 414 & 11.84\% & 0.1942 & 580 & \% & 0.2200 \\
-					ORB + BRISK & 143 & 54.55\% & 1.0620 & 328 & \% & 1.0876 \\
-					MSER + SIFT & - & - & - & - & - & - \\
-					MSER + DAISY & - & - & - & - & - & - \\
+					& \multicolumn{3}{c|}{\textbf{Campus (subimatge)}} & \multicolumn{3}{c}{\textbf{Graff}} \\
+					\textbf{Algorismes} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} \\ \hline
+					Harris + SIFT & 71 & 14.08\% & 0.1289 & 108 & 34.26\% & 0.5980 \\
+					Harris + ORB & 221 & 04.07\% & 0.0437 & 320 & 10.00\% & 0.2816 \\
+					SIFT + SIFT & 48 & 43.75\% & 0.4469 & 138 & 69.56\% & 7.9518 \\
+					ORB + ORB & 7 & 04.09\% & 0.0771 & 243 & 16.05\% & 0.2952 \\
+					ORB + BRISK & 26 & 61.54\% & 0.9651 & 57 & 96.49\% & 1.1579 \\
 				\end{tabular}
 			\end{center}
-			\caption{Matching - comparació 2}
+			\caption{Matching - comparació imatges campus i jardins}
 		\end{table}
 		\noindent
 		SIFT i ORB+BRISK continuent sent els algorismes amb la taxa d'encert més elevada i SIFT+LATCH segueix obtenint molt pocs matches.\\\\
@@ -314,23 +349,22 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\textwidth]{images/homography}
-			\caption{Homografia graff - SIFT}
+			\caption{Homografia graff}
 		\end{figure}
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\textwidth]{images/jardiSel}
-			\caption{Homografia jardins - ORB+BRISK}
+			\caption{Homografia jardins}
 		\end{figure}
 
 \newpage
-
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\textwidth]{images/uniSel}
-			\caption{Homografia campus - SIFT}
+			\caption{Homografia campus}
 		\end{figure}
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.7\textwidth]{images/uniSel5}
-			\caption{Homografia campus 2 - SIFT}
+			\caption{Homografia campus 2}
 		\end{figure}

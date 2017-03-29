@@ -3,9 +3,9 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 \section{Pre-processat digital d'imatges}
 	El pre-processament digital en una imatge, consisteix en aplicar diverses tècniques per tal d'aconseguir una imatge d'on poder obtenir la informació que necessitem més facilment. Es tracta
 	d'eliminar distorsions o be ressaltar determinades parts de la imatge.\\\\
-	Algunes de les tècniques que es poden aplicar són:
+	Algunes de les tècniques que es poden aplicar i s'han provat durant la realització del projecte són:
 
-	\begin{itemize}	
+	\begin{itemize}
 		\item{Suavitzat de la imatge i reducció de soroll: }
 		\item{Reducció de mides: Reduir la mida de la imatge ens permet millorar el temps d'execució.}
 		\item{Escala de grisos: Els píxels de la imatge passen a tenir un valor en el rang 0-255. D'aquesta manera s'aconsegueix reduir el pes de la imatge. Encara que es perd la informació del color, moltes
@@ -13,12 +13,8 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\item{Equalització de l'histograma: Per tal de millorar el contrast de les imatges. Clahe local adaptatiu.}
 		\item{Ressaltar vores: }
 	\end{itemize}
-	
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[width=0.9\textwidth]{images/pre-processat}
-	%	\caption{Pre-processat}
-	%\end{figure}
+
+	Finalment, s'ha decidit no aplicar cap filtre i utilitzar les imatges tal com són. Simplement s'ha reduït la mida i convertit la imatge a escala de grisos.
 
 \newpage
 \section{Obtenció de keypoints en una imatge}
@@ -33,6 +29,14 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\includegraphics[width=0.7\textwidth]{images/RobotKp}
 		\caption{Keypoints}
 	\end{figure}
+	Les principals tècniques d'obtenció de keypoints utilitzades són: SIFT, HARRIS i ORB.
+	També s'han provat altres algorismes com FAST, SURF, STAR, MSER o SHI-TOMASI.
+
+	HARRIS
+
+	SIFT
+
+	ORB
 
 \section{Extracció de característiques}
 
@@ -41,6 +45,14 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\item{Descriptors vectorials: SIFT, SURF}
 		\item{Descriptors binaris: ORB, BRISK}
 	\end{itemize}
+	Principalment s'han utilitzat SIFT, ORB i BRISK.\\\\
+	També s'han provat algorismes com SURF, LATCH o DAISY.
+
+	SIFT
+
+	ORB
+
+	BRISK
 
 \newpage
 \section{Matching de característiques}
@@ -51,7 +63,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\item{Força bruta: Consisteix en provar totes les combinacions possibles per cada punt.}
 		\item{Aproximació: ...}
 	\end{itemize}
-	Com que el temps d'execució no es una factor essencial, s'aplicarà el mètode de força bruta, una mica més lent pero més .
+	Com que el temps d'execució no es una factor essencial, s'aplicarà el mètode de força bruta, una mica més lent.
 
 	\begin{figure}[H]
 		\centering

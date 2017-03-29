@@ -5,9 +5,9 @@ import cv2
 IMAGES
 **********************'''
 
-img1 = cv2.imread('images/experiments/uni5_sel.jpg')
-img2 = cv2.imread('images/experiments/uni5.jpg')
-alg1 = vc._SIFT
+img1 = cv2.imread('images/experiments/uni1.jpg')
+img2 = cv2.imread('images/experiments/uni2.jpg')
+alg1 = vc._HARRIS
 alg2 = vc._SIFT
 
 '''**********************

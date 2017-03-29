@@ -114,8 +114,12 @@
 
 	Creem un SGI Entry Point (wsgi.py)\\
 
+	\begin{bash}
+	$ nano ~/moras/wsgi.py
+	\end{bash}
+
 	\begin{python}
-	from myproject import app
+	from project import app
 
 	if __name__ == "__main__":
 		app.run()
@@ -124,7 +128,7 @@
 	També necessitem l'arxiu de configuració que utilitzarà uwsgi.\\
 
 	\begin{bash}
-	$ nano ~/myproject/myproject.ini
+	$ nano ~/moras/moras.ini
 	\end{bash}
 
 	\begin{txt}
@@ -134,55 +138,43 @@
 	master = true
 	processes = 5
 
-	socket = myproject.sock
-	chmod-socket = 660
+	socket = /tmp/moras.sock
+	chmod-socket = 664
 	vacuum = true
 
 	die-on-term = true
 	\end{txt}
 
 	Amb això ja podriem executar uwsgi sense problemes, pero volem que el servei s'executi de manera automàtica quan iniciem el sistema.
-	Per aconseguir això, crearem un fitxer a systemd que s'encarregui d'executar l'arxiu .ini creat anteriorment.\\
+	Per aconseguir això, afegirem una linia al fitxer rc.local que s'encarregui d'executar l'arxiu .ini creat anteriorment.\\
 
 	\begin{bash}
-	$ sudo nano /etc/systemd/system/myproject.service
+	$ sudo nano /etc/rc.local
 	\end{bash}
 
 	\begin{txt}
-	[Unit]
-	Description=uWSGI instance to serve myproject
-	After=network.target
+	[...]
 
-	[Service]
-	User=sammy
-	Group=www-data
-	WorkingDirectory=/home/sammy/myproject
-	Environment="PATH=/home/sammy/myproject/myprojectenv/bin"
-	ExecStart=/home/sammy/myproject/myprojectenv/bin/uwsgi --ini myproject.ini
+	/usr/local/bin/uwsgi --ini /home/pi/moras/moras.ini
+		--uid www-data --gid www-data
+		--daemonize /var/log/uwsgi.log
 
-	[Install]
-	WantedBy=multi-user.target
+	exit 0
 	\end{txt}
 
-	Ara ja podrem activar el servei i fer que s'inicialitzi automàticament a l'arrancar el sistema.\\
+	Per tal que Nginx redirigeixi les peticions al servidor uWSGI, hem de crear un nou lloc a /etc/nginx/sites-available.\\
 	\begin{bash}
-	$ sudo systemctl start myproject
-	$ sudo systemctl enable myproject
-	\end{bash}
-
-	Per tal que Nginx redirigeixi les peticions al servidor Uwsgi, hem de crear un nou lloc a /etc/nginx/sites-available.\\
-	\begin{bash}
-	$ sudo nano /etc/nginx/sites-available/myproject
+	$ sudo nano /etc/nginx/sites-available/moras
 	\end{bash}
 
 	\begin{txt}
 	server {
 		listen 80;
-		server_name server_domain_or_IP;
+		server_name localhost;
 
 		location / {
 			include uwsgi_params;
-			uwsgi_pass unix:/home/sammy/myproject/myproject.sock;
+			uwsgi_pass unix:/tmp/moras.sock;
 		}
 	}
 	\end{txt}
@@ -190,7 +182,7 @@
 	Finalment, nomes caldrà activar el lloc web creant un soft link a sites-enabled i reiniciar el servidor Nginx
 	per aplicar la nova configuració.\\
 	\begin{bash}
-	$ sudo ln -s /etc/nginx/sites-available/myproject
+	$ sudo ln -s /etc/nginx/sites-available/moras
 		/etc/nginx/sites-enabled
 	$ sudo systemctl restart nginx
 	\end{bash}
