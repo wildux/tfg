@@ -156,7 +156,8 @@ def feature_extraction(image, kp, alg):
 
 	#ORB
 	elif alg == _ORB:
-		orb = cv2.ORB_create(nfeatures = 2500, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		#orb = cv2.ORB_create(nfeatures = 2500, nlevels = 8, edgeThreshold = 8, patchSize = 8, fastThreshold = 5)
+		orb = cv2.ORB_create()
 		kp, des = orb.compute(image, kp)
 
 	#BRIEF
@@ -186,26 +187,8 @@ def feature_extraction(image, kp, alg):
 
 	return kp, des
 
-def matching(img1, img2, des1, des2, kp1, kp2, fe, test=False):
-	if fe == _LATCH or fe == _ORB or fe == _BRISK:
-		#bf = cv2.BFMatcher(cv2.NORM_HAMMING)
-		bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
-	else:
-		#bf = cv2.BFMatcher()
-		bf = cv2.BFMatcher(crossCheck=True)
-
-	#matches = bf.knnMatch(des1, des2, k=2)
-	good = bf.match(des1,des2)
-	#matches = sorted(matches, key = lambda x:x.distance)
-	#num = int(len(matches)*0.6)
-	#good = matches[:num]
-	
+def homography(img1, img2, des1, des2, kp1, kp2, good):
 	x = -1; y = -1
-
-	#good = [] # Good matches; Lowe's ratio test
-	#for m,n in matches:
-	#	if m.distance < 0.75*n.distance:
-	#		good.append(m)
 
 	img2C = img2.copy()
 	if len(good) >= MIN_MATCH_COUNT:
@@ -227,40 +210,35 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe, test=False):
 		x = (x1+x2+x3+x4)/4
 		y = (y1+y2+y3+y4)/4
 
+		img2C = cv2.circle(img2C,(int(x),int(y)), 5, (0,0,255), -1)
 	else:
 		print("Not enough matches found", len(good),"of", MIN_MATCH_COUNT)
 		matchesMask = None
 
-	draw_params = dict(matchColor = (0,255,0), singlePointColor = None,
-					matchesMask = matchesMask, flags = 2)
+	draw_params = dict(matchColor = (0,255,0), singlePointColor = None, matchesMask = matchesMask, flags = 2)
 	img3 = cv2.drawMatches(img1,kp1,img2C,kp2,good,None,**draw_params)
-	if test:
-		return x, y, img3, len(good)
-	else:
-		return x, y, img3
+	return x, y, img3
 
 
-def matching2(img1, img2, des1, des2, kp1, kp2, fe):
+def matching(img1, img2, des1, des2, kp1, kp2, fe):
 	if fe == _LATCH or fe == _ORB or fe == _BRISK:
-		#bf = cv2.BFMatcher(cv2.NORM_HAMMING)
-		bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+		bf = cv2.BFMatcher(cv2.NORM_HAMMING)
+		#bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
 	else:
-		#bf = cv2.BFMatcher()
-		bf = cv2.BFMatcher(crossCheck=True)
+		bf = cv2.BFMatcher()
+		#bf = cv2.BFMatcher(crossCheck=True)
 
-	#matches = bf.knnMatch(des1, des2, k=2)
-	matches = bf.match(des1,des2)
+	matches = bf.knnMatch(des1, des2, k=2)
+	#matches = bf.match(des1,des2)
 	#matches = sorted(matches, key = lambda x:x.distance)
 	#num = int(len(matches)*0.6)
 	#good = matches[:num]
-	
-	x = -1; y = -1
 
-	#good = [] # Good matches; Lowe's ratio test
-	#for m,n in matches:
-	#	if m.distance < 0.75*n.distance:
-	#		good.append(m)
-	return matches
+	good = [] # Good matches; Lowe's ratio test
+	for m,n in matches:
+		if m.distance < 0.75*n.distance:
+			good.append(m)
+	return good
 
 
 def getResult(img1, img2, alg1, alg2):
@@ -273,7 +251,8 @@ def getResult(img1, img2, alg1, alg2):
 	kp1, des1 = feature_extraction(img1Gray, kp1, alg2)
 	kp2, des2 = feature_extraction(img2Gray, kp2, alg2)
 
-	x, y, img3 = matching(img1, img2, des1, des2, kp1, kp2, alg2)
+	good = matching(img1, img2, des1, des2, kp1, kp2, alg2)
+	x, y, img3 = matching(img1, img2, des1, des2, kp1, kp2, good)
 	return img3
 
 

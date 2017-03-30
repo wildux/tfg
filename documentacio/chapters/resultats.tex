@@ -235,20 +235,34 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 				\includegraphics[width=\linewidth]{images/experiments/uni4}
 				\label{fig:awesome_image3}
 			\endminipage
-			\caption{Imatges motos i cotxes}
+			\caption{Imatges campus}
 		\end{figure}
+
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\begin{tabular}{l | c c c c | c c c c}
+					& \multicolumn{4}{c|}{\textbf{Campus 1 (subimatge)}} & \multicolumn{4}{c}{\textbf{Campus 2 (subimatge)}} \\
+					\textbf{Algorismes} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} \\ \hline
+					Harris + SIFT & - & - & - & s & - & - & - & s \\
+					SIFT + SIFT & - & - & - & s & - & - & - & s \\
+					ORB + ORB & - & - & - & s & - & - & - & s \\
+					ORB + BRISK & - & - & - & s & - & - & - & s \\
+				\end{tabular}
+			\end{center}
+			\caption{Matching - comparació sub-imatges}
+		\end{table}
 
 		\begin{table}[H]
 			\begin{center}
 				\rowcolors{3}{}{myBlue}
 				\begin{tabular}{l | c c c | c c c}
 					& \multicolumn{3}{c|}{\textbf{Campus (subimatge)}} & \multicolumn{3}{c}{\textbf{Graff}} \\
-					\textbf{Algorismes} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} \\ \hline
-					Harris + SIFT & 71 & 14.08\% & 0.1289 & 108 & 34.26\% & 0.5980 \\
-					Harris + ORB & 221 & 04.07\% & 0.0437 & 320 & 10.00\% & 0.2816 \\
-					SIFT + SIFT & 48 & 43.75\% & 0.4469 & 138 & 69.56\% & 7.9518 \\
-					ORB + ORB & 7 & 04.09\% & 0.0771 & 243 & 16.05\% & 0.2952 \\
-					ORB + BRISK & 26 & 61.54\% & 0.9651 & 57 & 96.49\% & 1.1579 \\
+					\textbf{Algorismes} & \textbf{RANSAC} & \textbf{OK} & \textbf{Erronis} & \textbf{RANSAC} & \textbf{OK} & \textbf{Erronis} \\ \hline
+					Harris + SIFT & - & - & - & - & - & - \\
+					SIFT + SIFT & - & - & - & - & - & - \\
+					ORB + ORB & - & - & - & - & - & - \\
+					ORB + BRISK & - & - & - & - & - & - \\
 				\end{tabular}
 			\end{center}
 			\caption{Matching - comparació sub-imatges}
@@ -282,17 +296,31 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 		\begin{table}[H]
 			\begin{center}
 				\rowcolors{3}{}{myBlue}
-				\begin{tabular}{l | c c c | c c c}
-					& \multicolumn{3}{c|}{\textbf{Campus (subimatge)}} & \multicolumn{3}{c}{\textbf{Graff}} \\
-					\textbf{Algorismes} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} \\ \hline
-					Harris + SIFT & 71 & 14.08\% & 0.1289 & 108 & 34.26\% & 0.5980 \\
-					Harris + ORB & 221 & 04.07\% & 0.0437 & 320 & 10.00\% & 0.2816 \\
-					SIFT + SIFT & 48 & 43.75\% & 0.4469 & 138 & 69.56\% & 7.9518 \\
-					ORB + ORB & 7 & 04.09\% & 0.0771 & 243 & 16.05\% & 0.2952 \\
-					ORB + BRISK & 26 & 61.54\% & 0.9651 & 57 & 96.49\% & 1.1579 \\
+				\begin{tabular}{l | c c c c | c c c c}
+					& \multicolumn{4}{c|}{\textbf{Campus 1 (subimatge)}} & \multicolumn{4}{c}{\textbf{Campus 2 (subimatge)}} \\
+					\textbf{Algorismes} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} \\ \hline
+					Harris + SIFT & - & - & - & s & - & - & - & s \\
+					SIFT + SIFT & - & - & - & s & - & - & - & s \\
+					ORB + ORB & - & - & - & s & - & - & - & s \\
+					ORB + BRISK & - & - & - & s & - & - & - & s \\
 				\end{tabular}
 			\end{center}
-			\caption{Matching - comparació imatges similars}
+			\caption{Matching - comparació sub-imatges}
+		\end{table}
+
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\begin{tabular}{l | c c c | c c c}
+					& \multicolumn{3}{c|}{\textbf{Campus (subimatge)}} & \multicolumn{3}{c}{\textbf{Graff}} \\
+					\textbf{Algorismes} & \textbf{RANSAC} & \textbf{OK} & \textbf{Erronis} & \textbf{RANSAC} & \textbf{OK} & \textbf{Erronis} \\ \hline
+					Harris + SIFT & - & - & - & - & - & - \\
+					SIFT + SIFT & - & - & - & - & - & - \\
+					ORB + ORB & - & - & - & - & - & - \\
+					ORB + BRISK & - & - & - & - & - & - \\
+				\end{tabular}
+			\end{center}
+			\caption{Matching - comparació sub-imatges}
 		\end{table}
 		\noindent
 		Els resultats obtinguts són bastants dolents. En el cas de la imatge del graffiti sembla ser que el canvi de perspectiva i rotació de la imatge és massa gran.
@@ -326,22 +354,117 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 		\begin{table}[H]
 			\begin{center}
 				\rowcolors{3}{}{myBlue}
-				\begin{tabular}{l | c c c | c c c}
-					& \multicolumn{3}{c|}{\textbf{Campus (subimatge)}} & \multicolumn{3}{c}{\textbf{Graff}} \\
-					\textbf{Algorismes} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} & \textbf{OK} & \textbf{Descartats} & \textbf{Erronis} \\ \hline
-					Harris + SIFT & 71 & 14.08\% & 0.1289 & 108 & 34.26\% & 0.5980 \\
-					Harris + ORB & 221 & 04.07\% & 0.0437 & 320 & 10.00\% & 0.2816 \\
-					SIFT + SIFT & 48 & 43.75\% & 0.4469 & 138 & 69.56\% & 7.9518 \\
-					ORB + ORB & 7 & 04.09\% & 0.0771 & 243 & 16.05\% & 0.2952 \\
-					ORB + BRISK & 26 & 61.54\% & 0.9651 & 57 & 96.49\% & 1.1579 \\
+				\begin{tabular}{l | c c c c | c c c c}
+					& \multicolumn{4}{c|}{\textbf{Campus 1 (subimatge)}} & \multicolumn{4}{c}{\textbf{Campus 2 (subimatge)}} \\
+					\textbf{Algorismes} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} \\ \hline
+					Harris + SIFT & - & - & - & s & - & - & - & s \\
+					SIFT + SIFT & - & - & - & s & - & - & - & s \\
+					ORB + ORB & - & - & - & s & - & - & - & s \\
+					ORB + BRISK & - & - & - & s & - & - & - & s \\
 				\end{tabular}
 			\end{center}
-			\caption{Matching - comparació imatges campus i jardins}
+			\caption{Matching - comparació sub-imatges}
+		\end{table}
+
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\begin{tabular}{l | c c c | c c c}
+					& \multicolumn{3}{c|}{\textbf{Campus (subimatge)}} & \multicolumn{3}{c}{\textbf{Graff}} \\
+					\textbf{Algorismes} & \textbf{RANSAC} & \textbf{OK} & \textbf{Erronis} & \textbf{RANSAC} & \textbf{OK} & \textbf{Erronis} \\ \hline
+					Harris + SIFT & - & - & - & - & - & - \\
+					SIFT + SIFT & - & - & - & - & - & - \\
+					ORB + ORB & - & - & - & - & - & - \\
+					ORB + BRISK & - & - & - & - & - & - \\
+				\end{tabular}
+			\end{center}
+			\caption{Matching - comparació sub-imatges}
 		\end{table}
 		\noindent
 		SIFT i ORB+BRISK continuent sent els algorismes amb la taxa d'encert més elevada i SIFT+LATCH segueix obtenint molt pocs matches.\\\\
 		En els dos conjunts d'imatges, els algorismes confonen en molts casos
 		les finestres, ja que realment són iguals i els canvis de zoom i perspectiva fan molt complicat diferenciar-les. En el primer cas, la moto i la porta es detecten força bé.
+
+		\begin{figure}[!htb]
+			\resizebox{\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/experiments/uni_sel}
+			\includegraphics[height=1cm]{images/experiments/uni1}
+			\includegraphics[height=1cm]{images/experiments/jardi_sel}
+			\includegraphics[height=1cm]{images/experiments/jardi_2}}
+			\caption{Imatges Campus i jardins (objectes)}
+		\end{figure}
+
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\begin{tabular}{l | c c c c | c c c c}
+					& \multicolumn{4}{c|}{\textbf{Campus 1 (subimatge)}} & \multicolumn{4}{c}{\textbf{Campus 2 (subimatge)}} \\
+					\textbf{Algorismes} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} \\ \hline
+					Harris + SIFT & - & - & - & s & - & - & - & s \\
+					SIFT + SIFT & - & - & - & s & - & - & - & s \\
+					ORB + ORB & - & - & - & s & - & - & - & s \\
+					ORB + BRISK & - & - & - & s & - & - & - & s \\
+				\end{tabular}
+			\end{center}
+			\caption{Matching - objectes}
+		\end{table}
+
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\begin{tabular}{l | c c c | c c c}
+					& \multicolumn{3}{c|}{\textbf{Campus (subimatge)}} & \multicolumn{3}{c}{\textbf{Graff}} \\
+					\textbf{Algorismes} & \textbf{RANSAC} & \textbf{OK} & \textbf{Erronis} & \textbf{RANSAC} & \textbf{OK} & \textbf{Erronis} \\ \hline
+					Harris + SIFT & - & - & - & - & - & - \\
+					SIFT + SIFT & - & - & - & - & - & - \\
+					ORB + ORB & - & - & - & - & - & - \\
+					ORB + BRISK & - & - & - & - & - & - \\
+				\end{tabular}
+			\end{center}
+			\caption{Matching - objectes}
+		\end{table}
+		\noindent
+
+
+		\begin{figure}[!htb]
+			\resizebox{\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/experiments/uni_sel}
+			\includegraphics[height=1cm]{images/experiments/jardi2}
+			\includegraphics[height=1cm]{images/experiments/jardi_sel}
+			\includegraphics[height=1cm]{images/experiments/uni2}}
+			\caption{Imatges Campus i jardins}
+		\end{figure}
+
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\begin{tabular}{l | c c c c | c c c c}
+					& \multicolumn{4}{c|}{\textbf{Campus 1 (subimatge)}} & \multicolumn{4}{c}{\textbf{Campus 2 (subimatge)}} \\
+					\textbf{Algorismes} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} \\ \hline
+					Harris + SIFT & - & - & - & s & - & - & - & s \\
+					SIFT + SIFT & - & - & - & s & - & - & - & s \\
+					ORB + ORB & - & - & - & s & - & - & - & s \\
+					ORB + BRISK & - & - & - & s & - & - & - & s \\
+				\end{tabular}
+			\end{center}
+			\caption{Matching - comparació sub-imatges}
+		\end{table}
+
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\begin{tabular}{l | c c c | c c c}
+					& \multicolumn{3}{c|}{\textbf{Campus (subimatge)}} & \multicolumn{3}{c}{\textbf{Graff}} \\
+					\textbf{Algorismes} & \textbf{RANSAC} & \textbf{OK} & \textbf{Erronis} & \textbf{RANSAC} & \textbf{OK} & \textbf{Erronis} \\ \hline
+					Harris + SIFT & - & - & - & - & - & - \\
+					SIFT + SIFT & - & - & - & - & - & - \\
+					ORB + ORB & - & - & - & - & - & - \\
+					ORB + BRISK & - & - & - & - & - & - \\
+				\end{tabular}
+			\end{center}
+			\caption{Matching - comparació sub-imatges}
+		\end{table}
+		\noindent
 
 \newpage
 	\subsection{Matching i homografia}
