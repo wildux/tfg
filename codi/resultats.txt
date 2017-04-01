@@ -175,3 +175,129 @@ ORB: 0.129018204399 Good matches: 227
 ORB + BRISK: 1.0204817076 Good matches: 49
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##################
+images/experiments/uni_2.jpg images/experiments/uni.jpg
+HARRIS_SIFT: 0.523910876 Ransac matches: 1098
+HARRIS_SIFT: 0.523910876 Total matches: 1196
+SIFT: 2.3568321906 Ransac matches: 2737
+SIFT: 2.3568321906 Total matches: 2784
+ORB: 0.180970138 Ransac matches: 759
+ORB: 0.180970138 Total matches: 793
+ORB_BRISK: 1.0727138768 Ransac matches: 965
+ORB_BRISK: 1.0727138768 Total matches: 1012
+
+
+images/experiments/uni4_2.jpg images/experiments/uni4.jpg
+HARRIS_SIFT: 0.3723064584 Ransac matches: 326
+HARRIS_SIFT: 0.3723064584 Total matches: 385
+SIFT: 1.9095614406 Ransac matches: 1130
+SIFT: 1.9095614406 Total matches: 1134
+ORB: 0.181860000398 Ransac matches: 205
+ORB: 0.181860000398 Total matches: 243
+ORB_BRISK: 1.0609390714 Ransac matches: 271
+ORB_BRISK: 1.0609390714 Total matches: 301
+
+
+images/experiments/motos3.png images/experiments/motos1.png
+HARRIS_SIFT: 0.0602822688001 Ransac matches: 232
+HARRIS_SIFT: 0.0602822688001 Total matches: 269
+SIFT: 0.3737602972 Ransac matches: 500
+SIFT: 0.3737602972 Total matches: 515
+ORB: 0.0961173759999 Ransac matches: 1039
+ORB: 0.0961173759999 Total matches: 1132
+ORB_BRISK: 0.994492724799 Ransac matches: 1180
+ORB_BRISK: 0.994492724799 Total matches: 1250
+
+
+images/experiments/cars4.png images/experiments/cars6.png
+HARRIS_SIFT: 0.0385594081992 Ransac matches: 182
+HARRIS_SIFT: 0.0385594081992 Total matches: 230
+SIFT: 0.2094541076 Ransac matches: 264
+SIFT: 0.2094541076 Total matches: 302
+ORB: 0.0612575854 Ransac matches: 697
+ORB: 0.0612575854 Total matches: 907
+ORB_BRISK: 0.983404327599 Ransac matches: 1103
+ORB_BRISK: 0.983404327599 Total matches: 1161
+
+#######
+
+images/experiments/uni1.jpg images/experiments/uni2.jpg
+	HARRIS_SIFT: 0.546921819001 Ransac matches: 12
+	HARRIS_SIFT: 0.546921819001 Total matches: 77
+	SIFT: 2.5952919152 Ransac matches: 41
+	SIFT: 2.5952919152 Total matches: 150
+	ORB: 0.220537012399 Ransac matches: 60
+	ORB: 0.220537012399 Total matches: 180
+	ORB_BRISK: 1.09294957 Ransac matches: 42
+	ORB_BRISK: 1.09294957 Total matches: 143
+
+
+images/experiments/jardi_2.jpg images/experiments/jardi2.jpg
+	HARRIS_SIFT: 0.46561623 Ransac matches: 14
+	HARRIS_SIFT: 0.46561623 Total matches: 111
+	SIFT: 4.3275968804 Ransac matches: 31
+	SIFT: 4.3275968804 Total matches: 120
+	ORB: 0.271712980799 Ransac matches: 33
+	ORB: 0.271712980799 Total matches: 86
+	ORB_BRISK: 1.1451467314 Ransac matches: 41
+	ORB_BRISK: 1.1451467314 Total matches: 87
+
+images/experiments/uni_sel.jpg images/experiments/uni1.jpg
+	HARRIS_SIFT: 0.224278937 Ransac matches: 9
+	HARRIS_SIFT: 0.224278937 Total matches: 17
+	SIFT: 1.0579581 Ransac matches: 13
+	SIFT: 1.0579581 Total matches: 16
+	ORB: 0.0768326340003 Ransac matches: 12
+	ORB: 0.0768326340003 Total matches: 15
+	ORB_BRISK: 0.9391685882 Ransac matches: 18
+	ORB_BRISK: 0.9391685882 Total matches: 19
+
+images/experiments/jardi_sel.jpg images/experiments/jardi_2.jpg
+	HARRIS_SIFT: 0.1929366324 Ransac matches: 15
+	HARRIS_SIFT: 0.1929366324 Total matches: 58
+	SIFT: 1.1096188088 Ransac matches: 26
+	SIFT: 1.1096188088 Total matches: 51
+	ORB: 0.129821155201 Ransac matches: 33
+	ORB: 0.129821155201 Total matches: 62
+	ORB_BRISK: 1.0369446926 Ransac matches: 49
+	ORB_BRISK: 1.0369446926 Total matches: 77
+
+
+
+
+
+
+
+

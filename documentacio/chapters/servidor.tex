@@ -1,22 +1,40 @@
-\section{Arquitectura}
-
+\section{Estructura}
+	S'utilitzarà una Raspberry Pi 2 com a servidor de proves. La idea és que l'usuari pugui accedir a una aplicació web i utilitzar el sistema, ja sigui desde Internet o desde una xarxa local.\\\\
+	L'estructura d'aquest servidor serà la següent:\\
 	\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.6\textwidth]{images/server}
 			\caption{Arquitectura del sistema}
 	\end{figure}
 
-	\subsection{Nginx}
-		Nginx és...
-	\subsection{uWSGI}
-		asd
 	\subsection{Flask}
-		He decidit utilitzar Flask per desenvolupar l'aplicació web.
+		Per desenvolupar l'aplicació web he decidit utilitzar Flask, un micro-framework de Python que permetrà utilitzar el codi desenvolupat del projecte amb facilitat.
+		A més, també permet utilitzar un servidor per provar l'apliacció en la fase de desenvolupament sense necessitat d'inicialitzar el servidor web.\\\\
+		Un exemple d'aplicació en Flask (el típic Hello World) seria així:
+		\begin{python}
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+	return "Hello World!"
+
+if __name__ == "__main__":
+	app.run()
+		\end{python}
+	\subsection{Nginx}
+		Nginx és un servidor web i proxy invers lleuger i d'alt rendiment. Com que s'ha decidit utilitzar una Raspberry com a servidor de proves, Nginx és una bona opció, ja que no consumeix masses recursos
+		i ofereix molt bon rendiment.\\\\
+		Nginx, pero, no es capaç de comunicar-se amb l'aplicació web per WSGI. Per tant, necessitarem instal·lar un altre servidor que faci d'intermediari.
+	\subsection{uWSGI}
+		uWSGI és un servidor capaç de comunicarse amb aplicacions web mitjançant el protocol uwsgi.
 
 \section{Instal·lació del software}
-	
+
 	El sistema operatiu a utilitzar serà la versió lite de Raspbian, el sistema oficial de la fundació de Raspberry.
 	Es pot baixar la imatge desde el web de raspberry i instal·lar a la targeta SD amb la comanda dd.\\
+	Tot i que a continuació s'especifiquen les comandes utilitzades amb Raspbian, el mateix proces es podria replicar en qualsevol altre sistema basat en linux amb poques diferencies. I evidentment el
+	hardware tampoc ha de ser el d'una Raspberry Pi 2.
 
 	\begin{bash}
 	$ sudo dd bs=4M if=/home/joan/Downloads/raspbian.img
@@ -125,7 +143,7 @@
 		app.run()
 	\end{python}
 
-	També necessitem l'arxiu de configuració que utilitzarà uwsgi.\\
+	També necessitem l'arxiu de configuració que utilitzarà uWSGI.\\
 
 	\begin{bash}
 	$ nano ~/moras/moras.ini
