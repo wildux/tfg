@@ -11,7 +11,8 @@ imgs1 = ['images/experiments/uni_2.jpg', 'images/experiments/uni4_2.jpg', 'image
 imgs2 = ['images/experiments/uni.jpg', 'images/experiments/uni4.jpg', 'images/experiments/motos1.png', 'images/experiments/cars6.png',
 		'images/experiments/uni2.jpg', 'images/experiments/jardi2.jpg', 'images/experiments/jardi_2.jpg', 'images/experiments/uni1.jpg']
 
-algs1 = [vc._HARRIS, vc._SIFT, vc._ORB, vc._ORB]
+algs1 = [vc._HARRIS]
+#algs1 = [vc._HARRIS, vc._SIFT, vc._ORB, vc._ORB]
 algs2 = [vc._SIFT, vc._SIFT, vc._ORB, vc._BRISK]
 algsName = ["HARRIS_SIFT", "SIFT", "ORB", "ORB_BRISK"]
 

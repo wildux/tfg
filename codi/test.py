@@ -6,12 +6,12 @@ import numpy as np
 IMAGES
 **********************'''
 
-img1 = cv2.imread('images/experiments/uni_sel.jpg')
+img1 = cv2.imread('images/experiments/jardi2.jpg')
 img1, imgROIGray = vc.imgPrep(img1)
-img2 = cv2.imread('images/experiments/uni1.jpg')
+img2 = cv2.imread('images/experiments/jardi_2.jpg')
 img2, imgRobotGray = vc.imgPrep(img2)
 
-psAlg = vc._SIFT
+psAlg = vc._HARRIS
 feAlg = vc._SIFT
 
 MIN_MATCH_COUNT = 10
@@ -64,12 +64,13 @@ if len(good) >= MIN_MATCH_COUNT:
 
 	#draw_params = dict(matchColor = (0,255,0), singlePointColor = None, matchesMask = matchesMask, flags = 2)
 	#img3 = cv2.drawMatches(img1,kp1,img2C,kp2,good_matches,None,**draw_params)
-	#draw_params = dict(matchColor = (0,255,0), singlePointColor = None, flags = 2)
-	#img3 = cv2.drawMatches(img1,kp1,img2,kp2,good_matches,None,**draw_params)
-	img3 = cv2.circle(img2,(int(x),int(y)), 5, (0,0,255), -1)
+	draw_params = dict(matchColor = (0,255,0), singlePointColor = None, flags = 2)
+	img3 = cv2.drawMatches(img1,kp1,img2,kp2,good_matches,None,**draw_params)
+	#img3 = cv2.circle(img2,(int(x),int(y)), 5, (0,0,255), -1)
 	cv2.imshow("Matching", img3)
 	print(len(good_matches))
-	
+	print(len(good))
+
 	#print(good_matches[0])
 	
 

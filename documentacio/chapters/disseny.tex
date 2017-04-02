@@ -19,20 +19,26 @@ En aquest capítol es detalla l'arquitectura del sistema i el disseny de les apl
 	Inicialment es desenvoluparà una aplicació per realitzar les diverses proves sense interfície gràfica, que simplement mostrarà el resultat obtingut del matching. Més endavant, pero, s'inclourà una
 	interfície mínima que ens permetrà escollir les imatges a tractar i la regió d'interès (punt de destí).
 	\subsubsection{Selecció de les imatges}
-		Per seleccionar les imatges s'utilitzarà Tkinter, una GUI estàndard de Python.\\
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.5\textwidth]{images/fs}
-			\caption{Selecció de les imatges}
-		\end{figure}
+		Per seleccionar les imatges s'utilitzarà Tkinter, una GUI estàndard de Python.
+		%\begin{figure}[H]
+		%	\centering
+		%	\includegraphics[width=0.5\textwidth]{images/fs}
+		%	\caption{Selecció de les imatges}
+		%\end{figure}
 
 	\subsubsection{Selecció de la regió d'interès}
 		Per poder escollir el punt de destí del robot, l'usuari haurà de seleccionar una regió d'interès en una imatge. Això es farà de manera molt senzilla, fent una selecció amb el ratolí.
-		Un cop realitzada la selecció, l'usuari tindrà la opció de refer-la (simplement seleccionant de nou) o d'acceptar-la pulsant la tecla "c".\\
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.5\textwidth]{images/selection}
-			\caption{Selecció de la regió d'interès}
+		Un cop realitzada la selecció, l'usuari tindrà la opció de refer-la (simplement seleccionant de nou) o d'acceptar-la pulsant la tecla "c".\\\\
+		%\begin{figure}[H]
+		%	\centering
+		%	\includegraphics[width=0.5\textwidth]{images/selection}
+		%	\caption{Selecció de la regió d'interès}
+		%\end{figure}
+		\begin{figure}[!htb]
+			\resizebox{\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/fs}
+			\includegraphics[height=1cm]{images/selection}}
+			\caption{Aplicació de proves}
 		\end{figure}
 \newpage
 \section{Disseny de l'aplicació mòbil}
@@ -75,8 +81,8 @@ En aquest capítol es detalla l'arquitectura del sistema i el disseny de les apl
 			\item{Obtenció de keypoints: Harris, SIFT, SURF, ORB, BRISK, MSER}
 			\item{Extracció de característiques: SIFT, SURF, ORB, BRISK, LATCH, DAISY\\}
 		\end{itemize}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.4\textwidth]{images/options}
-			\caption{App - Opcions}
-		\end{figure}
+		%\begin{figure}[H]
+		%	\centering
+		%	\includegraphics[width=0.4\textwidth]{images/options}
+		%	\caption{App - Opcions}
+		%\end{figure}

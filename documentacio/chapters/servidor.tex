@@ -10,7 +10,7 @@
 	\subsection{Flask}
 		Per desenvolupar l'aplicació web he decidit utilitzar Flask, un micro-framework de Python que permetrà utilitzar el codi desenvolupat del projecte amb facilitat.
 		A més, també permet utilitzar un servidor per provar l'apliacció en la fase de desenvolupament sense necessitat d'inicialitzar el servidor web.\\\\
-		Un exemple d'aplicació en Flask (el típic Hello World) seria així:
+		Un exemple d'aplicació en Flask (el típic Hello World) seria així:\\
 		\begin{python}
 from flask import Flask
 app = Flask(__name__)
@@ -29,18 +29,19 @@ if __name__ == "__main__":
 	\subsection{uWSGI}
 		uWSGI és un servidor capaç de comunicarse amb aplicacions web mitjançant el protocol uwsgi.
 
+\newpage
 \section{Instal·lació del software}
 
 	El sistema operatiu a utilitzar serà la versió lite de Raspbian, el sistema oficial de la fundació de Raspberry.
-	Es pot baixar la imatge desde el web de raspberry i instal·lar a la targeta SD amb la comanda dd.\\
+	Es pot baixar la imatge desde el web de raspberry i instal·lar a la targeta SD amb la comanda dd.\\\\
 	Tot i que a continuació s'especifiquen les comandes utilitzades amb Raspbian, el mateix proces es podria replicar en qualsevol altre sistema basat en linux amb poques diferencies. I evidentment el
-	hardware tampoc ha de ser el d'una Raspberry Pi 2.
+	hardware tampoc ha de ser el d'una Raspberry Pi 2.\\
 
 	\begin{bash}
 	$ sudo dd bs=4M if=/home/joan/Downloads/raspbian.img
 		of=/dev/mmcbk0
 	\end{bash}
-
+\noindent
 	Un cop tenim el sistema operatiu instal·lat, abans de començar a fer res, actualitzarem els paquets del sistema.\\
 
 	\begin{bash}
@@ -48,7 +49,7 @@ if __name__ == "__main__":
 	\end{bash}
 
 	\subsubsection{Python}
-	Instal·lar python, pip i dependencies del projecte\\
+	Serà necessari instal·lar Python per poder executar el codi principal i l'aplicació web. També caldrà instal·lar altres dependencies del projecte com numpy i matplotlib.\\
 	\begin{bash}
 	$ sudo apt-get install python3-pip python3-dev
 	$ sudo apt-get install python3-numpy 
@@ -56,40 +57,31 @@ if __name__ == "__main__":
 	\end{bash}
 
 	\subsubsection{OpenCV}
-	Instal·lar opencv Eines i biblioteques necessaries\\
+	Evidentment, com que el projecte està desenvolupat utilitzant la biblioteca OpenCV, serà necessari instal·lar-la al servidor. Abans, pero, haurem d'instal·lar algunes eines i biblioteques per poder
+	compil·lar OpenCV i tractar amb imatges.\\
 	\begin{bash}
 	$ sudo apt-get install cmake
-	\end{bash}
-
-	Imatges\\
-	\begin{bash}
 	$ sudo apt-get install libjpeg-dev libtiff5-dev
 		libjasper-dev libpng12-dev
-	\end{bash}
-	Gtk\\
-	\begin{bash}
 	$ sudo apt-get install libgtk2.0-dev
-	\end{bash}
-	Optimitzacions\\
-	\begin{bash}
 	$ sudo apt-get install libatlas-base-dev gfortran
 	\end{bash}
-
-	Ens podem baixar OpenCV desde el repositori de github.\\
+\noindent
+	La versió a instal·lar és la 3.2, que ens podem baixar OpenCV desde el repositori oficial de github.\\
 	\begin{bash}
 	$ wget -O opencv.zip https://github.com/Itseez/
 		opencv/archive/3.2.0.zip
 	$ unzip opencv.zip
 	\end{bash}
-
-	Per poder utilitzar algorismes com SIFT i SURF també necessitarem descarregar OpenCV Contrib.\\
+\noindent
+	Com que també utilitzem algorismes no lliures com SIFT i SURF, també serà necessari descarregar OpenCV Contrib.\\
 	\begin{bash}
 	$ wget -O opencv_contrib.zip https://github.com/
 		Itseez/opencv_contrib/archive/3.2.0.zip
 	$ unzip opencv_contrib.zip
 	\end{bash}
-
-	Un cop obtinguts els arxius necessaris, podem preparar, compil·lar i instal·lar OpenCV al nostre sistema.\\
+\noindent
+	Un cop obtinguts els arxius necessaris, ja podem preparar, compil·lar i instal·lar OpenCV al nostre sistema.\\
 	\begin{bash}
 	$ cd ~/opencv-3.2.0/
 	$ mkdir build
@@ -109,13 +101,13 @@ if __name__ == "__main__":
 
 
 	\subsubsection{Nginx}
-	Per instal·lar el servidor web nomes cal utilitzar apt-get\\
+	Per instal·lar el servidor web nomes cal utilitzar apt-get.\\
 	\begin{bash}
 	$ sudo apt-get install nginx
 	\end{bash}
 
 	\subsubsection{Flask}
-	Farem el mateix per instal·lar flask\\
+	Podem instal·lar Flask a traves de pip.\\
 	\begin{bash}
 	$ sudo pip3 install flask
 	\end{bash}
@@ -128,9 +120,10 @@ if __name__ == "__main__":
 
 \section{Configuració}
 	Ara que tenim tots els programes necessaris al servidor, ja podem configurar-lo perque s'executi la nostra aplicació web quan accedim
-	a la IP del servidor.\\
-
-	Creem un SGI Entry Point (wsgi.py)\\
+	a la IP del servidor.\\\\
+	S'ha de tenir en compte que la configuració següent ens permetrà accedir a l'aplicació web desde la xarxa local. En cas que es vulgui accedir desde l'exterior, s'haurà de configurar el router perque faci
+	port forwading i redirigeixi el trafic cap al servidor.\\\\
+	Suposant que l'aplicació web s'anomena "project.py", el primer que haurem de fer serà crear un SGI Entry Point (wsgi.py) que executi l'aplicació i pugui ser utilitzar per uWSGI.\\
 
 	\begin{bash}
 	$ nano ~/moras/wsgi.py
@@ -142,7 +135,7 @@ if __name__ == "__main__":
 	if __name__ == "__main__":
 		app.run()
 	\end{python}
-
+\noindent
 	També necessitem l'arxiu de configuració que utilitzarà uWSGI.\\
 
 	\begin{bash}
@@ -162,8 +155,8 @@ if __name__ == "__main__":
 
 	die-on-term = true
 	\end{txt}
-
-	Amb això ja podriem executar uwsgi sense problemes, pero volem que el servei s'executi de manera automàtica quan iniciem el sistema.
+\noindent
+	Amb això ja podriem executar uWSGI sense problemes, pero volem que el servei s'executi de manera automàtica quan iniciem el sistema.
 	Per aconseguir això, afegirem una linia al fitxer rc.local que s'encarregui d'executar l'arxiu .ini creat anteriorment.\\
 
 	\begin{bash}
@@ -179,7 +172,7 @@ if __name__ == "__main__":
 
 	exit 0
 	\end{txt}
-
+\noindent
 	Per tal que Nginx redirigeixi les peticions al servidor uWSGI, hem de crear un nou lloc a /etc/nginx/sites-available.\\
 	\begin{bash}
 	$ sudo nano /etc/nginx/sites-available/moras
@@ -196,7 +189,7 @@ if __name__ == "__main__":
 		}
 	}
 	\end{txt}
-
+\noindent
 	Finalment, nomes caldrà activar el lloc web creant un soft link a sites-enabled i reiniciar el servidor Nginx
 	per aplicar la nova configuració.\\
 	\begin{bash}

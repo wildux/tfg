@@ -88,17 +88,17 @@ def point_selection(gray, alg):
 		kp = surf.detect(gray,None)
 
 	#Harris
-	elif alg == _HARRIS:		
+	elif alg == _HARRIS:
 		G = gray.copy()
 		for i in range(5):
 			if i != 0:
 				G = cv2.pyrDown(G)
 			scale = 2**(i)
-			corners = cv2.goodFeaturesToTrack(image=G,maxCorners=1000,qualityLevel=0.01,minDistance=scale,useHarrisDetector=1, k=0.04)
+			corners = cv2.goodFeaturesToTrack(image=G,maxCorners=2000,qualityLevel=0.05,minDistance=4,useHarrisDetector=1, k=0.04) #mindistance = scale, quality = 0.01
 			corners = np.int0(corners)
 			for corner in corners:
 				x,y = corner.ravel()
-				k = cv2.KeyPoint(x*scale, y*scale, scale)
+				k = cv2.KeyPoint(x*scale, y*scale, scale*3)
 				kp.append(k)
 
 	#FAST
@@ -113,12 +113,23 @@ def point_selection(gray, alg):
 
 	#GFTT (SHI TOMASI)
 	elif alg == _SHI_TOMASI:
-		corners = cv2.goodFeaturesToTrack(gray,100000,0.008,1)
-		corners = np.int0(corners)
-		for i in corners:
-			x,y = i.ravel()
-			k = cv2.KeyPoint(x, y, 10) #Size (?)
-			kp.append(k)
+		#corners = cv2.goodFeaturesToTrack(gray,100000,0.008,1)
+		#corners = np.int0(corners)
+		#for i in corners:
+		#	x,y = i.ravel()
+		#	k = cv2.KeyPoint(x, y, 10) #Size (?)
+		#	kp.append(k)
+		G = gray.copy()
+		for i in range(5):
+			if i != 0:
+				G = cv2.pyrDown(G)
+			scale = 2**(i)
+			corners = cv2.goodFeaturesToTrack(image=G,maxCorners=2000,qualityLevel=0.05,minDistance=4,useHarrisDetector=0, k=0.04) #mindistance = scale, quality = 0.01
+			corners = np.int0(corners)
+			for corner in corners:
+				x,y = corner.ravel()
+				k = cv2.KeyPoint(x*scale, y*scale, scale*3)
+				kp.append(k)
 
 	#ORB
 	elif alg == _ORB:

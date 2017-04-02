@@ -300,4 +300,200 @@ images/experiments/jardi_sel.jpg images/experiments/jardi_2.jpg
 
 
 
+images/experiments/uni_2.jpg images/experiments/uni.jpg
+HARRIS_SIFT: Keypoints: 2258 2522
+SIFT: Keypoints: 3518 5769
+ORB: Keypoints: 2500 2500
+ORB_BRISK: Keypoints: 2500 2500
+
+
+images/experiments/uni4_2.jpg images/experiments/uni4.jpg
+HARRIS_SIFT: Keypoints: 714 2591
+SIFT: Keypoints: 1269 6168
+ORB: Keypoints: 2500 2500
+ORB_BRISK: Keypoints: 2500 2500
+
+
+images/experiments/motos3.png images/experiments/motos1.png
+HARRIS_SIFT: Keypoints: 465 739
+SIFT: Keypoints: 1195 1237
+ORB: Keypoints: 2500 2500
+ORB_BRISK: Keypoints: 2500 2500
+
+
+images/experiments/cars4.png images/experiments/cars6.png
+HARRIS_SIFT: Keypoints: 390 361
+SIFT: Keypoints: 612 523
+ORB: Keypoints: 2500 2500
+ORB_BRISK: Keypoints: 2500 2500
+
+
+images/experiments/uni1.jpg images/experiments/uni2.jpg
+HARRIS_SIFT: Keypoints: 994 2448
+SIFT: Keypoints: 1342 5921
+ORB: Keypoints: 2500 2500
+ORB_BRISK: Keypoints: 2500 2500
+
+
+images/experiments/jardi_2.jpg images/experiments/jardi2.jpg
+HARRIS_SIFT: Keypoints: 1504 1977
+SIFT: Keypoints: 5148 12582
+ORB: Keypoints: 2500 2500
+ORB_BRISK: Keypoints: 2500 2500
+
+
+images/experiments/uni_sel.jpg images/experiments/uni1.jpg
+HARRIS_SIFT: Keypoints: 156 994
+SIFT: Keypoints: 125 1342
+ORB: Keypoints: 830 2500
+ORB_BRISK: Keypoints: 830 2500
+
+
+images/experiments/jardi_sel.jpg images/experiments/jardi_2.jpg
+HARRIS_SIFT: Keypoints: 791 1504
+SIFT: Keypoints: 570 5148
+ORB: Keypoints: 2405 2500
+ORB_BRISK: Keypoints: 2405 2500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#######################
+
+	images/experiments/uni_2.jpg images/experiments/uni.jpg
+	HARRIS_SIFT: 1.4633430296 Total matches: 835 Ransac matches: 809
+	HARRIS_SIFT: Keypoints: 1133 1554
+	SIFT: 2.3392273654 Total matches: 2784 Ransac matches: 2737
+	SIFT: Keypoints: 3518 5769
+	ORB: 0.183099170799 Total matches: 793 Ransac matches: 759
+	ORB: Keypoints: 2500 2500
+	ORB_BRISK: 1.0829394954 Total matches: 1012 Ransac matches: 965
+	ORB_BRISK: Keypoints: 2500 2500
+
+
+	images/experiments/uni4_2.jpg images/experiments/uni4.jpg
+	HARRIS_SIFT: 1.0704691778 Total matches: 187 Ransac matches: 172
+	HARRIS_SIFT: Keypoints: 265 1308
+	SIFT: 1.8751353382 Total matches: 1134 Ransac matches: 1130
+	SIFT: Keypoints: 1269 6168
+	ORB: 0.1788571226 Total matches: 243 Ransac matches: 205
+	ORB: Keypoints: 2500 2500
+	ORB_BRISK: 1.0615767478 Total matches: 301 Ransac matches: 271
+	ORB_BRISK: Keypoints: 2500 2500
+
+
+	images/experiments/motos3.png images/experiments/motos1.png
+	HARRIS_SIFT: 0.161518425599 Total matches: 111 Ransac matches: 91
+	HARRIS_SIFT: Keypoints: 126 242
+	SIFT: 0.373400591398 Total matches: 515 Ransac matches: 500
+	SIFT: Keypoints: 1195 1237
+	ORB: 0.0967805122011 Total matches: 1132 Ransac matches: 1039
+	ORB: Keypoints: 2500 2500
+	ORB_BRISK: 1.0031460414 Total matches: 1250 Ransac matches: 1180
+	ORB_BRISK: Keypoints: 2500 2500
+
+
+	images/experiments/cars4.png images/experiments/cars6.png
+	HARRIS_SIFT: 0.1479116538 Total matches: 102 Ransac matches: 92
+	HARRIS_SIFT: Keypoints: 135 136
+	SIFT: 0.218701561796 Total matches: 302 Ransac matches: 264
+	SIFT: Keypoints: 612 523
+	ORB: 0.0608843422 Total matches: 907 Ransac matches: 697
+	ORB: Keypoints: 2500 2500
+	ORB_BRISK: 0.979406273001 Total matches: 1161 Ransac matches: 1103
+	ORB_BRISK: Keypoints: 2500 2500
+
+
+	images/experiments/uni1.jpg images/experiments/uni2.jpg
+	HARRIS_SIFT: 1.7142880728 Total matches: 71 Ransac matches: 30
+	HARRIS_SIFT: Keypoints: 417 1099
+	SIFT: 2.558662254 Total matches: 150 Ransac matches: 41
+	SIFT: Keypoints: 1342 5921
+	ORB: 0.2175896136 Total matches: 180 Ransac matches: 60
+	ORB: Keypoints: 2500 2500
+	ORB_BRISK: 1.0828527268 Total matches: 143 Ransac matches: 42
+	ORB_BRISK: Keypoints: 2500 2500
+
+
+	images/experiments/jardi_2.jpg images/experiments/jardi2.jpg
+	HARRIS_SIFT: 0.9172511536 Total matches: 66 Ransac matches: 24
+	HARRIS_SIFT: Keypoints: 757 1276
+	SIFT: 4.2550312552 Total matches: 120 Ransac matches: 31
+	SIFT: Keypoints: 5148 12582
+	ORB: 0.264806576999 Total matches: 86 Ransac matches: 33
+	ORB: Keypoints: 2500 2500
+	ORB_BRISK: 1.1433722904 Total matches: 87 Ransac matches: 41
+	ORB_BRISK: Keypoints: 2500 2500
+
+
+images/experiments/uni_sel.jpg images/experiments/uni1.jpg
+HARRIS_SIFT: 0.789577355802 Total matches: 30 Ransac matches: 18
+HARRIS_SIFT: Keypoints: 67 417
+SIFT: 1.0432818652 Total matches: 16 Ransac matches: 13
+SIFT: Keypoints: 125 1342
+ORB: 0.0704685115983 Total matches: 15 Ransac matches: 12
+ORB: Keypoints: 830 2500
+ORB_BRISK: 0.923982598798 Total matches: 19 Ransac matches: 18
+ORB_BRISK: Keypoints: 830 2500
+
+
+images/experiments/jardi_sel.jpg images/experiments/jardi_2.jpg
+HARRIS_SIFT: 0.375372216599 Total matches: 38 Ransac matches: 23
+HARRIS_SIFT: Keypoints: 304 757
+SIFT: 1.1532407538 Total matches: 51 Ransac matches: 26
+SIFT: Keypoints: 570 5148
+ORB: 0.130616997801 Total matches: 62 Ransac matches: 33
+ORB: Keypoints: 2405 2500
+ORB_BRISK: 1.0219169228 Total matches: 77 Ransac matches: 49
+ORB_BRISK: Keypoints: 2405 2500
+
+
+images/experiments/uni_sel.jpg images/experiments/jardi_2.jpg
+Not enough matches found 0 of 10
+HARRIS_SIFT: 0.331167057801 Total matches: 0 Ransac matches: 0
+HARRIS_SIFT: Keypoints: 67 757
+Not enough matches found 1 of 10
+SIFT: 0.986526240398 Total matches: 1 Ransac matches: 1
+SIFT: Keypoints: 125 5148
+Not enough matches found 2 of 10
+ORB: 0.084014375 Total matches: 2 Ransac matches: 2
+ORB: Keypoints: 830 2500
+Not enough matches found 1 of 10
+ORB_BRISK: 0.942485086198 Total matches: 1 Ransac matches: 1
+ORB_BRISK: Keypoints: 830 2500
+
+
+images/experiments/jardi_sel.jpg images/experiments/uni1.jpg
+Not enough matches found 2 of 10
+HARRIS_SIFT: 0.839167466601 Total matches: 2 Ransac matches: 2
+HARRIS_SIFT: Keypoints: 304 417
+Not enough matches found 5 of 10
+SIFT: 1.1126987196 Total matches: 5 Ransac matches: 5
+SIFT: Keypoints: 570 1342
+Not enough matches found 7 of 10
+ORB: 0.112843690401 Total matches: 7 Ransac matches: 7
+ORB: Keypoints: 2405 2500
+Not enough matches found 7 of 10
+ORB_BRISK: 1.0033269112 Total matches: 7 Ransac matches: 7
+ORB_BRISK: Keypoints: 2405 2500
+
+
+
 
