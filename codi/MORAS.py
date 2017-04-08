@@ -263,7 +263,7 @@ def getResult(img1, img2, alg1, alg2):
 	kp2, des2 = feature_extraction(img2Gray, kp2, alg2)
 
 	good = matching(img1, img2, des1, des2, kp1, kp2, alg2)
-	x, y, img3 = matching(img1, img2, des1, des2, kp1, kp2, good)
+	x, y, img3 = homography(img1, img2, des1, des2, kp1, kp2, good)
 	return img3
 
 

@@ -497,3 +497,50 @@ ORB_BRISK: Keypoints: 2405 2500
 
 
 
+#####
+images/graff/img1.png
+SIFT: 0.0734946923001 ms Keypoints: 1318
+SURF: 0.0239314375996 ms Keypoints: 1467
+ORB: 0.0103245442 ms Keypoints: 2500
+HARRIS: 0.0127686960999 ms Keypoints: 587
+MSER: 0.1462390725 ms Keypoints: 806
+
+
+images/boat/img1.png
+SIFT: 0.0752066647998 ms Keypoints: 2048
+SURF: 0.0253677912004 ms Keypoints: 1768
+ORB: 0.0126193635002 ms Keypoints: 2500
+HARRIS: 0.00713280580021 ms Keypoints: 686
+MSER: 0.0747664449998 ms Keypoints: 654
+
+
+images/ubc/img1.png
+SIFT: 0.0616020894002 ms Keypoints: 1562
+SURF: 0.0236586763998 ms Keypoints: 1533
+ORB: 0.0101021691997 ms Keypoints: 2500
+HARRIS: 0.006006849 ms Keypoints: 535
+MSER: 0.0359235714996 ms Keypoints: 213
+
+
+images/experiments/uni.jpg
+SIFT: 0.6689489214 ms Keypoints: 5782
+SURF: 0.1762827478 ms Keypoints: 7676
+ORB: 0.0528650055001 ms Keypoints: 2500
+HARRIS: 0.0789037486 ms Keypoints: 1553
+MSER: 0.4553390663 ms Keypoints: 1619
+
+
+images/experiments/jardi2.jpg
+SIFT: 0.7591157829 ms Keypoints: 12609
+SURF: 0.2332551425 ms Keypoints: 14888
+ORB: 0.0966538821 ms Keypoints: 2500
+HARRIS: 0.0778539637002 ms Keypoints: 1282
+MSER: 0.2521344049 ms Keypoints: 799
+
+
+images/experiments/uni4.jpg
+SIFT: 0.6879432237 ms Keypoints: 6195
+SURF: 0.1958890471 ms Keypoints: 10720
+ORB: 0.0623234414996 ms Keypoints: 2500
+HARRIS: 0.0784999801001 ms Keypoints: 1302
+MSER: 0.5384888461 ms Keypoints: 1531

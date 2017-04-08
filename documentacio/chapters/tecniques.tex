@@ -6,15 +6,16 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	Algunes de les tècniques que es poden aplicar i s'han provat durant la realització del projecte són:
 
 	\begin{itemize}
-		\item{Suavitzat de la imatge i reducció de soroll: }
+		\item{Suavitzat de la imatge i reducció de soroll: S'han provat filtres senzills com la mediana.}
 		\item{Reducció de mides: Reduir la mida de la imatge ens permet millorar el temps d'execució.}
 		\item{Escala de grisos: Els píxels de la imatge passen a tenir un valor en el rang 0-255. D'aquesta manera s'aconsegueix reduir el pes de la imatge. Encara que es perd la informació del color, moltes
 		vegades pot ser irellevant o fins i tot portar a errors.}
-		\item{Equalització de l'histograma: Per tal de millorar el contrast de les imatges. Clahe local adaptatiu.}
-		\item{Ressaltar vores: }
+		\item{Equalització de l'histograma: Per tal de millorar el contrast de les imatges, s'ha provat d'utilitzar Clahe local adaptatiu.}
+		\item{Operacions morfologiques: Erode, dilate, open, close}
 	\end{itemize}
-
-	Finalment, s'ha decidit no aplicar cap filtre i utilitzar les imatges tal com són. Simplement s'ha reduït la mida i convertit la imatge a escala de grisos.
+\noindent
+	Finalment, s'ha decidit no aplicar cap filtre i utilitzar les imatges tal com són, ja que o bé no feien cap efecte o funcionaven correctament nomes amb determinats tipus d'imatges i empitjoraven d'altres.
+	El que si que s'ha fet es reduir la mida i convertir les imatges a escala de grisos.
 
 \newpage
 \section{Obtenció de keypoints en una imatge}
@@ -32,11 +33,9 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	Les principals tècniques d'obtenció de keypoints utilitzades són: SIFT, HARRIS i ORB.
 	També s'han provat altres algorismes com FAST, SURF, STAR, MSER o SHI-TOMASI.
 
-	HARRIS
-
-	SIFT
-
-	ORB
+	\subsubsection{HARRIS}
+	\subsubsection{SIFT}
+	\subsubsection{ORB}
 
 \section{Extracció de característiques}
 
@@ -45,14 +44,11 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\item{Descriptors vectorials: SIFT, SURF}
 		\item{Descriptors binaris: ORB, BRISK}
 	\end{itemize}
-	Principalment s'han utilitzat SIFT, ORB i BRISK.\\\\
-	També s'han provat algorismes com SURF, LATCH o DAISY.
+	Principalment s'han utilitzat SIFT, ORB i BRISK, encara que també s'han provat d'altres com SURF, LATCH o DAISY.
 
-	SIFT
-
-	ORB
-
-	BRISK
+	\subsubsection{SIFT}
+	\subsubsection{ORB}
+	\subsubsection{BRISK}
 
 \newpage
 \section{Matching de característiques}
@@ -61,7 +57,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	Bàsicament podem obtenir els matchs de dues maneres:\\
 	\begin{itemize}	
 		\item{Força bruta: Consisteix en provar totes les combinacions possibles per cada punt.}
-		\item{Aproximació: ...}
+		\item{Aproximació}
 	\end{itemize}
 	Com que el temps d'execució no es una factor essencial, s'aplicarà el mètode de força bruta, una mica més lent.
 
@@ -70,7 +66,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\includegraphics[width=0.7\textwidth]{images/matching}
 		\caption{Matching}
 	\end{figure}
-
+\noindent
 	En la imatge anterior podem veure determinats punts on el "match" és clarament erroni. Aquest error es pot minimitzar escollint punts més significatius, característiques més distinctives, aplicant el rati
 	de Lowe o eliminant outliers.
 

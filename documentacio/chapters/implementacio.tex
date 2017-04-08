@@ -75,10 +75,11 @@ def point_selection(gray, alg):
 		\end{python}
 
 		\subsubsection{SIFT}
-		Una de les opcions serà utilitzar SIFT (DoG). Per fer això simplement cridarem la funció d'OpenCV detect() en la instància de SIFT creada.\\
+		Una de les opcions serà utilitzar SIFT (DoG). Per fer això simplement cridarem la funció d'OpenCV detect() en la instància de SIFT creada. Modificarem el paràmetre sigma perque funcioni millor
+		amb les imatges utilitzades.\\
 		\begin{python}
 	if alg == _SIFT:
-		sift = cv2.xfeatures2d.SIFT_create()
+		sift = cv2.xfeatures2d.SIFT_create(sigma=1.4)
 		kp = sift.detect(gray,None)
 		\end{python}
 
@@ -104,12 +105,12 @@ def point_selection(gray, alg):
 			if i != 0:
 				G = cv2.pyrDown(G)
 			scale = 2**(i)
-			corners = cv2.goodFeaturesToTrack(image=G,maxCorners=1000,
-				qualityLevel=0.01,minDistance=scale,useHarrisDetector=1, k=0.04)
+			corners = cv2.goodFeaturesToTrack(image=G,maxCorners=2000,
+				qualityLevel=0.05,minDistance=4,useHarrisDetector=1, k=0.04)
 			corners = np.int0(corners)
 			for corner in corners:
 				x,y = corner.ravel()
-				k = cv2.KeyPoint(x*scale, y*scale, scale)
+				k = cv2.KeyPoint(x*scale, y*scale, scale*3)
 				kp.append(k)
 		\end{python}
 
@@ -248,6 +249,8 @@ def uploaded_file(filename):
 	return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 		\end{python}
 
+\newpage
+\noindent
 El formulari de l'arxiu upload.html és el següent:\\
 
 		\begin{txt}
@@ -316,7 +319,7 @@ El formulari de l'arxiu upload.html és el següent:\\
 	});
  </script>
 		\end{txt}
-
+\noindent
 El formulari ens porta a la ruta /send, que executarà el codi principal de visió per computador. Finalment podrem veure el resultat obtingut del matching a result.html.\\
 
 		\begin{python}

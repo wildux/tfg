@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {catalan}
+\beamer@sectionintoc {1}{Web}{7}{0}{1}
+\beamer@sectionintoc {2}{Aplicaci\IeC {\'o} d'Android}{14}{0}{2}
