@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.3.7)  8 APR 2017 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.3.7)  10 APR 2017 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -953,19 +953,338 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+(/usr/share/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2016/10/19 v6730 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2016/10/19 v6730 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/06/13 v6596 L3 Bootstrap code
+L3 Module: l3names 2016/10/13 v6722 L3 Namespace for primitives
+L3 Module: l3basics 2016/09/01 v6696 L3 Basic definitions
+L3 Module: l3expan 2016/08/19 v6684 L3 Argument expansion
+L3 Module: l3tl 2016/08/19 v6692 L3 Token lists
+L3 Module: l3str 2016/08/19 v6692 L3 Strings
+L3 Module: l3seq 2016/08/19 v6685 L3 Sequences and stacks
+L3 Module: l3int 2016/09/07 v6700 L3 Integers
+\c_max_int=\count312
+\l_tmpa_int=\count313
+\l_tmpb_int=\count314
+\g_tmpa_int=\count315
+\g_tmpb_int=\count316
+L3 Module: l3quark 2016/08/19 v6685 L3 Quarks
+L3 Module: l3prg 2016/08/18 v6679 L3 Control structures
+\g__prg_map_int=\count317
+L3 Module: l3clist 2016/08/19 v6685 L3 Comma separated lists
+L3 Module: l3token 2016/09/01 v6695 L3 Experimental token manipulation
+L3 Module: l3prop 2016/08/19 v6685 L3 Property lists
+L3 Module: l3msg 2016/08/19 v6691 L3 Messages
+L3 Module: l3file 2016/08/19 v6685 L3 File and I/O operations
+\l_iow_line_count_int=\count318
+\l__iow_target_count_int=\count319
+\l__iow_current_line_int=\count320
+\l__iow_current_word_int=\count321
+\l__iow_current_indentation_int=\count322
+L3 Module: l3skip 2016/08/19 v6692 L3 Dimensions and skips
+\c_zero_dim=\dimen152
+\c_max_dim=\dimen153
+\l_tmpa_dim=\dimen154
+\l_tmpb_dim=\dimen155
+\g_tmpa_dim=\dimen156
+\g_tmpb_dim=\dimen157
+\c_zero_skip=\skip78
+\c_max_skip=\skip79
+\l_tmpa_skip=\skip80
+\l_tmpb_skip=\skip81
+\g_tmpa_skip=\skip82
+\g_tmpb_skip=\skip83
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+L3 Module: l3keys 2016/09/21 v6711 L3 Key-value interfaces
+\l_keys_choice_int=\count323
+L3 Module: l3fp 2016/08/19 v6685 L3 Floating points
+\c__fp_leading_shift_int=\count324
+\c__fp_middle_shift_int=\count325
+\c__fp_trailing_shift_int=\count326
+\c__fp_big_leading_shift_int=\count327
+\c__fp_big_middle_shift_int=\count328
+\c__fp_big_trailing_shift_int=\count329
+\c__fp_Bigg_leading_shift_int=\count330
+\c__fp_Bigg_middle_shift_int=\count331
+\c__fp_Bigg_trailing_shift_int=\count332
+L3 Module: l3box 2016/08/19 v6685 L3 Experimental boxes
+\c_empty_box=\box57
+\l_tmpa_box=\box58
+\l_tmpb_box=\box59
+\g_tmpa_box=\box60
+\g_tmpb_box=\box61
+L3 Module: l3coffins 2016/08/19 v6685 L3 Coffin code layer
+\l__coffin_internal_box=\box62
+\l__coffin_internal_dim=\dimen158
+\l__coffin_offset_x_dim=\dimen159
+\l__coffin_offset_y_dim=\dimen160
+\l__coffin_x_dim=\dimen161
+\l__coffin_y_dim=\dimen162
+\l__coffin_x_prime_dim=\dimen163
+\l__coffin_y_prime_dim=\dimen164
+\c_empty_coffin=\box63
+\l__coffin_aligned_coffin=\box64
+\l__coffin_aligned_internal_coffin=\box65
+\l_tmpa_coffin=\box66
+\l_tmpb_coffin=\box67
+\l__coffin_display_coffin=\box68
+\l__coffin_display_coord_coffin=\box69
+\l__coffin_display_pole_coffin=\box70
+\l__coffin_display_offset_dim=\dimen165
+\l__coffin_display_x_dim=\dimen166
+\l__coffin_display_y_dim=\dimen167
+L3 Module: l3color 2016/06/13 v6596 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/08/19 v6688 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen168
+\l__box_bottom_dim=\dimen169
+\l__box_left_dim=\dimen170
+\l__box_right_dim=\dimen171
+\l__box_top_new_dim=\dimen172
+\l__box_bottom_new_dim=\dimen173
+\l__box_left_new_dim=\dimen174
+\l__box_right_new_dim=\dimen175
+\l__box_internal_box=\box71
+\l__coffin_bounding_shift_dim=\dimen176
+\l__coffin_left_corner_dim=\dimen177
+\l__coffin_right_corner_dim=\dimen178
+\l__coffin_bottom_corner_dim=\dimen179
+\l__coffin_top_corner_dim=\dimen180
+\l__coffin_scaled_total_height_dim=\dimen181
+\l__coffin_scaled_width_dim=\dimen182
+L3 Module: l3luatex 2016/08/18 v6679 L3 Experimental LuaTeX-specific functions
+)
+(/usr/share/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2016/08/18 v6679 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count333
+\l__driver_tmp_box=\box72
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks25
+\ex@=\dimen183
+))
+(/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2016/10/19 v6730 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/share/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2016/10/19 v6730 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count334
+\l__xparse_m_args_int=\count335
+\l__xparse_mandatory_args_int=\count336
+\l__xparse_processor_int=\count337
+\l__xparse_v_nesting_int=\count338
+)
+(/usr/share/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2016/10/19 v6730 L3 Experimental prototype document function
+s
+\l__xtemplate_tmp_dim=\dimen184
+\l__xtemplate_tmp_int=\count339
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip84
+)
+Package: xfrac 2016/10/19 v6730 L3 Experimental split-level fractions
+\l__xfrac_slash_box=\box73
+\l__xfrac_tmp_box=\box74
+\l__xfrac_denominator_bot_sep_dim=\dimen185
+\l__xfrac_numerator_bot_sep_dim=\dimen186
+\l__xfrac_numerator_top_sep_dim=\dimen187
+\l__xfrac_slash_left_sep_dim=\dimen188
+\l__xfrac_slash_right_sep_dim=\dimen189
+\l__xfrac_slash_left_muskip=\muskip18
+\l__xfrac_slash_right_muskip=\muskip19
+.................................................
+. xtemplate info: "declare-object-type"
+. 
+. Declaring object type 'xfrac' taking 3 argument(s) on line 111.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sfrac with sig. 'omom' on line 451.
+.................................................
+)
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2016/07/14 version 3.94 text color boxes
 
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks25
-\pgfutil@tempdima=\dimen152
-\pgfutil@tempdimb=\dimen153
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen190
+\pgfutil@tempdimb=\dimen191
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box57
+\pgfutil@abb=\box75
 
 (/usr/share/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -981,29 +1300,29 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks26
-\pgfkeys@temptoks=\toks27
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks28
+\pgfkeys@tmptoks=\toks29
 ))
-\pgf@x=\dimen154
-\pgf@y=\dimen155
-\pgf@xa=\dimen156
-\pgf@ya=\dimen157
-\pgf@xb=\dimen158
-\pgf@yb=\dimen159
-\pgf@xc=\dimen160
-\pgf@yc=\dimen161
+\pgf@x=\dimen192
+\pgf@y=\dimen193
+\pgf@xa=\dimen194
+\pgf@ya=\dimen195
+\pgf@xb=\dimen196
+\pgf@yb=\dimen197
+\pgf@xc=\dimen198
+\pgf@yc=\dimen199
 \w@pgf@writea=\write5
 \r@pgf@reada=\read2
-\c@pgf@counta=\count312
-\c@pgf@countb=\count313
-\c@pgf@countc=\count314
-\c@pgf@countd=\count315
-\t@pgf@toka=\toks29
-\t@pgf@tokb=\toks30
-\t@pgf@tokc=\toks31
+\c@pgf@counta=\count340
+\c@pgf@countb=\count341
+\c@pgf@countc=\count342
+\c@pgf@countd=\count343
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
 
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -1018,8 +1337,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count316
-\pgfsyssoftpath@bigbuffer@items=\count317
+\pgfsyssoftpath@smallbuffer@items=\count344
+\pgfsyssoftpath@bigbuffer@items=\count345
 )
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -1031,12 +1350,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen162
-\pgfmath@count=\count318
-\pgfmath@box=\box58
-\pgfmath@toks=\toks32
-\pgfmath@stack@operand=\toks33
-\pgfmath@stack@operation=\toks34
+\pgfmath@dimen=\dimen256
+\pgfmath@count=\count346
+\pgfmath@box=\box76
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
 )
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
@@ -1049,50 +1368,50 @@ x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
 .code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count319
+\c@pgfmathroundto@lastzeros=\count347
 )) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen163
-\pgf@picmaxx=\dimen164
-\pgf@picminy=\dimen165
-\pgf@picmaxy=\dimen166
-\pgf@pathminx=\dimen167
-\pgf@pathmaxx=\dimen168
-\pgf@pathminy=\dimen169
-\pgf@pathmaxy=\dimen170
-\pgf@xx=\dimen171
-\pgf@xy=\dimen172
-\pgf@yx=\dimen173
-\pgf@yy=\dimen174
-\pgf@zx=\dimen175
-\pgf@zy=\dimen176
+\pgf@picminx=\dimen257
+\pgf@picmaxx=\dimen258
+\pgf@picminy=\dimen259
+\pgf@picmaxy=\dimen260
+\pgf@pathminx=\dimen261
+\pgf@pathmaxx=\dimen262
+\pgf@pathminy=\dimen263
+\pgf@pathmaxy=\dimen264
+\pgf@xx=\dimen265
+\pgf@xy=\dimen266
+\pgf@yx=\dimen267
+\pgf@yy=\dimen268
+\pgf@zx=\dimen269
+\pgf@zy=\dimen270
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen177
-\pgf@path@lasty=\dimen178
+\pgf@path@lastx=\dimen271
+\pgf@path@lasty=\dimen272
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen179
-\pgf@shorten@start@additional=\dimen180
+\pgf@shorten@end@additional=\dimen273
+\pgf@shorten@start@additional=\dimen274
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box59
-\pgf@hbox=\box60
-\pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count320
+\pgfpic=\box77
+\pgf@hbox=\box78
+\pgf@layerbox@main=\box79
+\pgf@picture@serial@count=\count348
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen181
+\pgflinewidth=\dimen275
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
 ex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen182
-\pgf@pt@y=\dimen183
-\pgf@pt@temp=\dimen184
+\pgf@pt@x=\dimen276
+\pgf@pt@y=\dimen277
+\pgf@pt@temp=\dimen278
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
@@ -1104,19 +1423,19 @@ x
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen185
+\pgfarrowsep=\dimen279
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen186
-\pgf@sys@shading@range@num=\count321
+\pgf@max=\dimen280
+\pgf@sys@shading@range@num=\count349
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box62
+\pgfexternal@startupbox=\box80
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
@@ -1128,23 +1447,23 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box63
+\pgfnodeparttextbox=\box81
 )
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen187
-\pgf@nodesepend=\dimen188
+\pgf@nodesepstart=\dimen281
+\pgf@nodesepend=\dimen282
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
 (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks35
-\verbatim@line=\toks36
+\every@verbatim=\toks36
+\verbatim@line=\toks37
 \verbatim@in@stream=\read3
 )
 (/usr/share/texmf-dist/tex/latex/environ/environ.sty
@@ -1153,43 +1472,43 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks37
+\@envbody=\toks38
 )
-\tcb@titlebox=\box64
-\tcb@upperbox=\box65
-\tcb@lowerbox=\box66
-\tcb@phantombox=\box67
-\c@tcbbreakpart=\count322
-\c@tcblayer=\count323
-\tcolorbox@number=\count324
-\tcb@temp=\box68
-\tcb@temp=\box69
-\tcb@temp=\box70
-\tcb@temp=\box71
+\tcb@titlebox=\box82
+\tcb@upperbox=\box83
+\tcb@lowerbox=\box84
+\tcb@phantombox=\box85
+\c@tcbbreakpart=\count350
+\c@tcblayer=\count351
+\tcolorbox@number=\count352
+\tcb@temp=\box86
+\tcb@temp=\box87
+\tcb@temp=\box88
+\tcb@temp=\box89
 \tcb@out=\write6
 \tcb@record@out=\write7
 )
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '3.94'
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count325
-\lst@gtempboxa=\box72
-\lst@token=\toks38
-\lst@length=\count326
-\lst@currlwidth=\dimen189
-\lst@column=\count327
-\lst@pos=\count328
-\lst@lostspace=\dimen190
-\lst@width=\dimen191
-\lst@newlines=\count329
-\lst@lineno=\count330
-\lst@maxwidth=\dimen192
+\lst@mode=\count353
+\lst@gtempboxa=\box90
+\lst@token=\toks39
+\lst@length=\count354
+\lst@currlwidth=\dimen283
+\lst@column=\count355
+\lst@pos=\count356
+\lst@lostspace=\dimen284
+\lst@width=\dimen285
+\lst@newlines=\count357
+\lst@lineno=\count358
+\lst@maxwidth=\dimen286
 
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count331
-\lst@skipnumbers=\count332
-\lst@framebox=\box73
+\c@lstnumber=\count359
+\lst@skipnumbers=\count360
+\lst@framebox=\box91
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -1204,9 +1523,9 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '3.94'
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 69.
 ))
-\c@tcblisting=\count333
+\c@tcblisting=\count361
 ))
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 43.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 45.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
@@ -1221,8 +1540,8 @@ File: catalan.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count334
-\@quotereset=\count335
+\@quotelevel=\count362
+\@quotereset=\count363
 (./tfg.aux
 
 LaTeX Warning: Label `fig:awesome_image1' multiply defined.
@@ -1272,33 +1591,41 @@ LaTeX Warning: Label `fig:awesome_image3' multiply defined.
 )
 \openout1 = `tfg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
- (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 170.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 170.
+
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 170.
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count336
-\scratchdimen=\dimen193
-\scratchbox=\box74
-\nofMPsegments=\count337
-\nofMParguments=\count338
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count339
-\MPscratchDim=\dimen194
-\MPnumerator=\count340
-\makeMPintoPDFobject=\count341
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count364
+\scratchdimen=\dimen287
+\scratchbox=\box92
+\nofMPsegments=\count365
+\nofMParguments=\count366
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count367
+\MPscratchDim=\dimen288
+\MPnumerator=\count368
+\makeMPintoPDFobject=\count369
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1316,8 +1643,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \l on input line 168.
-LaTeX Info: Redefining \L on input line 168.
+LaTeX Info: Redefining \l on input line 170.
+LaTeX Info: Redefining \L on input line 170.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1329,8 +1656,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tfg.bbl' found.
  (./tfg.bbl)
-Package biblatex Info: Reference section=0 on input line 168.
-Package biblatex Info: Reference segment=0 on input line 168.
+Package biblatex Info: Reference section=0 on input line 170.
+Package biblatex Info: Reference segment=0 on input line 170.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1366,22 +1693,22 @@ Package biblatex Info: Reference segment=0 on input line 168.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box75
-Package hyperref Info: Link coloring OFF on input line 168.
+\AtBeginShipoutBox=\box93
+Package hyperref Info: Link coloring OFF on input line 170.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count342
+\c@section@level=\count370
 )
-LaTeX Info: Redefining \ref on input line 168.
-LaTeX Info: Redefining \pageref on input line 168.
-LaTeX Info: Redefining \nameref on input line 168.
+LaTeX Info: Redefining \ref on input line 170.
+LaTeX Info: Redefining \pageref on input line 170.
+LaTeX Info: Redefining \nameref on input line 170.
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count343
+\c@lstlisting=\count371
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1418,7 +1745,7 @@ ABD: EveryShipout initializing macros
 <images/logo.png, id=7, 1027.84pt x 1027.84pt>
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 198.
+Package pdftex.def Info: images/logo.png used on input line 200.
 (pdftex.def)             Requested size: 83.64944pt x 83.6404pt.
  [1
 
@@ -1458,7 +1785,7 @@ Package pdftex.def Info: images/logo.png used on input line 198.
 
 
 (./chapters/abstract.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--219
+Underfull \hbox (badness 10000) in paragraph at lines 1--221
 
  []
 
@@ -1467,7 +1794,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--219
 
 
 ] (./chapters/acknowledgements.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--221
+Underfull \hbox (badness 10000) in paragraph at lines 1--223
 
  []
 
@@ -1482,16 +1809,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 7.
  [4
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 121.
-
- (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
-
-<images/fib-upc-logo.png, id=130, 823.075pt x 116.435pt>
+] <images/fib-upc-logo.png, id=130, 823.075pt x 116.435pt>
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
@@ -1504,7 +1822,7 @@ Package pdftex.def Info: images/fib-upc-logo.png used on input line 219.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 223.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 225.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [6]
 Cap\'{\i }tol 1.
@@ -1694,7 +2012,7 @@ Package pdftex.def Info: images/fib-upc-logo.png used on input line 148.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 225.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 227.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [15]
 Cap\'{\i }tol 2.
@@ -1890,7 +2208,7 @@ Package pdftex.def Info: images/fib-upc-logo.png used on input line 164.
 ])
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 227.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 229.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [22]
 Cap\'{\i }tol 3.
@@ -1991,7 +2309,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 229.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 231.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [27 <./images/crop.png>]
 Cap\'{\i }tol 4.
@@ -2035,9 +2353,6 @@ File: images/fib-upc-logo.png Graphic file (type png)
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 32.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [29]
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <17.28> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 33.
-
 Underfull \hbox (badness 10000) in paragraph at lines 35--39
 
  []
@@ -2054,7 +2369,12 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (./tfg.listing)
+) (./tfg.listing
+LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 1.
+
+(/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+))
 Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
@@ -2202,7 +2522,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--199
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 231.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 233.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
  [34]
 Cap\'{\i }tol 5.
@@ -2213,59 +2533,208 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
 [35
 
-] <images/RobotKp.png, id=549, 803.0pt x 642.4pt>
+] <images/RobotKp.png, id=550, 803.0pt x 642.4pt>
 File: images/RobotKp.png Graphic file (type png)
  <use images/RobotKp.png>
-Package pdftex.def Info: images/RobotKp.png used on input line 30.
-(pdftex.def)             Requested size: 292.77629pt x 234.22409pt.
-File: images/fib-upc-logo.png Graphic file (type png)
+Package pdftex.def Info: images/RobotKp.png used on input line 25.
+(pdftex.def)             Requested size: 271.86234pt x 217.4917pt.
 
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 45.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [36 <./images/RobotKp.png (PNG copy)>]
-File: images/fib-upc-logo.png Graphic file (type png)
-
-<use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 53.
-(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [37]
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
+Underfull \hbox (badness 10000) in paragraph at lines 22--27
 
  []
 
-<images/matching.png, id=566, 975.645pt x 642.4pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+<images/harris.png, id=551, 259.7203pt x 89.58469pt>
+File: images/harris.png Graphic file (type png)
+ <use images/harris.png>
+Package pdftex.def Info: images/harris.png used on input line 44.
+(pdftex.def)             Requested size: 292.77629pt x 100.98618pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--46
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 46.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [36 <./images/RobotKp.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 47--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
+
+<images/fast.png, id=558, 508.90125pt x 254.45062pt>
+File: images/fast.png Graphic file (type png)
+ <use images/fast.png>
+Package pdftex.def Info: images/fast.png used on input line 62.
+(pdftex.def)             Requested size: 230.04079pt x 115.02199pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+File: images/fib-upc-logo.png Graphic file (type png)
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 65.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [37 <./images/harris.png>]
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 66.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 66.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 65--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+<images/sift-des.png, id=567, 642.4pt x 291.0875pt>
+File: images/sift-des.png Graphic file (type png)
+ <use images/sift-des.png>
+Package pdftex.def Info: images/sift-des.png used on input line 90.
+(pdftex.def)             Requested size: 271.86234pt x 123.18864pt.
+File: images/fib-upc-logo.png Graphic file (type png)
+
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 93.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [38 <./images/fast.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
+
+ []
+
+<images/brisk.png, id=575, 241.65282pt x 237.13594pt>
+File: images/brisk.png Graphic file (type png)
+ <use images/brisk.png>
+Package pdftex.def Info: images/brisk.png used on input line 106.
+(pdftex.def)             Requested size: 209.12683pt x 205.22469pt.
+File: images/fib-upc-logo.png Graphic file (type png)
+
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 109.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [39 <./images/sift-des.png>]
+File: images/fib-upc-logo.png Graphic file (type png)
+
+<use images/fib-upc-logo.png>
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 111.
+(pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
+ [40 <./images/brisk.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
+
+ []
+
+<images/matching.png, id=588, 975.645pt x 642.4pt>
 File: images/matching.png Graphic file (type png)
  <use images/matching.png>
-Package pdftex.def Info: images/matching.png used on input line 66.
+Package pdftex.def Info: images/matching.png used on input line 125.
 (pdftex.def)             Requested size: 292.77629pt x 192.7705pt.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 73.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 132.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [38 <./images/matching.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
-
- []
-
-<images/homography.png, id=572, 975.645pt x 642.4pt>
+ [41 <./images/matching.png (PNG copy)>]
+<images/homography.png, id=594, 975.645pt x 642.4pt>
 File: images/homography.png Graphic file (type png)
 
 <use images/homography.png>
-Package pdftex.def Info: images/homography.png used on input line 82.
+Package pdftex.def Info: images/homography.png used on input line 139.
 (pdftex.def)             Requested size: 292.77629pt x 192.7705pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--141
+
+ []
+
+<images/ransac.png, id=595, 255.95625pt x 255.95625pt>
+File: images/ransac.png Graphic file (type png)
+ <use images/ransac.png>
+Package pdftex.def Info: images/ransac.png used on input line 146.
+(pdftex.def)             Requested size: 188.21288pt x 188.21344pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--148
+
+ []
+
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 233.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 235.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [39 <./images/homography.png (PNG copy)>]
+ [42 <./images/homography.png (PNG copy)> <./images/ransac.png>]
 Cap\'{\i }tol 6.
 (./chapters/implementacio.tex
 Underfull \hbox (badness 10000) in paragraph at lines 16--20
@@ -2282,7 +2751,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
-[40
+[43
 
 ]
 Overfull \hbox (13.7507pt too wide) in paragraph at lines 35--36
@@ -2306,7 +2775,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 66.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [41]
+ [44]
 Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
@@ -2330,7 +2799,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 95.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [42]
+ [45]
 Underfull \hbox (badness 10000) in paragraph at lines 97--101
 
  []
@@ -2349,7 +2818,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 124.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [43]
+ [46]
 Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
  []
@@ -2368,7 +2837,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 155.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [44]
+ [47]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
@@ -2395,7 +2864,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 186.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
 
-[45]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
@@ -2419,7 +2888,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 221.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [46]
+ [49]
 Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
@@ -2428,7 +2897,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 252.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [47]
+ [50]
 Underfull \hbox (badness 10000) in paragraph at lines 253--255
 
  []
@@ -2452,7 +2921,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 322.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [48]
+ [51]
 Overfull \vbox (12.4877pt too high) has occurred while \output is active []
 
 File: images/fib-upc-logo.png Graphic file (type png)
@@ -2460,7 +2929,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 322.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [49]
+ [52]
 Underfull \hbox (badness 10000) in paragraph at lines 322--324
 
  []
@@ -2481,7 +2950,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 358.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [50]
+ [53]
 Underfull \hbox (badness 10000) in paragraph at lines 362--364
 
  []
@@ -2509,9 +2978,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--375
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 235.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 237.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [51]
+ [54]
 Cap\'{\i }tol 7.
 (./chapters/resultats.tex
 
@@ -2532,7 +3001,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--27
 
  []
 
-[52
+[55
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 29--33
@@ -2548,22 +3017,22 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 44.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [53]
-<images/experiments/graf3.png, id=891, 803.0pt x 642.4pt>
+ [56]
+<images/experiments/graf3.png, id=918, 803.0pt x 642.4pt>
 File: images/experiments/graf3.png Graphic file (type png)
 
 <use images/experiments/graf3.png>
 Package pdftex.def Info: images/experiments/graf3.png used on input line 51.
 (pdftex.def)             Requested size: 133.84424pt x 107.06967pt.
 
-<images/experiments/boat.png, id=892, 853.1875pt x 682.55pt>
+<images/experiments/boat.png, id=919, 853.1875pt x 682.55pt>
 File: images/experiments/boat.png Graphic file (type png)
 
 <use images/experiments/boat.png>
 Package pdftex.def Info: images/experiments/boat.png used on input line 55.
 (pdftex.def)             Requested size: 133.84424pt x 107.07518pt.
 
-<images/experiments/ubc.png, id=893, 803.0pt x 642.4pt>
+<images/experiments/ubc.png, id=920, 803.0pt x 642.4pt>
 File: images/experiments/ubc.png Graphic file (type png)
 
 <use images/experiments/ubc.png>
@@ -2588,23 +3057,23 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 84.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [54 <./images/experiments/graf3.png (PNG copy)> <./images/experiments/boat.png
+ [57 <./images/experiments/graf3.png (PNG copy)> <./images/experiments/boat.png
 > <./images/experiments/ubc.png (PNG copy)>]
-<images/experiments/uni.jpg, id=901, 3276.24pt x 2457.18pt>
+<images/experiments/uni.jpg, id=928, 3276.24pt x 2457.18pt>
 File: images/experiments/uni.jpg Graphic file (type jpg)
 
 <use images/experiments/uni.jpg>
 Package pdftex.def Info: images/experiments/uni.jpg used on input line 90.
 (pdftex.def)             Requested size: 133.84424pt x 100.37009pt.
 
-<images/experiments/jardi2.jpg, id=902, 3276.24pt x 2457.18pt>
+<images/experiments/jardi2.jpg, id=929, 3276.24pt x 2457.18pt>
 File: images/experiments/jardi2.jpg Graphic file (type jpg)
 
 <use images/experiments/jardi2.jpg>
 Package pdftex.def Info: images/experiments/jardi2.jpg used on input line 94.
 (pdftex.def)             Requested size: 133.84424pt x 100.37009pt.
 
-<images/experiments/uni4.jpg, id=903, 3276.24pt x 2457.18pt>
+<images/experiments/uni4.jpg, id=930, 3276.24pt x 2457.18pt>
 File: images/experiments/uni4.jpg Graphic file (type jpg)
 
 <use images/experiments/uni4.jpg>
@@ -2619,9 +3088,9 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 124.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [55 <./images/experiments/uni.jpg> <./images/experiments/jardi2.jpg> <./images
+ [58 <./images/experiments/uni.jpg> <./images/experiments/jardi2.jpg> <./images
 /experiments/uni4.jpg>]
-<images/experiments/uni_2.jpg, id=911, 1793.70125pt x 1345.025pt>
+<images/experiments/uni_2.jpg, id=937, 1793.70125pt x 1345.025pt>
 File: images/experiments/uni_2.jpg Graphic file (type jpg)
 
 <use images/experiments/uni_2.jpg>
@@ -2632,7 +3101,7 @@ File: images/experiments/uni.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/experiments/uni.jpg used on input line 226.
 (pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
 
-<images/experiments/uni4_2.jpg, id=912, 1642.135pt x 1231.60126pt>
+<images/experiments/uni4_2.jpg, id=938, 1642.135pt x 1231.60126pt>
 File: images/experiments/uni4_2.jpg Graphic file (type jpg)
 
 <use images/experiments/uni4_2.jpg>
@@ -2666,29 +3135,29 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 272.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [56 <./images/experiments/uni_2.jpg> <./images/experiments/uni4_2.jpg>]
-<images/experiments/motos3.png, id=920, 1003.75pt x 702.625pt>
+ [59 <./images/experiments/uni_2.jpg> <./images/experiments/uni4_2.jpg>]
+<images/experiments/motos3.png, id=946, 1003.75pt x 702.625pt>
 File: images/experiments/motos3.png Graphic file (type png)
 
 <use images/experiments/motos3.png>
 Package pdftex.def Info: images/experiments/motos3.png used on input line 275.
 (pdftex.def)             Requested size: 100.38318pt x 70.2666pt.
 
-<images/experiments/motos1.png, id=921, 1003.75pt x 702.625pt>
+<images/experiments/motos1.png, id=947, 1003.75pt x 702.625pt>
 File: images/experiments/motos1.png Graphic file (type png)
 
 <use images/experiments/motos1.png>
 Package pdftex.def Info: images/experiments/motos1.png used on input line 279.
 (pdftex.def)             Requested size: 100.38318pt x 70.2666pt.
 
-<images/experiments/cars4.png, id=922, 903.375pt x 602.25pt>
+<images/experiments/cars4.png, id=948, 903.375pt x 602.25pt>
 File: images/experiments/cars4.png Graphic file (type png)
 
 <use images/experiments/cars4.png>
 Package pdftex.def Info: images/experiments/cars4.png used on input line 283.
 (pdftex.def)             Requested size: 100.38318pt x 66.91853pt.
 
-<images/experiments/cars6.png, id=923, 903.375pt x 602.25pt>
+<images/experiments/cars6.png, id=949, 903.375pt x 602.25pt>
 File: images/experiments/cars6.png Graphic file (type png)
 
 <use images/experiments/cars6.png>
@@ -2704,21 +3173,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--324
 
  []
 
-<images/experiments/uni1.jpg, id=924, 3276.24pt x 2457.18pt>
+<images/experiments/uni1.jpg, id=950, 3276.24pt x 2457.18pt>
 File: images/experiments/uni1.jpg Graphic file (type jpg)
 
 <use images/experiments/uni1.jpg>
 Package pdftex.def Info: images/experiments/uni1.jpg used on input line 327.
 (pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
 
-<images/experiments/uni2.jpg, id=925, 3276.24pt x 2457.18pt>
+<images/experiments/uni2.jpg, id=951, 3276.24pt x 2457.18pt>
 File: images/experiments/uni2.jpg Graphic file (type jpg)
 
 <use images/experiments/uni2.jpg>
 Package pdftex.def Info: images/experiments/uni2.jpg used on input line 331.
 (pdftex.def)             Requested size: 100.38318pt x 75.28694pt.
 
-<images/experiments/jardi_2.png, id=926, 2645.885pt x 1984.41376pt>
+<images/experiments/jardi_2.png, id=952, 2645.885pt x 1984.41376pt>
 File: images/experiments/jardi_2.png Graphic file (type png)
 
 <use images/experiments/jardi_2.png>
@@ -2738,7 +3207,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 359.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [57 <./images/experiments/motos3.png (PNG copy)> <./images/experiments/motos1.
+ [60 <./images/experiments/motos3.png (PNG copy)> <./images/experiments/motos1.
 png (PNG copy)> <./images/experiments/cars4.png (PNG copy)> <./images/experimen
 ts/cars6.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 374--379
@@ -2759,7 +3228,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 379.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [58 <./images/experiments/uni1.jpg> <./images/experiments/uni2.jpg> <./images/
+ [61 <./images/experiments/uni1.jpg> <./images/experiments/uni2.jpg> <./images/
 experiments/jardi_2.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 394--397
 
@@ -2770,7 +3239,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 394--397
 
  []
 
-<images/experiments/uni_sel.jpg, id=941, 224.84pt x 208.78pt>
+<images/experiments/uni_sel.jpg, id=968, 224.84pt x 208.78pt>
 File: images/experiments/uni_sel.jpg Graphic file (type jpg)
 
 <use images/experiments/uni_sel.jpg>
@@ -2782,7 +3251,7 @@ File: images/experiments/uni1.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/experiments/uni1.jpg used on input line 403.
 (pdftex.def)             Requested size: 37.89342pt x 28.45274pt.
 
-<images/experiments/jardi_sel.jpg, id=942, 453.695pt x 441.65pt>
+<images/experiments/jardi_sel.jpg, id=969, 453.695pt x 441.65pt>
 File: images/experiments/jardi_sel.jpg Graphic file (type jpg)
 
 <use images/experiments/jardi_sel.jpg>
@@ -2803,7 +3272,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 421.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [59 <./images/experiments/uni_sel.jpg> <./images/experiments/jardi_sel.jpg>]
+ [62 <./images/experiments/uni_sel.jpg> <./images/experiments/jardi_sel.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 436--453
 
  []
@@ -2827,7 +3296,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 457.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [60]
+ [63]
 File: images/experiments/uni_sel.jpg Graphic file (type jpg)
  <use images/experiments/uni_sel.jpg>
 Package pdftex.def Info: images/experiments/uni_sel.jpg used on input line 463.
@@ -2858,25 +3327,25 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 484.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [61]
+ [64]
 File: images/homography.png Graphic file (type png)
  <use images/homography.png>
 Package pdftex.def Info: images/homography.png used on input line 490.
 (pdftex.def)             Requested size: 43.20242pt x 28.45274pt.
 
-<images/6.png, id=963, 1549.79pt x 991.705pt>
+<images/6.png, id=989, 1549.79pt x 991.705pt>
 File: images/6.png Graphic file (type png)
  <use images/6.png>
 Package pdftex.def Info: images/6.png used on input line 490.
 (pdftex.def)             Requested size: 44.45798pt x 28.45274pt.
 
-<images/7.png, id=964, 1750.54pt x 1228.59pt>
+<images/7.png, id=990, 1750.54pt x 1228.59pt>
 File: images/7.png Graphic file (type png)
  <use images/7.png>
 Package pdftex.def Info: images/7.png used on input line 496.
 (pdftex.def)             Requested size: 40.52066pt x 28.45274pt.
 
-<images/uniSel5.png, id=965, 1846.9pt x 1228.59pt>
+<images/uniSel5.png, id=991, 1846.9pt x 1228.59pt>
 File: images/uniSel5.png Graphic file (type png)
  <use images/uniSel5.png>
 Package pdftex.def Info: images/uniSel5.png used on input line 496.
@@ -2885,16 +3354,16 @@ Package pdftex.def Info: images/uniSel5.png used on input line 496.
 File: images/fib-upc-logo.png Graphic file (type png)
 
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 237.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 239.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [62 <./images/6.png (PNG copy)> <./images/7.png (PNG copy)> <./images/uniSel5.
+ [65 <./images/6.png (PNG copy)> <./images/7.png (PNG copy)> <./images/uniSel5.
 png (PNG copy)>]
 Cap\'{\i }tol 8.
 (./chapters/costos.tex
 
 Package array Warning: Column x is already defined on input line 6.
 
-[63
+[66
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 96--99
@@ -2905,16 +3374,16 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 99.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [64])
-Underfull \hbox (badness 10000) in paragraph at lines 125--239
+ [67])
+Underfull \hbox (badness 10000) in paragraph at lines 125--241
 
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 239.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 241.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [65]
+ [68]
 Cap\'{\i }tol 9.
 (./chapters/sostenibilitat.tex
 
@@ -2943,7 +3412,7 @@ Overfull \hbox (3.54701pt too wide) in paragraph at lines 18--31
  [] 
  []
 
-[66
+[69
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 45--50
@@ -2965,7 +3434,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 58.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [67]
+ [70]
 Underfull \hbox (badness 10000) in paragraph at lines 64--68
 
  []
@@ -2979,22 +3448,22 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 79.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [68])
-Underfull \hbox (badness 10000) in paragraph at lines 87--241
+ [71])
+Underfull \hbox (badness 10000) in paragraph at lines 87--243
 
  []
 
 
-Overfull \hbox (7.90163pt too wide) in paragraph at lines 87--241
+Overfull \hbox (7.90163pt too wide) in paragraph at lines 87--243
 \OT1/cmr/m/n/12 La ^^Sunica de-pend^^Rencia del pro-gra-ma prin-ci-pal es la bi
 -bli-o-te-ca OpenCV, pero tractant-
  []
 
 File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 241.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 243.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [69]
+ [72]
 Cap\'{\i }tol 10.
 (./chapters/conclusions.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--4
@@ -3006,7 +3475,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-[70
+[73
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 15--17
@@ -3027,9 +3496,9 @@ ra-des amb di-ver-ses c^^Rameres.
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 244.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 246.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [71] [72
+ [74] [75
 
 
 ]
@@ -3041,7 +3510,13 @@ Overfull \hbox (116.35176pt too wide) in paragraph at lines 11--13
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[73
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 29.
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+ [76
 
 ]
 Overfull \hbox (13.75072pt too wide) in paragraph at lines 40--41
@@ -3085,7 +3560,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 76.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [74]
+ [77]
 Overfull \hbox (13.75072pt too wide) in paragraph at lines 92--93
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -3103,7 +3578,7 @@ File: images/fib-upc-logo.png Graphic file (type png)
 <use images/fib-upc-logo.png>
 Package pdftex.def Info: images/fib-upc-logo.png used on input line 119.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [75]
+ [78]
 Overfull \hbox (13.7507pt too wide) in paragraph at lines 133--135
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
 
@@ -3124,31 +3599,31 @@ Overfull \hbox (46.15103pt too wide) in paragraph at lines 136--138
 )
 File: images/fib-upc-logo.png Graphic file (type png)
  <use images/fib-upc-logo.png>
-Package pdftex.def Info: images/fib-upc-logo.png used on input line 252.
+Package pdftex.def Info: images/fib-upc-logo.png used on input line 254.
 (pdftex.def)             Requested size: 125.47737pt x 17.74875pt.
- [76] [77
+ [79] [80
 
 ] (./tfg.lot)
 \tf@lot=\write9
 \openout9 = `tfg.lot'.
 
- [78
+ [81
 
 
 ] (./tfg.lof)
 \tf@lof=\write10
 \openout10 = `tfg.lof'.
 
- [79
+ [82
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
 
 (./tfg.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 259.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 261.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3158,30 +3633,33 @@ Package logreq Info: Writing requests to 'tfg.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27236 strings out of 493013
- 477538 string characters out of 6139318
- 749078 words of memory out of 5000000
- 29488 multiletter control sequences out of 15000+600000
- 11300 words of font info for 40 fonts, out of 8000000 for 9000
+ 35217 strings out of 493013
+ 641142 string characters out of 6139318
+ 876195 words of memory out of 5000000
+ 37394 multiletter control sequences out of 15000+600000
+ 13801 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,20n,73p,819b,3325s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/font
-s/type1/public/eurosym/feymr10.pfb></usr/share/texmf-dist/fonts/type1/public/tx
-fonts/t1xbtt.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on tfg.pdf (79 pages, 36942173 bytes).
+ 54i,20n,73p,10350b,3322s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fon
+ts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1
+728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist
+/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/txfonts/t1xtt.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on tfg.pdf (82 pages, 37135568 bytes).
 PDF statistics:
- 1772 PDF objects out of 2073 (max. 8388607)
- 1616 compressed objects within 17 object streams
- 756 named destinations out of 1000 (max. 500000)
- 1001 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1813 PDF objects out of 2073 (max. 8388607)
+ 1646 compressed objects within 17 object streams
+ 764 named destinations out of 1000 (max. 500000)
+ 1026 words of extra memory for PDF output out of 10000 (max. 10000000)
 
