@@ -5,10 +5,10 @@ Els avenços tecnològics dels últims anys, han millorat la capacitat de les m�
 el comportament humà. En aquest treball, es treballarà la visió per computador aplicada a un problema de robòtica.\\\\
 El projecte es divideix en 10 capítols. El primer capítol serveix com a introducció del projecte, on s'explica l'abast, objectiu, motivació i estat de l'art de les tecnologies a tractar.
 En el segon capítol es detallen els recursos utilitzats per realitzar el treball.\\\\
-Els capítols 3 a 7 conformen el treball principal. Al tercer capítol s'explica el disseny i l'aquitectura del sistema desenvolupat. Al cuart, l'estructura i configuració del servidor. Les tecniques de visió
-utilitzades s'expliquen al cinqué capítol, amb la seva implementació detallada al sisé. Al capítol 7 s'explicaran els experiments realitzats i els resultats obtinguts.\\\\
-Al capítol 8 podeu trobar un anàlisi de la gestió econòmica del projecte, on es detallen els costos humans, de programari, de maquinari, indirectes i possibles imprevistos. I al nové capítol
-es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions del projecte, on es valorarà l'aportació del projecte a nivell personal i si s'han complert els objectius inicials proposats.
+Els capítols 3 a 7 conformen el treball principal. Al tercer capítol s'explica el disseny i l'arquitectura del sistema desenvolupat. Al quart, l'estructura i configuració del servidor. Les tècniques de visió
+utilitzades s'expliquen al cinquè capítol, amb la seva implementació detallada al sisè. Al capítol 7 s'explicaran els experiments realitzats i els resultats obtinguts.\\\\
+Al capítol 8 podeu trobar una anàlisi de la gestió econòmica del projecte, on es detallen els costos humans, de programari, de maquinari, indirectes i possibles imprevistos. I al novè capítol
+es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions del projecte, on es valorarà l'aportació del projecte en l'àmbit personal i si s'han complert els objectius inicials proposats.
 
 %\section{Context}
 %	Aquest projecte es desenvolupa com a treball final de grau dels estudis de grau en enginyeria informàtica, de l'especialitat en tecnologies de la informació.
@@ -18,10 +18,10 @@ es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions d
 	El treball pretén resoldre un problema d'autolocalització de robots mòbils en un entorn variable, de tal manera que el robot sigui capaç de desplaçar-se d'un punt inicial a un punt final escollit per
 	l'usuari. Per fer això, s'utilitzaran diverses tècniques de visió per ordinador.
 \section{Motivació}
-	Visió per computador i Robòtica van ser sense cap mena de dubte dos de les assignatures més interessants que he cursat a la universitat, així que quan vaig veure la oferta del projecte vaig pensar que
-	seria una bona idea per profunditzar els meus coneixements sobre la materia.
+	Visió per computador i Robòtica van ser sense cap mena de dubte dos de les assignatures més interessants que he cursat a la universitat, així que quan vaig veure l'oferta del projecte vaig pensar que
+	seria una bona idea per profunditzar els meus coneixements sobre la matèria.
 \section{Actors implicats}
-	En aquesta secció es descriuen els actors implicats del projecte, és a dir, totes aquelles persones que es veuran beneficiades directa o indirectament amb la realització d'aquest.\\
+	En aquesta secció es descriuen els actors implicats del projecte, és a dir, totes aquelles persones que es veuran beneficiades directament o indirectament amb la realització d'aquest.\\
 	\begin{itemize}
 		\item \textbf{Autor/Desenvolupador:} És el màxim responsable del projecte. En tractar-se d'un treball final de grau, l'autor del projecte serà també el màxim beneficiari, ja que la realització d'aquest li permetrà acabar la carrera d'enginyeria informàtica.
 		\item \textbf{Usuaris:} Qualsevol persona qui ho desitgi, tindrà accés a tots els codis desenvolupats durant el projecte, ja que es llançaran sota una llicència de programari lliure que permetrà veure i adaptar el codi a les necessitats d'altres usuaris.
@@ -47,14 +47,14 @@ es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions d
 			En els darrers anys, han aparegut nous algorismes d'obtenció de punts i extracció de característiques que suposen una alternativa als clàssics SIFT\cite{SIFT}
 			( Scale Invariant Feature Transform) i SURF\cite{SURF} (Speeded-Up Robust Features). Alguns d'aquests algorismes són BinBoost\cite{Trzcinski13a} o un dels més recents:
 			LATCH\cite{LeviHassner2016LATCH}\\\\
-			En aquest projecte s'analitzarà si es adequat emprar algun d'aquests algorismes en la implementació del sistema d'autolocalització. 
+			En aquest projecte s'analitzarà si és adequat emprar algun d'aquests algorismes en la implementació del sistema d'autolocalització. 
 \newpage
 	\subsection{Robòtica}
 		La robòtica és un camp de la tecnologia que estudia el disseny i la construcció de robots.\\\\
-		Que és, doncs, un robot? Al llarg de la historia, s'han donat diverses definicions del concepte de robot, sense existir encara una definició exacta acceptada per tothom. I a mesura que passa el temps,
+		Que és, doncs, un robot? Al llarg de la història, s'han donat diverses definicions del concepte de robot, sense existir encara una definició exacta acceptada per tothom. I a mesura que passa el temps,
 		cada vegada resulta més complicat determinar si una màquina és o no un robot. Per no complicar-nos massa, entendrem com a robot una màquina programable capaç de realitzar una sèrie de
-		tasques concretes interactuant amb l'entorn, ja sigui de manera automàtica o dirigida.\\\\
-		Existeixen diversos tipus de robots, podent fer una classificació senzilla segons la seva arquitectura: robots mòbils, poliarticulats (industrials, mèdics, etc.), humanoides, 
+		tasques concretes interactuant amb l'entorn, sigui de manera automàtica o dirigida.\\\\
+		Existeixen diversos tipus de robots, podent fer una classificació senzilla segons la seva arquitectura: robots mòbils, poliarticulars (industrials, mèdics, etc.), humanoides, 
 		zoomòrfics\footnote{\textbf{Robots zoomòrfics:} Robots que imiten característiques pròpies de determinats animals.} i híbrids.\\\\
 		Els robots mòbils, que són els que ens interessen per aquest projecte, acostumen a tenir una sèrie de sensors i dispositius per permetre'n el desplaçament, la localització, esquivar obstacles i
 		realitzar tasques concretes. Alguns exemples de sensors utilitzats per robots mòbils són:\\
@@ -146,6 +146,6 @@ es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions d
 	\section{Mètode de validació}
 		Es faran validacions parcials durant la realització del projecte, fent proves del sistema amb diverses imatges.
 	\subsubsection{Contacte amb el director}
-		Hi haurà reunions presencials amb el director, així com comunicació via correu electrònic, per tal de resoldre dubtes i validar la feina realitzada. També es realitzarà una reunió de seguiment abans
-		del 19 de decembre, per conèixer l'estat del projecte i poder escollir el torn de lectura.
+		Hi haurà reunions presencials amb el director, així com comunicació via correu electrònic, per tal de resoldre dubtes i validar la feina realitzada. També es realitzarà una reunió de seguiment,
+		per conèixer l'estat del projecte i poder escollir el torn de lectura.
 
