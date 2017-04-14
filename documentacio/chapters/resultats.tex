@@ -6,10 +6,11 @@
 En aquest capítol es detallen els experiments realitzats i els resultats obtinguts a partir d'aquests.
 
 \section{Experiments realitzats}
-	S'han realitzat diversos expermients per comprovar tant la detecció de keypoints com la fiabilitat del matching. Els paràmetres utilitzats en tots els algormismes
+	S'han realitzat diversos experiments per comprovar tant la detecció de \textit{keypoints} com la fiabilitat del \textit{matching}. Els paràmetres utilitzats en tots els algorismes
 	són els descrits al Capítol 6: Implementació.\\\\
 	Podeu trobar el codi dels scripts utilitzats per la realització dels experiments a l'annex del treball.
-	\subsection{Comparació detectors de keypoints}
+	\subsection{Comparació detectors de \textit{keypoints}}
+		Tot i que la velocitat d'execució no és un factor determinant pel projecte, s'ha realitzat una comparació inicial de la velocitat d'execució dels algorismes de detecció de \textit{keypoints}.\\\\
 		Els algorismes a comparar són:
 		\begin{multicols}{3}  
 			\begin{itemize}
@@ -21,12 +22,12 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\end{itemize}
 		\end{multicols}
 		\noindent
-		Tot i que la velocitat d'execució no és un factor determinant pel projecte, s'ha realitzat una comparació inicial de la velocitat d'execució dels algorismes de detecció de keypoints.\\\\
-		Per mesurar el temps d'execució, s'ha fet la mitjana de 5 execucions de la funció d'obtenció de keypoints utilitzada.\\\\
+		\\{}
+		Per mesurar el temps d'execució, s'ha fet la mitjana de 5 execucions de la funció d'obtenció de \textit{keypoints} utilitzada.\\\\
 		Un cop obtinguts els temps d'execució, s'ha analitzat la repetibilitat dels detectors a ull, utilitzant imatges similars i sub-imatges.
 \newpage
-	\subsection{Comparació detecció i extracció de keypoints}
-		En aquest experiment s'analitzen els diversos algorismes de detecció i extracció de keypoints, tant en la velocitat d'execució com en fiabilitat dels aparellaments, que serà el més important
+	\subsection{Comparació detecció i extracció de \textit{keypoints}}
+		En aquest experiment s'analitzen els diversos algorismes de detecció i extracció de \textit{keypoints}, tant en la velocitat d'execució com en fiabilitat dels aparellaments, que serà el més important
 		pel sistema desenvolupat.\\\\
 		Es compararan els següents algorismes:
 		\begin{multicols}{2} 
@@ -38,13 +39,14 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\end{itemize}
 		\end{multicols}
 		\noindent
-		En primer lloc es provaran els algorismes utilitzant sub-imatges. Desprès es provarà el sistema amb imatges amb poques variacions (canvis d'il·luminació, blur...). L'última prova serà amb fotografies
+		\\{}
+		En primer lloc es provaran els algorismes utilitzant sub-imatges. Després es provarà el sistema amb imatges amb poques variacions (canvis d'il·luminació, \textit{blur}...). L'última prova serà amb fotografies
 		del campus i els jardins de palau reial, que presenten canvis de perspectiva i zoom entre d'altres.\\\\
-		Per comprovar els aparellaments, s'hauran de mirar manualment un per un, ja que les imatges no ens permeten utilitzar cap mecanisme per automatitzar el procès.
+		Per comprovar els aparellaments, s'hauran de mirar manualment un per un, ja que les imatges no ens permeten utilitzar cap mecanisme per automatitzar el procés.
 \newpage
 \section{Resultats i comparació d'algorismes}
 
-	\subsection{Detectors de keypoints}
+	\subsection{Detectors de \textit{keypoints}}
 	En primer lloc s'han realitzat proves amb imatges típiques de visió per computador.
 		\begin{figure}[!htb]
 			\minipage{0.32\textwidth}
@@ -76,10 +78,10 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 					MSER & 1044 & 0.2323 & 924 & 0.1586 & 286 & 0.0565 \\
 				\end{tabular}
 			\end{center}
-			\caption{Detectors de keypoints - comparació}
+			\caption{Detectors de \textit{keypoints} - comparació}
 		\end{table}
 		\noindent
-		Amb aquestes imatges, podem veure com Harris, ORB i SURF són força més rapids que el detector de keypoints de SIFT (DoG). MSER sembla ser el més lent en general.\\\\
+		Amb aquestes imatges, podem veure com Harris, ORB i SURF són força més ràpids que el detector de \textit{keypoints} de SIFT (DoG). MSER sembla ser el més lent en general.\\\\
 		S'ha de tenir en compte que el detector ORB s'ha limitat a 2500 punts.\\
 \newpage
 		\noindent
@@ -115,11 +117,11 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 					MSER & 2135 & 0.6790 & 1141 & 0.3930 & 1798 & 0.6397 \\
 				\end{tabular}
 			\end{center}
-			\caption{Detectors de keypoints - comparació 2}
+			\caption{Detectors de \textit{keypoints} - comparació 2}
 		\end{table}
 		\noindent
-		SURF és el que més keypoints detecta, seguit de SIFT. Pel que fa al temps d'execució, SIFT és el més lent, seguit de MSER. El més ràpid amb diferència és ORB, pero la
-		limitació a 2500 punts podria afectar els resultats. MSER i Harris són els que obtenen menys keypoints.
+		SURF és el que més \textit{keypoints} detecta, seguit de SIFT. Pel que fa al temps d'execució, SIFT és el més lent, seguit de MSER. El més ràpid amb diferència és ORB, però la
+		limitació a 2500 punts podria afectar els resultats. MSER i Harris són els que obtenen menys \textit{keypoints}.
 
 \newpage
 %\subsection{Repetibilitat dels detectors de keypoints}
@@ -214,7 +216,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 
 
 \newpage
-	\subsection{Detecció i extracció de keypoints}
+	\subsection{Detecció i extracció de \textit{keypoints}}
 		En primer lloc es prova el sistema amb imatges similars i subimatges, per comprovar  que funciona correctament en els casos més senzills.
 
 		\begin{figure}[!htb]
@@ -268,7 +270,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 		En general, quan s'utilitzen sub-imatges el sistema funciona correctament. Es detecten bastants aparellaments i la majoria són correctes. Com es pot veure en la taula anterior,
 		Harris+SIFT encerta en la majoria dels aparellaments, tot i que falla en alguns casos.\\\\
 		Analitzant els casos on hi ha falsos aparellaments, podem veure que les característiques són molt similars, fallant sobretot en la finestra correcta.\\\\
-		Pel que fa al temps d'execució, ORB és amb diferencia el més ràpid, mentre que SIFT és el més lent.\\
+		Pel que fa al temps d'execució, ORB és amb diferència el més ràpid, mentre que SIFT és el més lent.\\
 
 		\begin{figure}[!htb]
 			\minipage{0.24\textwidth}
@@ -318,7 +320,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 		\end{table}
 
 		\noindent
-		Amb canvis d'il·luminació i blur, els algorismes també presenten una bona taxa d'encert. ORB continua sent el més ràpid, pero en aquest cas ORB+BRISK és més lent que SIFT, ja que és detecten més
+		Amb canvis d'il·luminació i \textit{blur}, els algorismes també presenten una bona taxa d'encert. ORB continua sent el més ràpid, però en aquest cas ORB+BRISK és més lent que SIFT, ja que es detecten més
 		aparellaments.\\\\
 		També s'han realitzat proves amb les següents fotografies, que presenten canvis de perspectiva i zoom:
 
@@ -372,10 +374,10 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\caption{Matching - canvis de perspectiva i zoom}
 		\end{table}
 		\noindent
-		Quan utilitzem escenes diferents, amb canvis de zoom i de perspectiva, el nombre d'aparellaments disminueix considerablement. La taxa d'encert també disminueix, pero sempre superant el 50\%.\\\\
+		Quan utilitzem escenes diferents, amb canvis de zoom i de perspectiva, el nombre d'aparellaments disminueix considerablement. La taxa d'encert també disminueix, però sempre superant el 50\%.\\\\
 		En les imatges de la universitat, el millor algorisme és HARRIS+SIFT (tot i que troba menys aparellaments), mentre ORB+BRISK seria el pitjor. En el cas dels jardins, tots els algorismes presenten
 		una bona taxa d'encert, especialment Harris+SIFT i ORB+BRISK.\\\\
-		Pel que fa als temps d'execució, SIFT és bastant més lent, encara que troba molts més keypoints. Harris en comparació troba molts menys punts pero acaba funcionant millor.\\
+		Pel que fa als temps d'execució, SIFT és bastant més lent, encara que troba molts més \textit{keypoints}. Harris en comparació troba molts menys punts però acaba funcionant millor.\\
 		
 		\begin{table}[H]
 			\begin{center}
@@ -392,7 +394,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\caption{RANSAC - canvis de perspectiva i zoom}
 		\end{table}
 		\noindent
-		Un cop aplicat RANSAC, el nombre d'aparellaments restants es redueix un altre cop, pero en aquest cas tots els aparellaments són correctes.\\\\
+		Un cop aplicat RANSAC, el nombre d'aparellaments restants es redueix un altre cop, però en aquest cas tots els aparellaments són correctes.\\\\
 		També s'ha provat el sistema amb regions més concretes, que és són realment el tipus d'imatges que utilitzarà.\\
 
 		\begin{figure}[!htb]
@@ -434,7 +436,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\caption{Matching - objectes}
 		\end{table}
 		\noindent
-		En les imatges més petites, com era d'esperar, s'obtenen menys keypoints. Per tant el nombre total d'aparellaments trobats també serà menor.\\\\
+		En les imatges més petites, com era d'esperar, s'obtenen menys \textit{keypoints}. Per tant el nombre total d'aparellaments trobats també serà menor.\\\\
 		Harris+SIFT funciona molt bé amb aquests tipus d'imatges, essent tots els aparellaments trobats correctes. La resta d'algorismes també obtenen bons resultats,
 		essent ORB el pitjor (amb un 93\% i 84\% d'encert).\\
 		\begin{table}[H]
@@ -452,7 +454,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\caption{RANSAC - objectes}
 		\end{table}
 		\noindent
-		Un cop aplicat RANSAC, tots els aparellaments considerats inliers són correctes.\\\\
+		Un cop aplicat RANSAC, tots els aparellaments considerats \textit{inliers} són correctes.\\\\
 		Finalment, s'ha provat el sistema utilitzant parells d'imatges totalment diferents, per comprovar que el nombre d'aparellaments trobats no sigui elevat.\\
 
 		\begin{figure}[!htb]
@@ -479,11 +481,11 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\caption{Matching - comparació sub-imatges}
 		\end{table}
 		\noindent
-		Analitzant els resultats es pot veure que no es troben gaires aparellaments, pero tot i així s'en troben alguns. Harris+SIFT sembla ser el que en troba menys.
+		Analitzant els resultats es pot veure que no es troben gaires aparellaments, però tot i així se'n troben alguns. Harris+SIFT sembla ser el que en troba menys.
 
 \newpage
 	\subsection{Matching i homografia}
-		Aquí podeu veure alguns dels resultats obtinguts a l'executar el programa seleccionant una regió més concreta:\\
+		Aquí podeu veure alguns dels resultats obtinguts en executar el programa seleccionant una regió més concreta:\\
 		\begin{figure}[!htb]
 			\resizebox{\textwidth}{!}{%
 			\includegraphics[height=1cm]{images/homography}
