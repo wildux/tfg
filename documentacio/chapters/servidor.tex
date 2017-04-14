@@ -1,14 +1,16 @@
+\label{sec:Servidor}
+
 \section{Estructura}
 	S'utilitzarà una Raspberry Pi 2 com a servidor de proves. La idea és que l'usuari pugui accedir a una aplicació web per utilitzar el sistema, ja sigui desde Internet o des d'una xarxa local.\\\\
 	L'estructura d'aquest servidor serà la següent:\\
 	\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.6\textwidth]{images/server}
-			\caption{Estructura del servidor}
+			\caption[Estructura del servidor]{Estructura del servidor\protect\footnotemark}
 	\end{figure}
-
+	\footnotetext{\textbf{Font:} https://iotbytes.wordpress.com}
 	\subsection{Flask}
-		Per desenvolupar l'aplicació web he decidit utilitzar Flask, un micro-framework de Python que permetrà utilitzar el codi desenvolupat del projecte amb facilitat.
+		Per desenvolupar l'aplicació web he decidit utilitzar Flask\cite{Flask}, un micro-framework de Python que permetrà utilitzar el codi desenvolupat del projecte amb facilitat.
 		A més, també permet utilitzar un servidor per provar l'aplicació en la fase de desenvolupament sense necessitat d'inicialitzar el servidor web.\\\\
 		Un exemple d'aplicació en Flask (el típic Hello World) seria així:\\
 		\begin{python}
@@ -23,14 +25,14 @@ if __name__ == "__main__":
 	app.run()
 		\end{python}
 	\subsection{Nginx}
-		Nginx és un servidor web i proxy invers lleuger i d'alt rendiment. Com que s'ha decidit utilitzar una Raspberry com a servidor de proves, Nginx és una bona opció, ja que no consumeix gaires recursos
+		Nginx\cite{Nginx} és un servidor web i proxy invers lleuger i d'alt rendiment. Com que s'ha decidit utilitzar una Raspberry com a servidor de proves, Nginx és una bona opció, ja que no consumeix gaires recursos
 		i ofereix molt bon rendiment.\\\\
 		Nginx, però, no és capaç de comunicar-se amb l'aplicació web per WSGI. Per tant, necessitarem instal·lar un altre servidor que faci d'intermediari.
 	\subsection{uWSGI}
-		uWSGI és un servidor capaç de comunicar-se amb aplicacions web mitjançant el protocol uwsgi.
+		uWSGI\cite{uWSGI} és un servidor capaç de comunicar-se amb aplicacions web mitjançant el protocol uwsgi.
 
 \newpage
-\section{Instal·lació del software}
+\section{Instal·lació del \textit{software}}
 
 	El sistema operatiu a utilitzar serà la versió lite de Raspbian, el sistema oficial de la fundació de Raspberry.
 	Es pot baixar la imatge des del web de Raspberry i instal·lar a la targeta SD amb la comanda dd.\\\\
@@ -195,7 +197,7 @@ if __name__ == "__main__":
 	\end{txt}
 \noindent
 {}\\
-	Finalment, només caldrà activar el lloc web creant un "soft link" a sites-enabled i reiniciar el servidor Nginx
+	Finalment, només caldrà activar el lloc web creant un \textit{soft link} a sites-enabled i reiniciar el servidor Nginx
 	per aplicar la nova configuració.\\
 	\begin{bash}
 	$ sudo ln -s /etc/nginx/sites-available/moras

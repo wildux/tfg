@@ -4,11 +4,13 @@ del departament d'ESAII (Enginyeria de Sistemes, Automàtica i Informàtica Indu
 Els avenços tecnològics dels últims anys, han millorat la capacitat de les màquines per extreure informació i resoldre problemes de manera autònoma, imitant cada vegada millor
 el comportament humà. En aquest treball, es treballarà la visió per computador aplicada a un problema de robòtica.\\\\
 El projecte es divideix en 10 capítols. El primer capítol serveix com a introducció del projecte, on s'explica l'abast, objectiu, motivació i estat de l'art de les tecnologies a tractar.
-En el segon capítol es detallen els recursos utilitzats per realitzar el treball.\\\\
-Els capítols 3 a 7 conformen el treball principal. Al tercer capítol s'explica el disseny i l'arquitectura del sistema desenvolupat. Al quart, l'estructura i configuració del servidor. Les tècniques de visió
-utilitzades s'expliquen al cinquè capítol, amb la seva implementació detallada al sisè. Al capítol 7 s'explicaran els experiments realitzats i els resultats obtinguts.\\\\
-Al capítol 8 podeu trobar una anàlisi de la gestió econòmica del projecte, on es detallen els costos humans, de programari, de maquinari, indirectes i possibles imprevistos. I al novè capítol
-es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions del projecte, on es valorarà l'aportació del projecte en l'àmbit personal i si s'han complert els objectius inicials proposats.
+En el \hyperref[sec:Planificacio]{segon capítol} es detalla la planificació i els recursos utilitzats per realitzar el treball.\\\\
+Els capítols 3 a 7 conformen el treball principal. Al \hyperref[sec:Disseny]{tercer capítol} s'explica el disseny i l'arquitectura del sistema desenvolupat. Al \hyperref[sec:Servidor]{quart},
+l'estructura i configuració del servidor. Les tècniques de visió utilitzades s'expliquen al \hyperref[sec:Tecniques]{cinquè capítol}, amb la seva implementació detallada al \hyperref[sec:Implementacio]{sisè}.
+Al \hyperref[sec:Resultats]{capítol 7} s'explicaran els experiments realitzats i els resultats obtinguts.\\\\
+Al \hyperref[sec:Costos]{capítol 8} podeu trobar una anàlisi de la gestió econòmica del projecte, on es detallen els costos humans, de programari, de maquinari, indirectes i possibles imprevistos.
+I al \hyperref[sec:Sostenibilitat]{novè capítol} es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions del projecte, on es valorarà l'aportació del projecte en l'àmbit personal
+i si s'han complert els objectius inicials proposats.
 
 %\section{Context}
 %	Aquest projecte es desenvolupa com a treball final de grau dels estudis de grau en enginyeria informàtica, de l'especialitat en tecnologies de la informació.
@@ -45,7 +47,7 @@ es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions d
 		determinat basant-se en la detecció d'un punt o regió en una imatge.
 		\subsubsection{Nous algorismes}
 			En els darrers anys, han aparegut nous algorismes d'obtenció de punts i extracció de característiques que suposen una alternativa als clàssics SIFT\cite{SIFT}
-			( Scale Invariant Feature Transform) i SURF\cite{SURF} (Speeded-Up Robust Features). Alguns d'aquests algorismes són BinBoost\cite{Trzcinski13a} o un dels més recents:
+			(Scale Invariant Feature Transform) i SURF\cite{SURF} (Speeded-Up Robust Features). Alguns d'aquests algorismes són BinBoost\cite{Trzcinski13a} o un dels més recents:
 			LATCH\cite{LeviHassner2016LATCH}\\\\
 			En aquest projecte s'analitzarà si és adequat emprar algun d'aquests algorismes en la implementació del sistema d'autolocalització. 
 \newpage
@@ -60,7 +62,7 @@ es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions d
 		realitzar tasques concretes. Alguns exemples de sensors utilitzats per robots mòbils són:\\
 		\begin{itemize}
 			\item Odometria: S'utilitza la informació obtinguda amb sensors de moviment (\textit{encoders} a les rodes, per exemple) per estimar la posició del robot respecte a la inicial.
-			\item GPS (Global Positioning System): Es determina la ubicació del robot amb la xarxa de satèl·lits.
+			\item GPS (\textit{Global Positioning System}): Es determina la ubicació del robot amb la xarxa de satèl·lits.
 			\item Sensors de contacte: Permeten detectar si el robot està en contacte amb un altre objecte.
 			\item Sensors d'ultrasons: Detecten objectes mitjançant ones ultrasòniques.
 			\item Acceleròmetre: Determina l'acceleració del robot quan es mou. 
@@ -125,7 +127,7 @@ es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions d
 	En cas de crear una aplicació per a dispositius Android, es realitzarà mitjançant Android Studio (Java).
 	\subsection{OpenCV}
 		Per tal d'utilitzar algorismes de visió per computador en el codi amb relativa facilitat, s'utilitzarà la biblioteca de codi obert OpenCV\cite{OpenCV} (Open Source Computer Vision Library),
-		disponible per a python. La versió emprada serà la 3.1.\\\\
+		disponible per a Python. La versió emprada serà la 3.1.\\\\
 		En concret, hi haurà tres passos indispensables que faran ús d'aquesta biblioteca:\\
 		\begin{itemize}
 			\item {Obtenció de punts en una imatge}
@@ -140,8 +142,8 @@ es presenta l'informe de sostenibilitat. Per acabar, hi haurà les conclusions d
 	\subsubsection{Gantt Project}
 		Per tal d'organitzar totes les tasques a realitzar i mirar si hi ha desviacions respecte el pla inicial, s'utilitzarà l'eina de \textit{software} lliure 
 		Gantt Project\cite{GanttProject}. Aquesta eina ens permetrà realitzar tant un diagrama de Gantt com un diagrama de PERT.
-	\subsubsection{Git + Github}
-		Tot i que no es tracta d'un projecte col·laboratiu (només hi ha un desenvolupador), s'ha decidit utilitzar el sistema de control de versions Git juntament amb la pàgina web Github. 
+	\subsubsection{Git + GitHub}
+		Tot i que no es tracta d'un projecte col·laboratiu (només hi ha un desenvolupador), s'ha decidit utilitzar el sistema de control de versions Git juntament amb la pàgina web GitHub.
 		D'aquesta manera es facilitarà treballar amb diverses màquines i portar un control dels canvis realitzats. A més, permetrà compartir el codi amb el director amb facilitat.
 	\section{Mètode de validació}
 		Es faran validacions parcials durant la realització del projecte, fent proves del sistema amb diverses imatges.

@@ -1,3 +1,5 @@
+\label{sec:Tecniques}
+
 En aquesta secció es descriuen les tècniques de visió per ordinador i tractament d'imatges emprades durant la realització del projecte.
 
 \section{Preprocessat digital d'imatges}
@@ -23,7 +25,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.65\textwidth]{images/RobotKp}
-		\caption{\textit{keypoints}}
+		\caption{\textit{Keypoints}}
 	\end{figure}
 	\noindent
 	La detecció es pot classificar en:\\
@@ -33,7 +35,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\item{Detecció de regions\\}
 	\end{itemize}
 	Les principals tècniques d'obtenció de \textit{keypoints} que s'han utilitzat són: SIFT, Harris i ORB.
-	També s'han provat altres algorismes com FAST, SURF, STAR, MSER o SHI-TOMASI.
+	També s'han provat altres algorismes com FAST\cite{Rosten:2006:MLH:2094437.2094478}, SURF, MSER\cite{BMVC.16.36:abbreviated} o Shi-Tomasi\cite{Shi:1993:GFT:866676}.
 
 	\subsubsection{Harris}
 	Harris és un detector que es basa a trobar cantonades. La idea bàsica és que mitjançant una finestra de NxM píxels, es recorre la imatge buscant els punts on hi ha canvis d'intensitat
@@ -79,7 +81,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\item{Descriptors vectorials: SIFT, SURF}
 		\item{Descriptors binaris: ORB, BRISK\\}
 	\end{itemize}
-	Principalment s'han utilitzat SIFT, ORB i BRISK, encara que també s'han provat d'altres com SURF, LATCH o DAISY.
+	Principalment s'han utilitzat SIFT, ORB i BRISK, encara que també s'han provat d'altres com SURF, LATCH o DAISY\cite{Tola10}.
 
 	\subsubsection{SIFT}
 	S'agafa l'histograma d'orientacions al voltant del punt, discretitzant en una finestra de 16x16.
@@ -92,7 +94,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	\end{figure}
 
 	\subsubsection{ORB}
-	El descriptor d'ORB és una modificació de BRIEF, un descriptor ràpid i senzill basat en \textit{strings} binaris.\\\\
+	El descriptor d'ORB és una modificació de BRIEF\cite{Calonder:2010:BBR:1888089.1888148}, un descriptor ràpid i senzill basat en \textit{strings} binaris.\\\\
 	Per cada \textit{keypoint} s'agafen N punts veïns i d'aquests s'agafen parells de forma més o menys aleatòria. Per cada parell es compara la intensitat i es retorna un \textit{string} binari de mida N amb '1' o '0' segons
 	si la intensitat del primer punt és major a la del segon o no. Això ens permet comparar els descriptors amb una simple operació XOR.\\\\
 	És un mètode molt ràpid, però no és invariable ni a la rotació ni a l'escala. Per això, ORB intenta solucionar el problema de la rotació girant els patrons en funció de l'angle de la característica.
@@ -139,7 +141,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\caption{Homografia}
 	\end{figure}
 	\noindent
-	A l'hora de buscar l'homografia aplicarem RANSAC (\textit{Random Sample Consensus}), un algorisme que ens permetrà eliminar \textit{outliers} dels \textit{match} trobats.\\
+	A l'hora de buscar l'homografia aplicarem RANSAC (\textit{Random Sample Consensus})\cite{Fischler:1981:RSC:358669.358692}, un algorisme que ens permetrà eliminar \textit{outliers} dels \textit{match} trobats.\\
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.45\textwidth]{images/ransac}

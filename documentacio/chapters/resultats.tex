@@ -3,12 +3,14 @@
 %\definecolor{myBlue}{RGB}{210, 230, 255}
 \definecolor{myBlue}{RGB}{217, 230, 242}
 
+\label{sec:Resultats}
+
 En aquest capítol es detallen els experiments realitzats i els resultats obtinguts a partir d'aquests.
 
 \section{Experiments realitzats}
 	S'han realitzat diversos experiments per comprovar tant la detecció de \textit{keypoints} com la fiabilitat del \textit{matching}. Els paràmetres utilitzats en tots els algorismes
 	són els descrits al Capítol 6: Implementació.\\\\
-	Podeu trobar el codi dels scripts utilitzats per la realització dels experiments a l'annex del treball.
+	Podeu trobar el codi dels scripts utilitzats per la realització dels experiments al \href{https://github.com/wildux/tfg}{GitHub del projecte}.
 	\subsection{Comparació detectors de \textit{keypoints}}
 		Tot i que la velocitat d'execució no és un factor determinant pel projecte, s'ha realitzat una comparació inicial de la velocitat d'execució dels algorismes de detecció de \textit{keypoints}.\\\\
 		Els algorismes a comparar són:
@@ -263,7 +265,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 					Harris + SIFT & 816 & 19 & 184 & 3 \\
 				\end{tabular}
 			\end{center}
-			\caption{Matching - Sub-imatges}
+			\caption{\textit{Matching} - Sub-imatges}
 		\end{table}
 
 		\noindent
@@ -316,7 +318,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 					Harris + SIFT & 110 & 1 & 98 & 4 \\
 				\end{tabular}
 			\end{center}
-			\caption{Matching - imatges similars}
+			\caption{\textit{Matching} - imatges similars}
 		\end{table}
 
 		\noindent
@@ -341,7 +343,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 				\includegraphics[width=\linewidth]{images/experiments/jardi2}
 				\label{fig:awesome_image3}
 			\endminipage
-			\caption{Imatges Campus i jardins}
+			\caption{Imatges campus i jardins}
 		\end{figure}
 
 		\begin{table}[H]
@@ -371,7 +373,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 					ORB + BRISK & 78 & 65 & 81 & 6 \\
 				\end{tabular}
 			\end{center}
-			\caption{Matching - canvis de perspectiva i zoom}
+			\caption{\textit{Matching} - canvis de perspectiva i zoom}
 		\end{table}
 		\noindent
 		Quan utilitzem escenes diferents, amb canvis de zoom i de perspectiva, el nombre d'aparellaments disminueix considerablement. La taxa d'encert també disminueix, però sempre superant el 50\%.\\\\
@@ -403,7 +405,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\includegraphics[height=1cm]{images/experiments/uni1}
 			\includegraphics[height=1cm]{images/experiments/jardi_sel}
 			\includegraphics[height=1cm]{images/experiments/jardi_2}}
-			\caption{Imatges Campus i jardins (objectes)}
+			\caption{Imatges campus i jardins (objectes)}
 		\end{figure}
 
 		\begin{table}[H]
@@ -433,7 +435,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 					ORB + BRISK & 19 & 0 & 71 & 6 \\
 				\end{tabular}
 			\end{center}
-			\caption{Matching - objectes}
+			\caption{\textit{Matching} - objectes}
 		\end{table}
 		\noindent
 		En les imatges més petites, com era d'esperar, s'obtenen menys \textit{keypoints}. Per tant el nombre total d'aparellaments trobats també serà menor.\\\\
@@ -463,7 +465,7 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\includegraphics[height=1cm]{images/experiments/jardi_2}
 			\includegraphics[height=1cm]{images/experiments/jardi_sel}
 			\includegraphics[height=1cm]{images/experiments/uni1}}
-			\caption{Imatges Campus i jardins}
+			\caption{Imatges campus i jardins (diferents)}
 		\end{figure}
 
 		\begin{table}[H]
@@ -478,13 +480,13 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 					ORB + BRISK & 830 & 2500 & 1 & 0.942s & 2405 & 2500 & 7 & 1.003s \\
 				\end{tabular}
 			\end{center}
-			\caption{Matching - comparació sub-imatges}
+			\caption{\textit{Matching} - imatges diferents}
 		\end{table}
 		\noindent
 		Analitzant els resultats es pot veure que no es troben gaires aparellaments, però tot i així se'n troben alguns. Harris+SIFT sembla ser el que en troba menys.
 
 \newpage
-	\subsection{Matching i homografia}
+	\subsection{\textit{Matching} i homografia}
 		Aquí podeu veure alguns dels resultats obtinguts en executar el programa seleccionant una regió més concreta:\\
 		\begin{figure}[!htb]
 			\resizebox{\textwidth}{!}{%
@@ -496,5 +498,5 @@ En aquest capítol es detallen els experiments realitzats i els resultats obting
 			\resizebox{\textwidth}{!}{%
 			\includegraphics[height=1cm]{images/7}
 			\includegraphics[height=1cm]{images/uniSel5}}
-			\caption{Homografia}
+			\caption{Homografia - Resultats}
 		\end{figure}

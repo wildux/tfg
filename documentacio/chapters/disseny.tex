@@ -1,3 +1,5 @@
+\label{sec:Disseny}
+
 En aquest capítol es detalla l'arquitectura del sistema i el disseny de les aplicacions desenvolupades.
 \section{Arquitectura del sistema}
 	L'arquitectura del sistema està formada per tres parts diferenciades: el client (aplicació web o per \textit{smartphones}), un servidor i el robot. A continuació podeu veure un esquema de l'arquitectura i l'explicació
@@ -19,7 +21,7 @@ En aquest capítol es detalla l'arquitectura del sistema i el disseny de les apl
 	Inicialment es desenvoluparà una aplicació per realitzar les diverses proves sense interfície gràfica, que simplement mostrarà el resultat obtingut del \textit{matching}. Més endavant, però, s'inclourà una
 	interfície mínima que ens permetrà escollir les imatges a tractar i la regió d'interès (punt de destí).
 	\subsubsection{Selecció de les imatges}
-		Per seleccionar les imatges s'utilitzarà Tkinter, una GUI estàndard de Python.
+		Per seleccionar les imatges s'utilitzarà Tkinter\cite{Tkinter}, una GUI estàndard de Python.
 		%\begin{figure}[H]
 		%	\centering
 		%	\includegraphics[width=0.5\textwidth]{images/fs}
@@ -28,7 +30,7 @@ En aquest capítol es detalla l'arquitectura del sistema i el disseny de les apl
 
 	\subsubsection{Selecció de la regió d'interès}
 		Per poder escollir el punt de destí del robot, l'usuari haurà de seleccionar una regió d'interès en una imatge. Això es farà de manera molt senzilla, fent una selecció amb el ratolí.
-		Un cop realitzada la selecció, l'usuari tindrà l'opció de refer-la (simplement seleccionant de nou) o d'acceptar-la polsant la tecla "c".\\\\
+		Un cop realitzada la selecció, l'usuari tindrà l'opció de refer-la (simplement seleccionant de nou) o d'acceptar-la polsant la tecla c.\\\\
 		%\begin{figure}[H]
 		%	\centering
 		%	\includegraphics[width=0.5\textwidth]{images/selection}
