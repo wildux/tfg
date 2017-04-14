@@ -1,22 +1,22 @@
-\section{Programa principal en python}
-	Per facilitar la utilització del codi en possibles adaptacions o millores futures, s'ha decidit implementar una petita biblioteca en Python amb totes les funcions necessaries. El programa principal farà ús
+\section{Programa principal en Python}
+	Per facilitar la utilització del codi en possibles adaptacions o millores futures, s'ha decidit implementar una petita biblioteca en Python amb totes les funcions necessàries. El programa principal farà ús
 	d'aquesta biblioteca, que permetrà:
 
 	\begin{enumerate}
-		\item{Pre-processar les imatges}
+		\item{Preprocessar les imatges}
 		\item{Seleccionar la regió d'interès}
-		\item{Obtenir els keypoints}
+		\item{Obtenir els \textit{keypoints}}
 		\item{Extreure les característiques}
-		\item{Fer matching de característiques}
+		\item{Fer \textit{matching} de característiques}
 		\item{Homografia: Obtenir la regió/punt demanat}
-		\item{Obtenir l'angle de rotació pel robot}
+		%\item{Obtenir l'angle de rotació pel robot}
 	\end{enumerate}
 
-	\subsection{Pre-processat de les imatges}
-		S'han provat diverses tècniques de pre-processat com ara filtres gaussians o canvis en el contrast, pero els resultats obtinguts no han sigut satisfactoris i finalment s'ha optat per deixar
+	\subsection{Preprocessat de les imatges}
+		S'han provat diverses tècniques de preprocessat com ara filtres gaussians o canvis en el contrast, però els resultats obtinguts no han sigut satisfactoris i finalment s'ha optat per deixar
 		les imatges tal com són.\\\\
-		Simplement es transforma la imatge a escala de grisos per poder treballar amb tots els algorismes de visió i es redimensiona per agilitzar la selecció de keypoints, extracció
-		de característiques i matching.\\
+		Simplement es transforma la imatge a escala de grisos per poder treballar amb tots els algorismes de visió i es redimensiona per agilitzar la selecció de \textit{keypoints}, extracció
+		de característiques i \textit{matching}.\\
 		\begin{python}
 def prep(image):
 	img = cv2.resize(image, (0,0), fx=0.3, fy=0.3)
@@ -63,10 +63,10 @@ def selectROI(image):
 		img = img[refPt[0][1]:refPt[1][1], refPt[0][0]:refPt[1][0]]
 	return img
 		\end{python}
-	\subsection{Obtenció de keypoints}
-		Per obtenir els punts d'interès d'una imatge, s'utilitzaràn diversos algorismes de visió per computador.\\\\
-		La funció point{\_}selection(gray, alg) serà l'encarregada de cridar l'algoritme desitjat segons el que vulgui l'usuari (per defecte s'utilitzarà Harris).
-		Els paràmetres necessaris seràn una imatge en escala de grisos i l'algorisme desitjat. La funció retornarà un array amb els keypoints trobats. \\
+	\subsection{Obtenció de \textit{keypoints}}
+		Per obtenir els punts d'interès d'una imatge, s'utilitzaran diversos algorismes de visió per computador.\\\\
+		La funció point{\_}selection(gray, alg) serà l'encarregada de cridar l'algoritme escollit per l'usuari (per defecte s'utilitzarà Harris).
+		Els paràmetres necessaris seran una imatge en escala de grisos i l'algorisme desitjat. La funció retornarà un \textit{array} amb els \textit{keypoints} trobats. \\
 		\begin{python}
 def point_selection(gray, alg):
 	kp = []
@@ -75,7 +75,7 @@ def point_selection(gray, alg):
 		\end{python}
 
 		\subsubsection{SIFT}
-		Una de les opcions serà utilitzar SIFT (DoG). Per fer això simplement cridarem la funció d'OpenCV detect() en la instància de SIFT creada. Modificarem el paràmetre sigma perque funcioni millor
+		Una de les opcions serà utilitzar SIFT (DoG). Per fer això, simplement cridarem la funció d'OpenCV detect() en la instància de SIFT creada. Modificarem el paràmetre \textit{sigma} perquè funcioni millor
 		amb les imatges utilitzades.\\
 		\begin{python}
 	if alg == _SIFT:
@@ -84,7 +84,7 @@ def point_selection(gray, alg):
 		\end{python}
 
 		\subsubsection{ORB}
-		Per utilitzar ORB també cridarem la funció detect() d'OpenCV, pero en aquest cas haurem de modificar una mica els paràmetres per defecte de la creació de l'objecte ORB, ja que els resultats obtinguts
+		Per utilitzar ORB també cridarem la funció detect() d'OpenCV, però en aquest cas haurem de modificar una mica els paràmetres per defecte de la creació de l'objecte ORB, ja que els resultats obtinguts
 		en primer moment no eren gaire bons.\\
 		\begin{python}
 	elif alg == _ORB:
@@ -96,8 +96,8 @@ def point_selection(gray, alg):
 		\subsubsection{Harris}
 		En el cas de Harris, el detector no utilitza diferents escales i simplement detecta ``corners'' en la imatge. Per tant, utilitzarem la funció d'OpenCV pyrDown() per reduir
 		la mida de la imatge (1/2) i aplicar Harris en diverses escales.\\\\
-		Per detectar els keypoints farem servir la funció goodFeaturesToTrack() en comptes del detector de corners de Harris, ja que permet obtenir els punts més facilment i
-		també té la opció d'utilitzar Shi-Tomasi si ens interessés.\\
+		Per detectar els \textit{keypoints} farem servir la funció goodFeaturesToTrack() en comptes del detector de corners de Harris, ja que permet obtenir els punts més fàcilment i
+		també té l'opció d'utilitzar Shi-Tomasi si ens interessés.\\
 		\begin{python}
 	elif alg == _HARRIS:
 		G = gray.copy()
@@ -115,7 +115,7 @@ def point_selection(gray, alg):
 		\end{python}
 
 		\subsubsection{MSER}
-		Per últim, tindrem la opció d'utilitzar MSER. Tal com fem amb SIFT i ORB, també farem servir la funció detect().\\
+		Per últim, tindrem l'opció d'utilitzar MSER. Tal com fem amb SIFT i ORB, també farem servir la funció detect().\\
 		\begin{python}
 	elif alg == _MSER:
 		mser = cv2.MSER_create()
@@ -123,9 +123,9 @@ def point_selection(gray, alg):
 		\end{python}
 \newpage
 	\subsection{Extracció de característiques}
-		De la mateixa manera en que podem aconseguir keypoints, OpenCV també disposa de diversos algorismes d'extracció de característiques a partir dels keypoints d'una imatge.\\\\
+		De la mateixa manera en què podem aconseguir \textit{keypoints}, OpenCV també disposa de diversos algorismes d'extracció de característiques a partir dels \textit{keypoints} d'una imatge.\\\\
 		La funció creada feature{\_}detection(image, kp, alg) serà l'encarregada d'extreure les característiques utilitzant algun dels algorismes disponibles. Els paràmetres necessaris de la funció són:
-		la imatge en escala de grisos, l'array de keypoints obtinguts i l'algorisme desitjat. Retornarà tant els descriptors com els keypoints.\\
+		la imatge en escala de grisos, l'\textit{array} de \textit{keypoints} obtinguts i l'algorisme desitjat. Retornarà tant els descriptors com els \textit{keypoints}.\\
 
 		\begin{python}
 def feature_extraction(image, kp, alg):
@@ -153,8 +153,8 @@ def feature_extraction(image, kp, alg):
 		\end{python}
 
 \newpage
-	\subsection{Matching i homografia}
-La funció retornarà les coordenades de destí (x,y) i una imatge amb els matches i la regió de destí pintats.\\
+	\subsection{\textit{Matching} i homografia}
+La funció retornarà les coordenades de destí (x,y) i una imatge amb els aparellaments i la regió de destí pintats.\\
 		\begin{python}
 def matching(img1, img2, des1, des2, kp1, kp2, fe):
 	draw_params = dict(matchColor = (0,255,0), singlePointColor = None,
@@ -162,9 +162,9 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe):
 	return x, y, cv2.drawMatches(img1,kp1,img2,kp2,good,None,**draw_params)
 		\end{python}
 
-		\subsubsection{Matching}
-		En el cas dels descriptors binaris, utilitzarem la distancia Hamming, mentre que per la resta s'utilitzarà... En els dos casos, s'utilitzarà la funció BFMatcher(), que aplicarà el matching
-		per força bruta.\\
+		\subsubsection{\textit{Matching}}
+		En el cas dels descriptors binaris, utilitzarem la distància de Hamming, mentre que per la resta s'utilitzarà l'euclidiana. En els dos casos, s'utilitzarà la funció BFMatcher(), que aplicarà el
+		\textit{matching} per força bruta.\\
 		\begin{python}
 	if fe == _LATCH or fe == _ORB or fe == _BRISK:
 		bf = cv2.BFMatcher(cv2.NORM_HAMMING)
@@ -174,8 +174,8 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe):
 	matches = bf.knnMatch(des1, des2, k=2)
 		\end{python}
 
-		\subsubsection{Ratio test}
-Un cop obtinguts els "matches", aplicarem el ratio test per descartar alguns "matches".\\
+		\subsubsection{\textit{Ratio test}}
+Un cop obtinguts els aparellaments, aplicarem el \textit{ratio test} per descartar-ne alguns.\\
 		\begin{python}
 	good = []
 	for m,n in matches:
@@ -185,7 +185,7 @@ Un cop obtinguts els "matches", aplicarem el ratio test per descartar alguns "ma
 
 \newpage
 		\subsubsection{Homografia}
-Si hi ha prou coincidencies (considerem acceptable com a mínim 10), es buscarà la homografia i es pintarà la regió trobada en la imatge. S'aplicarà Ransac. \\
+Si hi ha prou coincidències (considerem acceptable com a mínim 10), es buscarà l'homografia i es pintarà la regió trobada en la imatge. S'aplicarà RANSAC. \\
 		\begin{python}
 	if len(good) >= MIN_MATCH_COUNT:
 		src_pts = np.float32([ kp1[m.queryIdx].pt for m in good ]).reshape(-1,1,2)
@@ -199,7 +199,7 @@ Si hi ha prou coincidencies (considerem acceptable com a mínim 10), es buscarà
 		\end{python}
 
 		\subsubsection{Coordenades de destí}
-Per obtenir el punt on volem que es dirigeixi el robot agafarem els valors de dst i retornarem el punt mig.\\
+Per obtenir el punt on volem que es dirigeixi el robot agafarem els valors de ``dst'' i retornarem el punt mitjà.\\
 		\begin{python}
 		x1, y1 = np.int32(dst)[0].ravel()
 		x2, y2 = np.int32(dst)[1].ravel()
@@ -272,8 +272,8 @@ El formulari de l'arxiu upload.html és el següent:\\
 		\end{txt}
 
 	\subsection{Selecció de la regió d'interès}
-		Per seleccionar la regió d'interès s'ha utilitzar jQuery i el plugin imgAreaSelect, essent també compatible amb dispositius mòbils.\\\\
-		En la pàgina principal es mostra una imatge i un botó per acceptar la selecció. El plugin imgAreaSelect s'encarrega de permetre a l'usuari fer una selecció i actualitzar els camps
+		Per seleccionar la regió d'interès s'ha utilitzat jQuery i el \textit{plugin} imgAreaSelect, essent també compatible amb dispositius mòbils.\\\\
+		En la pàgina principal es mostra una imatge i un botó per acceptar la selecció. El \textit{plugin} imgAreaSelect s'encarrega de permetre a l'usuari fer una selecció i actualitzar els camps
 		amagats del formulari.\\
 		\begin{txt}
 <form action="send" method="post" >
@@ -320,7 +320,7 @@ El formulari de l'arxiu upload.html és el següent:\\
  </script>
 		\end{txt}
 \noindent
-El formulari ens porta a la ruta /send, que executarà el codi principal de visió per computador. Finalment podrem veure el resultat obtingut del matching a result.html.\\
+El formulari ens porta a la ruta /send, que executarà el codi principal de visió per computador. Finalment podrem veure el resultat obtingut del \textit{matching} a result.html.\\
 
 		\begin{python}
 @app.route("/")
@@ -345,10 +345,10 @@ def send():
 
 
 \section{Aplicació mòbil}
-	L'aplicació mòbil s'ha desenvolupat amb Android Studio i el llenguatge de programació Java (amb l'SDK d'Android).
+	L'aplicació mòbil s'està desenvolupant amb Android Studio i el llenguatge de programació Java (amb l'SDK d'Android).
 	\subsection{Capturar imatge}
 		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
-		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera des d'una altra aplicació, només ha sigut necessari fer l'Intent corresponent.\\
 		\begin{java}
 if (v.getId() == R.id.capture_btn) try {
 	Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -359,8 +359,7 @@ if (v.getId() == R.id.capture_btn) try {
 }
 		\end{java}
 	\subsection{Selecció d'imatges de la galeria}
-		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
-		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera desde una altre aplicació, nomès ha sigut necessari fer l'Intent corresponent.\\
+		Android també disposa d'una Activitat que ens permet obrir la galeria des d'una altra aplicació, així que s'ha seguit el mateix procés que per obrir la càmera.\\
 		\begin{java}
 else if (v.getId() == R.id.browse_btn) try {
 	Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -372,6 +371,5 @@ else if (v.getId() == R.id.browse_btn) try {
 		\end{java}
 	\subsection{Enviament de dades al servidor}
 		Per poder enviar dades al servidor, serà necessari l'ús d'una connexió a Internet. Per tant, s'haurà d'habilitar el permís necessari.\\\\
-		\begin{java}
-...
-		\end{java}
+		Inicialment s'havia pensat d'enviar la imatge seleccionada, codificada en base 64, però només funcionava amb imatges molt petites. Per tant, s'ha considerat millor opció utilitzar alguna biblioteca
+		d'Android com Volley o Retrofit.
