@@ -5,37 +5,33 @@
 	<input type="hidden" name="y2" value="" />
 	<input type="hidden" name="width" value="" />
 	<input type="hidden" name="height" value="" />
-	<input class="btn btn-primary" type="submit"
-		value="Send" />
+	<input class="btn btn-primary" style="float:right"
+		type="submit" value="Acceptar sel." />
 </form>
 
 <script type="text/javascript">
 	jQuery(document).ready(function () {
+		var img = document.getElementById('scene');
+		document.getElementById('width')
+			.value = img.clientWidth
+		document.getElementById('height')
+			.value = img.clientHeight
+
 		jQuery('img#scene').imgAreaSelect({
 			handles: true,
 			persistent: true,
-			imageHeight: 2448,
-			imageWidth: 3264,
-			x1: 100, y1: 100, x2: 300, y2: 300,
+			x1: 50, y1: 50, x2: 200, y2: 200,
 			onInit: function ( image, selected) {
 				jQuery('input[name=x1]').val(selected.x1);
 				jQuery('input[name=y1]').val(selected.y1);
 				jQuery('input[name=x2]').val(selected.x2);
 				jQuery('input[name=y2]').val(selected.y2);
-				jQuery('input[name=width]')
-					.val(selected.width);
-				jQuery('input[name=height]')
-					.val(selected.height);
 			},
 			onSelectEnd: function ( image, selected) {
 				jQuery('input[name=x1]').val(selected.x1);
 				jQuery('input[name=y1]').val(selected.y1);
 				jQuery('input[name=x2]').val(selected.x2);
 				jQuery('input[name=y2]').val(selected.y2);
-				jQuery('input[name=width]')
-					.val(selected.width);
-				jQuery('input[name=height]')
-					.val(selected.height);
 			}
 		});
 	});

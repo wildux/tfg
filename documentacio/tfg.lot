@@ -24,48 +24,46 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces Detectors de keypoints - comparaci\IeC {\'o}}}{57}{table.7.1}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Detectors de \textit {keypoints} - comparaci\IeC {\'o}}}{56}{table.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.2}{\ignorespaces Detectors de keypoints - comparaci\IeC {\'o} 2}}{58}{table.7.2}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Detectors de \textit {keypoints} - comparaci\IeC {\'o} 2}}{57}{table.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.3}{\ignorespaces Extracci\IeC {\'o} - Sub-imatges}}{59}{table.7.3}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Extracci\IeC {\'o} - Subimatges}}{58}{table.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.4}{\ignorespaces Matching - Sub-imatges}}{59}{table.7.4}
+\contentsline {table}{\numberline {7.4}{\ignorespaces \textit {Matching} - Subimatges}}{58}{table.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.5}{\ignorespaces Extracci\IeC {\'o} - imatges similars}}{60}{table.7.5}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Extracci\IeC {\'o} - imatges similars}}{59}{table.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.6}{\ignorespaces Matching - imatges similars}}{60}{table.7.6}
+\contentsline {table}{\numberline {7.6}{\ignorespaces \textit {Matching} - imatges similars}}{59}{table.7.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.7}{\ignorespaces Extracci\IeC {\'o} - canvis de perspectiva i zoom}}{61}{table.7.7}
+\contentsline {table}{\numberline {7.7}{\ignorespaces Extracci\IeC {\'o} - canvis de perspectiva i zoom}}{60}{table.7.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.8}{\ignorespaces Matching - canvis de perspectiva i zoom}}{61}{table.7.8}
+\contentsline {table}{\numberline {7.8}{\ignorespaces \textit {Matching} - canvis de perspectiva i zoom}}{60}{table.7.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.9}{\ignorespaces RANSAC - canvis de perspectiva i zoom}}{62}{table.7.9}
+\contentsline {table}{\numberline {7.9}{\ignorespaces RANSAC - canvis de perspectiva i zoom}}{61}{table.7.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.10}{\ignorespaces Extracci\IeC {\'o} - objectes}}{63}{table.7.10}
+\contentsline {table}{\numberline {7.10}{\ignorespaces Extracci\IeC {\'o} - objectes}}{62}{table.7.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.11}{\ignorespaces Matching - objectes}}{63}{table.7.11}
+\contentsline {table}{\numberline {7.11}{\ignorespaces \textit {Matching} - objectes}}{62}{table.7.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.12}{\ignorespaces RANSAC - objectes}}{63}{table.7.12}
+\contentsline {table}{\numberline {7.12}{\ignorespaces RANSAC - objectes}}{62}{table.7.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.13}{\ignorespaces Matching - comparaci\IeC {\'o} sub-imatges}}{64}{table.7.13}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.1}{\ignorespaces Recursos humans (hores)}}{66}{table.8.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.2}{\ignorespaces Recursos humans (costos)}}{67}{table.8.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.3}{\ignorespaces Recursos de maquinari (costos)}}{67}{table.8.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.4}{\ignorespaces Costos indirectes}}{67}{table.8.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.5}{\ignorespaces Costos totals}}{68}{table.8.5}
+\contentsline {table}{\numberline {7.13}{\ignorespaces \textit {Matching} - imatges diferents}}{63}{table.7.13}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {9.1}{\ignorespaces Matriu de sostenibilitat}}{69}{table.9.1}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Recursos humans (hores)}}{65}{table.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.2}{\ignorespaces Recursos humans (costos)}}{66}{table.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.3}{\ignorespaces Recursos de maquinari (costos)}}{66}{table.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.4}{\ignorespaces Costos indirectes}}{66}{table.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.5}{\ignorespaces Costos totals}}{67}{table.8.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {9.1}{\ignorespaces Matriu de sostenibilitat}}{68}{table.9.1}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

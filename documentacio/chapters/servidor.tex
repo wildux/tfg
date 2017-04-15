@@ -10,9 +10,9 @@
 	\end{figure}
 	\footnotetext{\textbf{Font:} https://iotbytes.wordpress.com}
 	\subsection{Flask}
-		Per desenvolupar l'aplicació web he decidit utilitzar Flask\cite{Flask}, un micro-framework de Python que permetrà utilitzar el codi desenvolupat del projecte amb facilitat.
+		Per desenvolupar l'aplicació web he decidit utilitzar Flask\cite{Flask}, un \textit{micro-framework} de Python que permetrà utilitzar el codi desenvolupat del projecte amb facilitat.
 		A més, també permet utilitzar un servidor per provar l'aplicació en la fase de desenvolupament sense necessitat d'inicialitzar el servidor web.\\\\
-		Un exemple d'aplicació en Flask (el típic Hello World) seria així:\\
+		Un exemple d'aplicació en Flask (el típic ``Hello World") seria així:\\
 		\begin{python}
 from flask import Flask
 app = Flask(__name__)
@@ -36,8 +36,8 @@ if __name__ == "__main__":
 
 	El sistema operatiu a utilitzar serà la versió lite de Raspbian, el sistema oficial de la fundació de Raspberry.
 	Es pot baixar la imatge des del web de Raspberry i instal·lar a la targeta SD amb la comanda dd.\\\\
-	Tot i que a continuació s'especifiquen les comandes utilitzades amb Raspbian, el mateix procés es podria replicar en qualsevol altre sistema basat en Linux amb poques diferències. I evidentment el
-	hardware tampoc ha de ser el d'una Raspberry Pi 2.\\
+	Tot i que a continuació s'especifiquen les comandes utilitzades amb Raspbian, el mateix procés es podria replicar en qualsevol altre sistema basat en Linux amb poques diferències. I evidentment, el
+	\textit{hardware} tampoc ha de ser el d'una Raspberry Pi 2.\\
 
 	\begin{bash}
 	$ sudo dd bs=4M if=/home/joan/Downloads/raspbian.img
@@ -126,7 +126,7 @@ if __name__ == "__main__":
 	a la IP del servidor.\\\\
 	S'ha de tenir en compte que la configuració següent ens permetrà accedir a l'aplicació web des de la xarxa local. En cas que es vulgui accedir des de l'exterior, s'haurà de configurar l'encaminador
 	perquè redirigeixi el tràfic del port cap al servidor.\\\\
-	Suposant que l'aplicació web s'anomena "project.py", el primer que haurem de fer serà crear un SGI Entry Point (wsgi.py) que executi l'aplicació i pugui ser utilitzar per uWSGI.\\
+	Suposant que l'aplicació web s'anomena ``project.py", el primer que haurem de fer serà crear un \textit{SGI Entry Point} (wsgi.py) que executi l'aplicació i pugui ser utilitzar per uWSGI.\\
 
 	\begin{bash}
 	$ nano ~/moras/wsgi.py
@@ -162,7 +162,7 @@ if __name__ == "__main__":
 \noindent
 {}\\
 	Amb això ja podríem executar uWSGI sense problemes, però volem que el servei s'executi de manera automàtica quan iniciem el sistema.
-	Per aconseguir això, afegirem una línia al fitxer rc.local que s'encarregui d'executar l'arxiu .ini creat anteriorment.\\
+	Per aconseguir això, afegirem una línia al fitxer `rc.local' que s'encarregui d'executar l'arxiu .ini creat anteriorment.\\
 
 	\begin{bash}
 	$ sudo nano /etc/rc.local
@@ -179,7 +179,7 @@ if __name__ == "__main__":
 	\end{txt}
 \noindent
 {}\\
-	Per tal que Nginx redirigeixi les peticions al servidor uWSGI, hem de crear un nou lloc a /etc/nginx/sites-available.\\
+	Per tal que Nginx redirigeixi les peticions al servidor uWSGI, hem de crear un nou lloc a `/etc/nginx/sites-available'.\\
 	\begin{bash}
 	$ sudo nano /etc/nginx/sites-available/moras
 	\end{bash}
@@ -197,7 +197,7 @@ if __name__ == "__main__":
 	\end{txt}
 \noindent
 {}\\
-	Finalment, només caldrà activar el lloc web creant un \textit{soft link} a sites-enabled i reiniciar el servidor Nginx
+	Finalment, només caldrà activar el lloc web creant un \textit{soft link} a `sites-enabled' i reiniciar el servidor Nginx
 	per aplicar la nova configuració.\\
 	\begin{bash}
 	$ sudo ln -s /etc/nginx/sites-available/moras

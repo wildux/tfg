@@ -18,57 +18,53 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Aplicaci\IeC {\'o} de proves}}{24}{figure.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces App - Men\IeC {\'u}}}{25}{figure.3.3}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces App/Webapp - Selecci\IeC {\'o} de la regi\IeC {\'o} d'inter\IeC {\`e}s}}{25}{figure.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces App - C\IeC {\`a}mera}}{26}{figure.3.4}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces App - C\IeC {\`a}mera}}{25}{figure.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces App - Galeria}}{26}{figure.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces App - Selecci\IeC {\'o} de la regi\IeC {\'o} d'inter\IeC {\`e}s}}{27}{figure.3.6}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Estructura del servidor}}{27}{figure.4.1}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Estructura del servidor}}{28}{figure.4.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \textit {Keypoints}}}{35}{figure.5.1}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \textit {Flat}, vora i cantonada}}{36}{figure.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Keypoints}}{36}{figure.5.1}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces FAST, N=16}}{37}{figure.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Flat, vora i cantonada}}{37}{figure.5.2}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Descriptor SIFT}}{38}{figure.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces FAST}}{38}{figure.5.3}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \textit {Sampling pattern} BRISK}}{39}{figure.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Descriptor SIFT}}{39}{figure.5.4}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \textit {Matching}}}{40}{figure.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Sampling pattern BRISK}}{40}{figure.5.5}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Homografia}}{41}{figure.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Matching}}{41}{figure.5.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Homografia}}{42}{figure.5.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Ransac}}{42}{figure.5.8}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces RANSAC}}{41}{figure.5.8}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Imatges graff, boat i ubc}}{57}{figure.7.1}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Imatges graff, boat i ubc}}{56}{figure.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Imatges UPC i jardins}}{58}{figure.7.2}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Imatges UPC i jardins}}{57}{figure.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Imatges campus}}{59}{figure.7.3}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Imatges campus}}{58}{figure.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Imatges motos i cotxes}}{60}{figure.7.4}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Imatges motos i cotxes}}{59}{figure.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Imatges Campus i jardins}}{61}{figure.7.5}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Imatges campus i jardins}}{60}{figure.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Imatges Campus i jardins (objectes)}}{62}{figure.7.6}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Imatges campus i jardins (objectes)}}{61}{figure.7.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Imatges Campus i jardins}}{64}{figure.7.7}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Imatges campus i jardins (diferents)}}{63}{figure.7.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Homografia}}{65}{figure.7.8}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Homografia - Resultats}}{64}{figure.7.8}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

@@ -293,5 +293,419 @@
     \endverb
     \field{year}{2003}
   \endentry
+
+  \entry{Rublee:2011:OEA:2355573.2356268}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=RE}{%
+         family={Rublee},
+         familyi={R\bibinitperiod},
+         given={Ethan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Rabaud},
+         familyi={R\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Konolige},
+         familyi={K\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Bradski},
+         familyi={B\bibinitperiod},
+         given={Gary},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Computer Society}%
+    }
+    \strng{namehash}{RE+1}
+    \strng{fullhash}{RERVKKBG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2011 International Conference on
+  Computer Vision}
+    \verb{doi}
+    \verb 10.1109/ICCV.2011.6126544
+    \endverb
+    \field{isbn}{978-1-4577-1101-5}
+    \field{pages}{2564\bibrangedash 2571}
+    \field{series}{ICCV '11}
+    \field{title}{ORB: An Efficient Alternative to SIFT or SURF}
+    \verb{url}
+    \verb http://dx.doi.org/10.1109/ICCV.2011.6126544
+    \endverb
+    \list{location}{1}{%
+      {Washington, DC, USA}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{Leutenegger:2011:BBR:2355573.2356277}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=LS}{%
+         family={Leutenegger},
+         familyi={L\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chli},
+         familyi={C\bibinitperiod},
+         given={Margarita},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SRY}{%
+         family={Siegwart},
+         familyi={S\bibinitperiod},
+         given={Roland\bibnamedelima Y.},
+         giveni={R\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Computer Society}%
+    }
+    \strng{namehash}{LSCMSRY1}
+    \strng{fullhash}{LSCMSRY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2011 International Conference on
+  Computer Vision}
+    \verb{doi}
+    \verb 10.1109/ICCV.2011.6126542
+    \endverb
+    \field{isbn}{978-1-4577-1101-5}
+    \field{pages}{2548\bibrangedash 2555}
+    \field{series}{ICCV '11}
+    \field{title}{BRISK: Binary Robust Invariant Scalable Keypoints}
+    \verb{url}
+    \verb http://dx.doi.org/10.1109/ICCV.2011.6126542
+    \endverb
+    \list{location}{1}{%
+      {Washington, DC, USA}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{Tkinter}{online}{}
+    \name{author}{2}{}{%
+      {{hash=LS}{%
+         family={Lumholt},
+         familyi={L\bibinitperiod},
+         given={Steen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=vRG}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Rossum},
+         familyi={R\bibinitperiod},
+         given={Guido},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LSRGv1}
+    \strng{fullhash}{LSRGv1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Tkinter}
+    \verb{url}
+    \verb http://tkinter.unpythonic.net/wiki/
+    \endverb
+  \endentry
+
+  \entry{Flask}{online}{}
+    \name{author}{1}{}{%
+      {{hash=RA}{%
+         family={Ronacher},
+         familyi={R\bibinitperiod},
+         given={Armin},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RA1}
+    \strng{fullhash}{RA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Flask}
+    \verb{url}
+    \verb http://flask.pocoo.org/
+    \endverb
+    \field{year}{2010}
+  \endentry
+
+  \entry{Nginx}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SI}{%
+         family={Sysoev},
+         familyi={S\bibinitperiod},
+         given={Igor},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SI1}
+    \strng{fullhash}{SI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Nginx}
+    \verb{url}
+    \verb https://nginx.org/
+    \endverb
+    \field{year}{2004}
+  \endentry
+
+  \entry{uWSGI}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{uWSGI}
+    \verb{url}
+    \verb https://uwsgi-docs.readthedocs.io
+    \endverb
+  \endentry
+
+  \entry{Rosten:2006:MLH:2094437.2094478}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RE}{%
+         family={Rosten},
+         familyi={R\bibinitperiod},
+         given={Edward},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DT}{%
+         family={Drummond},
+         familyi={D\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{REDT1}
+    \strng{fullhash}{REDT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 9th European Conference on Computer
+  Vision - Volume Part I}
+    \verb{doi}
+    \verb 10.1007/11744023_34
+    \endverb
+    \field{isbn}{3-540-33832-2, 978-3-540-33832-1}
+    \field{pages}{430\bibrangedash 443}
+    \field{series}{ECCV'06}
+    \field{title}{Machine Learning for High-speed Corner Detection}
+    \verb{url}
+    \verb http://dx.doi.org/10.1007/11744023_34
+    \endverb
+    \list{location}{1}{%
+      {Graz, Austria}%
+    }
+    \field{year}{2006}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{BMVC.16.36:abbreviated}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=MJ}{%
+         family={Matas},
+         familyi={M\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CO}{%
+         family={Chum},
+         familyi={C\bibinitperiod},
+         given={O.},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=UM}{%
+         family={Urban},
+         familyi={U\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Pajdla},
+         familyi={P\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJ+1}
+    \strng{fullhash}{MJCOUMPT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. BMVC}
+    \field{isbn}{1-901725-19-7}
+    \field{note}{doi:10.5244/C.16.36}
+    \field{pages}{36.1\bibrangedash 36.10}
+    \field{title}{Robust Wide Baseline Stereo from Maximally Stable Extremal
+  Regions}
+    \field{year}{2002}
+  \endentry
+
+  \entry{Shi:1993:GFT:866676}{report}{}
+    \name{author}{2}{}{%
+      {{hash=SJ}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Jianbo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TC}{%
+         family={Tomasi},
+         familyi={T\bibinitperiod},
+         given={Carlo},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cornell University}%
+    }
+    \strng{namehash}{SJTC1}
+    \strng{fullhash}{SJTC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Good Features to Track}
+    \list{location}{1}{%
+      {Ithaca, NY, USA}%
+    }
+    \field{type}{techreport}
+    \field{year}{1993}
+  \endentry
+
+  \entry{Tola10}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TE}{%
+         family={Tola},
+         familyi={T\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Lepetit},
+         familyi={L\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Fua},
+         familyi={F\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TELVFP1}
+    \strng{fullhash}{TELVFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{815\bibrangedash 830}
+    \field{title}{{DAISY: An Efficient Dense Descriptor Applied to Wide
+  Baseline Stereo}}
+    \field{volume}{32}
+    \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Calonder:2010:BBR:1888089.1888148}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=CM}{%
+         family={Calonder},
+         familyi={C\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Lepetit},
+         familyi={L\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Strecha},
+         familyi={S\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Fua},
+         familyi={F\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{CM+1}
+    \strng{fullhash}{CMLVSCFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 11th European Conference on Computer
+  Vision: Part IV}
+    \field{isbn}{3-642-15560-X, 978-3-642-15560-4}
+    \field{pages}{778\bibrangedash 792}
+    \field{series}{ECCV'10}
+    \field{title}{BRIEF: Binary Robust Independent Elementary Features}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=1888089.1888148
+    \endverb
+    \list{location}{1}{%
+      {Heraklion, Crete, Greece}%
+    }
+    \field{year}{2010}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{Fischler:1981:RSC:358669.358692}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FMA}{%
+         family={Fischler},
+         familyi={F\bibinitperiod},
+         given={Martin\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BRC}{%
+         family={Bolles},
+         familyi={B\bibinitperiod},
+         given={Robert\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{automated cartography, camera calibration, image matching, location
+  determination, model fitting, scene analysis}
+    \strng{namehash}{FMABRC1}
+    \strng{fullhash}{FMABRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1145/358669.358692
+    \endverb
+    \field{issn}{0001-0782}
+    \field{number}{6}
+    \field{pages}{381\bibrangedash 395}
+    \field{title}{Random Sample Consensus: A Paradigm for Model Fitting with
+  Applications to Image Analysis and Automated Cartography}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/358669.358692
+    \endverb
+    \field{volume}{24}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{Commun. ACM}
+    \field{month}{06}
+    \field{year}{1981}
+  \endentry
 \endsortlist
 \endinput

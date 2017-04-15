@@ -21,7 +21,7 @@
 		de característiques i \textit{matching}.\\
 		\begin{python}
 def prep(image):
-	img = cv2.resize(image, (0,0), fx=0.3, fy=0.3)
+	img = cv2.resize(image, (0,0), fx=0.5, fy=0.5)
 	return img, cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 		\end{python}
 	\subsection{Selecció de la regió d'interès}
@@ -45,7 +45,7 @@ def click_and_crop(event, x, y, flags, param):
 
 def selectROI(image):
 	global img, refPt, sel_rect_endpoint
-	img = image ###
+	img = image
 	cv2.namedWindow("image")
 	cv2.setMouseCallback("image", click_and_crop)
 	cv2.imshow('image', img)
@@ -67,7 +67,7 @@ def selectROI(image):
 		\end{python}
 	\subsection{Obtenció de \textit{keypoints}}
 		Per obtenir els punts d'interès d'una imatge, s'utilitzaran diversos algorismes de visió per computador.\\\\
-		La funció point{\_}selection(gray, alg) serà l'encarregada de cridar l'algoritme escollit per l'usuari (per defecte s'utilitzarà Harris).
+		La funció \textbf{point{\_}selection(gray, alg)} serà l'encarregada de cridar l'algoritme escollit per l'usuari (per defecte s'utilitzarà Harris).
 		Els paràmetres necessaris seran una imatge en escala de grisos i l'algorisme desitjat. La funció retornarà un \textit{array} amb els \textit{keypoints} trobats. \\
 		\begin{python}
 def point_selection(gray, alg):
@@ -77,7 +77,7 @@ def point_selection(gray, alg):
 		\end{python}
 
 		\subsubsection{SIFT}
-		Una de les opcions serà utilitzar SIFT (DoG). Per fer això, simplement cridarem la funció d'OpenCV detect() en la instància de SIFT creada. Modificarem el paràmetre \textit{sigma} perquè funcioni millor
+		Una de les opcions serà utilitzar SIFT (DoG). Per fer això, simplement cridarem la funció d'OpenCV \textbf{detect()} en la instància de SIFT creada. Modificarem el paràmetre \textit{sigma} perquè funcioni millor
 		amb les imatges utilitzades.\\
 		\begin{python}
 	if alg == _SIFT:
@@ -86,19 +86,19 @@ def point_selection(gray, alg):
 		\end{python}
 
 		\subsubsection{ORB}
-		Per utilitzar ORB també cridarem la funció detect() d'OpenCV, però en aquest cas haurem de modificar una mica els paràmetres per defecte de la creació de l'objecte ORB, ja que els resultats obtinguts
+		Per utilitzar ORB també cridarem la funció \textbf{detect()} d'OpenCV, però en aquest cas haurem de modificar una mica els paràmetres per defecte de la creació de l'objecte ORB, ja que els resultats obtinguts
 		en primer moment no eren gaire bons.\\
 		\begin{python}
 	elif alg == _ORB:
-		orb = cv2.ORB_create(nfeatures = 5000, nlevels = 8, edgeThreshold = 8,
+		orb = cv2.ORB_create(nfeatures = 2500, nlevels = 8, edgeThreshold = 8,
 		 patchSize = 8, fastThreshold = 5)
 		kp = orb.detect(gray,None)
 		\end{python}
 \newpage
 		\subsubsection{Harris}
-		En el cas de Harris, el detector no utilitza diferents escales i simplement detecta ``corners'' en la imatge. Per tant, utilitzarem la funció d'OpenCV pyrDown() per reduir
-		la mida de la imatge (1/2) i aplicar Harris en diverses escales.\\\\
-		Per detectar els \textit{keypoints} farem servir la funció goodFeaturesToTrack() en comptes del detector de corners de Harris, ja que permet obtenir els punts més fàcilment i
+		En el cas de Harris, el detector no utilitza diferents escales i simplement detecta \textit{corners} en la imatge. Per tant, utilitzarem la funció d'OpenCV \textbf{pyrDown()} per reduir
+		la mida de la imatge (\sfrac{1}{2}) i aplicar Harris en diverses escales.\\\\
+		Per detectar els \textit{keypoints} farem servir la funció \textbf{goodFeaturesToTrack()} en comptes del detector de corners de Harris, ja que permet obtenir els punts més fàcilment i
 		també té l'opció d'utilitzar Shi-Tomasi si ens interessés.\\
 		\begin{python}
 	elif alg == _HARRIS:
@@ -117,7 +117,7 @@ def point_selection(gray, alg):
 		\end{python}
 
 		\subsubsection{MSER}
-		Per últim, tindrem l'opció d'utilitzar MSER. Tal com fem amb SIFT i ORB, també farem servir la funció detect().\\
+		Per últim, tindrem l'opció d'utilitzar MSER. Tal com fem amb SIFT i ORB, també farem servir la funció \textbf{detect()}.\\
 		\begin{python}
 	elif alg == _MSER:
 		mser = cv2.MSER_create()
@@ -126,7 +126,7 @@ def point_selection(gray, alg):
 \newpage
 	\subsection{Extracció de característiques}
 		De la mateixa manera en què podem aconseguir \textit{keypoints}, OpenCV també disposa de diversos algorismes d'extracció de característiques a partir dels \textit{keypoints} d'una imatge.\\\\
-		La funció creada feature{\_}detection(image, kp, alg) serà l'encarregada d'extreure les característiques utilitzant algun dels algorismes disponibles. Els paràmetres necessaris de la funció són:
+		La funció creada \textbf{feature{\_}detection(image, kp, alg)} serà l'encarregada d'extreure les característiques utilitzant algun dels algorismes disponibles. Els paràmetres necessaris de la funció són:
 		la imatge en escala de grisos, l'\textit{array} de \textit{keypoints} obtinguts i l'algorisme desitjat. Retornarà tant els descriptors com els \textit{keypoints}.\\
 
 		\begin{python}
@@ -156,7 +156,7 @@ def feature_extraction(image, kp, alg):
 
 \newpage
 	\subsection{\textit{Matching} i homografia}
-La funció retornarà les coordenades de destí (x,y) i una imatge amb els aparellaments i la regió de destí pintats.\\
+La funció \textbf{matching()} retornarà els aparellaments trobats.\\
 		\begin{python}
 def matching(img1, img2, des1, des2, kp1, kp2, fe):
 	draw_params = dict(matchColor = (0,255,0), singlePointColor = None,
@@ -165,7 +165,7 @@ def matching(img1, img2, des1, des2, kp1, kp2, fe):
 		\end{python}
 
 		\subsubsection{\textit{Matching}}
-		En el cas dels descriptors binaris, utilitzarem la distància de Hamming, mentre que per la resta s'utilitzarà l'euclidiana. En els dos casos, s'utilitzarà la funció BFMatcher(), que aplicarà el
+		En el cas dels descriptors binaris, utilitzarem la distància de Hamming, mentre que per la resta s'utilitzarà l'euclidiana. En els dos casos, s'utilitzarà la funció \textbf{BFMatcher()}, que aplicarà el
 		\textit{matching} per força bruta.\\
 		\begin{python}
 	if fe == _LATCH or fe == _ORB or fe == _BRISK:
@@ -187,6 +187,17 @@ Un cop obtinguts els aparellaments, aplicarem el \textit{ratio test} per descart
 
 \newpage
 		\subsubsection{Homografia}
+La funció \textbf{homography()} retornarà les coordenades de destí (x,y) i una imatge amb els aparellaments i la regió de destí pintats.\\
+		\begin{python}
+homography(img1, img2, des1, des2, kp1, kp2, good):
+	...
+	draw_params = dict(matchColor = (0,255,0), singlePointColor = None,
+		matchesMask = matchesMask, flags = 2)
+	img3 = cv2.drawMatches(img1,kp1,img2C,kp2,good,None,**draw_params)
+	return x, y, img3
+		\end{python}
+\noindent
+\\{}
 Si hi ha prou coincidències (considerem acceptable com a mínim 10), es buscarà l'homografia i es pintarà la regió trobada en la imatge. S'aplicarà RANSAC. \\
 		\begin{python}
 	if len(good) >= MIN_MATCH_COUNT:
@@ -197,7 +208,7 @@ Si hi ha prou coincidències (considerem acceptable com a mínim 10), es buscar�
 		h,w,_ = img1.shape
 		pts = np.float32([ [0,0],[0,h-1],[w-1,h-1],[w-1,0] ]).reshape(-1,1,2)
 		dst = cv2.perspectiveTransform(pts,M)
-		img2 = cv2.polylines(img2,[np.int32(dst)],True,255,3, cv2.LINE_AA)
+		img2C = cv2.polylines(img2C,[np.int32(dst)],True,255,3, cv2.LINE_AA)
 		\end{python}
 
 		\subsubsection{Coordenades de destí}
@@ -209,6 +220,7 @@ Per obtenir el punt on volem que es dirigeixi el robot agafarem els valors de ``
 		x4, y4 = np.int32(dst)[3].ravel()
 		x = (x1+x2+x3+x4)/4
 		y = (y1+y2+y3+y4)/4
+		img2C = cv2.circle(img2C,(int(x),int(y)), 5, (0,0,255), -1)
 		\end{python}
 
 %	\subsection{Angle de gir}
@@ -224,12 +236,12 @@ Per obtenir el punt on volem que es dirigeixi el robot agafarem els valors de ``
 \section{Aplicació web}
 	L'aplicació web s'ha desenvolupat amb Flask (Python).
 	\subsection{Pujar imatge al servidor}
-		Per poder canviar la imatge que mostrarà el sistema, es defineix la ruta /update, que ens mostra un formulari per penjar un arxiu (imatge).\\
+		Per poder canviar la imatge que mostrarà el sistema, es defineix la ruta `/update', que ens mostra un formulari per penjar un arxiu (imatge).\\
 		\begin{python}
 app.config['UPLOAD_FOLDER'] = 'static/'
 app.config['ALLOWED_EXTENSIONS'] = set(['png', 'jpg', 'jpeg', 'gif'])
 
-# For a given file, return whether it's an allowed type or not
+
 def allowed_file(filename):
 	return '.' in filename and 
 		filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
@@ -239,10 +251,11 @@ def update():
 	return render_template('upload.html')
 
 @app.route('/upload', methods=['POST'])
-def upload():
+def upload():    
 	file = request.files['file']
-	if file and allowed_file(file.filename):
-		filename = secure_filename(file.filename)
+	if file and allowed_file(file.filename):        
+		ext = filename.rsplit('.', 1)[1]
+		filename = "scene." + ext        
 		file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 		return redirect(url_for('uploaded_file', filename=filename))
 
@@ -253,7 +266,7 @@ def uploaded_file(filename):
 
 \newpage
 \noindent
-El formulari de l'arxiu upload.html és el següent:\\
+El formulari de l'arxiu `upload.html' és el següent:\\
 
 		\begin{txt}
 <form action="upload" method="post" 
@@ -274,7 +287,7 @@ El formulari de l'arxiu upload.html és el següent:\\
 		\end{txt}
 
 	\subsection{Selecció de la regió d'interès}
-		Per seleccionar la regió d'interès s'ha utilitzat jQuery i el \textit{plugin} imgAreaSelect, essent també compatible amb dispositius mòbils.\\\\
+		Per seleccionar la regió d'interès s'ha utilitzat jQuery i el \textit{plugin} \textbf{imgAreaSelect}, essent també compatible amb dispositius mòbils.\\\\
 		En la pàgina principal es mostra una imatge i un botó per acceptar la selecció. El \textit{plugin} imgAreaSelect s'encarrega de permetre a l'usuari fer una selecció i actualitzar els camps
 		amagats del formulari.\\
 		\begin{txt}
@@ -285,46 +298,46 @@ El formulari de l'arxiu upload.html és el següent:\\
 	<input type="hidden" name="y2" value="" />
 	<input type="hidden" name="width" value="" />
 	<input type="hidden" name="height" value="" />
-	<input class="btn btn-primary" type="submit"
-		value="Send" />
+	<input class="btn btn-primary" style="float:right"
+		type="submit" value="Acceptar sel." />
 </form>
 
 <script type="text/javascript">
 	jQuery(document).ready(function () {
+		var img = document.getElementById('scene');
+		document.getElementById('width')
+			.value = img.clientWidth
+		document.getElementById('height')
+			.value = img.clientHeight
+
 		jQuery('img#scene').imgAreaSelect({
 			handles: true,
 			persistent: true,
-			imageHeight: 2448,
-			imageWidth: 3264,
-			x1: 100, y1: 100, x2: 300, y2: 300,
+			x1: 50, y1: 50, x2: 200, y2: 200,
 			onInit: function ( image, selected) {
 				jQuery('input[name=x1]').val(selected.x1);
 				jQuery('input[name=y1]').val(selected.y1);
 				jQuery('input[name=x2]').val(selected.x2);
-				jQuery('input[name=y2]').val(selected.y2);
-				jQuery('input[name=width]')
-					.val(selected.width);
-				jQuery('input[name=height]')
-					.val(selected.height);
+				jQuery('input[name=y2]').val(selected.y2);              
 			},
 			onSelectEnd: function ( image, selected) {
 				jQuery('input[name=x1]').val(selected.x1);
 				jQuery('input[name=y1]').val(selected.y1);
 				jQuery('input[name=x2]').val(selected.x2);
-				jQuery('input[name=y2]').val(selected.y2);
-				jQuery('input[name=width]')
-					.val(selected.width);
-				jQuery('input[name=height]')
-					.val(selected.height);
+				jQuery('input[name=y2]').val(selected.y2);                           
 			}
 		});
 	});
  </script>
 		\end{txt}
+\newpage
 \noindent
-El formulari ens porta a la ruta /send, que executarà el codi principal de visió per computador. Finalment podrem veure el resultat obtingut del \textit{matching} a result.html.\\
+El formulari ens porta a la ruta `/send', que executarà el codi principal de visió per computador. Finalment podrem veure el resultat obtingut del \textit{matching} a `result.html'.\\
 
 		\begin{python}
+imgPath = 'static/scene.jpg'
+imgRobotPath = 'static/uni.jpg'
+
 @app.route("/")
 def index():
 	return render_template('index.html')
@@ -335,41 +348,46 @@ def send():
 	x2 = int(request.form['x2'])
 	y1 = int(request.form['y1'])
 	y2 = int(request.form['y2'])
+	height = int(request.form['height'])
+	width = int(request.form['width'])
 
 	img = cv2.imread(imgPath)
-	img = img[x1:x2, y1:y2]
+	h,w,_ = img.shape
+	scale_h = h/height
+	scale_w = w/width
+	x1 = int(x1*scale_w)
+	x2 = int(x2*scale_w)
+	y1 = int(y1*scale_h)
+	y2 = int(y2*scale_h)
+
+	img = img[y1:y2, x1:x2]
 	imgRobot = cv2.imread(imgRobotPath)
 	imgRes, x, y = vc.getResult(img, imgRobot, vc._SIFT)
-	cv2.imwrite("static/result.png", imgRes)
+	resultPath = "static/" + strftime("%Y-%m-%d-%H:%M") + ".png" 
+	cv2.imwrite(resultPath, imgRes)
 
-	return render_template('result.html', x=x, y=y)
+	return render_template('result.html', x=x, y=y, image=resultPath)
 		\end{python}
 
-
+\newpage
 \section{Aplicació mòbil}
 	L'aplicació mòbil s'està desenvolupant amb Android Studio i el llenguatge de programació Java (amb l'SDK d'Android).
 	\subsection{Capturar imatge}
 		Per poder utilitzar la càmera del mòbil s'ha hagut d'afegir el permís necessari.\\\\
-		Com que Android ja disposa d'una Activitat que ens permet llançar la càmera des d'una altra aplicació, només ha sigut necessari fer l'Intent corresponent.\\
+		Com que Android ja disposa d'una activitat que ens permet llançar la càmera des d'una altra aplicació, només ha sigut necessari fer l'Intent corresponent.\\
 		\begin{java}
 if (v.getId() == R.id.capture_btn) try {
 	Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 	startActivityForResult(captureIntent, CAMERA_CAPTURE);
-} catch (ActivityNotFoundException anfe) {
-	String errorMessage = "Your device doesn't support capturing images!";
-	Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
-}
+} catch (ActivityNotFoundException anfe) {...}
 		\end{java}
 	\subsection{Selecció d'imatges de la galeria}
-		Android també disposa d'una Activitat que ens permet obrir la galeria des d'una altra aplicació, així que s'ha seguit el mateix procés que per obrir la càmera.\\
+		Android també disposa d'una activitat que ens permet obrir la galeria des d'una altra aplicació, així que s'ha seguit el mateix procés que per obrir la càmera.\\
 		\begin{java}
 else if (v.getId() == R.id.browse_btn) try {
 	Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 	startActivityForResult(galleryIntent, RESULT_GALLERY);
-} catch (ActivityNotFoundException anfe) {
-	String errorMessage = "Your device doesn't support gallery access!";
-	Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
-}
+} catch (ActivityNotFoundException anfe) {...}
 		\end{java}
 	\subsection{Enviament de dades al servidor}
 		Per poder enviar dades al servidor, serà necessari l'ús d'una connexió a Internet. Per tant, s'haurà d'habilitar el permís necessari.\\\\
