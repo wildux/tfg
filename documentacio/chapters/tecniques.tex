@@ -47,13 +47,26 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 		\caption{\textit{Flat}, vora i cantonada}
 	\end{figure}
 	\noindent
-	El problema principal de Harris és que no és invariant a l'escala. Punts considerats cantonades en una escala, podrien convertir-se en vores en una altra.
-	Per això, existeixen algunes solucions com Harris-Laplace.\\\\
+	El problema principal de Harris és que no és invariant a l'escala. Com podeu veure en la imatge [IMG], punts considerats cantonades en una escala,
+	podrien convertir-se en vores en una altra. Per això, existeixen algunes solucions alternatives com Harris-Laplace.\\\\
+	[IMAGE]
 	En el nostre cas, s'ha optat per aplicar Harris en diverses escales, fent una piràmide de la imatge original.
 
 	\subsubsection{SIFT}
 	Localització multi-escala mitjançant una diferència de gaussianes (DoG), que s'utilitza com a aproximació d'una laplaciana de gaussianes.\\\\
-	Es troba l'histograma d'orientacions ponderat en l'escala calculada i es calcula l'orientació dominant.
+	[TO-DO]DoG s'obté com la diferencia de gaussian blurring de la imatge amb diferents *. Aquest procés es realitza per diferents octaves de la imatge en la
+	piràmide gaussiana, tal com es veu en la imatge següent:\\
+	[IMAGE SCALE OCTAVE]
+	Un cop tenim les DoG, es busquen {local extrema} en l'espai i l'escala. Per cada píxel, es compara amb els seus 8 veïns, així com els 9 píxels de la
+	següent escala i els 9 de les anteriors. Si és {local extrema} el considerem potencial \textit{keypoint}.\\
+	[IMAGE SPACE-SCALE]
+	Un cop obtinguts els possibles \textit{keypoints}, s'eliminen els menys robustos. S'utilitza [Taylor] per aconseguir una millor localització del [extrema],
+	i si la seva intensitat és menor a un llindar (0.03 segons Lowe) es rebutja. També s'han d'eliminar vores, utilitzant un mètode similar a Harris.
+	S'agafa una matriu hessiana de 2x2 per calcular la principal corbatura. Sabent que les vores tenen un eigen-value major a l'altre, si la ratio dels
+	{eigen-values} supera un llindar (10 per Lowe) es descarta el punt. \\\\
+	SIFT també assigna una orientació als punts d'interés per aconseguir ser invariant a la rotació. S'agafa un veinatge al voltant de la localització del
+	\textit{keypoint} segons l'escala i es calcula la magnitud i direcció del gradient. Es crea un histograma d'orientació de 36 \textit{bins}
+	que cobreix els 360 graus.
 
 	\subsubsection{ORB}
 	El detector d'ORB (\textit{Oriented FAST and Rotated BRIEF}) utilitza el detector FAST amb modificacions per millorar el rendiment.\\\\
@@ -84,9 +97,9 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	Principalment s'han utilitzat SIFT, ORB i BRISK, encara que també s'han provat d'altres com SURF, LATCH o DAISY\cite{Tola10}.
 
 	\subsubsection{SIFT}
-	S'agafa l'histograma d'orientacions al voltant del punt, discretitzant en una finestra de 16x16.
-	Es divideix en 16 particions de mida 4x4 i per cada partició es calcula un histograma d'orientacions, en 8 direccions.
-	Finalment, es concatenen els histogrames per tal d'obtenir el vector de característiques de dimensió 128.
+	Per cada \textit{keypoint}, s'agafa un veinatge de 16x16 píxels al voltant del punt. Això es divideix en 16 blocs de mida 4x4. Per cada sub-block,
+	es calcula l'histograma d'orientacions en 8 direccions, de manera que podem obtenir 128 valors, que es representaran en forma de vector.\\\\
+	A part d'aquest procés, s'apliccaran també mesures per fer més robust el descriptor contra canvis d'intensitat, rotació, etc.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.65\textwidth]{images/sift-des}
