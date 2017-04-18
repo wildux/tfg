@@ -44,22 +44,40 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{images/harris}
-		\caption{\textit{Flat}, vora i cantonada}
+		\captionsource{\textit{Flat}, vora i cantonada}{Wikipedia}
 	\end{figure}
 	\noindent
-	El problema principal de Harris és que no és invariant a l'escala. Com podeu veure en la imatge [IMG], punts considerats cantonades en una escala,
+	El problema principal de Harris és que no és invariant a l'escala. Com podeu veure en la figura \ref{fig:vores}, punts considerats cantonades en una escala,
 	podrien convertir-se en vores en una altra. Per això, existeixen algunes solucions alternatives com Harris-Laplace.\\\\
-	[IMAGE]
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{images/scale_invariant}
+		\captionsource{\textit{Vores a diferent escala}}{OpenCV}
+		\label{fig:vores}
+	\end{figure}
+	\noindent
 	En el nostre cas, s'ha optat per aplicar Harris en diverses escales, fent una piràmide de la imatge original.
 
 	\subsubsection{SIFT}
 	Localització multi-escala mitjançant una diferència de gaussianes (DoG), que s'utilitza com a aproximació d'una laplaciana de gaussianes.\\\\
-	[TO-DO]DoG s'obté com la diferencia de gaussian blurring de la imatge amb diferents *. Aquest procés es realitza per diferents octaves de la imatge en la
+	{TO-DO}
+	DoG s'obté com la diferencia de gaussian blurring de la imatge amb diferents *. Aquest procés es realitza per diferents octaves de la imatge en la
 	piràmide gaussiana, tal com es veu en la imatge següent:\\
-	[IMAGE SCALE OCTAVE]
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{images/sift_dog}
+		\captionsource{\textit{SIFT - DoG}}{OpenCV}
+	\end{figure}
+	\noindent
 	Un cop tenim les DoG, es busquen {local extrema} en l'espai i l'escala. Per cada píxel, es compara amb els seus 8 veïns, així com els 9 píxels de la
 	següent escala i els 9 de les anteriors. Si és {local extrema} el considerem potencial \textit{keypoint}.\\
-	[IMAGE SPACE-SCALE]
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\textwidth]{images/sift_local_extrema}
+		\captionsource{\textit{SIFT - Local extrema}}{OpenCV}
+	\end{figure}
+	\noindent
 	Un cop obtinguts els possibles \textit{keypoints}, s'eliminen els menys robustos. S'utilitza [Taylor] per aconseguir una millor localització del [extrema],
 	i si la seva intensitat és menor a un llindar (0.03 segons Lowe) es rebutja. També s'han d'eliminar vores, utilitzant un mètode similar a Harris.
 	S'agafa una matriu hessiana de 2x2 per calcular la principal corbatura. Sabent que les vores tenen un eigen-value major a l'altre, si la ratio dels
@@ -75,7 +93,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.55\textwidth]{images/fast}
-		\caption{FAST, N=16}
+		\captionsource{FAST, N=16}{-}
 	\end{figure}
 	\noindent
 	Suposant que N = 16 i definint un llindar t, si 12 píxels veïns (\sfrac{3}{4} parts) són majors a I\textsubscript{p} + t o bé menors a I\textsubscript{p} - t, es considera que el punt és d'interès.
@@ -103,7 +121,7 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.65\textwidth]{images/sift-des}
-		\caption{Descriptor SIFT}
+		\captionsource{Descriptor SIFT}{-}
 	\end{figure}
 
 	\subsubsection{ORB}
@@ -114,12 +132,13 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 
 	\subsubsection{BRISK}
 	És un descriptor binari que utilitza un patró de cercles concèntrics. S'agafen N punts del patró i per cada parell de punts es compara la intensitat del primer amb el segon. Si el valor del primer és
-	major, es posa '1', si no '0'. D'aquesta manera s'obté una cadena de N caràcters (binari) molt fàcil de comparar a l'hora de fer \textit{matching}. Utilitzant el mateix patró i seqüència de parells, només caldrà
+	major, es posa '1', si no '0'.\\\\
+	D'aquesta manera s'obté una cadena de N caràcters (binari) molt fàcil de comparar a l'hora de fer \textit{matching}. Utilitzant el mateix patró i seqüència de parells, només caldrà
 	comparar les cadenes binàries amb la suma del resultat d'una XOR.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{images/brisk}
-		\caption{\textit{Sampling pattern} BRISK}
+		\captionsource{\textit{Sampling pattern} BRISK}{-}
 	\end{figure}
 
 %\newpage
@@ -158,5 +177,5 @@ En aquesta secció es descriuen les tècniques de visió per ordinador i tractam
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.45\textwidth]{images/ransac}
-		\caption{RANSAC}
+		\captionsource{RANSAC}{Wikipedia}
 	\end{figure}

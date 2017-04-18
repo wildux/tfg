@@ -34,37 +34,43 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces \textit {Flat}, vora i cantonada}}{36}{figure.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces FAST, N=16}}{37}{figure.5.3}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \textit {Vores a diferent escala}}}{36}{figure.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Descriptor SIFT}}{38}{figure.5.4}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces \textit {SIFT - DoG}}}{37}{figure.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces \textit {Sampling pattern} BRISK}}{39}{figure.5.5}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \textit {SIFT - Local extrema}}}{37}{figure.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces \textit {Matching}}}{40}{figure.5.6}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces FAST, N=16}}{38}{figure.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Homografia}}{41}{figure.5.7}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Descriptor SIFT}}{39}{figure.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces RANSAC}}{41}{figure.5.8}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces \textit {Sampling pattern} BRISK}}{40}{figure.5.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces \textit {Matching}}}{41}{figure.5.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Homografia}}{42}{figure.5.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces RANSAC}}{42}{figure.5.11}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Imatges graff, boat i ubc}}{56}{figure.7.1}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Imatges graff, boat i ubc}}{57}{figure.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Imatges UPC i jardins}}{57}{figure.7.2}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Imatges UPC i jardins}}{58}{figure.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Imatges campus}}{58}{figure.7.3}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Imatges campus}}{59}{figure.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Imatges motos i cotxes}}{59}{figure.7.4}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Imatges motos i cotxes}}{60}{figure.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Imatges campus i jardins}}{60}{figure.7.5}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Imatges campus i jardins}}{61}{figure.7.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Imatges campus i jardins (objectes)}}{61}{figure.7.6}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Imatges campus i jardins (objectes)}}{62}{figure.7.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Imatges campus i jardins (diferents)}}{63}{figure.7.7}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Imatges campus i jardins (diferents)}}{64}{figure.7.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Homografia - Resultats}}{64}{figure.7.8}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Homografia - Resultats}}{65}{figure.7.8}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
