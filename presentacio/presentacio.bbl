@@ -124,6 +124,47 @@
     \field{year}{2011}
   \endentry
 
+  \entry{Rosten:2006:MLH:2094437.2094478}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RE}{%
+         family={Rosten},
+         familyi={R\bibinitperiod},
+         given={Edward},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DT}{%
+         family={Drummond},
+         familyi={D\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{REDT1}
+    \strng{fullhash}{REDT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 9th European Conference on Computer
+  Vision - Volume Part I}
+    \verb{doi}
+    \verb 10.1007/11744023_34
+    \endverb
+    \field{isbn}{3-540-33832-2, 978-3-540-33832-1}
+    \field{pages}{430\bibrangedash 443}
+    \field{series}{ECCV'06}
+    \field{title}{Machine Learning for High-speed Corner Detection}
+    \verb{url}
+    \verb http://dx.doi.org/10.1007/11744023_34
+    \endverb
+    \list{location}{1}{%
+      {Graz, Austria}%
+    }
+    \field{year}{2006}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{Leutenegger:2011:BBR:2355573.2356277}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=LS}{%
@@ -168,6 +209,56 @@
       {Washington, DC, USA}%
     }
     \field{year}{2011}
+  \endentry
+
+  \entry{Calonder:2010:BBR:1888089.1888148}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=CM}{%
+         family={Calonder},
+         familyi={C\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LV}{%
+         family={Lepetit},
+         familyi={L\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Strecha},
+         familyi={S\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Fua},
+         familyi={F\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{CM+1}
+    \strng{fullhash}{CMLVSCFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 11th European Conference on Computer
+  Vision: Part IV}
+    \field{isbn}{3-642-15560-X, 978-3-642-15560-4}
+    \field{pages}{778\bibrangedash 792}
+    \field{series}{ECCV'10}
+    \field{title}{BRIEF: Binary Robust Independent Elementary Features}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=1888089.1888148
+    \endverb
+    \list{location}{1}{%
+      {Heraklion, Crete, Greece}%
+    }
+    \field{year}{2010}
+    \warn{\item Can't use 'location' + 'address'}
   \endentry
 
   \entry{Fischler:1981:RSC:358669.358692}{article}{}

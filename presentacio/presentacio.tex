@@ -17,6 +17,7 @@
 
 \usetheme{metropolis}
 \usepackage{appendixnumberbeamer}
+%\usepackage{enumitem}
 
 \makeatletter
 \patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0.5em}{}{}
@@ -419,11 +420,96 @@ Director: Joan Climent (ESAII)
 		\end{itemize}
 	\end{frame}
 
+	\begin{frame}{Harris I}
+		\tz
+		\begin{minipage}{0.53\textwidth}
+			\begin{itemize}
+				\item Detector de cantonades
+				\item Finestra NxM píxels
+				\item Busca canvis d'intensitat
+				\item \alert{No és invariant a l'escala}
+			\end{itemize}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.45\textwidth}
+			\begin{figure}[H]
+				\includegraphics[width=\textwidth]{images/harris}
+				\captionsource{\textit{Flat}, vora i cantonada\vspace{0.1cm}}{Wikipedia}
+			\end{figure}
+		\end{minipage}
+	\end{frame}
+
+	\begin{frame}{Harris II}
+		\tz
+		En el nostre cas, s'ha optat per aplicar Harris en diverses escales, fent una piràmide de la imatge original. A cada nivell, es redueix la imatge a la meitat.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\textwidth]{images/scale_invariant}
+			\captionsource{\textit{Vores a diferent escala}}{OpenCV}
+			\label{fig:vores}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{SIFT - Detector I}
+		\tz
+		\begin{enumerate}
+			\item{Diferència de Gaussianes en diferents escales}
+			\item{Piràmide gaussiana}
+			\item{Màxims i mínims locals en l'espai i l'escala}
+			\newcounter{enumTemp}
+			\setcounter{enumTemp}{\theenumi}
+		\end{enumerate}
+		\begin{figure}[H]
+			\resizebox{0.8\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/sift_dog}
+			\includegraphics[height=1cm]{images/sift_local_extrema}}
+			\captionsource{\textit{SIFT - DoG i \textit{local extrema}}}{OpenCV}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{SIFT - Detector II}
+		\tz
+		\begin{enumerate}
+			\setcounter{enumi}{\theenumTemp}
+			\item{S'eliminen punts amb intensitat menor a un cert llindar}
+			\item{S'eliminen vores}
+			\item{S'assigna una orientació als punts}
+		\end{enumerate}
+	\end{frame}
+
+	\begin{frame}{ORB - Detector I}
+		\tz
+		\begin{itemize}
+			\item{Detector FAST\cite{Rosten:2006:MLH:2094437.2094478} amb modificacions}
+			\item{Detecció de cantonades, molt ràpid}
+			\item{Es compara la intensitat d'un píxel amb N veïns}
+		\end{itemize}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.55\textwidth]{images/fast}
+			\captionsource{FAST, N=16}{https://www.edwardrosten.com/work/fast.html}
+		\end{figure}
+		%Suposant que N = 16 i definint un llindar t, si 12 píxels veïns (\sfrac{3}{4} parts) són majors a I\textsubscript{p} + t o bé menors a I\textsubscript{p} - t, es considera que el punt és d'interès.
+		%El problema principal de FAST és que no té en compte l'orientació.\\\\
+	\end{frame}
+
+	\begin{frame}{ORB - Detector II}
+		\tz
+		FAST no és invariant a l'escala ni la rotació.\\\vspace{0.5cm}
+		ORB aplica les següents millores:\\
+
+		\begin{itemize}
+			\item{S'agafen els N millors punts després d'aplicar la mesura de Harris.}
+			\item{Es fa una piràmide per fer multi-escala.}
+			\item{S'utilitzen els moments per calcular l'orientació.}
+		\end{itemize}
+	\end{frame}
+
 	\begin{frame}{Extracció de característiques}
 		\tz
 		\metroset{block=fill}
 		\begin{block}{Què és?}
-			Consisteix en descriure característiques de les imatges en els punts donats, de manera que podrem comparar aquestes característiques amb les d'una altre imatge.
+			Consisteix en descriure característiques de les imatges en els punts donats. Podrem comparar aquestes característiques amb les d'una altre imatge i veure si són similars.
 		\end{block}
 		Algorismes principals utilitzats:
 		\begin{itemize}
@@ -433,14 +519,66 @@ Director: Joan Climent (ESAII)
 		\end{itemize}
 	\end{frame}
 
+	\begin{frame}{SIFT - Descriptor}
+		\tz
+		\begin{itemize}
+			\item Veïnatge de 16x16 píxels al voltant del punt
+			\item Divisió en 16 blocs de 4x4
+			\item Per cada sub-bloc es calcula histograma d'orientacions en 8 direccions
+			\item Vector de dimensió 128
+		\end{itemize}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\textwidth]{images/sift-des}
+			\captionsource{Descriptor SIFT}{https://www.researchgate.net}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}{ORB - Descriptor}
+		\tz
+		\begin{itemize}
+			\item Descriptor binari, senzill i ràpid
+			\item Modificació BRIEF\cite{Calonder:2010:BBR:1888089.1888148}
+			\item Es ``gira'' el patró en funció de l'angle
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{BRISK}
+		\tz
+		\begin{minipage}{0.53\textwidth}
+			\begin{itemize}
+				\item Descriptor binari
+				\item Patró de cercles concèntrics
+				\item Comparació cadenes binàries amb XOR
+			\end{itemize}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.45\textwidth}
+			\begin{figure}[H]
+				\includegraphics[width=0.9\textwidth]{images/brisk}
+				\captionsource{Patró BRISK\vspace{0.1cm}}{https://gilscvblog.com}
+			\end{figure}
+		\end{minipage}
+	\end{frame}
+
 	\begin{frame}{Matching}
 		\tz
-		\metroset{block=fill}
-		\begin{block}{Què és?}
-			Consisteix en comparar els punts de dos regions (imatges) i trobar coincidencies en funció de les característiques dels punts. Pels descriptors binaris s'utilitzarà la distància de Hamming,
-			mentre que pels vectorials s'utilitzarà l'euclidiana.
-		\end{block}
-		Força bruta
+		\begin{minipage}{0.62\textwidth}
+			\metroset{block=fill}
+			\begin{block}{Què és?}
+				Consisteix en trobar coincidències entre els punts de dues regions, comparant les seves característiques.\par
+				Pels descriptors binaris utilitzem la distància de Hamming i pels vectorials l'euclidiana.
+			\end{block}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.36\textwidth}
+			\begin{figure}[H]
+				%\includegraphics[width=0.9\textwidth]{images/matching}
+				\vspace{0.8cm}
+				\includegraphics[width=\textwidth]{images/matching}
+				\caption{\textit{Matching}}
+			\end{figure}
+		\end{minipage}
 	\end{frame}
 
 	\begin{frame}{Homografia}
@@ -449,21 +587,56 @@ Director: Joan Climent (ESAII)
 		\begin{block}{Què és?}
 			Trobant la relació entre els píxels de les dues imatges podrem reprojectar el pla d'una imatge en l'altre i trobar el punt on volem dirigir el robot.
 		\end{block}
-		A l'hora de buscar l'homografia aplicarem RANSAC (\textit{Random Sample Consensus})\cite{Fischler:1981:RSC:358669.358692},
-		un algorisme que ens permetrà eliminar \textit{outliers} dels \textit{match} trobats.
+		Aplicarem RANSAC (\textit{Random Sample Consensus})\cite{Fischler:1981:RSC:358669.358692},
+		un algorisme que ens permetrà eliminar \textit{outliers}.
 	\end{frame}
 
 %RESULTATS
 \section{Resultats}
 
-	\begin{frame}{Homografia}
+	\begin{frame}{Subimatges I}
 		\tz
-		\centering
-		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
-			\vspace{0.2cm}
-			\caption{Tasques desenvolupament}
-		\end{figure}
+		a
+	\end{frame}
+
+	\begin{frame}{Subimatges II}
+		\tz
+		a
+	\end{frame}
+
+	\begin{frame}{Imatges similars I}
+		\tz
+		a
+	\end{frame}
+
+	\begin{frame}{Imatges similars II}
+		\tz
+		a
+	\end{frame}
+
+	\begin{frame}{Objectes I}
+		\tz
+		a
+	\end{frame}
+
+	\begin{frame}{Objectes II}
+		\tz
+		a
+	\end{frame}
+
+	\begin{frame}{Imatges diferents I}
+		\tz
+		a
+	\end{frame}
+
+	\begin{frame}{Imatges diferents II}
+		\tz
+		a
+	\end{frame}
+
+	\begin{frame}{Resultats matching i homografia}
+		\tz
+		a
 	\end{frame}
 
 
@@ -484,11 +657,11 @@ Director: Joan Climent (ESAII)
 	\begin{frame}{Treball futur}
 		\tz
 		\begin{itemize}
-			\item{\textbf{Comparació i anàlisi d'algorismes}}
-			\item{\textbf{Diferents imatges}}
-			\item{\textbf{Preprocessat}}
-			\item{\textbf{Aplicació mòbil}}
-			\item{\textbf{Entorn real + robot}}
+			\item{Comparació i anàlisi d'algorismes}
+			\item{Diferents imatges}
+			\item{Preprocessat}
+			\item{Aplicació mòbil}
+			\item{Entorn real + robot}
 		\end{itemize}
 	\end{frame}
 
