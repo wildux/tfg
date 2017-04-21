@@ -1,4 +1,4 @@
-\documentclass[xcolor=table]{beamer}
+\documentclass[xcolor=table, 11pt]{beamer}
 
 \usepackage[utf8]{inputenc}
 \usepackage[catalan]{babel}
@@ -12,7 +12,15 @@
 \usepackage[textfont={small,it}]{caption}
 \usepackage{adjustbox}
 
+\usepackage[backend=bibtex,sorting=none]{biblatex}
+\addbibresource{references.bib}
+
 \usetheme{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\makeatletter
+\patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0.5em}{}{}
+\makeatother
 
 \title[TFG]{\vspace{1cm}\Large{Sistema d'autolocalització per a robots mòbils mitjançant tècniques de visió per computador}\\
 %\hspace{0.05cm}
@@ -22,6 +30,9 @@
 \normalsize{Tecnologies de la informació}}
 }
 
+%\fontsize{13}{15.6}\selectfont
+\fontsize{14}{16.8}\selectfont
+
 \author{Joan Rodas Cusidó}
 
 \institute{
@@ -29,11 +40,11 @@ Facultat d'Informàtica de Barcelona\\
 Universitat Politècnica de Catalunya\\
 Director: Joan Climent (ESAII)
 \begin{textblock*}{100mm}(0.95\textwidth,-0.95cm)
-	\includegraphics[height=1cm,width=1cm]{logo.png}
+	\includegraphics[height=1cm,width=1cm]{images/logo}
 \end{textblock*}
 }
 
-\date{\vspace{-0.1cm}20 d'octubre de 2016}
+\date{\vspace{-0.1cm}22 d'abril de 2017}
 
 \setbeamertemplate{footline}{%
 	\begin{beamercolorbox}[ht=2.25ex,dp=3ex,right]{normal text}%
@@ -43,15 +54,24 @@ Director: Joan Climent (ESAII)
 
 \addtobeamertemplate{frametitle}{}{%
 	\begin{textblock*}{100mm}(\textwidth,-0.95cm)
-		\includegraphics[height=0.8cm,width=0.8cm]{logo.png}
+		\includegraphics[height=0.8cm,width=0.8cm]{images/logo}
 	\end{textblock*}
 }
 
 \setbeamerfont{footline}{size=\fontsize{7}{11}\selectfont}
 
+\newcommand*{\captionsource}[2]{%
+  \caption[{#1}]{#1}\par
+  \vspace{-0.4cm}
+  \tiny{\textbf{Font:} #2\par}}
+
+\newcommand\tz{\fontsize{13}{15.6}\selectfont}
+
 \begin{document}
 
 	\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+	\newcolumntype{M}[1]{>{\centering\arraybackslash\hspace{0pt}}m{#1}}
+	\newcommand{\bigcell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 	\definecolor{myBlue}{RGB}{217, 230, 242}
 	\definecolor{total}{RGB}{240, 240, 240} %GRIS
 	\def\arraystretch{1.4}
@@ -62,38 +82,49 @@ Director: Joan Climent (ESAII)
 	% TITLE
 	\begin{frame}[plain]
 		\titlepage
-		
 	\end{frame}
 
 	\begin{frame}{Índex}
-		\centering
+		\tz
+		\begin{minipage}{\textwidth}
+			%\linespread{1.4}
+			\setbeamertemplate{section in toc}[sections numbered]
+			\tableofcontents[hideallsubsections]
+		\end{minipage}
 	\end{frame}
 
 	% OBJECTIU/DESCRIPCIÓ
-	\begin{frame}{Objectiu}
-		Dissenyar i desenvolupar un sistema d'autolocalització per a robots usant algorismes de visió.\\
-		\vspace{1em}
-
-		\begin{itemize}
+	\begin{frame}{Introducció}
+		\tz
+		\metroset{block=fill}
+		\begin{block}{Objectiu}
+			Dissenyar i desenvolupar un sistema d'autolocalització per a robots usant algorismes de visió.
+		\end{block}
+		
+		%\vspace{1em}
+		\begin{enumerate}
 			\item Obtenció de \textit{keypoints}
 			\item Extracció de característiques
 			\item \textit{Matching} de dues imatges
-		\end{itemize}
+			\item Homografia
+		\end{enumerate}
 	\end{frame}
+
+\section{Planificació}
 
 	% TASQUES
 	\begin{frame}{Tasques}
+		\tz
 		\begin{table}[H]
 			\begin{center}
 				\adjustbox{max width=\textwidth}{
 				\rowcolors{2}{myOrange}{}
-				\begin{tabular}{l !{\vrule width -1pt}l !{\vrule width -1pt}r}
-				%\rowcolor{tableHeader}
-				\textbf{Descripció} & \textbf{Metodologia} & \textbf{Hores} \\ \hline
-				Preparació de l'entorn & - & 5h \\
-				Curs de GEP & Cascada & 75h \\
-				Desenvolupament del projecte & Àgil & 340h \\
-				Preparació de la defensa & - & 30h \\
+				\begin{tabular}{l !{\vrule width -1pt}c !{\vrule width -1pt}r}
+					\textbf{Descripció} & \textbf{Metodologia} & \textbf{Hores} \\ \hline
+					Preparació de l'entorn & - & 5h \\
+					Curs de GEP & Cascada & 75h \\
+					Desenvolupament del projecte & Àgil & 355h \\
+					Preparació de la defensa & - & 45h \\
 				\end{tabular}
 				}
 			\end{center}
@@ -103,25 +134,40 @@ Director: Joan Climent (ESAII)
 
 	% DESENVOLUPAMENT
 	\begin{frame}{Desenvolupament}
+		\tz
 		\centering
 		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
+			\includegraphics[width=\textwidth-0.2cm]{images/tasques}
 			\vspace{0.2cm}
 			\caption{Tasques desenvolupament}
 		\end{figure}
 	\end{frame}
 
+	% GANTT
+	\begin{frame}{Diagrama de Gantt}
+		\tz
+		\centering
+		\begin{figure}
+			\makebox[\textwidth][c]{\includegraphics[width=1.1\textwidth]{images/gantt}}%
+			\vspace{0.2cm}
+			\caption{Gantt del projecte}
+		\end{figure}
+	\end{frame}
+
+\section{Recursos i costos}
+
 	% HARDWARE
 	\begin{frame}{Maquinari}
+		\tz
 		\begin{table}[H]
 			\begin{center}
-				\begin{tabular}{l !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r}					
+				\begin{tabular}{l !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r}
 					\textbf{Producte} & \textbf{Preu} & \textbf{Ús} & \textbf{Vida útil} & \textbf{Amortització} \\ \hline
-					Ordinador & 500€ & 5 mesos & 5 anys & 41,70€ \\
-					Càmera & 185€ & 1 mes & 8 anys & 1,93€ \\
+					Ordinador & 500€ & 7 mesos & 5 anys & 58,33€ \\
+					Smartphone & 39€ & 1 mes & 3 anys & 1,08€ \\
 					\noalign{\vskip 4mm}
 					\rowcolor{total}
-					Total &  &  &  & 43,60€ \\
+					Total &  &  &  & 59,41€ \\
 				\end{tabular}
 			\end{center}
 			\caption{Recursos de maquinari}
@@ -136,15 +182,16 @@ Director: Joan Climent (ESAII)
 				\rowcolors{2}{myOrange}{white}
 				\begin{tabular}{l !{\vrule width -1pt}p{5cm} !{\vrule width -1pt}p{5cm}}
 				\textbf{Nom} & \textbf{Tipus} & \textbf{Ús} \\ \hline
-				Arch Linux & Eina de desenvolupament & Execució del programari \\
-				Python & Eina de desenvolupament & Programació \\
-				OpenCV & Eina de desenvolupament & Algorismes de VC \\
-				Geany & Eina de desenvolupament & Programació del codi \\
-				\LaTeX & Eina de desenvolupament & Redacció de la memòria \\
-				Zathura & Eina de desenvolupament & Visualització de pdf \\
+				Arch Linux/Raspbian & Eina de desenvolupament & Execució del programari \\
+				Python + OpenCV & Eina de desenvolupament & Programació \\
+				Flask & Eina de desenvolupament & Micro-framework \\
+				uWSGI & Eina de desenvolupament & Servidor uwsgi \\
+				Nginx & Eina de desenvolupament & Servidor web/proxy \\
+				Geany/Atom & Eina de desenvolupament & Programació del codi \\
+				\LaTeX & Documentació & Redacció de la memòria \\
+				Zathura & Documentació & Visualització de pdf \\
 				Gantt Project & Eina de gestió & Creació diagrames de Gantt \\
-				LibreOffice Calc & Eina de gestió & Control de les hores \\
-				Git + Github & Desenvolupament i gestió & Control de versions \\
+				Git + GitHub & Desenvolupament i gestió & Control de versions \\
 				\end{tabular}
 			}
 			\end{center}
@@ -161,14 +208,14 @@ Director: Joan Climent (ESAII)
 					\textbf{Tasca} & \textbf{Cap de projecte} & \textbf{Analista} & \textbf{Programador} \\ \hline
 					Preparació de l'entorn & 3h & & 2h \\
 					Curs de GEP & 75h & & \\
-					Implementació i proves & & 40h & 200h \\
-					Conclusions i resultats & & 30h & \\
-					Ampliacions (opcional) & & & 30h\\
-					Redacció memòria & 40h & & \\
-					Preparació defensa & 30h & & \\
+					Implementació i proves & & 30h & 195h \\
+					Experiments & & & 40h \\
+					Ampliacions & & 10h & 30h\\
+					Redacció memòria & 50h & & \\
+					Preparació defensa & 45h & & \\
 					\noalign{\vskip 4mm}
 					\rowcolor{total}
-					Total & 148h & 70h & 232h
+					Total & 173h & 40h & 267h
 				\end{tabular}
 			}
 			\caption{Recursos humans (hores)}
@@ -177,21 +224,40 @@ Director: Joan Climent (ESAII)
 	
 	% RECURSOS HUMANS II
 	\begin{frame}{Recursos humans II}
+		\tz
 		\begin{table}[H]
 			\centering
 			\adjustbox{max width=\textwidth}{
 				\begin{tabular}{l !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r}
 					\textbf{Rol} & \textbf{Hores} & \textbf{Cost/hora} & \textbf{Cost total} \\ \hline
-					Cap de projecte & 148h & 25€/h & 3700€ \\
-					Analista & 70h & 20€/h & 1400€ \\
-					Programador & 230h & 15€/h & 3450€ \\
+					Cap de projecte & 173h & 25€/h & 4325€ \\
+					Analista & 40h & 20€/h & 800€ \\
+					Programador & 267h & 15€/h & 4005€ \\
 					\noalign{\vskip 4mm}
 					\rowcolor{total}
-					Total & & & 8550€
+					Total & & & 9130€
 				\end{tabular}
 			}
 			\caption{Recursos humans (costos)}
 		\end{table}
+	\end{frame}
+
+	\begin{frame}{Costos indirectes}
+		\tz
+		\begin{table}[H]
+			\begin{center}
+				\begin{tabular}{l !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r}
+					\textbf{Tipus} & \textbf{Temps} & \textbf{Cost} & \textbf{Cost total} \\ \hline
+					Electricitat* & 480h & 0,028€/h & 13,44€ \\
+					Accès a Internet & 480h & 0,17€/h & 81,6€ \\
+					\noalign{\vskip 4mm}
+					\rowcolor{total}
+					Total & & & 95,04€
+				\end{tabular}
+			\end{center}
+			\caption{Costos indirectes}
+		\end{table}
+		\tiny{* Cost de l'electricitat = 0,141033€/kWh (considerem la potència 0,2kW)}
 	\end{frame}
 
 	% GESTIÓ ECONOMICA
@@ -201,15 +267,15 @@ Director: Joan Climent (ESAII)
 			\adjustbox{max width=\textwidth}{
 				\begin{tabular}{p{8cm}  !{\vrule width -1pt}r}
 					\textbf{Tipus} & \textbf{Cost estimat} \\ \hline
-					Recursos humans & 8550€ \\
+					Recursos humans & 9.130€ \\
 					Recursos de programari & 0€ \\
-					Recursos de maquinari & 43,60€ \\
-					Costos indirectes & 87,69€ \\
+					Recursos de maquinari & 59,41€ \\
+					Costos indirectes & 95,04€ \\
 					Imprevistos & 600€ \\
-					Contingència (5\%) & 464,06€ \\
+					Contingència (5\%) & 494,22€ \\
 					\noalign{\vskip 4mm}
 					\rowcolor{total}
-					Total & 9745,35€
+					Total & 10.378,67€
 				\end{tabular}
 			}
 			\end{center}
@@ -217,17 +283,36 @@ Director: Joan Climent (ESAII)
 		\end{table}
 	\end{frame}
 
-	% SOSTENIBILITAT
+% SOSTENIBILITAT
+\section{Sostenibilitat}
+
+	\begin{frame}{Lleis i regulacions}
+		\tz
+		Caldrà tenir en compte les lleis i regulacions, tant a l'hora de realitzar el projecte com a l'hora de publicar-lo o fer la documentació.\\
+		\vspace{1em}
+
+		\begin{itemize}
+			\item Drets d'imatge
+			\item Patents dels algorismes
+			\item Drets d'autor
+		\end{itemize}
+	\end{frame}
+
 	\begin{frame}{Sostenibilitat}
+		\tz
 		\begin{table}[H]
 			\begin{center}
 			\adjustbox{max width=\textwidth}{
-				\begin{tabular}{l !{\vrule width -1pt}x{3cm} !{\vrule width -1pt}x{3cm} !{\vrule width -1pt}x{3cm}}
-					\textbf{Sostenibilitat} & \textbf{Econòmica} & \textbf{Social} & \textbf{Ambiental} \\ \hline
-					Planificació & Viabilitat Econòmica & Millora en la qualitat de vida & Anàlisi de recursos \\
+				\begin{tabular}{l !{\vrule width -1pt}M{3.7cm} !{\vrule width -1pt}M{3.4cm} !{\vrule width -1pt}M{3.4cm}}
+					\textbf{Sostenibilitat} & \textbf{PPP} & \textbf{Vida útil} & \textbf{Riscos} \\ \hline
+					Ambiental & \bigcell{c}{Consum del disseny \\ {\textbf{8} [0:10]}} & \bigcell{c}{Petjada ecològica \\ {\textbf{15} [0:20]}} & \bigcell{c}{Riscos ambientals \\ {\textbf{0} [-20:0]}} \\
+					\noalign{\vskip 2mm}
+					Econòmica & \bigcell{c}{Factura \\ {\textbf{7} [0:10]}} & \bigcell{c}{Pla de viabilitat \\ {\textbf{10} [0:20]}} & \bigcell{c}{Riscos econòmics \\ {\textbf{0} [-20:0]}} \\
+					\noalign{\vskip 2mm}
+					Social & \bigcell{c}{Impacte personal \\ {\textbf{8} [0:10]}} & \bigcell{c}{Impacte social \\ {\textbf{5} [0:20]}} & \bigcell{c}{Riscos socials \\ {\textbf{0} [-20:0]}} \\
 					\noalign{\vskip 4mm}
 					\rowcolor{myBlue}
-					Valoració & 8 & 6 & 8 \\
+					Valoració total & \multicolumn{3}{c}{\textbf{53} [-60:90]} \\
 				\end{tabular}
 			}
 			\end{center}
@@ -235,73 +320,144 @@ Director: Joan Climent (ESAII)
 		\end{table}
 	\end{frame}
 
+\section{Arquitectura del sistema}
+
 	% ARQUITECTURA
 	\begin{frame}{Arquitectura del sistema}
+		\tz
 		\centering
 		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
+			\includegraphics[width=0.6\textwidth]{images/arquitectura}
 			\vspace{0.2cm}
-			\caption{Tasques desenvolupament}
+			\captionsource{Arquitectura del sistema}{Madebyoliver i Freepik}
 		\end{figure}
 	\end{frame}
+
+	% APLICACIÓ
+	\begin{frame}{Aplicació - Disseny}
+		\tz
+		\centering
+		\begin{figure}[H]
+			\resizebox{\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/crop}
+			\includegraphics[height=1cm]{images/webapp}}
+			\caption{Selecció de la regió d'interès}
+		\end{figure}
+	\end{frame}
+
+	%\begin{frame}{Aplicació - Disseny II}
+	%	\centering
+	%	\begin{figure}[!htb]
+	%		\resizebox{\textwidth}{!}{%
+	%		\includegraphics[height=1cm]{images/gallery}
+	%		\includegraphics[height=1cm]{images/cam}}
+	%		\caption{Selecció de la regió d'interès}
+	%	\end{figure}
+	%\end{frame}
 
 	% SERVIDOR
 	\begin{frame}{Servidor - Estructura}
+		\tz
 		\centering
 		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
+			\includegraphics[width=0.4\textwidth]{images/server}
 			\vspace{0.2cm}
-			\caption{Tasques desenvolupament}
+			\captionsource{Estructura del servidor}{https://iotbytes.wordpress.com}
 		\end{figure}
+	\end{frame}
+
+	\begin{frame}{Servidor - Instal·lació}
+		\tz
+		\begin{enumerate}
+			\item{Instal·lar sistema operatiu}
+			\item{Instal·lar Python + OpenCV}
+			\item{Instal·lar Flask}
+			\item{Instal·lar uWSGI i Nginx}
+			\item{Configuració bàsica}
+		\end{enumerate}
 	\end{frame}
 
 	\begin{frame}{Servidor - Configuració}
-		\centering
-		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
-			\vspace{0.2cm}
-			\caption{Tasques desenvolupament}
-		\end{figure}
+		\tz
+		\metroset{block=fill}
+		\begin{alertblock}{Flask}
+			Simmons Hall is composed of metal and concrete.
+		\end{alertblock}
+		\begin{alertblock}{uWSGI}
+			Simmons Hall is composed of metal and concrete.
+		\end{alertblock}
+		\begin{alertblock}{Nginx}
+			Simmons Hall is composed of metal and concrete.
+		\end{alertblock}
 	\end{frame}
 
-	% TÈCNIQUES UTILITZADES
+% TÈCNIQUES UTILITZADES
+\section{Tècniques de visió usades}
+
 	\begin{frame}{Tècniques de visió}
-		\centering
-		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
-			\vspace{0.2cm}
-			\caption{Tasques desenvolupament}
-		\end{figure}
+		\tz
+		\begin{itemize}
+			\item Preprocessat digital d'imatges
+			\item Detecció de punts d'interès
+			\item Extracció de característiques
+			\item \textit{Matching} de característiques
+			\item Homografia
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}{Detecció de keypoints}
-		\centering
-		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
-			\vspace{0.2cm}
-			\caption{Tasques desenvolupament}
-		\end{figure}
+		\tz
+		\metroset{block=fill}
+		\begin{block}{Què és?}
+			Consisteix a obtenir punts de la imatge amb característiques distintives, que ens puguin ser útils més endavant.
+		\end{block}
+		Algorismes principals utilitzats:
+		\begin{itemize}
+			\item Harris\cite{Harris}
+			\item SIFT\cite{SIFT}
+			\item ORB\cite{Rublee:2011:OEA:2355573.2356268}
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}{Extracció de característiques}
-		\centering
-		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
-			\vspace{0.2cm}
-			\caption{Tasques desenvolupament}
-		\end{figure}
+		\tz
+		\metroset{block=fill}
+		\begin{block}{Què és?}
+			Consisteix en descriure característiques de les imatges en els punts donats, de manera que podrem comparar aquestes característiques amb les d'una altre imatge.
+		\end{block}
+		Algorismes principals utilitzats:
+		\begin{itemize}
+			\item SIFT
+			\item ORB
+			\item BRISK\cite{Leutenegger:2011:BBR:2355573.2356277}
+		\end{itemize}
 	\end{frame}
 
 	\begin{frame}{Matching}
-		\centering
-		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
-			\vspace{0.2cm}
-			\caption{Tasques desenvolupament}
-		\end{figure}
+		\tz
+		\metroset{block=fill}
+		\begin{block}{Què és?}
+			Consisteix en comparar els punts de dos regions (imatges) i trobar coincidencies en funció de les característiques dels punts. Pels descriptors binaris s'utilitzarà la distància de Hamming,
+			mentre que pels vectorials s'utilitzarà l'euclidiana.
+		\end{block}
+		Força bruta
 	\end{frame}
 
 	\begin{frame}{Homografia}
+		\tz
+		\metroset{block=fill}
+		\begin{block}{Què és?}
+			Trobant la relació entre els píxels de les dues imatges podrem reprojectar el pla d'una imatge en l'altre i trobar el punt on volem dirigir el robot.
+		\end{block}
+		A l'hora de buscar l'homografia aplicarem RANSAC (\textit{Random Sample Consensus})\cite{Fischler:1981:RSC:358669.358692},
+		un algorisme que ens permetrà eliminar \textit{outliers} dels \textit{match} trobats.
+	\end{frame}
+
+%RESULTATS
+\section{Resultats}
+
+	\begin{frame}{Homografia}
+		\tz
 		\centering
 		\begin{figure}
 			\includegraphics[width=\textwidth-1cm]{tasques}
@@ -309,23 +465,41 @@ Director: Joan Climent (ESAII)
 			\caption{Tasques desenvolupament}
 		\end{figure}
 	\end{frame}
+
+
+\section{Conclusions}
 
 	\begin{frame}{Conclusions}
-		\centering
-		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
-			\vspace{0.2cm}
-			\caption{Tasques desenvolupament}
-		\end{figure}
+		\tz
+		Dissenyar i desenvolupar un sistema d'autolocalització per a robots usant algorismes de visió.\\
+		\vspace{1em}
+
+		\begin{itemize}
+			\item Harris + SIFT més robust
+			\item ORB alternativa ràpida
+			\item asd
+		\end{itemize}
 	\end{frame}
 
-	\begin{frame}{Referències}
-		\centering
-		\begin{figure}
-			\includegraphics[width=\textwidth-1cm]{tasques}
-			\vspace{0.2cm}
-			\caption{Tasques desenvolupament}
-		\end{figure}
+	\begin{frame}{Treball futur}
+		\tz
+		\begin{itemize}
+			\item{\textbf{Comparació i anàlisi d'algorismes}}
+			\item{\textbf{Diferents imatges}}
+			\item{\textbf{Preprocessat}}
+			\item{\textbf{Aplicació mòbil}}
+			\item{\textbf{Entorn real + robot}}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}[standout,plain]
+		\Huge{Gràcies per la vostra\\atenció}
+	\end{frame}
+
+	\appendix
+
+	\begin{frame}[allowframebreaks]
+		\printbibliography
 	\end{frame}
 
 \end{document}

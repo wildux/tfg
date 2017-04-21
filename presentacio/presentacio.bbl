@@ -1,0 +1,217 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{Harris}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=HC}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Stephens},
+         familyi={S\bibinitperiod},
+         given={Mike},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HCSM1}
+    \strng{fullhash}{HCSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{In Proc. of Fourth Alvey Vision Conference}
+    \field{pages}{147\bibrangedash 151}
+    \field{title}{A combined corner and edge detector}
+    \verb{url}
+    \verb www.bmva.org/bmvc/1988/avc-88-023.pdf
+    \endverb
+    \field{year}{1988}
+  \endentry
+
+  \entry{SIFT}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=LDG}{%
+         family={Lowe},
+         familyi={L\bibinitperiod},
+         given={David\bibnamedelima G.},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LDG1}
+    \strng{fullhash}{LDG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Computer Vision, 1999. The Proceedings of the Seventh
+  IEEE International Conference on}
+    \verb{doi}
+    \verb 10.1109/ICCV.1999.790410
+    \endverb
+    \field{pages}{1150\bibrangedash 1157}
+    \field{title}{Object recognition from local scale-invariant features}
+    \verb{url}
+    \verb http://www.cs.ubc.ca/~lowe/papers/iccv99.pdf
+    \endverb
+    \field{volume}{2}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Rublee:2011:OEA:2355573.2356268}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=RE}{%
+         family={Rublee},
+         familyi={R\bibinitperiod},
+         given={Ethan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Rabaud},
+         familyi={R\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Konolige},
+         familyi={K\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Bradski},
+         familyi={B\bibinitperiod},
+         given={Gary},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Computer Society}%
+    }
+    \strng{namehash}{RE+1}
+    \strng{fullhash}{RERVKKBG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2011 International Conference on
+  Computer Vision}
+    \verb{doi}
+    \verb 10.1109/ICCV.2011.6126544
+    \endverb
+    \field{isbn}{978-1-4577-1101-5}
+    \field{pages}{2564\bibrangedash 2571}
+    \field{series}{ICCV '11}
+    \field{title}{ORB: An Efficient Alternative to SIFT or SURF}
+    \verb{url}
+    \verb http://dx.doi.org/10.1109/ICCV.2011.6126544
+    \endverb
+    \list{location}{1}{%
+      {Washington, DC, USA}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{Leutenegger:2011:BBR:2355573.2356277}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=LS}{%
+         family={Leutenegger},
+         familyi={L\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chli},
+         familyi={C\bibinitperiod},
+         given={Margarita},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SRY}{%
+         family={Siegwart},
+         familyi={S\bibinitperiod},
+         given={Roland\bibnamedelima Y.},
+         giveni={R\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Computer Society}%
+    }
+    \strng{namehash}{LSCMSRY1}
+    \strng{fullhash}{LSCMSRY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2011 International Conference on
+  Computer Vision}
+    \verb{doi}
+    \verb 10.1109/ICCV.2011.6126542
+    \endverb
+    \field{isbn}{978-1-4577-1101-5}
+    \field{pages}{2548\bibrangedash 2555}
+    \field{series}{ICCV '11}
+    \field{title}{BRISK: Binary Robust Invariant Scalable Keypoints}
+    \verb{url}
+    \verb http://dx.doi.org/10.1109/ICCV.2011.6126542
+    \endverb
+    \list{location}{1}{%
+      {Washington, DC, USA}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{Fischler:1981:RSC:358669.358692}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FMA}{%
+         family={Fischler},
+         familyi={F\bibinitperiod},
+         given={Martin\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BRC}{%
+         family={Bolles},
+         familyi={B\bibinitperiod},
+         given={Robert\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{automated cartography, camera calibration, image matching, location
+  determination, model fitting, scene analysis}
+    \strng{namehash}{FMABRC1}
+    \strng{fullhash}{FMABRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1145/358669.358692
+    \endverb
+    \field{issn}{0001-0782}
+    \field{number}{6}
+    \field{pages}{381\bibrangedash 395}
+    \field{title}{Random Sample Consensus: A Paradigm for Model Fitting with
+  Applications to Image Analysis and Automated Cartography}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/358669.358692
+    \endverb
+    \field{volume}{24}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{Commun. ACM}
+    \field{month}{06}
+    \field{year}{1981}
+  \endentry
+\endsortlist
+\endinput
