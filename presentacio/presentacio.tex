@@ -594,49 +594,131 @@ Director: Joan Climent (ESAII)
 %RESULTATS
 \section{Resultats}
 
-	\begin{frame}{Subimatges I}
-		\tz
-		a
-	\end{frame}
-
-	\begin{frame}{Subimatges II}
-		\tz
-		a
-	\end{frame}
-
 	\begin{frame}{Imatges similars I}
 		\tz
-		a
+		\begin{figure}[!htb]
+			\minipage{0.4\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/motos3}
+			\endminipage
+			\hspace*{0.2cm}
+			\minipage{0.4\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/motos1}
+			\endminipage
+
+			\minipage{0.4\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/cars4}
+			\endminipage
+			\hspace*{0.2cm}
+			\minipage{0.4\textwidth}
+				\includegraphics[width=\linewidth]{images/experiments/cars6}
+			\endminipage
+			\caption{Imatges motos i cotxes}
+		\end{figure}
 	\end{frame}
 
 	\begin{frame}{Imatges similars II}
 		\tz
-		a
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\adjustbox{max width=\textwidth}{
+				\begin{tabular}{l | c c | c c}
+					& \multicolumn{2}{c|}{\textbf{Motos}} & \multicolumn{2}{c}{\textbf{Cotxes}} \\
+					\textbf{Algorismes} & \textbf{Correctes} & \textbf{Erronis} & \textbf{Correctes} & \textbf{Erronis} \\ \hline
+					Harris + SIFT & 110 & 1 & 98 & 4 \\
+				\end{tabular}
+				}
+			\end{center}
+			\caption{\textit{Matching} - imatges similars}
+		\end{table}
 	\end{frame}
 
 	\begin{frame}{Objectes I}
 		\tz
-		a
+		\begin{figure}[H]
+			\resizebox{0.6\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/experiments/uni_sel}
+			%\hspace{0.1cm}
+			\includegraphics[height=1cm]{images/experiments/uni1}}
+			%\vspace*{2cm}
+			\par
+			\resizebox{0.6\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/experiments/jardi_sel}
+			%\hspace{0.1cm}
+			\includegraphics[height=1cm]{images/experiments/jardi_2}}
+			\caption{Imatges campus i jardins palau reial}
+		\end{figure}
 	\end{frame}
 
 	\begin{frame}{Objectes II}
 		\tz
-		a
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\adjustbox{max width=\textwidth}{
+				\begin{tabular}{l | c c | c c}
+					& \multicolumn{2}{c|}{\textbf{Campus (moto)}} & \multicolumn{2}{c}{\textbf{Jardins (font)}} \\
+					\textbf{Algorismes} & \textbf{Correctes} & \textbf{Erronis} & \textbf{Correctes} & \textbf{Erronis} \\ \hline
+					Harris + SIFT & 30 & 0 & 38 & 0 \\
+					SIFT + SIFT & 15 & 1 & 49 & 2 \\
+					ORB + ORB & 14 & 1 & 52 & 10 \\
+					ORB + BRISK & 19 & 0 & 71 & 6 \\
+				\end{tabular}
+				}
+			\end{center}
+			\caption{\textit{Matching} - objectes}
+		\end{table}
 	\end{frame}
 
 	\begin{frame}{Imatges diferents I}
 		\tz
-		a
+		\begin{figure}[H]
+			\resizebox{0.6\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/experiments/uni_sel}
+			%\hspace{0.1cm}
+			\includegraphics[height=1cm]{images/experiments/jardi_2}}
+			%\vspace*{2cm}
+			\par
+			\resizebox{0.6\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/experiments/jardi_sel}
+			%\hspace{0.1cm}
+			\includegraphics[height=1cm]{images/experiments/uni1}}
+			\caption{Imatges campus i jardins palau reial}
+		\end{figure}
 	\end{frame}
 
 	\begin{frame}{Imatges diferents II}
 		\tz
-		a
+		\begin{table}[H]
+			\begin{center}
+				\rowcolors{3}{}{myBlue}
+				\adjustbox{max width=\textwidth}{
+				\begin{tabular}{l | c c c c | c c c c}
+					& \multicolumn{4}{c|}{\textbf{Campus 1 (subimatge)}} & \multicolumn{4}{c}{\textbf{Campus 2 (subimatge)}} \\
+					\textbf{Algorismes} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} & \textbf{Kp1} & \textbf{Kp2} & \textbf{Parells} & \textbf{t} \\ \hline
+					Harris + SIFT & 67 & 757 & 0 & 0.331s & 304 & 417 & 2 & 0.839s \\
+					SIFT + SIFT & 125 & 5148 & 1 & 0.987s & 570 & 1342 & 5 & 1.113s \\
+					ORB + ORB & 830 & 2500 & 2 & 0.840s & 2405 & 2500 & 7 & 0.113s \\
+					ORB + BRISK & 830 & 2500 & 1 & 0.942s & 2405 & 2500 & 7 & 1.003s \\
+				\end{tabular}
+				}
+			\end{center}
+			\caption{\textit{Matching} - imatges diferents}
+		\end{table}
 	\end{frame}
 
 	\begin{frame}{Resultats matching i homografia}
 		\tz
-		a
+		\begin{figure}[!htb]
+			\resizebox{0.8\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/homography}
+			\includegraphics[height=1cm]{images/6}}
+			\par
+			\resizebox{0.8\textwidth}{!}{%
+			\includegraphics[height=1cm]{images/uniSel5}
+			\includegraphics[height=1cm]{images/7}}
+			\caption{Homografia - Resultats}
+		\end{figure}
 	\end{frame}
 
 
