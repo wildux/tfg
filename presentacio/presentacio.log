@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.3.7)  21 APR 2017 23:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.3.7)  22 APR 2017 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1136,6 +1136,162 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen271
 \@vwid@roff=\dimen272
 ))
+(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/share/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/09/17 v3.6 programmable bibliographies (PK/JW/AB)
 
@@ -1509,6 +1665,12 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 71.
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1831,12 +1993,21 @@ Package pdftex.def Info: images/logo.png used on input line 156.
  <./images/gantt.png>] [8
 
 ]
+LaTeX Font Info:    Try loading font information for TS1+cmss on input line 176
+.
+
+(/usr/share/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+
+LaTeX Font Warning: Font shape `TS1/cmss/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 176.
+
 File: images/logo.png Graphic file (type png)
- <use images/logo.png>
+<use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 176.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
-
-[9
+ [9
 
 ]
 File: images/logo.png Graphic file (type png)
@@ -1889,21 +2060,8 @@ Overfull \vbox (14.6369pt too high) detected at line 285
 ] [15
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 300
-.
-LaTeX Font Info:    No file OMScmss.fd. on input line 300.
-
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 300.
-
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 300.
-
 File: images/logo.png Graphic file (type png)
-<use images/logo.png>
+ <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 300.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [16
@@ -1921,7 +2079,7 @@ Overfull \vbox (2.55983pt too high) detected at line 322
 
 ] [18
 
-] <images/arquitectura.png, id=168, 170.91855pt x 54.2025pt>
+] <images/arquitectura.png, id=169, 170.91855pt x 54.2025pt>
 File: images/arquitectura.png Graphic file (type png)
 
 <use images/arquitectura.png>
@@ -1933,13 +2091,13 @@ Package pdftex.def Info: images/logo.png used on input line 335.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [19
 
- <./images/arquitectura.png>] <images/crop.png, id=176, 1284.8pt x 722.7pt>
+ <./images/arquitectura.png>] <images/crop.png, id=177, 1284.8pt x 722.7pt>
 File: images/crop.png Graphic file (type png)
  <use images/crop.png>
 Package pdftex.def Info: images/crop.png used on input line 347.
 (pdftex.def)             Requested size: 50.57945pt x 28.45274pt.
 
-<images/webapp.png, id=177, 1080.035pt x 833.1125pt>
+<images/webapp.png, id=178, 1080.035pt x 833.1125pt>
 File: images/webapp.png Graphic file (type png)
  <use images/webapp.png>
 Package pdftex.def Info: images/webapp.png used on input line 347.
@@ -1952,7 +2110,7 @@ Package pdftex.def Info: images/logo.png used on input line 347.
  [20
 
  <./images/crop.png> <./images/webapp.png>]
-<images/server.png, id=183, 183.18437pt x 193.72375pt>
+<images/server.png, id=184, 183.18437pt x 193.72375pt>
 File: images/server.png Graphic file (type png)
  <use images/server.png>
 Package pdftex.def Info: images/server.png used on input line 368.
@@ -1965,43 +2123,31 @@ Package pdftex.def Info: images/logo.png used on input line 368.
  [21
 
  <./images/server.png>]
-
-LaTeX Font Warning: Font shape `OMS/cmss/bx/n' undefined
-(Font)              using `OMS/cmss/m/n' instead
-(Font)              for symbol `textperiodcentered' on input line 379.
-
 File: images/logo.png Graphic file (type png)
-<use images/logo.png>
+ <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 379.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [22
 
 ]
-File: images/logo.png Graphic file (type png)
- <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 393.
-(pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [23
-
-] [24
+[23
 
 ]
 File: images/logo.png Graphic file (type png)
-
-<use images/logo.png>
+ <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 407.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [25
+ [24
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 421.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [26
+ [25
 
 ]
-<images/harris.png, id=221, 259.7203pt x 89.58469pt>
+<images/harris.png, id=218, 259.7203pt x 89.58469pt>
 File: images/harris.png Graphic file (type png)
  <use images/harris.png>
 Package pdftex.def Info: images/harris.png used on input line 440.
@@ -2011,10 +2157,10 @@ File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 440.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [27
+ [26
 
  <./images/harris.png>]
-<images/scale_invariant.jpg, id=227, 328.22626pt x 135.50626pt>
+<images/scale_invariant.jpg, id=224, 328.22626pt x 135.50626pt>
 File: images/scale_invariant.jpg Graphic file (type jpg)
 
 <use images/scale_invariant.jpg>
@@ -2024,314 +2170,311 @@ File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 451.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [28
+ [27
 
  <./images/scale_invariant.jpg>]
 \c@enumTemp=\count368
- <images/sift_dog.jpg, id=234, 451.6875pt x 326.21875pt>
+ <images/sift_dog.jpg, id=231, 451.6875pt x 326.21875pt>
 File: images/sift_dog.jpg Graphic file (type jpg)
 
 <use images/sift_dog.jpg>
-Package pdftex.def Info: images/sift_dog.jpg used on input line 468.
+Package pdftex.def Info: images/sift_dog.jpg used on input line 469.
 (pdftex.def)             Requested size: 39.39574pt x 28.45274pt.
 
-<images/sift_local_extrema.jpg, id=235, 290.08376pt x 234.8775pt>
+<images/sift_local_extrema.jpg, id=232, 290.08376pt x 234.8775pt>
 File: images/sift_local_extrema.jpg Graphic file (type jpg)
 
 <use images/sift_local_extrema.jpg>
-Package pdftex.def Info: images/sift_local_extrema.jpg used on input line 468.
+Package pdftex.def Info: images/sift_local_extrema.jpg used on input line 469.
 (pdftex.def)             Requested size: 35.14052pt x 28.45274pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 468.
+Package pdftex.def Info: images/logo.png used on input line 469.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [29
+ [28
 
  <./images/sift_dog.jpg> <./images/sift_local_extrema.jpg>]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 478.
+Package pdftex.def Info: images/logo.png used on input line 479.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [30
+ [29
 
 ]
-<images/fast.png, id=247, 508.90125pt x 254.45062pt>
+<images/fast.png, id=244, 508.90125pt x 254.45062pt>
 File: images/fast.png Graphic file (type png)
  <use images/fast.png>
-Package pdftex.def Info: images/fast.png used on input line 494.
+Package pdftex.def Info: images/fast.png used on input line 495.
 (pdftex.def)             Requested size: 169.01036pt x 84.50476pt.
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 494.
+Package pdftex.def Info: images/logo.png used on input line 495.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [31
+ [30
 
  <./images/fast.png>]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 506.
+Package pdftex.def Info: images/logo.png used on input line 508.
+(pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
+ [31
+
+]
+File: images/logo.png Graphic file (type png)
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 522.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [32
 
 ]
-File: images/logo.png Graphic file (type png)
-
-<use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 520.
-(pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [33
-
-]
-<images/sift-des.png, id=267, 488.82625pt x 229.85875pt>
+<images/sift-des.png, id=264, 488.82625pt x 229.85875pt>
 File: images/sift-des.png Graphic file (type png)
 
 <use images/sift-des.png>
-Package pdftex.def Info: images/sift-des.png used on input line 535.
+Package pdftex.def Info: images/sift-des.png used on input line 537.
 (pdftex.def)             Requested size: 184.3758pt x 86.69836pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 535.
+Package pdftex.def Info: images/logo.png used on input line 537.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
 
-Overfull \vbox (8.43764pt too high) detected at line 535
+Overfull \vbox (8.43764pt too high) detected at line 537
  []
 
-[34
+[33
 
  <./images/sift-des.png (PNG copy)>]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 544.
+Package pdftex.def Info: images/logo.png used on input line 548.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [35
+ [34
 
 ]
-<images/brisk.png, id=280, 241.65282pt x 237.13594pt>
+<images/brisk.png, id=277, 241.65282pt x 237.13594pt>
 File: images/brisk.png Graphic file (type png)
  <use images/brisk.png>
-Package pdftex.def Info: images/brisk.png used on input line 562.
+Package pdftex.def Info: images/brisk.png used on input line 566.
 (pdftex.def)             Requested size: 124.4507pt x 122.12456pt.
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 562.
+Package pdftex.def Info: images/logo.png used on input line 566.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [36
+ [35
 
  <./images/brisk.png>]
-<images/matching.png, id=286, 975.645pt x 642.4pt>
+<images/matching.png, id=283, 975.645pt x 642.4pt>
 File: images/matching.png Graphic file (type png)
  <use images/matching.png>
-Package pdftex.def Info: images/matching.png used on input line 582.
+Package pdftex.def Info: images/matching.png used on input line 586.
 (pdftex.def)             Requested size: 110.62453pt x 72.8305pt.
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 582.
+Package pdftex.def Info: images/logo.png used on input line 586.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [37
+ [36
 
  <./images/matching.png (PNG copy)>]
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 592.
+Package pdftex.def Info: images/logo.png used on input line 596.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [38
+ [37
 
-] [39
+] [38
 
 ]
-<images/experiments/motos3.png, id=306, 1003.75pt x 702.625pt>
+<images/experiments/motos3.png, id=302, 1003.75pt x 702.625pt>
 File: images/experiments/motos3.png Graphic file (type png)
 
 <use images/experiments/motos3.png>
-Package pdftex.def Info: images/experiments/motos3.png used on input line 617.
+Package pdftex.def Info: images/experiments/motos3.png used on input line 621.
 (pdftex.def)             Requested size: 122.91406pt x 86.03746pt.
 
-<images/experiments/motos1.png, id=307, 1003.75pt x 702.625pt>
+<images/experiments/motos1.png, id=303, 1003.75pt x 702.625pt>
 File: images/experiments/motos1.png Graphic file (type png)
 
 <use images/experiments/motos1.png>
-Package pdftex.def Info: images/experiments/motos1.png used on input line 617.
+Package pdftex.def Info: images/experiments/motos1.png used on input line 621.
 (pdftex.def)             Requested size: 122.91406pt x 86.03746pt.
 
-<images/experiments/cars4.png, id=308, 903.375pt x 602.25pt>
+<images/experiments/cars4.png, id=304, 903.375pt x 602.25pt>
 File: images/experiments/cars4.png Graphic file (type png)
 
 <use images/experiments/cars4.png>
-Package pdftex.def Info: images/experiments/cars4.png used on input line 617.
+Package pdftex.def Info: images/experiments/cars4.png used on input line 621.
 (pdftex.def)             Requested size: 122.91406pt x 81.93431pt.
 
-<images/experiments/cars6.png, id=309, 903.375pt x 602.25pt>
+<images/experiments/cars6.png, id=305, 903.375pt x 602.25pt>
 File: images/experiments/cars6.png Graphic file (type png)
 
 <use images/experiments/cars6.png>
-Package pdftex.def Info: images/experiments/cars6.png used on input line 617.
+Package pdftex.def Info: images/experiments/cars6.png used on input line 621.
 (pdftex.def)             Requested size: 122.91406pt x 81.93431pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 617.
+Package pdftex.def Info: images/logo.png used on input line 621.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [40
+ [39
 
  <./images/experiments/motos3.png (PNG copy)> <./images/experiments/motos1.png 
 (PNG copy)> <./images/experiments/cars4.png (PNG copy)> <./images/experiments/c
 ars6.png (PNG copy)>]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 634.
+Package pdftex.def Info: images/logo.png used on input line 638.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [41
+ [40
 
 ]
-<images/experiments/uni_sel.jpg, id=320, 224.84pt x 208.78pt>
+<images/experiments/uni_sel.jpg, id=317, 224.84pt x 208.78pt>
 File: images/experiments/uni_sel.jpg Graphic file (type jpg)
 
 <use images/experiments/uni_sel.jpg>
-Package pdftex.def Info: images/experiments/uni_sel.jpg used on input line 651.
+Package pdftex.def Info: images/experiments/uni_sel.jpg used on input line 655.
 
 (pdftex.def)             Requested size: 30.64027pt x 28.45274pt.
 
-<images/experiments/uni1.jpg, id=321, 3276.24pt x 2457.18pt>
+<images/experiments/uni1.jpg, id=318, 3276.24pt x 2457.18pt>
 File: images/experiments/uni1.jpg Graphic file (type jpg)
 
 <use images/experiments/uni1.jpg>
-Package pdftex.def Info: images/experiments/uni1.jpg used on input line 651.
+Package pdftex.def Info: images/experiments/uni1.jpg used on input line 655.
 (pdftex.def)             Requested size: 37.89342pt x 28.45274pt.
 
-<images/experiments/jardi_sel.jpg, id=322, 453.695pt x 441.65pt>
+<images/experiments/jardi_sel.jpg, id=319, 453.695pt x 441.65pt>
 File: images/experiments/jardi_sel.jpg Graphic file (type jpg)
 
 <use images/experiments/jardi_sel.jpg>
 Package pdftex.def Info: images/experiments/jardi_sel.jpg used on input line 65
-1.
+5.
 (pdftex.def)             Requested size: 29.22813pt x 28.45274pt.
 
-<images/experiments/jardi_2.png, id=323, 2645.885pt x 1984.41376pt>
+<images/experiments/jardi_2.png, id=320, 2645.885pt x 1984.41376pt>
 File: images/experiments/jardi_2.png Graphic file (type png)
 
 <use images/experiments/jardi_2.png>
-Package pdftex.def Info: images/experiments/jardi_2.png used on input line 651.
+Package pdftex.def Info: images/experiments/jardi_2.png used on input line 655.
 
 (pdftex.def)             Requested size: 37.91014pt x 28.45274pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 651.
+Package pdftex.def Info: images/logo.png used on input line 655.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [42
+ [41
 
  <./images/experiments/uni_sel.jpg> <./images/experiments/uni1.jpg> <./images/e
 xperiments/jardi_sel.jpg> <./images/experiments/jardi_2.png (PNG copy)>]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 671.
+Package pdftex.def Info: images/logo.png used on input line 675.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
 
-[43
+[42
 
 ]
 File: images/experiments/uni_sel.jpg Graphic file (type jpg)
  <use images/experiments/uni_sel.jpg>
-Package pdftex.def Info: images/experiments/uni_sel.jpg used on input line 688.
+Package pdftex.def Info: images/experiments/uni_sel.jpg used on input line 692.
 
 (pdftex.def)             Requested size: 30.64027pt x 28.45274pt.
 File: images/experiments/jardi_2.png Graphic file (type png)
  <use images/experiments/jardi_2.png>
-Package pdftex.def Info: images/experiments/jardi_2.png used on input line 688.
+Package pdftex.def Info: images/experiments/jardi_2.png used on input line 692.
 
 (pdftex.def)             Requested size: 37.91014pt x 28.45274pt.
 File: images/experiments/jardi_sel.jpg Graphic file (type jpg)
 
 <use images/experiments/jardi_sel.jpg>
-Package pdftex.def Info: images/experiments/jardi_sel.jpg used on input line 68
-8.
+Package pdftex.def Info: images/experiments/jardi_sel.jpg used on input line 69
+2.
 (pdftex.def)             Requested size: 29.22813pt x 28.45274pt.
 File: images/experiments/uni1.jpg Graphic file (type jpg)
  <use images/experiments/uni1.jpg>
-Package pdftex.def Info: images/experiments/uni1.jpg used on input line 688.
+Package pdftex.def Info: images/experiments/uni1.jpg used on input line 692.
 (pdftex.def)             Requested size: 37.89342pt x 28.45274pt.
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 688.
+Package pdftex.def Info: images/logo.png used on input line 692.
+(pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
+ [43
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 712.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [44
 
 ]
-File: images/logo.png Graphic file (type png)
- <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 708.
-(pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [45
-
-]
-<images/homography.png, id=345, 975.645pt x 642.4pt>
+<images/homography.png, id=342, 975.645pt x 642.4pt>
 File: images/homography.png Graphic file (type png)
 
 <use images/homography.png>
-Package pdftex.def Info: images/homography.png used on input line 722.
+Package pdftex.def Info: images/homography.png used on input line 726.
 (pdftex.def)             Requested size: 43.20242pt x 28.45274pt.
- <images/6.png, id=346, 1549.79pt x 991.705pt>
+ <images/6.png, id=343, 1549.79pt x 991.705pt>
 File: images/6.png Graphic file (type png)
 
 <use images/6.png>
-Package pdftex.def Info: images/6.png used on input line 722.
+Package pdftex.def Info: images/6.png used on input line 726.
 (pdftex.def)             Requested size: 44.45798pt x 28.45274pt.
- <images/uniSel5.png, id=347, 1846.9pt x 1228.59pt>
+ <images/uniSel5.png, id=344, 1846.9pt x 1228.59pt>
 File: images/uniSel5.png Graphic file (type png)
 
 <use images/uniSel5.png>
-Package pdftex.def Info: images/uniSel5.png used on input line 722.
+Package pdftex.def Info: images/uniSel5.png used on input line 726.
 (pdftex.def)             Requested size: 42.75116pt x 28.45274pt.
- <images/7.png, id=348, 1750.54pt x 1228.59pt>
+ <images/7.png, id=345, 1750.54pt x 1228.59pt>
 File: images/7.png Graphic file (type png)
 
 <use images/7.png>
-Package pdftex.def Info: images/7.png used on input line 722.
+Package pdftex.def Info: images/7.png used on input line 726.
 (pdftex.def)             Requested size: 40.52066pt x 28.45274pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 722.
+Package pdftex.def Info: images/logo.png used on input line 726.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [46
+ [45
 
  <./images/homography.png (PNG copy)> <./images/6.png (PNG copy)> <./images/uni
-Sel5.png (PNG copy)> <./images/7.png (PNG copy)>] [47
+Sel5.png (PNG copy)> <./images/7.png (PNG copy)>] [46
 
 ]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 737.
+Package pdftex.def Info: images/logo.png used on input line 741.
+(pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
+ [47
+
+]
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 752.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [48
 
 ]
-File: images/logo.png Graphic file (type png)
- <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 748.
-(pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [49
+[49
 
 ]
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <9> not available
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 762.
+
 [50
 
-]
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 758.
-
+ </usr/share/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
 [51
 
- </usr/share/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
-[52
 
-
-] [53
-
-
-] [54
+] [52
 
 
 ]
@@ -2344,13 +2487,13 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
 \tf@snm=\write10
 \openout10 = `presentacio.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 760.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 760.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
  (./presentacio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 760.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 760.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 764.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 764.
 Package rerunfilecheck Info: File `presentacio.out' has not changed.
-(rerunfilecheck)             Checksum: 7DDCA3B9D32B442219F724162845EA47;409.
+(rerunfilecheck)             Checksum: E06A687A82D9D69A769067999D1E2EC3;417.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2362,29 +2505,33 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'presentacio.run.xml'.
 \openout1 = `presentacio.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 760.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 764.
  ) 
 Here is how much of TeX's memory you used:
- 29638 strings out of 493013
- 565655 string characters out of 6139318
- 986806 words of memory out of 5000000
- 32401 multiletter control sequences out of 15000+600000
- 19601 words of font info for 72 fonts, out of 8000000 for 9000
+ 30131 strings out of 493013
+ 573263 string characters out of 6139318
+ 989351 words of memory out of 5000000
+ 32881 multiletter control sequences out of 15000+600000
+ 22699 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,19n,92p,1729b,1798s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public
-/eurosym/feymr10.pfb>
-Output written on presentacio.pdf (54 pages, 21004175 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf-dist
+/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/cm-super/sfsx1200.pfb>
+Output written on presentacio.pdf (52 pages, 21032160 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 126 named destinations out of 1000 (max. 500000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
+ 121 named destinations out of 1000 (max. 500000)
  242 words of extra memory for PDF output out of 10000 (max. 10000000)
 

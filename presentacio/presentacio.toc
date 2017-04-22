@@ -8,12 +8,12 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {2}{Recursos i costos}{8}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Sostenibilitat}{15}{0}{3}
+\beamer@sectionintoc {3}{Lleis i sostenibilitat}{15}{0}{3}
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {4}{Arquitectura del sistema}{18}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{T\IeC {\`e}cniques de visi\IeC {\'o} usades}{24}{0}{5}
+\beamer@sectionintoc {5}{T\IeC {\`e}cniques de visi\IeC {\'o} usades}{23}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {6}{Resultats}{39}{0}{6}
+\beamer@sectionintoc {6}{Resultats}{38}{0}{6}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {7}{Conclusions}{47}{0}{7}
+\beamer@sectionintoc {7}{Conclusions}{46}{0}{7}

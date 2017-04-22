@@ -11,27 +11,25 @@
 \usepackage{hyperref}
 \usepackage[textfont={small,it}]{caption}
 \usepackage{adjustbox}
+\usepackage{textcomp}
 
 \usepackage[backend=bibtex,sorting=none]{biblatex}
 \addbibresource{references.bib}
 
 \usetheme{metropolis}
 \usepackage{appendixnumberbeamer}
-%\usepackage{enumitem}
 
 \makeatletter
 \patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0.5em}{}{}
 \makeatother
 
 \title[TFG]{\vspace{1cm}\Large{Sistema d'autolocalització per a robots mòbils mitjançant tècniques de visió per computador}\\
-%\hspace{0.05cm}
 \vspace{0.6cm}
 \textit{\normalsize{Treball final de grau en eng. informàtica}\\
 \vspace{-0.15cm}
 \normalsize{Tecnologies de la informació}}
 }
 
-%\fontsize{13}{15.6}\selectfont
 \fontsize{14}{16.8}\selectfont
 
 \author{Joan Rodas Cusidó}
@@ -67,6 +65,8 @@ Director: Joan Climent (ESAII)
   \tiny{\textbf{Font:} #2\par}}
 
 \newcommand\tz{\fontsize{13}{15.6}\selectfont}
+\renewcommand*{\bibfont}{\footnotesize}
+\setlength{\bibhang}{0pt}
 
 \begin{document}
 
@@ -99,7 +99,7 @@ Director: Joan Climent (ESAII)
 		\tz
 		\metroset{block=fill}
 		\begin{block}{Objectiu}
-			Dissenyar i desenvolupar un sistema d'autolocalització per a robots usant algorismes de visió.
+			Dissenyar i desenvolupar un sistema d'autolocalització per a robots mòbils usant algorismes de visió.
 		\end{block}
 		
 		%\vspace{1em}
@@ -114,7 +114,7 @@ Director: Joan Climent (ESAII)
 \section{Planificació}
 
 	% TASQUES
-	\begin{frame}{Tasques}
+	\begin{frame}{Tasques (blocs)}
 		\tz
 		\begin{table}[H]
 			\begin{center}
@@ -134,7 +134,7 @@ Director: Joan Climent (ESAII)
 	\end{frame}
 
 	% DESENVOLUPAMENT
-	\begin{frame}{Desenvolupament}
+	\begin{frame}{Tasques (desenvolupament)}
 		\tz
 		\centering
 		\begin{figure}
@@ -201,7 +201,7 @@ Director: Joan Climent (ESAII)
 	\end{frame}
 
 	% RECURSOS HUMANS
-	\begin{frame}{Recursos humans}
+	\begin{frame}{Recursos humans I}
 		\begin{table}[H]
 			\centering
 			\adjustbox{max width=\textwidth, max height=\dimexpr\textheight-5.52cm\relax}{
@@ -285,7 +285,7 @@ Director: Joan Climent (ESAII)
 	\end{frame}
 
 % SOSTENIBILITAT
-\section{Sostenibilitat}
+\section{Lleis i sostenibilitat}
 
 	\begin{frame}{Lleis i regulacions}
 		\tz
@@ -378,19 +378,19 @@ Director: Joan Climent (ESAII)
 		\end{enumerate}
 	\end{frame}
 
-	\begin{frame}{Servidor - Configuració}
-		\tz
-		\metroset{block=fill}
-		\begin{alertblock}{Flask}
-			Simmons Hall is composed of metal and concrete.
-		\end{alertblock}
-		\begin{alertblock}{uWSGI}
-			Simmons Hall is composed of metal and concrete.
-		\end{alertblock}
-		\begin{alertblock}{Nginx}
-			Simmons Hall is composed of metal and concrete.
-		\end{alertblock}
-	\end{frame}
+%	\begin{frame}{Servidor - Configuració}
+%		\tz
+%		\metroset{block=fill}
+%		\begin{alertblock}{Flask}
+%			Simmons Hall is composed of metal and concrete.
+%		\end{alertblock}
+%		\begin{alertblock}{uWSGI}
+%			Simmons Hall is composed of metal and concrete.
+%		\end{alertblock}
+%		\begin{alertblock}{Nginx}
+%			Simmons Hall is composed of metal and concrete.
+%		\end{alertblock}
+%	\end{frame}
 
 % TÈCNIQUES UTILITZADES
 \section{Tècniques de visió usades}
@@ -454,14 +454,15 @@ Director: Joan Climent (ESAII)
 		\tz
 		\begin{enumerate}
 			\item{Diferència de Gaussianes en diferents escales}
-			\item{Piràmide gaussiana}
 			\item{Màxims i mínims locals en l'espai i l'escala}
+			\item{Es repeteixen els passos fent una piràmide}
 			\newcounter{enumTemp}
 			\setcounter{enumTemp}{\theenumi}
 		\end{enumerate}
 		\begin{figure}[H]
 			\resizebox{0.8\textwidth}{!}{%
 			\includegraphics[height=1cm]{images/sift_dog}
+			\hfill
 			\includegraphics[height=1cm]{images/sift_local_extrema}}
 			\captionsource{\textit{SIFT - DoG i \textit{local extrema}}}{OpenCV}
 		\end{figure}
@@ -495,7 +496,8 @@ Director: Joan Climent (ESAII)
 
 	\begin{frame}{ORB - Detector II}
 		\tz
-		FAST no és invariant a l'escala ni la rotació.\\\vspace{0.5cm}
+		\alert{FAST no és invariant a l'escala ni la rotació.}\\
+		\vspace{0.5cm}
 		ORB aplica les següents millores:\\
 
 		\begin{itemize}
@@ -539,7 +541,9 @@ Director: Joan Climent (ESAII)
 		\begin{itemize}
 			\item Descriptor binari, senzill i ràpid
 			\item Modificació BRIEF\cite{Calonder:2010:BBR:1888089.1888148}
-			\item Es ``gira'' el patró en funció de l'angle
+			\item N píxels veïns, s'agafen parells
+			\item Per cada parell es compara la intensitat i es retorna 1 o 0 segons si és major la del primer o la del segon
+			\item \alert{BRIEF no és invariable en la rotació} \textrightarrow{} ORB ``gira'' el patró en funció de l'angle
 		\end{itemize}
 	\end{frame}
 
@@ -566,7 +570,7 @@ Director: Joan Climent (ESAII)
 		\begin{minipage}{0.62\textwidth}
 			\metroset{block=fill}
 			\begin{block}{Què és?}
-				Consisteix en trobar coincidències entre els punts de dues regions, comparant les seves característiques.\par
+				Consisteix en trobar coincidències entre els punts de dues imatges, comparant les seves característiques.\par
 				Pels descriptors binaris utilitzem la distància de Hamming i pels vectorials l'euclidiana.
 			\end{block}
 		\end{minipage}
@@ -726,13 +730,13 @@ Director: Joan Climent (ESAII)
 
 	\begin{frame}{Conclusions}
 		\tz
-		Dissenyar i desenvolupar un sistema d'autolocalització per a robots usant algorismes de visió.\\
+		L'objectiu principal s'ha complert.
 		\vspace{1em}
 
 		\begin{itemize}
 			\item Harris + SIFT més robust
 			\item ORB alternativa ràpida
-			\item asd
+			\item Marge de millora
 		\end{itemize}
 	\end{frame}
 
@@ -753,8 +757,8 @@ Director: Joan Climent (ESAII)
 
 	\appendix
 
-	\begin{frame}[allowframebreaks]
-		\printbibliography
+	\begin{frame}[allowframebreaks]{Referències}
+		\printbibliography[heading=none]
 	\end{frame}
 
 \end{document}
