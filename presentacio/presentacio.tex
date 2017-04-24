@@ -43,7 +43,7 @@ Director: Joan Climent (ESAII)
 \end{textblock*}
 }
 
-\date{\vspace{-0.1cm}22 d'abril de 2017}
+\date{\vspace{-0.1cm}23 d'abril de 2017}
 
 \setbeamertemplate{footline}{%
 	\begin{beamercolorbox}[ht=2.25ex,dp=3ex,right]{normal text}%
@@ -94,6 +94,11 @@ Director: Joan Climent (ESAII)
 		\end{minipage}
 	\end{frame}
 
+	\begin{frame}[plain]
+		\section{Introducció}
+	\end{frame}
+
+
 	% OBJECTIU/DESCRIPCIÓ
 	\begin{frame}{Introducció}
 		\tz
@@ -104,14 +109,20 @@ Director: Joan Climent (ESAII)
 		
 		%\vspace{1em}
 		\begin{enumerate}
-			\item Obtenció de \textit{keypoints}
-			\item Extracció de característiques
-			\item \textit{Matching} de dues imatges
-			\item Homografia
+		%	\item Obtenció de \textit{keypoints}
+		%	\item Extracció de característiques
+		%	\item \textit{Matching} de dues imatges
+		%	\item Homografia
+			\item Selecció d'un punt o regió en una imatge
+			\item Obtenció d'una imatge capturada pel robot
+			\item Posició de la regió seleccionada en la imatge del robot
+			\item Desplaçament del robot cap a la posició desitjada
 		\end{enumerate}
 	\end{frame}
 
-\section{Planificació}
+	\begin{frame}[plain]
+		\section{Planificació}
+	\end{frame}
 
 	% TASQUES
 	\begin{frame}{Tasques (blocs)}
@@ -155,7 +166,9 @@ Director: Joan Climent (ESAII)
 		\end{figure}
 	\end{frame}
 
-\section{Recursos i costos}
+	\begin{frame}[plain]
+		\section{Gestió econòmica i sostenibilitat}
+	\end{frame}
 
 	% HARDWARE
 	\begin{frame}{Maquinari}
@@ -243,25 +256,25 @@ Director: Joan Climent (ESAII)
 		\end{table}
 	\end{frame}
 
-	\begin{frame}{Costos indirectes}
-		\tz
-		\begin{table}[H]
-			\begin{center}
-				\begin{tabular}{l !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r}
-					\textbf{Tipus} & \textbf{Temps} & \textbf{Cost} & \textbf{Cost total} \\ \hline
-					Electricitat* & 480h & 0,028€/h & 13,44€ \\
-					Accès a Internet & 480h & 0,17€/h & 81,6€ \\
-					\noalign{\vskip 4mm}
-					\rowcolor{total}
-					Total & & & 95,04€
-				\end{tabular}
-			\end{center}
-			\caption{Costos indirectes}
-		\end{table}
-		\tiny{* Cost de l'electricitat = 0,141033€/kWh (considerem la potència 0,2kW)}
-	\end{frame}
+	%\begin{frame}{Costos indirectes}
+	%	\tz
+	%	\begin{table}[H]
+	%		\begin{center}
+	%			\begin{tabular}{l !{\vrule width -1pt}r !{\vrule width -1pt}r !{\vrule width -1pt}r}
+	%				\textbf{Tipus} & \textbf{Temps} & \textbf{Cost} & \textbf{Cost total} \\ \hline
+	%				Electricitat* & 480h & 0,028€/h & 13,44€ \\
+	%				Accès a Internet & 480h & 0,17€/h & 81,6€ \\
+	%				\noalign{\vskip 4mm}
+	%				\rowcolor{total}
+	%				Total & & & 95,04€
+	%			\end{tabular}
+	%		\end{center}
+	%		\caption{Costos indirectes}
+	%	\end{table}
+	%	\tiny{* Cost de l'electricitat = 0,141033€/kWh (considerem la potència 0,2kW)}
+	%\end{frame}
 
-	% GESTIÓ ECONOMICA
+	% COSTOS
 	\begin{frame}{Costos totals}
 		\begin{table}[H]
 			\begin{center}
@@ -285,19 +298,18 @@ Director: Joan Climent (ESAII)
 	\end{frame}
 
 % SOSTENIBILITAT
-\section{Lleis i sostenibilitat}
+%\section{Lleis i sostenibilitat}
 
-	\begin{frame}{Lleis i regulacions}
-		\tz
-		Caldrà tenir en compte les lleis i regulacions, tant a l'hora de realitzar el projecte com a l'hora de publicar-lo o fer la documentació.\\
-		\vspace{1em}
-
-		\begin{itemize}
-			\item Drets d'imatge
-			\item Patents dels algorismes
-			\item Drets d'autor
-		\end{itemize}
-	\end{frame}
+%	\begin{frame}{Lleis i regulacions}
+%		\tz
+%		Caldrà tenir en compte les lleis i regulacions, tant a l'hora de realitzar el projecte com a l'hora de publicar-lo o fer la documentació.\\
+%		\vspace{1em}
+%		\begin{itemize}
+%			\item Drets d'imatge
+%			\item Patents dels algorismes
+%			\item Drets d'autor
+%		\end{itemize}
+%	\end{frame}
 
 	\begin{frame}{Sostenibilitat}
 		\tz
@@ -321,7 +333,9 @@ Director: Joan Climent (ESAII)
 		\end{table}
 	\end{frame}
 
-\section{Arquitectura del sistema}
+	\begin{frame}[plain]
+		\section{Arquitectura del sistema}
+	\end{frame}
 
 	% ARQUITECTURA
 	\begin{frame}{Arquitectura del sistema}
@@ -393,7 +407,9 @@ Director: Joan Climent (ESAII)
 %	\end{frame}
 
 % TÈCNIQUES UTILITZADES
-\section{Tècniques de visió usades}
+	\begin{frame}[plain]
+		\section{Tècniques de visió utilitzades}
+	\end{frame}
 
 	\begin{frame}{Tècniques de visió}
 		\tz
@@ -596,7 +612,10 @@ Director: Joan Climent (ESAII)
 	\end{frame}
 
 %RESULTATS
-\section{Resultats}
+
+	\begin{frame}[plain]
+		\section{Resultats}
+	\end{frame}
 
 	\begin{frame}{Imatges similars I}
 		\tz
@@ -726,7 +745,9 @@ Director: Joan Climent (ESAII)
 	\end{frame}
 
 
-\section{Conclusions}
+	\begin{frame}[plain]
+		\section{Conclusions}
+	\end{frame}
 
 	\begin{frame}{Conclusions}
 		\tz

@@ -4,16 +4,16 @@
 \defcounter {refsection}{0}\relax 
 \select@language {catalan}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {1}{Planificaci\IeC {\'o}}{4}{0}{1}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Recursos i costos}{8}{0}{2}
+\beamer@sectionintoc {2}{Planificaci\IeC {\'o}}{5}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Lleis i sostenibilitat}{15}{0}{3}
+\beamer@sectionintoc {3}{Gesti\IeC {\'o} econ\IeC {\`o}mica i sostenibilitat}{9}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Arquitectura del sistema}{18}{0}{4}
+\beamer@sectionintoc {4}{Arquitectura del sistema}{16}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{T\IeC {\`e}cniques de visi\IeC {\'o} usades}{23}{0}{5}
+\beamer@sectionintoc {5}{T\IeC {\`e}cniques de visi\IeC {\'o} utilitzades}{21}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {6}{Resultats}{38}{0}{6}
+\beamer@sectionintoc {6}{Resultats}{36}{0}{6}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {7}{Conclusions}{46}{0}{7}
+\beamer@sectionintoc {7}{Conclusions}{44}{0}{7}
