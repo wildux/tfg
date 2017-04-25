@@ -106,18 +106,21 @@ Director: Joan Climent (ESAII)
 		\begin{block}{Objectiu}
 			Dissenyar i desenvolupar un sistema d'autolocalització per a robots mòbils usant algorismes de visió per ordinador.
 		\end{block}
-		
-		%\vspace{1em}
-		\begin{enumerate}
-		%	\item Obtenció de \textit{keypoints}
-		%	\item Extracció de característiques
-		%	\item \textit{Matching} de dues imatges
-		%	\item Homografia
-			\item Selecció d'un punt o regió en una imatge
-			\item Obtenció d'una imatge capturada pel robot
-			\item Localització de la regió seleccionada en la imatge del robot
-			\item Desplaçament del robot cap a la posició desitjada
-		\end{enumerate}
+		\vspace{1em}
+		\begin{minipage}{0.49\textwidth}
+			\begin{figure}
+				\includegraphics[width=0.6\textwidth]{images/smartjardi}
+			\end{figure}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.49\textwidth}
+			\begin{enumerate}
+				\item Selecció de l'usuari
+				\item Captura del robot
+				\item Localització
+				\item Desplaçament
+			\end{enumerate}
+		\end{minipage}
 	\end{frame}
 
 	\begin{frame}[plain]
@@ -413,13 +416,13 @@ Director: Joan Climent (ESAII)
 
 	\begin{frame}{Tècniques de visió}
 		\tz
-		\begin{itemize}
+		\begin{enumerate}
 			\item Preprocessat digital d'imatges
 			\item Detecció de punts d'interès
 			\item Extracció de característiques
 			\item \textit{Matching} de característiques
 			\item Homografia
-		\end{itemize}
+		\end{enumerate}
 	\end{frame}
 
 	\begin{frame}{Detecció de keypoints}
