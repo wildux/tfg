@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.3.7)  24 APR 2017 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.3.7)  25 APR 2017 13:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2218,22 +2218,18 @@ Package pdftex.def Info: images/logo.png used on input line 538.
 File: images/sift-des.png Graphic file (type png)
 
 <use images/sift-des.png>
-Package pdftex.def Info: images/sift-des.png used on input line 553.
+Package pdftex.def Info: images/sift-des.png used on input line 552.
 (pdftex.def)             Requested size: 184.3758pt x 86.69836pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 553.
+Package pdftex.def Info: images/logo.png used on input line 552.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
-
-Overfull \vbox (8.43764pt too high) detected at line 553
- []
-
-[31
+ [31
 
  <./images/sift-des.png (PNG copy)>]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 564.
+Package pdftex.def Info: images/logo.png used on input line 563.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [32
 
@@ -2241,12 +2237,12 @@ Package pdftex.def Info: images/logo.png used on input line 564.
 <images/brisk.png, id=266, 241.65282pt x 237.13594pt>
 File: images/brisk.png Graphic file (type png)
  <use images/brisk.png>
-Package pdftex.def Info: images/brisk.png used on input line 582.
+Package pdftex.def Info: images/brisk.png used on input line 581.
 (pdftex.def)             Requested size: 124.4507pt x 122.12456pt.
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 582.
+Package pdftex.def Info: images/logo.png used on input line 581.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [33
 
@@ -2254,212 +2250,229 @@ Package pdftex.def Info: images/logo.png used on input line 582.
 <images/matching.png, id=272, 975.645pt x 642.4pt>
 File: images/matching.png Graphic file (type png)
  <use images/matching.png>
-Package pdftex.def Info: images/matching.png used on input line 602.
+Package pdftex.def Info: images/matching.png used on input line 600.
 (pdftex.def)             Requested size: 110.62453pt x 72.8305pt.
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 602.
+Package pdftex.def Info: images/logo.png used on input line 600.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [34
 
  <./images/matching.png (PNG copy)>]
-File: images/logo.png Graphic file (type png)
+<images/homography.png, id=278, 975.645pt x 642.4pt>
+File: images/homography.png Graphic file (type png)
 
-<use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 612.
+<use images/homography.png>
+Package pdftex.def Info: images/homography.png used on input line 618.
+(pdftex.def)             Requested size: 110.62453pt x 72.8305pt.
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 618.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [35
 
-] [36
+ <./images/homography.png (PNG copy)>] <images/ransac.png, id=285, 255.95625pt 
+x 255.95625pt>
+File: images/ransac.png Graphic file (type png)
 
-]
-<images/experiments/motos3.png, id=290, 1003.75pt x 702.625pt>
+<use images/ransac.png>
+Package pdftex.def Info: images/ransac.png used on input line 628.
+(pdftex.def)             Requested size: 92.1879pt x 92.18713pt.
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 628.
+(pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
+ [36
+
+ <./images/ransac.png>]
+[37
+
+] <images/experiments/motos3.png, id=299, 1003.75pt x 702.625pt>
 File: images/experiments/motos3.png Graphic file (type png)
 
 <use images/experiments/motos3.png>
-Package pdftex.def Info: images/experiments/motos3.png used on input line 640.
+Package pdftex.def Info: images/experiments/motos3.png used on input line 656.
 (pdftex.def)             Requested size: 122.91406pt x 86.03746pt.
 
-<images/experiments/motos1.png, id=291, 1003.75pt x 702.625pt>
+<images/experiments/motos1.png, id=300, 1003.75pt x 702.625pt>
 File: images/experiments/motos1.png Graphic file (type png)
 
 <use images/experiments/motos1.png>
-Package pdftex.def Info: images/experiments/motos1.png used on input line 640.
+Package pdftex.def Info: images/experiments/motos1.png used on input line 656.
 (pdftex.def)             Requested size: 122.91406pt x 86.03746pt.
 
-<images/experiments/cars4.png, id=292, 903.375pt x 602.25pt>
+<images/experiments/cars4.png, id=301, 903.375pt x 602.25pt>
 File: images/experiments/cars4.png Graphic file (type png)
 
 <use images/experiments/cars4.png>
-Package pdftex.def Info: images/experiments/cars4.png used on input line 640.
+Package pdftex.def Info: images/experiments/cars4.png used on input line 656.
 (pdftex.def)             Requested size: 122.91406pt x 81.93431pt.
 
-<images/experiments/cars6.png, id=293, 903.375pt x 602.25pt>
+<images/experiments/cars6.png, id=302, 903.375pt x 602.25pt>
 File: images/experiments/cars6.png Graphic file (type png)
 
 <use images/experiments/cars6.png>
-Package pdftex.def Info: images/experiments/cars6.png used on input line 640.
+Package pdftex.def Info: images/experiments/cars6.png used on input line 656.
 (pdftex.def)             Requested size: 122.91406pt x 81.93431pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 640.
+Package pdftex.def Info: images/logo.png used on input line 656.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [37
+ [38
 
  <./images/experiments/motos3.png (PNG copy)> <./images/experiments/motos1.png 
 (PNG copy)> <./images/experiments/cars4.png (PNG copy)> <./images/experiments/c
 ars6.png (PNG copy)>]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 657.
+Package pdftex.def Info: images/logo.png used on input line 673.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [38
+ [39
 
 ]
-<images/experiments/uni_sel.jpg, id=305, 224.84pt x 208.78pt>
+<images/experiments/uni_sel.jpg, id=314, 224.84pt x 208.78pt>
 File: images/experiments/uni_sel.jpg Graphic file (type jpg)
 
 <use images/experiments/uni_sel.jpg>
-Package pdftex.def Info: images/experiments/uni_sel.jpg used on input line 674.
+Package pdftex.def Info: images/experiments/uni_sel.jpg used on input line 690.
 
 (pdftex.def)             Requested size: 30.64027pt x 28.45274pt.
 
-<images/experiments/uni1.jpg, id=306, 3276.24pt x 2457.18pt>
+<images/experiments/uni1.jpg, id=315, 3276.24pt x 2457.18pt>
 File: images/experiments/uni1.jpg Graphic file (type jpg)
 
 <use images/experiments/uni1.jpg>
-Package pdftex.def Info: images/experiments/uni1.jpg used on input line 674.
+Package pdftex.def Info: images/experiments/uni1.jpg used on input line 690.
 (pdftex.def)             Requested size: 37.89342pt x 28.45274pt.
 
-<images/experiments/jardi_sel.jpg, id=307, 453.695pt x 441.65pt>
+<images/experiments/jardi_sel.jpg, id=316, 453.695pt x 441.65pt>
 File: images/experiments/jardi_sel.jpg Graphic file (type jpg)
 
 <use images/experiments/jardi_sel.jpg>
-Package pdftex.def Info: images/experiments/jardi_sel.jpg used on input line 67
-4.
+Package pdftex.def Info: images/experiments/jardi_sel.jpg used on input line 69
+0.
 (pdftex.def)             Requested size: 29.22813pt x 28.45274pt.
 
-<images/experiments/jardi_2.png, id=308, 2645.885pt x 1984.41376pt>
+<images/experiments/jardi_2.png, id=317, 2645.885pt x 1984.41376pt>
 File: images/experiments/jardi_2.png Graphic file (type png)
 
 <use images/experiments/jardi_2.png>
-Package pdftex.def Info: images/experiments/jardi_2.png used on input line 674.
+Package pdftex.def Info: images/experiments/jardi_2.png used on input line 690.
 
 (pdftex.def)             Requested size: 37.91014pt x 28.45274pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 674.
+Package pdftex.def Info: images/logo.png used on input line 690.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [39
+ [40
 
  <./images/experiments/uni_sel.jpg> <./images/experiments/uni1.jpg> <./images/e
 xperiments/jardi_sel.jpg> <./images/experiments/jardi_2.png (PNG copy)>]
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 694.
+Package pdftex.def Info: images/logo.png used on input line 710.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
 
-[40
+[41
 
 ]
 File: images/experiments/uni_sel.jpg Graphic file (type jpg)
  <use images/experiments/uni_sel.jpg>
-Package pdftex.def Info: images/experiments/uni_sel.jpg used on input line 711.
+Package pdftex.def Info: images/experiments/uni_sel.jpg used on input line 727.
 
 (pdftex.def)             Requested size: 30.64027pt x 28.45274pt.
 File: images/experiments/jardi_2.png Graphic file (type png)
  <use images/experiments/jardi_2.png>
-Package pdftex.def Info: images/experiments/jardi_2.png used on input line 711.
+Package pdftex.def Info: images/experiments/jardi_2.png used on input line 727.
 
 (pdftex.def)             Requested size: 37.91014pt x 28.45274pt.
 File: images/experiments/jardi_sel.jpg Graphic file (type jpg)
 
 <use images/experiments/jardi_sel.jpg>
-Package pdftex.def Info: images/experiments/jardi_sel.jpg used on input line 71
-1.
+Package pdftex.def Info: images/experiments/jardi_sel.jpg used on input line 72
+7.
 (pdftex.def)             Requested size: 29.22813pt x 28.45274pt.
 File: images/experiments/uni1.jpg Graphic file (type jpg)
  <use images/experiments/uni1.jpg>
-Package pdftex.def Info: images/experiments/uni1.jpg used on input line 711.
+Package pdftex.def Info: images/experiments/uni1.jpg used on input line 727.
 (pdftex.def)             Requested size: 37.89342pt x 28.45274pt.
 File: images/logo.png Graphic file (type png)
 
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 711.
-(pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [41
-
-]
-File: images/logo.png Graphic file (type png)
- <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 731.
+Package pdftex.def Info: images/logo.png used on input line 727.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [42
 
 ]
-<images/homography.png, id=330, 975.645pt x 642.4pt>
-File: images/homography.png Graphic file (type png)
-
-<use images/homography.png>
-Package pdftex.def Info: images/homography.png used on input line 745.
-(pdftex.def)             Requested size: 43.20242pt x 28.45274pt.
- <images/6.png, id=331, 1549.79pt x 991.705pt>
-File: images/6.png Graphic file (type png)
-
-<use images/6.png>
-Package pdftex.def Info: images/6.png used on input line 745.
-(pdftex.def)             Requested size: 44.45798pt x 28.45274pt.
- <images/uniSel5.png, id=332, 1846.9pt x 1228.59pt>
-File: images/uniSel5.png Graphic file (type png)
-
-<use images/uniSel5.png>
-Package pdftex.def Info: images/uniSel5.png used on input line 745.
-(pdftex.def)             Requested size: 42.75116pt x 28.45274pt.
- <images/7.png, id=333, 1750.54pt x 1228.59pt>
-File: images/7.png Graphic file (type png)
-
-<use images/7.png>
-Package pdftex.def Info: images/7.png used on input line 745.
-(pdftex.def)             Requested size: 40.52066pt x 28.45274pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 745.
+Package pdftex.def Info: images/logo.png used on input line 747.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [43
 
- <./images/homography.png (PNG copy)> <./images/6.png (PNG copy)> <./images/uni
-Sel5.png (PNG copy)> <./images/7.png (PNG copy)>] [44
-
 ]
+File: images/homography.png Graphic file (type png)
+
+<use images/homography.png>
+Package pdftex.def Info: images/homography.png used on input line 761.
+(pdftex.def)             Requested size: 43.20242pt x 28.45274pt.
+ <images/6.png, id=339, 1549.79pt x 991.705pt>
+File: images/6.png Graphic file (type png)
+
+<use images/6.png>
+Package pdftex.def Info: images/6.png used on input line 761.
+(pdftex.def)             Requested size: 44.45798pt x 28.45274pt.
+ <images/uniSel5.png, id=340, 1846.9pt x 1228.59pt>
+File: images/uniSel5.png Graphic file (type png)
+
+<use images/uniSel5.png>
+Package pdftex.def Info: images/uniSel5.png used on input line 761.
+(pdftex.def)             Requested size: 42.75116pt x 28.45274pt.
+ <images/7.png, id=341, 1750.54pt x 1228.59pt>
+File: images/7.png Graphic file (type png)
+
+<use images/7.png>
+Package pdftex.def Info: images/7.png used on input line 761.
+(pdftex.def)             Requested size: 40.52066pt x 28.45274pt.
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 762.
+Package pdftex.def Info: images/logo.png used on input line 761.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
- [45
+ [44
+
+ <./images/6.png (PNG copy)> <./images/uniSel5.png (PNG copy)> <./images/7.png 
+(PNG copy)>] [45
 
 ]
 File: images/logo.png Graphic file (type png)
- <use images/logo.png>
-Package pdftex.def Info: images/logo.png used on input line 773.
+
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 778.
 (pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
  [46
 
 ]
-[47
+File: images/logo.png Graphic file (type png)
+ <use images/logo.png>
+Package pdftex.def Info: images/logo.png used on input line 789.
+(pdftex.def)             Requested size: 22.75684pt x 22.75684pt.
+ [47
+
+] [48
 
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <9> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 783.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 799.
 
-[48
-
- </usr/share/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
 [49
 
+ </usr/share/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
+[50
 
-] [50
+
+] [51
 
 
 ]
@@ -2472,11 +2485,11 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <9> not available
 \tf@snm=\write10
 \openout10 = `presentacio.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 785.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 785.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 801.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 801.
  (./presentacio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 785.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 785.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 801.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 801.
 Package rerunfilecheck Info: File `presentacio.out' has not changed.
 (rerunfilecheck)             Checksum: 68BBF69530E8B04073479641EFF45FE2;436.
 
@@ -2490,14 +2503,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package logreq Info: Writing requests to 'presentacio.run.xml'.
 \openout1 = `presentacio.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 785.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 801.
  ) 
 Here is how much of TeX's memory you used:
- 30121 strings out of 493013
- 573167 string characters out of 6139318
+ 30131 strings out of 493013
+ 573320 string characters out of 6139318
  989351 words of memory out of 5000000
- 32876 multiletter control sequences out of 15000+600000
- 22355 words of font info for 80 fonts, out of 8000000 for 9000
+ 32883 multiletter control sequences out of 15000+600000
+ 22711 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,19n,92p,1729b,1798s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
@@ -2512,10 +2525,10 @@ amsfonts/cm/cmssi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt9.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist
 /fonts/type1/public/cm-super/sfsx1200.pfb>
-Output written on presentacio.pdf (50 pages, 21027191 bytes).
+Output written on presentacio.pdf (51 pages, 21041625 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 363 compressed objects within 4 object streams
- 117 named destinations out of 1000 (max. 500000)
- 242 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 367 compressed objects within 4 object streams
+ 119 named destinations out of 1000 (max. 500000)
+ 247 words of extra memory for PDF output out of 10000 (max. 10000000)
 

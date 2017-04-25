@@ -14,6 +14,6 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {5}{T\IeC {\`e}cniques de visi\IeC {\'o} utilitzades}{21}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {6}{Resultats}{36}{0}{6}
+\beamer@sectionintoc {6}{Resultats}{37}{0}{6}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {7}{Conclusions}{44}{0}{7}
+\beamer@sectionintoc {7}{Conclusions}{45}{0}{7}
