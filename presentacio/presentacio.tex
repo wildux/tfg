@@ -434,8 +434,8 @@ Director: Joan Climent (ESAII)
 		Algorismes principals utilitzats:
 		\begin{itemize}
 			\item Harris\cite{Harris}
-			\item SIFT\cite{SIFT}
-			\item ORB\cite{Rublee:2011:OEA:2355573.2356268}
+			\item SIFT\cite{SIFT} (Scale-invariant feature transform)
+			\item ORB\cite{Rublee:2011:OEA:2355573.2356268} (Oriented FAST and rotated BRIEF)
 		\end{itemize}
 	\end{frame}
 
@@ -479,11 +479,13 @@ Director: Joan Climent (ESAII)
 			\setcounter{enumTemp}{\theenumi}
 		\end{enumerate}
 		\begin{figure}[H]
-			\resizebox{0.8\textwidth}{!}{%
+			\begin{center}
+			\resizebox{0.8\textwidth}{!}{
 			\includegraphics[height=1cm]{images/sift_dog}
-			\hfill
-			\includegraphics[height=1cm]{images/sift_local_extrema}}
+			\hspace{0.1cm}
+			\includegraphics[height=1cm]{images/sift_local_extrema}\hspace{0.15cm}}
 			\captionsource{\textit{SIFT - DoG i \textit{local extrema}}}{OpenCV}
+			\end{center}
 		\end{figure}
 	\end{frame}
 
@@ -500,7 +502,7 @@ Director: Joan Climent (ESAII)
 	\begin{frame}{ORB - Detector I}
 		\tz
 		\begin{itemize}
-			\item{Detector FAST\cite{Rosten:2006:MLH:2094437.2094478} amb modificacions}
+			\item{Detector basat en FAST\cite{Rosten:2006:MLH:2094437.2094478} (Features from accelerated segment test)}
 			\item{Detecció de cantonades, molt ràpid}
 			\item{Es compara la intensitat d'un píxel amb N veïns}
 		\end{itemize}
@@ -536,7 +538,7 @@ Director: Joan Climent (ESAII)
 		\begin{itemize}
 			\item SIFT
 			\item ORB
-			\item BRISK\cite{Leutenegger:2011:BBR:2355573.2356277}
+			\item BRISK\cite{Leutenegger:2011:BBR:2355573.2356277} (Binary Robust Invariant Scalable Keypoints)
 		\end{itemize}
 	\end{frame}
 
@@ -558,9 +560,9 @@ Director: Joan Climent (ESAII)
 		\tz
 		\begin{itemize}
 			\item Descriptor binari, senzill i ràpid
-			\item Modificació BRIEF\cite{Calonder:2010:BBR:1888089.1888148}
+			\item Modificació BRIEF\cite{Calonder:2010:BBR:1888089.1888148} (Binary Robust Independent Elementary Features)
 			\item N parells de píxels veïns
-			\item Per cada parell es compara la intensitat i es retorna 1 o 0 segons si és major la del primer o la del segon
+			\item Es compara la intensitat, retornant 1 o 0 segons si la del primer punt és major o no
 			\item \alert{BRIEF no és invariable en la rotació} \textrightarrow{} ORB ``gira'' el patró en funció de l'angle
 		\end{itemize}
 	\end{frame}
